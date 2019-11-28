@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_f2f2f2"
+    android:clickable="true"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/fs_10"
+            android:layout_marginEnd="@dimen/fs_10"
+            android:layout_marginStart="@dimen/fs_10"
+            android:layout_marginTop="@dimen/fs_20"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/fs_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_inactive_users" />
+
+            <TextView
+                style="@style/TCTextViewBlackBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="120" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fs_20"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/inactive_user_amount_user" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/text_fee" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    style="@style/TCTextViewBlackBold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="120 TEC" />
+
+                <TextView
+                    style="@style/TCTextViewBlackBold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0.01 TEC" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fs_10"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/fs_50"
+            android:paddingEnd="@dimen/fs_10"
+            android:paddingStart="@dimen/fs_10"
+            android:paddingTop="@dimen/fs_10">
+
+            <TextView
+                style="@style/TCTextViewBlackBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Free ice-cream" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2018/09/30 - 2018/09/30" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fs_10"
+                android:text="We have not seen you a while and we have new menus that excites you. Visit out store by 30 Sept 2018 and show this message to enjoy fee ice cream of your choice on us!" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/fs_20"
+            android:layout_marginStart="@dimen/fs_20">
+
+            <TextView
+                style="@style/TCTextViewBlackLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="@string/text_total_tec" />
+
+            <TextView
+                style="@style/TCTextViewBlackBoldLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="120.01 TEC" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

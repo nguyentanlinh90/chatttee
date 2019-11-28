@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_view_ll_promotion"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/fs_20"
+    android:orientation="vertical"
+    android:visibility="invisible">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fs_20">
+
+        <LinearLayout
+            android:layout_width="@dimen/fs_120"
+            android:layout_height="@dimen/fs_30"
+            android:background="@drawable/bg_promotion_title"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TCTextViewWhiteBoldMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/fs_5"
+                android:gravity="center"
+                android:text="@string/text_promotions"
+                tools:ignore="RelativeOverlap" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/frag_review_ll_view_all_promotion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingEnd="@dimen/fs_10"
+            tools:ignore="RelativeOverlap,RtlSymmetry,UseCompoundDrawables">
+
+            <TextView
+                style="@style/TCTextViewGray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/review_view_all"
+                android:textSize="@dimen/ts_12" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/fs_2"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_next_gray_24pt" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.teecoin.ui.TCRecyclerView
+        android:id="@+id/frag_review_rcv_promotion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fs_10"
+        android:orientation="horizontal"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_promotion_horizontal">
+
+    </com.teecoin.ui.TCRecyclerView>
+</LinearLayout>

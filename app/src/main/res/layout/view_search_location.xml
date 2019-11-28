@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/fs_38"
+    android:layout_marginEnd="@dimen/fs_15"
+    android:layout_marginStart="@dimen/fs_15"
+    android:layout_marginTop="@dimen/fs_10"
+    android:background="@drawable/bg_black_solid_no_border_5_radius">
+
+    <RelativeLayout
+        android:id="@+id/rl_icon"
+        android:layout_width="@dimen/fs_40"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="@dimen/fs_22"
+            android:layout_height="@dimen/fs_22"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_search_white" />
+    </RelativeLayout>
+
+    <AutoCompleteTextView
+        android:id="@+id/frag_location_et_search"
+        style="@style/TCEditText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/rl_icon"
+        android:layout_toStartOf="@+id/frag_location_iv_remove_address"
+        android:hint="@string/location_text_hint_search"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/c_aaa9a9"
+        android:textCursorDrawable="@color/c_ffffff" />
+
+    <RelativeLayout
+        android:id="@+id/frag_location_iv_remove_address"
+        android:layout_width="@dimen/fs_40"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/fs_20"
+            android:layout_height="@dimen/fs_20"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_remove_white"
+            android:contentDescription="@string/todo" />
+    </RelativeLayout>
+
+</RelativeLayout>
+
+

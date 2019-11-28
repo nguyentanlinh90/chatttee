@@ -1,0 +1,55 @@
+package com.teecoin.feature.reviewSystem.reviewforUser;
+
+import android.view.LayoutInflater;
+
+import com.bumptech.glide.Glide;
+import com.teecoin.R;
+import com.teecoin.model.reviewsystem.VendorModel;
+import com.teecoin.utils.TCUtils;
+
+import java.util.ArrayList;
+
+import core.view.ItemViewHolder;
+import core.view.RecycleAdapter;
+import core.view.RecycleListener;
+
+import static core.base.BaseApplication.getActiveActivity;
+
+public class PlacesNearAdapter extends RecycleAdapter<VendorModel> {
+
+    public PlacesNearAdapter(LayoutInflater inflater, ArrayList<VendorModel> items, RecycleListener<VendorModel> listener) {
+        super(inflater, items, listener);
+
+    }
+
+    @Override
+    public int getItemViewType(int position) {
+        return ITEM_TYPE;
+    }
+
+    @Override
+    protected Class<? extends ItemViewHolder> getItemViewHolderClass() {
+        return PlacesNearViewHolder.class;
+    }
+
+    @Override
+    public int getItemCount() {
+        return items.size();
+    }
+
+    @Override
+    protected int getItemLayoutResource() {
+        return R.layout.item_review_place_near;
+    }
+
+    @Override
+    protected void bindItemView(ItemViewHolder<VendorModel> holder, VendorModel data, int position) {
+        if (holder instanceof PlacesNearViewHolder) {
+            PlacesNearViewHolder viewHolder = (PlacesNearViewHolder) holder;
+            Glide.with(getActiveActivity()).load(TCUtils.isEmpty(data.getFeaturedImage()) ? TCUtils.getDrawable(R.drawable.ic_logo_chattee) : data.getFeaturedImage()).apply(TCUtils.optionsSquareImage()).into(viewHolder.iv_image);
+            viewHolder.rb_rating.setRating(data.getRating());
+            viewHolder.tv_name.setText(data.getName());
+            viewHolder.rb_rating.setIsIndicator(true);
+        }
+    }
+}

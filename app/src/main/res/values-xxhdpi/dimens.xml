@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--values-xxhdpi           5.5"  1080x1920 xxhdpi-->
+    <!--values-xxxhdpi           5.5" 1440x2560 xxxhdpi-->
+
+
+    <!--use for text size-->
+    <dimen name="ts_7">7sp</dimen>
+    <dimen name="ts_8">8sp</dimen>
+    <dimen name="ts_9">9sp</dimen>
+    <dimen name="ts_9_3">9.3sp</dimen>
+    <dimen name="ts_10">10sp</dimen>
+    <dimen name="ts_11">11sp</dimen>
+    <dimen name="ts_11_5">11.5sp</dimen>
+    <dimen name="ts_12">12sp</dimen>
+    <dimen name="ts_12_8">12.8sp</dimen>
+    <dimen name="ts_13">13sp</dimen>
+    <dimen name="ts_14">14sp</dimen>
+    <dimen name="ts_14_5">14.5sp</dimen>
+    <dimen name="ts_15">15sp</dimen>
+    <dimen name="ts_15_5">15.5sp</dimen>
+    <dimen name="ts_16">16sp</dimen>
+    <dimen name="ts_17">16sp</dimen>
+    <dimen name="ts_18">18sp</dimen>
+    <dimen name="ts_19">19sp</dimen>
+    <dimen name="ts_20">20sp</dimen>
+    <dimen name="ts_22">22sp</dimen>
+    <dimen name="ts_30">30sp</dimen>
+    <dimen name="ts_41">41sp</dimen>
+
+    <!--  -->
+    <dimen name="fs_45">45dp</dimen>
+    <dimen name="fs_40">40dp</dimen>
+    <dimen name="fs_34">34dp</dimen>
+    <dimen name="fs_38">38dp</dimen>
+    <dimen name="fs_58">58dp</dimen>
+
+
+</resources>

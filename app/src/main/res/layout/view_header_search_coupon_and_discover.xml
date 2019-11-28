@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/fs_15"
+    android:layout_marginEnd="@dimen/fs_10"
+    android:layout_marginTop="@dimen/fs_22"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/view_header_search_coupon_discover_tv_title"
+        style="@style/text_view_content_price_range_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/text_filter_and_sort"
+        android:textAllCaps="true"
+        android:textSize="@dimen/ts_17" />
+
+    <TextView
+        android:id="@+id/view_header_search_coupon_discover_tv_reset"
+        style="@style/TCTextViewGold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/fs_5"
+        android:text="@string/filter_reset"
+        android:textSize="@dimen/ts_13"
+        tools:ignore="RelativeOverlap" />
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_rl_header"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_ffffff"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:weightSum="8">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fs_56">
+
+        <ImageView
+            android:id="@+id/frg_scan_iv_back_toolbar"
+            android:layout_width="@dimen/fs_56"
+            android:layout_height="@dimen/fs_56"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_back_black_24pt"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/frag_scan_tv_title_header"
+            style="@style/TCTextViewBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/fs_2"
+            android:gravity="center"
+            android:text="header"
+            android:textAllCaps="true"
+            android:textSize="@dimen/ts_17"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/frag_scan_tv_input"
+            style="@style/TCTextViewWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/fs_2"
+            android:gravity="center"
+            android:paddingStart="@dimen/fs_10"
+            android:paddingEnd="@dimen/fs_25"
+            android:text="@string/input"
+            android:textSize="@dimen/ts_17" />
+
+        <include
+            layout="@layout/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TCTextViewGoldBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fs_20"
+            android:layout_marginBottom="@dimen/fs_15"
+            android:gravity="center"
+            android:text="@string/text_your_qr_code" />
+
+        <ImageView
+            android:id="@+id/frg_my_qr_code_iv_my_qr"
+            android:layout_width="@dimen/fs_250"
+            android:layout_height="@dimen/fs_250"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_my_qr_code"
+            android:padding="@dimen/fs_15"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/frg_my_qr_code_tv_public_key"
+            style="@style/TCTextViewBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fs_20"
+            android:layout_marginBottom="@dimen/fs_20"
+            android:gravity="center"
+            android:paddingStart="@dimen/fs_50"
+            android:paddingEnd="@dimen/fs_50"
+            android:text="public key" />
+
+        <TextView
+            android:id="@+id/frg_my_qr_code_tv_copy_address"
+            style="@style/TCTextViewGold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_transparent_solid_gold_border_30_curvature"
+            android:padding="@dimen/fs_10"
+            android:text="@string/copy_address"
+            android:textAllCaps="true" />
+    </LinearLayout>
+
+
+</LinearLayout>

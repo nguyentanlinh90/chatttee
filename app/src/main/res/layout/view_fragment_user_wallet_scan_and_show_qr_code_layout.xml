@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/fs_22"
+    android:paddingTop="@dimen/fs_22"
+    tools:ignore="DisableBaselineAlignment">
+
+    <LinearLayout
+        android:id="@+id/frg_home_wallet_ll_send"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="NestedWeights,UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="@dimen/fs_64"
+            android:layout_height="@dimen/fs_64"
+            android:src="@drawable/ic_qr_code_circle_gold"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            style="@style/TCTextViewBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/fs_5"
+            android:text="@string/text_send"
+            android:textAllCaps="true"
+            android:textSize="@dimen/ts_14" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/frg_home_wallet_ll_receive"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="@dimen/fs_64"
+            android:layout_height="@dimen/fs_64"
+            android:src="@drawable/ic_search_qr_code_circle_gold"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            style="@style/TCTextViewBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/fs_5"
+            android:text="@string/text_receive"
+            android:textSize="@dimen/ts_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/frg_home_wallet_ll_top_up"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="@dimen/fs_64"
+            android:layout_height="@dimen/fs_64"
+            android:src="@drawable/ic_top_up_circle_gold"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            style="@style/TCTextViewBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/fs_5"
+            android:text="@string/top_up"
+            android:textAllCaps="true"
+            android:textSize="@dimen/ts_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/frg_home_wallet_ll_pay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="@dimen/fs_64"
+            android:layout_height="@dimen/fs_64"
+            android:src="@drawable/ic_pay_circle_gold"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            style="@style/TCTextViewBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/fs_5"
+            android:text="@string/pay"
+            android:textAllCaps="true"
+            android:textSize="@dimen/ts_14" />
+    </LinearLayout>
+</LinearLayout>

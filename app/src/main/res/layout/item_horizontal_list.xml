@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/view_group_discover"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/view_header_group_discover">
+
+        <TextView
+            android:id="@+id/item_horizontal_list_tv_name"
+            style="@style/text_view_title_item_main_user"
+            android:text="@string/text_text" />
+
+        <include
+            style="@style/view_button_all_main_user"
+            layout="@layout/view_all" />
+    </RelativeLayout>
+
+    <com.teecoin.ui.TCRecyclerView
+        android:id="@+id/item_horizontal_list_rcv"
+        style="@style/recycler_view_item_main_user"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_horizontal_list" />
+</LinearLayout>

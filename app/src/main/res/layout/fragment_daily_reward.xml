@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LinearLayoutVerticalFullWidthHeight"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/frag_daily_reward_iv_back"
+        android:layout_width="@dimen/fs_56"
+        android:layout_height="@dimen/fs_56"
+        android:contentDescription="@string/todo"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_back_black_24pt" />
+
+    <RelativeLayout
+        android:id="@+id/frag_daily_reward_rl_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/fs_50"
+        android:layout_marginTop="@dimen/fs_15"
+        android:layout_marginStart="@dimen/fs_52">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/bg_label_daily_reward" />
+
+        <TextView
+            style="@style/TCTextViewGoldBold"
+            android:layout_centerInParent="true"
+            android:text="@string/daily_tec_give_away"
+            android:textSize="@dimen/ts_17" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/frag_daily_reward_nested_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/frag_daily_reward_rl_label"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+              style="@style/TCTextViewBlackBoldMedium"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/daily_give_tec_title_1"
+                android:layout_marginTop="@dimen/fs_8"
+                />
+            <TextView
+                style="@style/TCTextViewBlackBold"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/daily_give_tec_title_2"
+                android:layout_marginTop="@dimen/fs_5"
+                android:textSize="@dimen/fs_12"
+                tools:ignore="SpUsage" />
+
+            <ImageView
+                android:id="@+id/frag_daily_reward_iv_backgroud_gift"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fs_280"
+                android:layout_marginStart="@dimen/fs_10"
+                android:layout_marginEnd="@dimen/fs_10"
+                android:layout_marginTop="@dimen/fs_10"
+                android:scaleType="fitCenter"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_banner_give_away" />
+
+            <LinearLayout
+                style="@style/view_group_discover"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="-5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TCTextViewGoldBoldMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/fs_5"
+                    android:layout_marginTop="@dimen/fs_15"
+                    android:layout_marginEnd="@dimen/fs_5"
+                    android:gravity="center"
+                    android:text="@string/daily_give_tec_your_daily_tec" />
+
+                <TextView
+                    style="@style/TCTextViewBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/fs_5"
+                    android:layout_marginTop="@dimen/fs_8"
+                    android:layout_marginEnd="@dimen/fs_5"
+                    android:gravity="center"
+                    android:text="@string/daily_give_tec_get_daily_prize" />
+
+                <TextView
+                    style="@style/TCTextViewGold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/fs_5"
+                    android:layout_marginTop="@dimen/fs_8"
+                    android:layout_marginEnd="@dimen/fs_5"
+                    android:gravity="center"
+                    android:text="@string/daily_give_tec_double_your_change" />
+
+                <com.teecoin.ui.TCRecyclerView
+                    android:id="@+id/frag_daily_reward_rcv_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fs_15"
+                    android:layout_marginBottom="@dimen/fs_5"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                    tools:listitem="@layout/item_daily_reward_day">
+
+                </com.teecoin.ui.TCRecyclerView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/frag_daily_reward_v_coupon"
+                style="@style/view_group_discover"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/fs_20">
+
+                <TextView
+                    style="@style/TCTextViewBlackBoldLarge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fs_10"
+                    android:gravity="center"
+                    android:textSize="@dimen/ts_15_5"
+                    android:text="@string/treat_yourself_with_tec_you_ve_earned" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/fs_10"
+                    android:paddingBottom="@dimen/fs_8"
+                    android:paddingTop="@dimen/fs_8">
+
+                    <TextView
+                        style="@style/text_view_title_item_main_user"
+                        android:text="@string/coupons_for_you" />
+
+                    <include
+                        layout="@layout/view_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+
+
+                <com.teecoin.ui.TCRecyclerView
+                    android:id="@+id/frag_daily_reward_rcv_coupon"
+                    style="@style/recycler_view_item_main_user"
+                    android:orientation="horizontal"
+                    app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                    tools:listitem="@layout/item_vendor" />
+
+            </LinearLayout>
+
+            <include layout="@layout/view_back_to_top" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

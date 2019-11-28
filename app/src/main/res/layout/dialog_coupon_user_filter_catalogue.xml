@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:paddingEnd="@dimen/fs_8"
+    android:paddingStart="@dimen/fs_8"
+    android:paddingTop="@dimen/fs_15">
+    <!--    android:background="@drawable/bg_white_solid_no_border_10_top_left_radius"-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_solid_no_border_10_top_left_radius"
+        android:paddingBottom="@dimen/fs_16">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/filter_discover_view_apply"
+            android:orientation="vertical">
+
+            <include layout="@layout/view_header_search_coupon_and_discover" />
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/fs_7"
+                android:layout_marginStart="@dimen/fs_7"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/fs_20">
+
+                    <TextView
+                        style="@style/fragment_coupon_shop_tv_title"
+                        android:layout_marginBottom="@dimen/fs_10"
+                        android:text="@string/category"
+                        android:textAllCaps="true" />
+
+                    <include
+                        layout="@layout/view_list_catalogue_image_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/fs_0" />
+                    <!--<include layout="@layout/view_list_catalogue_icon_horizontal" />-->
+
+                    <TextView
+                        style="@style/fragment_coupon_shop_tv_title"
+                        android:layout_marginTop="@dimen/fs_10"
+                        android:text="@string/text_sort_by"
+                        android:textAllCaps="true" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/dialog_coupon_user_filter_catalogue_cb_latest"
+                            style="@style/style_filter_coupon_cb_oval_vertical"
+                            android:layout_marginTop="@dimen/fs_20"
+                            android:text="@string/text_latest" />
+
+
+                        <RadioButton
+                            android:id="@+id/dialog_coupon_user_filter_catalogue_cb_ending_soon"
+                            style="@style/style_filter_coupon_cb_oval_vertical"
+                            android:layout_marginBottom="@dimen/fs_20"
+                            android:layout_marginTop="@dimen/fs_20"
+                            android:text="@string/ending_soon" />
+
+
+                        <RadioButton
+                            android:id="@+id/dialog_coupon_user_filter_catalogue_cb_popular"
+                            style="@style/style_filter_coupon_cb_oval_vertical"
+                            android:layout_marginBottom="@dimen/fs_20"
+                            android:text="@string/coupon_filter_best_selling" />
+
+                        <RadioButton
+                            android:id="@+id/dialog_coupon_user_filter_catalogue_cb_recommend_coupon"
+                            style="@style/style_filter_coupon_cb_oval_vertical"
+                            android:layout_marginBottom="@dimen/fs_20"
+                            android:text="@string/recommended_coupons_vouchers" />
+
+                        <RadioButton
+                            android:id="@+id/dialog_coupon_user_filter_catalogue_cb_low_to_high"
+                            style="@style/style_filter_coupon_cb_oval_vertical"
+                            android:layout_marginBottom="@dimen/fs_20"
+                            android:text="@string/low_to_high" />
+
+                        <RadioButton
+                            android:id="@+id/dialog_coupon_user_filter_catalogue_cb_high_to_low"
+                            style="@style/style_filter_coupon_cb_oval_vertical"
+                            android:layout_marginBottom="@dimen/fs_20"
+                            android:text="@string/high_to_low" />
+                    </RadioGroup>
+
+                    <TextView
+                        style="@style/fragment_coupon_shop_tv_title"
+                        android:text="@string/price_range_tec"
+                        android:textAllCaps="true" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/fs_20"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/dialog_coupon_user_filter_catalogue_et_min_price"
+                            android:layout_width="@dimen/fs_105"
+                            android:layout_height="@dimen/fs_35"
+                            android:background="@drawable/bg_transparent_solid_gray_border_5_radius"
+                            android:gravity="center"
+                            android:hint="@string/min"
+                            android:importantForAutofill="no"
+                            android:inputType="number"
+                            android:textColor="@color/c_b2973f"
+                            android:textCursorDrawable="@null"
+                            android:textSize="@dimen/ts_16"
+                            tools:ignore="LabelFor"
+                            tools:targetApi="o" />
+
+                        <TextView
+                            style="@style/TCTextViewGray"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="@dimen/fs_10"
+                            android:layout_marginStart="@dimen/fs_10"
+                            android:text="〜"
+                            android:textSize="@dimen/ts_20" />
+
+                        <EditText
+                            android:id="@+id/dialog_coupon_user_filter_catalogue_et_max_price"
+                            android:layout_width="@dimen/fs_105"
+                            android:layout_height="@dimen/fs_35"
+                            android:background="@drawable/bg_transparent_solid_gray_border_5_radius"
+                            android:gravity="center"
+                            android:hint="@string/max"
+                            android:importantForAutofill="no"
+                            android:inputType="number"
+                            android:textColor="@color/c_b2973f"
+                            android:textCursorDrawable="@null"
+                            android:textSize="@dimen/ts_16"
+                            tools:ignore="LabelFor"
+                            tools:targetApi="o" />
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+        </LinearLayout>
+
+        <!--        <View
+                    android:id="@+id/dialog_coupon_user_coupon_user_filter_catalogue_v_indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fs_3"
+                    android:layout_above="@+id/filter_discover_view_apply"
+                    android:layout_marginBottom="@dimen/fs_10"
+                    android:background="@drawable/bg_line_shadow" />-->
+
+        <LinearLayout
+            android:id="@+id/filter_discover_view_apply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/fs_20"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/filter_discover_tv_cancel"
+                style="@style/text_view_button_filter_border_gold"
+                android:text="@string/text_cancel" />
+
+            <TextView
+                android:id="@+id/filter_discover_tv_apply"
+                style="@style/text_view_button_filter_background_gold"
+                android:layout_marginStart="@dimen/fs_20"
+                android:text="@string/filter_apply" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

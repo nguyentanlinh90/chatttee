@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/fs_8"
+    android:paddingTop="@dimen/fs_15"
+    android:paddingEnd="@dimen/fs_8"
+    android:paddingBottom="@dimen/fs_10">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_solid_no_border_10_top_left_radius"
+        android:paddingBottom="@dimen/fs_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/filter_discover_view_apply"
+            android:orientation="vertical">
+
+            <include layout="@layout/view_header_search_coupon_and_discover" />
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/fs_5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/fs_10"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/fs_15"
+                        android:layout_marginEnd="@dimen/fs_15"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/text_view_title_filter_category"
+                            android:text="@string/categories" />
+
+                        <!--<include layout="@layout/view_list_catalogue_icon_horizontal" />-->
+                        <include
+                            layout="@layout/view_list_catalogue_image_horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/fs_10" />
+
+                        <TextView
+                            style="@style/text_view_title_filter_category"
+                            android:text="@string/filter_price_range" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/fs_10"
+                            android:layout_marginEnd="@dimen/fs_5"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/filter_discover_ll_price_range_one"
+                                style="@style/linner_layout_content_price_range_selector">
+
+                                <TextView
+                                    style="@style/text_view_content_price_range_selector"
+                                    android:text="@string/filter_price_range_one_price" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/filter_discover_ll_price_range_two"
+                                style="@style/linner_layout_content_price_range_selector">
+
+                                <TextView
+                                    style="@style/text_view_content_price_range_selector"
+                                    android:text="@string/filter_price_range_two_price" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/filter_discover_ll_price_range_three"
+                                style="@style/linner_layout_content_price_range_selector">
+
+                                <TextView
+                                    style="@style/text_view_content_price_range_selector"
+                                    android:text="@string/filter_price_range_three_price" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/filter_discover_ll_price_range_four"
+                                style="@style/linner_layout_content_price_range_selector">
+
+                                <TextView
+                                    style="@style/text_view_content_price_range_selector"
+                                    android:text="@string/filter_price_range_four_price" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/filter_discover_tv_distance_title"
+                            style="@style/text_view_title_filter_category"
+                            android:text="@string/filter_distance_within" />
+
+                        <LinearLayout
+                            android:id="@+id/filter_discover_ll_distance_section"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/fs_10"
+                            android:layout_marginEnd="@dimen/fs_5"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/filter_discover_ll_distance_1"
+                                style="@style/linner_layout_content_price_range_selector">
+
+                                <TextView
+                                    style="@style/text_view_content_price_range_selector"
+                                    android:text="@string/filter_distance_500m" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/filter_discover_ll_distance_2"
+                                style="@style/linner_layout_content_price_range_selector">
+
+                                <TextView
+                                    style="@style/text_view_content_price_range_selector"
+                                    android:text="@string/filter_distance_1_km" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/filter_discover_ll_distance_3"
+                                style="@style/linner_layout_content_price_range_selector">
+
+                                <TextView
+                                    style="@style/text_view_content_price_range_selector"
+                                    android:text="@string/filter_distance_1_5_km" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/filter_discover_ll_distance_4"
+                                style="@style/linner_layout_content_price_range_selector">
+
+                                <TextView
+                                    style="@style/text_view_content_price_range_selector"
+                                    android:text="@string/filter_distance_2_km" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            style="@style/text_view_title_filter_category"
+                            android:text="@string/filter_by_rating" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/fs_10"
+                            android:layout_marginEnd="@dimen/fs_5"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/filter_discover_ll_rating_one_star"
+                                style="@style/linner_layout_content_price_range_selector">
+
+                                <TextView
+                                    style="@style/text_view_content_price_range_selector"
+                                    android:layout_width="wrap_content"
+                                    android:text="@string/filter_star_1" />
+
+                                <include layout="@layout/view_icon_star_filter" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/filter_discover_ll_rating_two_star"
+                                style="@style/linner_layout_content_price_range_selector">
+
+                                <TextView
+                                    style="@style/text_view_content_price_range_selector"
+                                    android:layout_width="wrap_content"
+                                    android:text="@string/filter_star_2" />
+
+                                <include layout="@layout/view_icon_star_filter" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/filter_discover_ll_rating_three_star"
+                                style="@style/linner_layout_content_price_range_selector">
+
+                                <TextView
+                                    style="@style/text_view_content_price_range_selector"
+                                    android:layout_width="wrap_content"
+                                    android:text="@string/filter_star_3" />
+
+                                <include layout="@layout/view_icon_star_filter" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/filter_discover_ll_rating_four_star"
+                                style="@style/linner_layout_content_price_range_selector">
+
+                                <TextView
+                                    style="@style/text_view_content_price_range_selector"
+                                    android:layout_width="wrap_content"
+                                    android:text="@string/filter_star_4" />
+
+                                <include layout="@layout/view_icon_star_filter" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/filter_discover_ll_rating_five_star"
+                                style="@style/linner_layout_content_price_range_selector">
+
+                                <TextView
+                                    style="@style/text_view_content_price_range_selector"
+                                    android:layout_width="wrap_content"
+                                    android:text="@string/filter_star_5" />
+
+                                <include layout="@layout/view_icon_star_filter" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            style="@style/text_view_title_filter_category"
+                            android:text="@string/filter_opening_time" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/fs_10"
+                            android:layout_marginEnd="@dimen/fs_5"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/filter_discover_ll_open_now"
+                                style="@style/linner_layout_content_price_range_selector">
+
+                                <TextView
+                                    style="@style/text_view_content_price_range_selector"
+                                    android:paddingBottom="@dimen/fs_3"
+                                    android:text="@string/filter_open_now"
+                                    android:textAllCaps="false" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/filter_catalogue_ll_opening_hours"
+                                style="@style/linner_layout_content_price_range_selector"
+                                tools:ignore="UseCompoundDrawables">
+
+                                <TextView
+                                    android:id="@+id/filter_discover_tv_opening_hour"
+                                    style="@style/text_view_content_price_range_selector"
+                                    android:layout_width="wrap_content"
+                                    android:hint="@string/text_opening_hours"
+                                    android:paddingBottom="@dimen/fs_3"
+                                    android:textAllCaps="false"
+                                    android:textColorHint="@android:color/black" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="10dp"
+                                    android:contentDescription="@string/todo"
+                                    android:src="@drawable/ic_arrow_drop_down_black_24dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            style="@style/text_view_title_filter_category"
+                            android:text="@string/text_sort_by" />
+
+                        <RadioGroup
+                            android:id="@+id/filter_discover_rg_sort_condition"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:id="@+id/filter_discover_rb_near_by"
+                                style="@style/style_filter_coupon_cb_oval_vertical"
+                                android:text="@string/filter_sort_by_near_by" />
+
+                            <RadioButton
+                                android:id="@+id/filter_discover_rb_new_merchant"
+                                style="@style/style_filter_coupon_cb_oval_vertical"
+                                android:layout_marginTop="@dimen/fs_20"
+                                android:text="@string/text_new_merchant" />
+
+
+                            <RadioButton
+                                android:id="@+id/filter_discover_rb_highest_rate"
+                                style="@style/style_filter_coupon_cb_oval_vertical"
+                                android:layout_marginTop="@dimen/fs_20"
+                                android:text="@string/filter_sort_by_highest_rating" />
+
+                            <RadioButton
+                                android:id="@+id/filter_discover_rb_top_rate_experience"
+                                style="@style/style_filter_coupon_cb_oval_vertical"
+                                android:layout_marginTop="@dimen/fs_20"
+                                android:text="@string/top_rated_experiences" />
+
+                            <RadioButton
+                                android:id="@+id/filter_discover_rb_high_to_low_price"
+                                style="@style/style_filter_coupon_cb_oval_vertical"
+                                android:layout_marginTop="@dimen/fs_20"
+                                android:text="@string/filter_sort_by_high_to_low_price" />
+
+                            <RadioButton
+                                android:id="@+id/filter_discover_rb_low_to_high_price"
+                                style="@style/style_filter_coupon_cb_oval_vertical"
+                                android:layout_marginTop="@dimen/fs_20"
+                                android:text="@string/filter_sort_by_low_to_high_price" />
+                        </RadioGroup>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+        </LinearLayout>
+
+        <!--        <View
+                    android:id="@+id/view_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fs_3"
+                    android:layout_above="@+id/filter_discover_view_apply"
+                    android:layout_marginBottom="@dimen/fs_10"
+                    android:background="@drawable/bg_line_shadow" />-->
+
+        <LinearLayout
+            android:id="@+id/filter_discover_view_apply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/fs_20"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/filter_discover_tv_cancel"
+                style="@style/text_view_button_filter_border_gold"
+                android:text="@string/text_cancel" />
+
+            <TextView
+                android:id="@+id/filter_discover_tv_apply"
+                style="@style/text_view_button_filter_background_gold"
+                android:layout_marginStart="@dimen/fs_20"
+                android:text="@string/filter_apply" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/fs_1_5"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:layout_width="@dimen/fs_10"
+        android:layout_height="@dimen/fs_20"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/half_circle_gray_left" />
+
+    <ImageView
+        android:layout_width="@dimen/fs_10"
+        android:layout_height="@dimen/fs_20"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/half_circle_gray_right" />
+
+    <TextView
+        android:id="@+id/tv_validity"
+        style="@style/TCTextViewGray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/fs_5"
+        android:text="@string/coupon_validity_two_dot" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_validity"
+        android:layout_marginBottom="@dimen/fs_7"
+        android:layout_marginEnd="@dimen/fs_15"
+        android:layout_marginStart="@dimen/fs_15"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="@dimen/fs_22"
+            android:layout_height="@dimen/fs_22"
+            android:src="@drawable/ic_watch_gold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/fs_8"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/view_coupon_user_detail_tv_start_date_time"
+                style="@style/TCTextViewBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14:30    Wedneseday, 2018/10/25" />
+
+            <TextView
+                android:id="@+id/view_coupon_user_detail_tv_end_date_time"
+                style="@style/TCTextViewBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14:30   Tues, 2018/10/25" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

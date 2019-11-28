@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/frg_account_rl_account_info"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fs_160"
+            android:layout_marginBottom="@dimen/fs_10"
+            android:background="@color/c_f2f2f2">
+
+            <RelativeLayout
+                android:id="@+id/frg_account_rl_avatar"
+                android:layout_width="@dimen/fs_76"
+                android:layout_height="@dimen/fs_76"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_oval_white_solid_gold_border">
+
+                <ImageView
+                    android:id="@+id/frg_account_iv_avatar"
+                    android:layout_width="@dimen/fs_74"
+                    android:layout_height="@dimen/fs_74"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/todo"
+                    android:scaleType="centerCrop" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="@dimen/fs_32"
+                android:layout_height="@dimen/fs_32"
+                android:layout_alignBottom="@+id/frg_account_rl_avatar"
+                android:layout_marginStart="-20dp"
+                android:layout_marginBottom="-4dp"
+                android:layout_toEndOf="@+id/frg_account_rl_avatar"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_camera_gray_rounded_shadow" />
+
+            <TextView
+                android:id="@+id/frg_account_tv_name"
+                style="@style/TCTextViewGold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/frg_account_rl_avatar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/fs_10"
+                android:layout_marginBottom="@dimen/fs_8"
+                android:gravity="center"
+                android:text="@string/text_text"
+                android:textSize="@dimen/ts_15" />
+
+            <ImageView
+                android:id="@+id/frg_account_iv_billionaire_diamond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/fs_5"
+                android:src="@drawable/ic_diamond"
+                android:visibility="gone"
+                tools:ignore="ContentDescription" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/frg_account_rl_shop_account_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/fs_10"
+            android:background="@color/c_f2f2f2"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="@dimen/fs_67"
+                android:layout_height="@dimen/fs_67"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/fs_20"
+                android:layout_marginEnd="@dimen/fs_42"
+                android:background="@drawable/bg_oval_white_solid_gold_border">
+
+                <ImageView
+                    android:id="@+id/frg_account_iv_shop_avatar"
+                    android:layout_width="@dimen/fs_65"
+                    android:layout_height="@dimen/fs_65"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/todo"
+                    android:scaleType="centerCrop" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/frg_account_tv_shop_name"
+                    style="@style/TCTextViewGold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fs_15"
+                    android:layout_marginBottom="@dimen/fs_12"
+                    android:text="@string/text_three_dot"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/ts_14" />
+
+                <TextView
+                    style="@style/TCTextViewBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/fs_5"
+                    android:text="@string/your_balance"
+                    android:textSize="@dimen/ts_14" />
+
+                <LinearLayout
+                    android:id="@+id/frg_account_v_wallet_sgd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fs_5"
+                    android:layout_marginBottom="@dimen/fs_5"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/frg_account_tv_title_wallet_sgd"
+                        style="@style/TCTextViewBlackBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sgd_wallet"
+                        android:textSize="@dimen/ts_14" />
+
+                    <TextView
+                        android:id="@+id/frg_account_tv_wallet_sgd"
+                        style="@style/TCTextViewBlackBold"
+                        android:layout_marginStart="@dimen/fs_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/ts_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/frg_account_v_wallet_tec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fs_5"
+                    android:layout_marginBottom="@dimen/fs_15"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/frg_account_tv_title_wallet_tec"
+                        style="@style/TCTextViewBlackBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tec_wallet"
+                        android:textSize="@dimen/ts_14" />
+
+                    <TextView
+                        android:id="@+id/frg_account_tv_wallet_tec"
+                        style="@style/TCTextViewBlackBold"
+                        android:layout_marginStart="@dimen/fs_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/ts_14" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/view_item_account" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/frg_account_tv_version"
+                style="@style/TCTextViewGray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/c_f2f2f2"
+                android:gravity="center"
+                android:paddingTop="@dimen/fs_12"
+                android:paddingBottom="@dimen/fs_12"
+                android:text="@string/version_app"
+                android:textColor="@color/c_8e8e93" />
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

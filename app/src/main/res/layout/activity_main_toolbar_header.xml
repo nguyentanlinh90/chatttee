@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_rl_header"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/fs_56"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/activity_main_iv_bt_back"
+        android:layout_width="@dimen/fs_56"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/todo"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_back_black_24pt" />
+
+    <ImageView
+        android:id="@+id/activity_main_iv_bt_done"
+        android:layout_width="@dimen/fs_56"
+        android:layout_height="@dimen/fs_56"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/todo"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_done_gold"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/activity_main_iv_bt_filter"
+        android:layout_width="@dimen/fs_56"
+        android:layout_height="@dimen/fs_56"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/todo"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_filter"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/activity_main_tv_middle_title"
+        style="@style/TCTextViewHeader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/fs_56"
+        android:layout_marginEnd="@dimen/fs_56"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@string/text_three_dot"
+        android:textAllCaps="true" />
+
+    <TextView
+        android:id="@+id/activity_main_tv_right_title"
+        style="@style/TCTextViewRightHeaderBlueBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/fs_10"
+        android:gravity="center"
+        android:textSize="@dimen/ts_13"
+        android:textStyle="bold"
+        tools:ignore="RelativeOverlap" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.77dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/c_a6a8b0" />
+
+    <TextView
+        android:id="@+id/activity_main_tv_done"
+        style="@style/TCTextViewBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/fs_10"
+        android:paddingEnd="@dimen/fs_10"
+        android:text="@string/text_done"
+        android:textSize="@dimen/ts_13"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/activity_main_iv_read_all_notification"
+        android:layout_width="@dimen/fs_56"
+        android:layout_height="@dimen/fs_56"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/todo"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_notification_mark_as_read"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/activity_main_rl_qr_code"
+        android:layout_width="@dimen/fs_56"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/activity_main_iv_qr_code"
+            android:layout_width="@dimen/fs_35"
+            android:layout_height="@dimen/fs_35"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_chattee_logo" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/activity_main_iv_add_coupon"
+        android:layout_width="@dimen/fs_56"
+        android:layout_height="@dimen/fs_56"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/todo"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_add_gold"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/activity_main_rl_notification"
+        android:layout_width="@dimen/fs_56"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_notification"
+            android:layout_width="@dimen/fs_20"
+            android:layout_height="@dimen/fs_25"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_tab_notification_gray" />
+
+        <TextView
+            android:id="@+id/activity_main_tv_count_notification"
+            style="@style/TCTextViewWhite"
+            android:layout_width="@dimen/fs_15"
+            android:layout_height="@dimen/fs_15"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/fs_13"
+            android:layout_marginEnd="@dimen/fs_11"
+            android:background="@drawable/bg_circle_red"
+            android:gravity="center"
+            android:text="@string/text_zero"
+            android:textSize="@dimen/ts_10"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>

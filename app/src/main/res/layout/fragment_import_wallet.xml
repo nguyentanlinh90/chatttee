@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayoutVerticalParent"
+    android:padding="@dimen/fs_30">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/fs_12"
+        style="@style/TCTextViewBlackBold"
+        android:text="@string/text_secret_key"
+        android:textSize="@dimen/ts_12" />
+
+    <RelativeLayout
+        android:id="@+id/fragment_import_wallet_v_input"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fs_78"
+        android:layout_marginBottom="@dimen/fs_7"
+        android:background="@drawable/bg_white_solid_gray_border_5_radius">
+
+        <EditText
+            android:id="@+id/frg_import_secret_key_et_secret"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/frg_import_secret_key_iv_clear_secret"
+            android:background="@null"
+            style="@style/TCTextViewBlack"
+            android:gravity="top"
+            android:hint="@string/please_enter_your_secret_key_to_import_your_wallet"
+            android:lineSpacingExtra="@dimen/fs_5"
+            android:maxLines="3"
+            android:padding="@dimen/fs_11"
+            android:textColorHint="@color/c_9b9b9b"
+            android:textSize="@dimen/ts_12" />
+
+        <ImageView
+            android:id="@+id/frg_import_secret_key_iv_clear_secret"
+            style="@style/iv_clear_item_input" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/fragment_log_in_tv_error_input_secret"
+        style="@style/tv_b21225_10pt_regular"
+        android:text="@string/import_wallet_warning_enter_secret_key" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_notification_gold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/import_wallet_secret_key_info"
+            android:textColor="@color/c_9b9b9b"
+            android:textSize="@dimen/ts_12" />
+    </LinearLayout>
+
+</LinearLayout>

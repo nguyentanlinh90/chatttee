@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/frag_review_promotion_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/frag_review_promotion_iv_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/c_f2f2f2"
+            android:contentDescription="@string/todo"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher" />
+
+        <ImageView
+            android:layout_width="@dimen/fs_30"
+            android:layout_height="@dimen/fs_35"
+            android:layout_marginStart="@dimen/fs_8"
+            android:src="@drawable/ic_gift_background" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/frag_review_promotion_tv_name"
+        style="@style/TCTextViewBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fs_5"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="Coffe Lucky Garden food item t"
+        android:textSize="@dimen/ts_14" />
+</LinearLayout>

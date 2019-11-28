@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_ececec"
+    android:clickable="true"
+    android:focusable="true">
+
+    <include
+        android:id="@+id/frag_coupon_user_result_ll_go_back"
+        layout="@layout/view_coupon_user_button_go_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/frag_coupon_user_result_ll_go_back">
+
+        <include
+            layout="@layout/view_header_vendor_detail"
+            android:visibility="gone" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/c_ffffff"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include
+                    layout="@layout/view_coupon_result_processing"
+                    android:visibility="visible" />
+
+                <include layout="@layout/view_coupon_user_result_success" />
+
+                <include layout="@layout/view_coupon_user_result_unsuccessful" />
+
+                <include layout="@layout/view_coupon_user_result_view_more_bottom" />
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_view_ll_banner"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/fs_190"
+    android:visibility="invisible">
+
+    <com.teecoin.ui.TCAutoScrollViewPager
+        android:id="@+id/frag_main_review_page_slide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.bikomobile.circleindicatorpager.CircleIndicatorPager
+        android:id="@+id/frag_main_review_circle_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/fs_5"
+        app:ci_drawable="@drawable/ic_oval_check_box_selected"
+        app:ci_drawable_unselected="@drawable/ic_oval_check_box"
+        app:ci_height="7dp"
+        app:ci_width="7dp" />
+
+</RelativeLayout>

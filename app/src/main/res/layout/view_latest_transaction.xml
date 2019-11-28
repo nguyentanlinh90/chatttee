@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/fs_5"
+    android:layout_marginEnd="@dimen/fs_5"
+    android:elevation="@dimen/fs_2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fs_52">
+
+            <TextView
+                style="@style/TCTextViewBlack1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/fs_13"
+                android:text="@string/home_wallet_last_transaction"
+                android:textSize="@dimen/ts_14" />
+
+            <LinearLayout
+                android:id="@+id/view_latest_transaction_ll_view_all_transaction"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                tools:ignore="RelativeOverlap,UseCompoundDrawables">
+
+                <TextView
+                    style="@style/TCTextViewGray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/text_all"
+                    android:textSize="@dimen/ts_10" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/fs_5"
+                    android:layout_marginEnd="@dimen/fs_20"
+                    android:background="@drawable/ic_next_grey"
+                    android:contentDescription="@string/todo" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/c_d1d1d1" />
+
+        </RelativeLayout>
+
+        <com.teecoin.ui.TCRecyclerView
+            android:id="@+id/view_latest_transaction_rcv_transaction_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_last_transaction" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

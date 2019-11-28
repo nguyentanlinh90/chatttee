@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_f2f2f2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_solid_gray_border_5_radius"
+        android:orientation="vertical">
+
+        <!--<TextView-->
+        <!--android:id="@+id/frg_vendor_detail_about_restaurant_tv_description"-->
+        <!--style="@style/TCTextViewBlack"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="@dimen/fs_10"-->
+        <!--android:layout_marginTop="@dimen/fs_20"-->
+        <!--android:text="wwfss" />-->
+
+        <!--<include-->
+        <!--android:id="@+id/frg_vendor_detail_about_restaurant_v_more"-->
+        <!--layout="@layout/view_more" />-->
+
+        <ImageView
+            android:id="@+id/frg_vendor_detail_about_restaurant_iv_selected_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fs_50"
+            android:scaleType="centerCrop" />
+
+        <com.teecoin.ui.TCRecyclerView
+            android:id="@+id/frg_vendor_detail_about_restaurant_rcv_image_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fs_100"
+            android:orientation="horizontal"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager">
+        </com.teecoin.ui.TCRecyclerView>
+
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

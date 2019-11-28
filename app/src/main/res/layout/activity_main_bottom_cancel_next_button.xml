@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="@dimen/fs_5"
+    android:weightSum="2">
+
+    <TextView
+        android:id="@+id/activity_main_bottom_cancel_next_button_tv_cancel"
+        style="@style/TCTextViewGold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/fs_10"
+        android:layout_marginEnd="@dimen/fs_10"
+        android:layout_weight="1"
+        android:background="@drawable/bg_transparent_solid_gold_border_30_curvature"
+        android:gravity="center"
+        android:paddingStart="@dimen/fs_20"
+        android:paddingTop="@dimen/fs_10"
+        android:paddingEnd="@dimen/fs_20"
+        android:paddingBottom="@dimen/fs_10"
+        android:text="@string/text_cancel"
+        android:textAllCaps="true" />
+
+    <TextView
+        android:id="@+id/activity_main_bottom_cancel_next_button_tv_next"
+        style="@style/TCTextViewWhite"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/fs_10"
+        android:layout_marginEnd="@dimen/fs_10"
+        android:layout_weight="1"
+        android:background="@drawable/bg_gold_solid_no_border_30_radius"
+        android:contentDescription="@string/todo"
+        android:gravity="center"
+        android:paddingStart="@dimen/fs_20"
+        android:paddingTop="@dimen/fs_10"
+        android:paddingEnd="@dimen/fs_20"
+        android:paddingBottom="@dimen/fs_10"
+        android:text="@string/text_next"
+        android:textAllCaps="true"
+        android:textColor="@color/c_ffffff" />
+</LinearLayout>

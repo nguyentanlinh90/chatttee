@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/view_button_signup_tv_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TCTextViewBlackBold"
+        android:text="@string/text_sign_up"
+        android:textAllCaps="true"
+        android:textSize="@dimen/ts_15" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fs_37"
+        android:layout_marginBottom="@dimen/fs_15"
+        android:layout_marginTop="@dimen/fs_10"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/view_button_signup_ll_sign_up_with_facebook"
+            android:layout_width="@dimen/fs_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_login_facebook">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/fs_4"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_login_facebook" />
+
+            <TextView
+                style="@style/TCTextViewWhiteBold"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:text="@string/text_facebook" />
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/login_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/view_button_signup_ll_sign_up_with_google"
+            android:layout_width="@dimen/fs_0"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/fs_20"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_login_google">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/fs_15"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_login_google" />
+
+            <TextView
+                style="@style/TCTextViewBlackBold"
+                android:layout_centerInParent="true"
+                android:text="@string/text_google"
+                android:textSize="@dimen/ts_12" />
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/sign_in_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                tools:visibility="gone" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_button_signup_ll_sign_up_with_email"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fs_37"
+        android:background="@drawable/bg_white_solid_no_border_5_radius"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/fs_20"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_email" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TCTextViewBlackBold"
+            android:text="@string/text_email"
+            android:textSize="@dimen/ts_14" />
+    </LinearLayout>
+
+</LinearLayout>

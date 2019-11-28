@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_list_review_rl_play_video"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/c_2d2d2d"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center"
+    android:visibility="gone">
+
+    <VideoView
+        android:id="@+id/item_list_review_video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:backgroundTint="@android:color/black" />
+
+    <ImageView
+        android:id="@+id/iv_cover_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/todo"
+        android:scaleType="fitCenter"
+        android:visibility="visible"
+        android:src="@drawable/ic_logo_chattee" />
+
+    <include layout="@layout/view_progress_bar_small" />
+
+    <include layout="@layout/button_play_video" />
+
+</RelativeLayout>

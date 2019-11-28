@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/fs_20"
+    android:background="@drawable/bg_white_solid_no_border_10_radius"
+    android:paddingStart="@dimen/fs_20"
+    android:paddingTop="@dimen/fs_10"
+    android:paddingEnd="@dimen/fs_10"
+    android:paddingBottom="@dimen/fs_10">
+
+    <ImageView
+        android:id="@+id/dialog_select_country_iv_close"
+        android:layout_width="@dimen/fs_35"
+        android:layout_height="@dimen/fs_35"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/todo"
+        android:padding="@dimen/fs_8"
+        android:src="@drawable/ic_remove_gold" />
+
+    <TextView
+        android:id="@+id/dialog_select_country_tv_title"
+        style="@style/TCTextViewBlackBoldMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_select_country_iv_close"
+        android:layout_margin="@dimen/fs_5"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/fs_8"
+        android:text="@string/select_the_country_you_want_to_discover"
+        android:textSize="@dimen/ts_16" />
+
+    <com.teecoin.ui.TCRecyclerView
+        android:id="@+id/dialog_select_country_rcv_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_select_country_tv_title"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/fs_15"
+        android:layout_marginBottom="@dimen/fs_20"
+        android:orientation="vertical"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_country_discover" />
+
+    <TextView
+        android:id="@+id/dialog_select_country_tv_apply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_select_country_rcv_country"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/fs_10"
+        android:background="@drawable/bg_gold_solid_no_border_30_radius"
+        style="@style/TCTextViewWhite"
+        android:paddingStart="@dimen/fs_35"
+        android:paddingTop="@dimen/fs_10"
+        android:paddingEnd="@dimen/fs_35"
+        android:paddingBottom="@dimen/fs_10"
+        android:text="@string/filter_apply"
+        android:textSize="@dimen/ts_13" />
+
+</RelativeLayout>

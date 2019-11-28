@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/c_f2f2f2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fs_10"
+                android:layout_marginTop="@dimen/fs_10"
+                style="@style/TCTextViewBlackBold"
+                android:text="@string/search_inactive_users_since_last_visit" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fs_10"
+                android:layout_marginTop="@dimen/fs_20"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/fs_10"
+                        android:text="@string/text_from" />
+
+                    <include
+                        android:id="@+id/frg_new_purchase_ll_from_date"
+                        layout="@layout/view_filter_calendar_item" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/fs_10"
+                        android:text="@string/text_to" />
+
+                    <include
+                        android:id="@+id/frg_new_purchase_ll_to_date"
+                        layout="@layout/view_filter_calendar_item" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/frg_new_purchase_tv_search"
+                style="@style/TCTextViewWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/fs_10"
+                android:layout_marginTop="@dimen/fs_20"
+                android:background="@drawable/bg_gold_solid_no_border_30_radius"
+                android:paddingBottom="@dimen/fs_5"
+                android:paddingLeft="@dimen/fs_35"
+                android:paddingRight="@dimen/fs_35"
+                android:paddingTop="@dimen/fs_5"
+                android:text="@string/text_search" />
+
+        </LinearLayout>
+
+        <include layout="@layout/view_line" />
+
+        <LinearLayout
+            android:id="@+id/frg_new_purchase_ll_search_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fs_10"
+                android:layout_marginTop="@dimen/fs_10"
+                android:text="@string/text_inactive_users" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/fs_10"
+                android:layout_marginStart="@dimen/fs_10"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fs_10"
+                    android:layout_weight="1"
+                    android:background="@color/c_f2f2f2"
+                    android:padding="@dimen/fs_10"
+                    android:text="120" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fs_10"
+                android:layout_marginTop="@dimen/fs_10"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/fs_10"
+                    android:layout_weight="1"
+                    android:text="@string/inactive_user_amount_user" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/fs_10"
+                    android:layout_weight="1"
+                    android:text="@string/text_fee" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/fs_10"
+                android:layout_marginEnd="@dimen/fs_10"
+                android:layout_marginStart="@dimen/fs_10"
+                android:layout_marginTop="@dimen/fs_10"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/fs_38"
+                    android:layout_marginEnd="@dimen/fs_10"
+                    android:layout_weight="1"
+                    android:background="@color/c_f2f2f2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingStart="@dimen/fs_10"
+                        android:text="120" />
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@+id/frg_new_purchase_amount_user_tv_tec"
+                        android:background="@color/c_a6a8b0" />
+
+                    <TextView
+                        android:id="@+id/frg_new_purchase_amount_user_tv_tec"
+                        style="@style/TCTextViewBlack1Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="@dimen/fs_10"
+                        android:layout_marginStart="@dimen/fs_10"
+                        android:gravity="center"
+                        android:text="@string/tee_coin_symbol" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/fs_38"
+                    android:layout_marginStart="@dimen/fs_10"
+                    android:layout_weight="1"
+                    android:background="@color/c_f2f2f2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingStart="@dimen/fs_10"
+                        android:text="0.01" />
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@+id/frg_new_purchase_fee_user_tv_tec"
+                        android:background="@color/c_a6a8b0" />
+
+                    <TextView
+                        android:id="@+id/frg_new_purchase_fee_user_tv_tec"
+                        style="@style/TCTextViewBlack1Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="@dimen/fs_10"
+                        android:layout_marginStart="@dimen/fs_10"
+                        android:gravity="center"
+                        android:text="@string/tee_coin_symbol" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <include layout="@layout/view_line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/fs_5"
+                android:layout_marginStart="@dimen/fs_10"
+                android:layout_marginTop="@dimen/fs_5"
+                android:text="@string/title" />
+
+            <EditText
+                style="@style/TCEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/fs_10"
+                android:layout_marginStart="@dimen/fs_10"
+                android:background="@color/c_f2f2f2"
+                android:hint="@string/new_purchase_title_hint"
+                android:padding="@dimen/fs_10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fs_10"
+                android:layout_marginTop="@dimen/fs_10"
+                android:text="@string/validity" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/fs_5"
+                android:layout_marginStart="@dimen/fs_10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/fs_10"
+                        android:text="@string/text_from" />
+
+                    <include
+                        android:id="@+id/top_review_filter_ll_from_date"
+                        layout="@layout/view_filter_calendar_item" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/fs_10"
+                        android:text="@string/text_to" />
+
+                    <include
+                        android:id="@+id/top_review_filter_ll_from_date"
+                        layout="@layout/view_filter_calendar_item" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/fs_5"
+                android:layout_marginStart="@dimen/fs_10"
+                android:layout_marginTop="@dimen/fs_5"
+                android:text="@string/new_purchase_content" />
+
+            <EditText
+                android:id="@+id/frg_update_shop_et_shop_name"
+                style="@style/TCEditText"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="@dimen/fs_10"
+                android:layout_marginEnd="@dimen/fs_10"
+                android:layout_marginStart="@dimen/fs_10"
+                android:background="@color/c_f2f2f2"
+                android:gravity="top"
+                android:hint="@string/new_purchase_content_hint"
+                android:inputType="textMultiLine"
+                android:padding="@dimen/fs_10" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

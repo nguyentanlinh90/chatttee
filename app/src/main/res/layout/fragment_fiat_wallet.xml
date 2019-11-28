@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.teecoin.ui.TCSwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frg_fiat_wallet_account_refresh_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:focusable="true">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout style="@style/LinearLayoutVerticalFullWidthHeight">
+
+
+            <include layout="@layout/view_header_shop_wallet" />
+
+            <LinearLayout
+                style="@style/LinearLayoutHorizontalFullWidth"
+                android:paddingTop="@dimen/fs_22"
+                android:paddingBottom="@dimen/fs_22">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="@dimen/fs_20"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:id="@+id/frg_fiat_wallet_ll_convert"
+                        style="@style/LinearLayoutDefault"
+                        android:layout_gravity="end"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/fs_64"
+                            android:layout_height="@dimen/fs_64"
+                            android:background="@drawable/ic_withdraw" />
+
+                        <TextView
+                            style="@style/TCTextViewBlack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/fs_5"
+                            android:text="@string/convert_to_tec"
+                            android:textAllCaps="true"
+                            android:textSize="@dimen/ts_14" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="@dimen/fs_20"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:id="@+id/frg_fiat_wallet_ll_withdraw"
+                        style="@style/LinearLayoutDefault"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/fs_64"
+                            android:layout_height="@dimen/fs_64"
+                            android:background="@drawable/ic_convert_to_tec" />
+
+                        <TextView
+                            style="@style/TCTextViewBlack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/fs_5"
+                            android:text="@string/with_draw"
+                            android:textAllCaps="true"
+                            android:textSize="@dimen/ts_14" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <include layout="@layout/view_latest_transaction" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</com.teecoin.ui.TCSwipeRefreshLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_f2f2f2"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:paddingEnd="@dimen/fs_15"
+    android:paddingStart="@dimen/fs_15">
+
+    <com.teecoin.ui.TCRecyclerView
+        android:id="@+id/frg_myreviews_rcv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_my_reviews" />
+
+</LinearLayout>

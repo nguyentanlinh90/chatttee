@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_solid_no_border_10_radius"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/base_notify_tv_title"
+        style="@style/TCTextViewBlackBold"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fs_38"
+        android:gravity="center"
+        android:text="@string/location_service_title" />
+
+    <include layout="@layout/view_line" />
+
+    <TextView
+        android:id="@+id/base_notify_tv_content"
+        style="@style/TCTextViewBlackMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fs_10"
+        android:text="@string/location_service_message" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/fs_2">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            style="@style/TCTextViewGoldBoldMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/fs_5"
+            android:layout_toStartOf="@+id/tv_ok"
+            android:padding="@dimen/fs_10"
+            android:text="@string/text_cancel" />
+
+        <TextView
+            android:id="@+id/tv_ok"
+            style="@style/TCTextViewGoldBoldMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/fs_5"
+            android:padding="@dimen/fs_10"
+            android:text="@string/text_ok" />
+    </RelativeLayout>
+
+</LinearLayout>

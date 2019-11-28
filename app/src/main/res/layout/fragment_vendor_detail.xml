@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/frag_vendor_detail_nestedscroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/frag_vendor_detail_v_back_top"
+        android:background="@android:color/white"
+        android:fitsSystemWindows="true"
+        android:scrollbarSize="@dimen/fs_2"
+        android:scrollbars="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/v_back_top"
+            android:layout_marginBottom="@dimen/fs_10"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                style="@style/view_item_main_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fs_5"
+                android:layout_marginTop="@dimen/fs_5"
+                android:elevation="@dimen/fs_2"
+                android:orientation="vertical"
+                android:padding="@dimen/fs_5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/fs_5"
+                    android:layout_marginTop="@dimen/fs_10"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/text_to"
+                        android:src="@drawable/ic_location_gold_border" />
+
+                    <TextView
+                        android:id="@+id/frag_vendor_detail_tv_address"
+                        style="@style/TCTextViewBlack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/fs_15"
+                        android:lineSpacingExtra="@dimen/fs_5"
+                        android:text="@string/text_three_dot" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/frag_vendor_detail_view_outlet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/fs_5"
+                    android:layout_marginTop="@dimen/fs_10"
+                    android:visibility="gone"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:id="@+id/frag_vendor_detail_iv_shop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/text_to"
+                        android:src="@drawable/ic_shop_gold" />
+
+                    <TextView
+                        android:id="@+id/frag_vendor_detail_tv_outlet"
+                        style="@style/TCTextViewBlack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/fs_15"
+                        android:layout_toEndOf="@+id/frag_vendor_detail_iv_shop"
+                        android:text="@string/text_other_outlets" />
+
+                    <include
+                        android:id="@+id/frag_vendor_detail_view_more_outlet"
+                        layout="@layout/view_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/frag_vendor_detail_view_cuisine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/fs_5"
+                    android:layout_marginTop="@dimen/fs_10"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/text_to"
+                        android:src="@drawable/ic_cuisine_category" />
+
+                    <TextView
+                        android:id="@+id/frag_vendor_detail_tv_cuisine"
+                        style="@style/TCTextViewBlack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/fs_15"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:text="@string/text_three_dot" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/frag_vendor_detail_view_avg_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/fs_5"
+                    android:layout_marginTop="@dimen/fs_10"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/text_to"
+                        android:src="@drawable/ic_avg_price" />
+
+                    <TextView
+                        android:id="@+id/frag_vendor_detail_tv_avg_price"
+                        style="@style/TCTextViewBlack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/fs_15"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:text="@string/text_three_dot" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/frag_vendor_detail_view_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/fs_5"
+                    android:layout_marginTop="@dimen/fs_10"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/text_three_dot"
+                        android:src="@drawable/ic_phone_gold" />
+
+                    <TextView
+                        android:id="@+id/frag_vendor_detail_tv_phone"
+                        style="@style/TCTextViewGold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/fs_15"
+                        android:lineSpacingExtra="@dimen/fs_5"
+                        android:text="@string/text_three_dot" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/frag_vendor_detail_view_website"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/fs_5"
+                    android:layout_marginTop="@dimen/fs_10"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/text_to"
+                        android:src="@drawable/ic_house_gold" />
+
+                    <TextView
+                        android:id="@+id/frag_vendor_detail_tv_website"
+                        style="@style/TCTextViewBlack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/fs_15"
+                        android:autoLink="web"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:text="@string/text_three_dot" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/frag_vendor_detail_view_times_open"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/fs_5"
+                    android:layout_marginTop="@dimen/fs_5"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/frag_vendor_detail_iv_open_hours"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/text_three_dot"
+                            android:src="@drawable/ic_clock_opening" />
+
+                        <TextView
+                            style="@style/TCTextViewBlackBold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/fs_14"
+                            android:layout_toEndOf="@+id/frag_vendor_detail_iv_open_hours"
+                            android:text="@string/text_opening_hours" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/fs_30"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/frag_vendor_detail_tv_warning_open_time"
+                            style="@style/TCTextViewBlack"
+                            android:layout_marginBottom="@dimen/fs_3"
+                            android:text="@string/opening_hours_may_be_different_between_each_branch"
+                            android:textColor="@color/c_d0021b"
+                            android:textSize="@dimen/ts_11_5"
+                            android:visibility="visible" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:id="@+id/frag_vendor_detail_ll_all_open_hours"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:orientation="horizontal"
+                                android:paddingBottom="@dimen/fs_8"
+                                android:paddingTop="@dimen/fs_7"
+                                android:paddingEnd="@dimen/fs_3"
+                                android:paddingStart="@dimen/fs_10"
+                                tools:ignore="RelativeOverlap,UseCompoundDrawables">
+
+                                <TextView
+                                    android:id="@+id/frag_vendor_detail_tv_all_open_hours"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginBottom="@dimen/fs_0"
+                                    android:layout_marginEnd="@dimen/fs_4"
+                                    android:fontFamily="@font/axis_std_regular"
+                                    android:gravity="center_vertical"
+                                    android:text="@string/text_more"
+                                    android:textSize="@dimen/ts_10"
+                                    tools:ignore="TooDeepLayout" />
+
+                                <ImageView
+                                    style="@style/image_button_all_main_user"
+                                    android:contentDescription="@string/text_three_dot" />
+                            </LinearLayout>
+
+                            <com.teecoin.ui.TCRecyclerView
+                                android:id="@+id/frag_vendor_detail_rcv_time_open"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toStartOf="@+id/frag_vendor_detail_ll_all_open_hours"
+                                android:paddingTop="@dimen/fs_5"
+                                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                                tools:listitem="@layout/item_day_open_time" />
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fs_160">
+
+                    <include layout="@layout/view_maps" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/frag_vendor_detail_view_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/fs_5"
+                    android:layout_marginTop="@dimen/fs_15"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/TCTextViewGoldBold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/about_shop" />
+
+                    <TextView
+                        android:id="@+id/frag_vendor_detail_tv_description"
+                        style="@style/TCTextViewBlack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_three_dot" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/frag_vendor_detail_view_prices"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/fs_5"
+                    android:layout_marginTop="@dimen/fs_20"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/TCTextViewGoldBold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/prices" />
+
+                    <com.teecoin.ui.TCRecyclerView
+                        android:id="@+id/frag_vendor_detail_rcv_prices"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                        tools:listitem="@layout/item_prices_vendor_detail" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/frag_vendor_detail_view_payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/fs_5"
+                    android:layout_marginTop="@dimen/fs_20"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/TCTextViewGoldBold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vendor_review_detail_payment_by" />
+
+                    <include layout="@layout/view_payments" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/frag_vendor_detail_view_conveniences"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/fs_5"
+                    android:layout_marginTop="@dimen/fs_20"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/TCTextViewGoldBold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vendor_review_detail_convenience" />
+
+                    <include layout="@layout/view_conveniences" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/frag_vendor_detail_ll_review_list"
+                style="@style/view_item_main_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fs_5"
+                android:layout_marginTop="@dimen/fs_15"
+                android:elevation="@dimen/fs_2"
+                android:orientation="vertical"
+                android:padding="@dimen/fs_5"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/fs_5"
+
+                    android:layout_marginTop="@dimen/fs_5">
+
+                    <TextView
+                        android:id="@+id/frg_vendor_detail_tv_review_count"
+                        style="@style/TCTextViewGoldBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:text="@string/text_reviews_uppercase" />
+
+                    <include
+                        android:id="@+id/frg_vendor_detail_v_view_all_review"
+                        layout="@layout/view_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+
+                <com.teecoin.ui.TCRecyclerView
+                    android:id="@+id/frag_vendor_detail_rcv_review_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                    tools:listitem="@layout/item_review_vendor_detail" />
+
+                <LinearLayout
+                    android:id="@+id/frag_vendor_detail_view_all_review"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/fs_10"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <TextView
+                        style="@style/TCTextViewGray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/review_view_all" />
+
+                    <ImageView
+                        style="@style/image_button_all_main_user"
+                        android:layout_marginStart="@dimen/fs_5"
+                        android:contentDescription="@string/todo" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <include
+        android:id="@+id/frag_vendor_detail_v_back_top"
+        layout="@layout/view_back_to_top" />
+
+
+</RelativeLayout>

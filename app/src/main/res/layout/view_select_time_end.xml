@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/fs_35"
+    android:layout_marginStart="@dimen/fs_20"
+    android:layout_marginEnd="@dimen/fs_20"
+    android:layout_marginBottom="@dimen/fs_20"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    tools:ignore="MissingDefaultResource,RtlSymmetry">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:width="0dp"
+        style="@style/TCTextViewBlack"
+        android:text="@string/ends"
+        android:textAllCaps="true"
+        android:textSize="@dimen/ts_14"
+        tools:ignore="RtlSymmetry" />
+
+    <RelativeLayout
+        android:id="@+id/view_select_time_end_rl_end"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:background="@drawable/bg_transparent_solid_gray_border_5_radius">
+
+        <TextView
+            android:id="@+id/view_select_time_end_tv_end"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/view_select_time_end_iv_arrow"
+            style="@style/TCTextViewGold"
+            android:gravity="center"
+            android:hint="@string/please_select_date_and_time"
+            android:paddingStart="@dimen/fs_5"
+            android:paddingEnd="@dimen/fs_5"
+            android:textColorHint="@color/c_8e8e93"
+            android:textSize="@dimen/ts_12" />
+
+        <ImageView
+            android:id="@+id/view_select_time_end_iv_arrow"
+            style="@style/style_arrow_up"
+            android:contentDescription="@string/todo" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/fs_8"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+    <include layout="@layout/view_item_coupon_user_content_catalogue" />
+
+</RelativeLayout>

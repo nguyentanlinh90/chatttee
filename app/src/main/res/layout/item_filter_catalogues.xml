@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/fs_37"
+    android:orientation="horizontal"
+    android:id="@+id/item_list_filter_rl_parent"
+    tools:ignore="RtlSymmetry">
+
+    <LinearLayout
+        android:id="@+id/item_list_filter_ll_selector"
+        style="@style/style_sort_by_coupon_button_wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/item_list_filter_tv_name"
+            style="@style/TCTextViewFilterNotification"
+            android:paddingStart="@dimen/fs_7"
+            android:paddingEnd="@dimen/fs_2"
+            android:text="@string/text_text" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/item_list_filter_iv_icon"
+        android:layout_width="@dimen/fs_24"
+        android:layout_height="@dimen/fs_24"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/ic_is_good_deal" />
+</RelativeLayout>

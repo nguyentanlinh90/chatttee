@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LinearLayoutVerticalParent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/frag_vendor_photo_nested_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/frag_vendor_photo_v_back_top"
+        android:scrollbarSize="@dimen/fs_2"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!-- android:nestedScrollingEnabled="false"-->
+            <com.teecoin.ui.TCRecyclerView
+                android:id="@+id/frg_vendor_detail_photo_rcv_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/fs_10"
+                android:layout_marginBottom="@dimen/fs_10"
+                android:scrollbars="vertical"
+                android:nestedScrollingEnabled="false"
+                app:layoutManager="android.support.v7.widget.GridLayoutManager"
+                app:spanCount="2"
+                tools:listitem="@layout/item_list_images_vendor" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <include
+        android:id="@+id/frag_vendor_photo_v_back_top"
+        layout="@layout/view_back_to_top"
+        android:visibility="gone" />
+</RelativeLayout>

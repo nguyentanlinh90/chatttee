@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/fs_10"
+        android:paddingStart="@dimen/fs_10"
+        android:paddingTop="@dimen/fs_10">
+
+        <ImageView
+            android:id="@+id/frg_history_item_iv_icon"
+            android:layout_width="@dimen/fs_40"
+            android:layout_height="@dimen/fs_40"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_coin_in" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/fs_5"
+            android:layout_marginStart="@dimen/fs_10"
+            android:layout_toStartOf="@+id/ll_tee"
+            android:layout_toEndOf="@+id/frg_history_item_iv_icon"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TCTextViewBlack1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Payment ID 10002"
+                android:textSize="@dimen/ts_15" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="2018/24/02"
+                android:textColor="@color/c_9698a2"
+                android:textSize="@dimen/ts_11" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_tee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/fs_10"
+            android:gravity="center_vertical|end"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TCTextViewBlackBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_zero_tec"
+                android:textSize="@dimen/ts_15" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/fs_5"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/fs_10"
+                    android:layout_height="@dimen/fs_10"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_try" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/fs_3"
+                    android:text="@string/history_detail_try_coin_back"
+                    android:textColor="@color/c_d0021b"
+                    android:textSize="@dimen/ts_11" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/view_line" />
+</LinearLayout>

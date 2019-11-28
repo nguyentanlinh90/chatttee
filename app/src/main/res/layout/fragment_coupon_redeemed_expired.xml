@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:focusable="true"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <com.teecoin.ui.TCRecyclerView
+        android:id="@+id/frg_coupon_user_expired_redeemed_rcv_coupon_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/view_item_coupon_user_my_coupon" />
+
+    <include layout="@layout/view_no_coupon" />
+</LinearLayout>

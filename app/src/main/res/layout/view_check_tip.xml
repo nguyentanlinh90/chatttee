@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_solid_no_border_10_radius"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/fs_15">
+
+    <TextView
+        style="@style/TCTextViewGoldBold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fs_20"
+        android:layout_marginBottom="@dimen/fs_20"
+        android:gravity="center"
+        android:text="@string/dialog_tip_title" />
+
+    <include layout="@layout/view_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/fs_20"
+            android:layout_marginTop="@dimen/fs_20"
+            android:layout_marginEnd="@dimen/fs_20"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/view_check_tip_tv_balance"
+                style="@style/TCTextViewBlackBoldLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1000 TEC" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/view_check_tip_tv_exchange_rate"
+            style="@style/TCTextViewBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fs_15"
+            android:gravity="center"
+            android:text="Exchange:" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/fs_20"
+            android:layout_marginTop="@dimen/fs_15"
+            android:layout_marginEnd="@dimen/fs_20"
+            android:layout_marginBottom="@dimen/fs_10"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/view_input_tip_tv_tip_label"
+                style="@style/TCTextViewBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/view_input_tip_ll_tip_amount"
+                android:layout_alignBottom="@+id/view_input_tip_ll_tip_amount"
+                android:layout_marginEnd="@dimen/fs_5"
+                android:text="@string/text_tip" />
+
+            <LinearLayout
+                android:id="@+id/view_input_tip_ll_tip_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/view_input_tip_tv_tip_label"
+                android:background="@color/c_f2f2f2"
+                android:orientation="horizontal">
+
+                <AutoCompleteTextView
+                    android:id="@+id/view_check_tip_tv_tip_amount"
+                    android:layout_width="@dimen/fs_150"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/fs_3"
+                    android:background="@android:color/white"
+                    android:hint="@string/dialog_tip_optional"
+                    android:inputType="numberDecimal"
+                    android:maxLength="9"
+                    android:paddingBottom="@dimen/fs_5"
+                    android:paddingEnd="@dimen/fs_30"
+                    android:paddingTop="@dimen/fs_5"
+                    android:paddingStart="@dimen/fs_10"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:padding="@dimen/fs_10"
+                    android:text="TEC" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/view_check_tip_tv_tip_exchange_to_currency"
+                style="@style/TCTextViewGoldLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_input_tip_ll_tip_amount"
+                android:layout_alignStart="@+id/view_input_tip_ll_tip_amount" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/c_f2f2f2"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/fs_20"
+            android:paddingTop="@dimen/fs_20"
+            android:paddingEnd="@dimen/fs_20"
+            android:paddingBottom="@dimen/fs_20">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/fs_20"
+                    android:layout_weight="1">
+
+                    <ImageView style="@style/iv_done_gold_22pt" />
+
+                    <TextView
+                        style="@style/TCTextViewBlackBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="true"
+                        android:text="@string/text_tip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/view_check_tip_tv_summary_tip_amount"
+                        style="@style/TCTextViewBlackBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="50 TEC" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fs_5"
+                android:layout_marginBottom="@dimen/fs_5"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/fs_20"
+                    android:layout_weight="1">
+
+                    <ImageView style="@style/iv_done_gold_22pt" />
+
+                    <TextView
+                        style="@style/TCTextViewBlackBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_fee" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/view_check_tip_tv_summary_fee"
+                        style="@style/TCTextViewBlackBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="50 TEC" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/fs_20"
+                    android:layout_weight="1">
+
+                    <ImageView style="@style/iv_done_gold_22pt" />
+
+                    <TextView
+                        style="@style/TCTextViewBlackBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_total_tec" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/view_check_tip_tv_summary_total"
+                        style="@style/TCTextViewBlackBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="50 TEC" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fs_20"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/fs_20"
+            android:layout_marginEnd="@dimen/fs_20"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/view_check_tip_tv_back"
+                style="@style/TCTextViewGold"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_solid_gold_border_30_radius"
+                android:paddingTop="@dimen/fs_8"
+                android:paddingBottom="@dimen/fs_8"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:layout_marginEnd="@dimen/fs_10"
+                android:text="@string/text_back" />
+
+            <TextView
+                android:id="@+id/view_check_tip_tv_ok"
+                style="@style/TCTextViewWhite"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fs_10"
+                android:background="@drawable/bg_gold_solid_no_border_30_radius"
+                android:paddingTop="@dimen/fs_8"
+                android:paddingBottom="@dimen/fs_8"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:text="@string/text_ok" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

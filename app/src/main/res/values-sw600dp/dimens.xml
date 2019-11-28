@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--values-sw600dp          7.0”  tablet 1024x600 mdpi-->
+
+    <dimen name="main_header_height">58dp</dimen>
+    <dimen name="fs_45">48dp</dimen>
+    <dimen name="fs_40">44dp</dimen>
+    <dimen name="fs_34">37dp</dimen>
+    <dimen name="fs_38">41dp</dimen>
+    <dimen name="fs_58">62dp</dimen>
+
+</resources>

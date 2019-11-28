@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TCTextViewHeader"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fs_56"
+            android:gravity="center"
+            android:text="@string/new_purchase_upper_case" />
+
+        <include layout="@layout/view_line" />
+
+        <include layout="@layout/ripple_coinback_success" />
+
+        <include layout="@layout/ripple_coinback_fail" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/c_f2f2f2"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/fs_15"
+            android:paddingBottom="@dimen/fs_15">
+
+            <TextView
+                android:id="@+id/frg_purchase_result_tv_error_message"
+                style="@style/TCTextViewBlackBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="error message" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fs_10"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView style="@style/iv_done_gold_22pt" />
+
+                    <TextView
+                        style="@style/TCTextViewBlack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_inactive_users" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/frg_purchase_result_tv_inactive_users_count"
+                    style="@style/TCTextViewBlackBold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="120" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fs_5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView style="@style/iv_done_gold_22pt" />
+
+                    <TextView
+                        style="@style/TCTextViewBlack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/frg_purchase_result_tv_title"
+                    style="@style/TCTextViewBlack"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="Free ice-cream" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fs_5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView style="@style/iv_done_gold_22pt" />
+
+                    <TextView
+                        style="@style/TCTextViewBlack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_total_tec" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/frg_purchase_result_tv_total_tec"
+                    style="@style/TCTextViewBlack"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="120.01 TEC" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fs_40" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fs_50"
+            android:layout_marginRight="@dimen/fs_50"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/frg_purchase_result_ll_add_new"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fs_45"
+                android:background="@drawable/bg_gold_solid_no_border_30_radius"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TCTextViewWhite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/fs_15"
+                    android:gravity="center"
+                    android:text="@string/add_new" />
+            </LinearLayout>
+
+            <include layout="@layout/button_try_again" />
+
+            <TextView
+                android:id="@+id/frg_purchase_result_tv_back_to_list"
+                style="@style/TCTextViewGold"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fs_45"
+                android:layout_marginTop="@dimen/fs_10"
+                android:background="@drawable/bg_transparent_solid_gold_border_30_curvature"
+                android:gravity="center"
+                android:text="@string/back_to_list" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

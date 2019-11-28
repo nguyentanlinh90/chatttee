@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frg_wallet_account_nsv_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/view_header_shop_wallet" />
+
+        <LinearLayout
+            style="@style/LinearLayoutHorizontalFullWidth"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/fs_10"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/fs_15"
+                android:layout_height="@dimen/fs_15"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_hand" />
+
+            <TextView
+                android:id="@+id/frg_withdraw_tv_you_will_earn"
+                style="@style/TCTextViewGold"
+                android:layout_marginStart="@dimen/fs_10"
+                android:text="@string/you_will_earn_an_estimated_title_withdraw_screen" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LinearLayoutHorizontalFullWidth"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/fs_10"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/fs_15"
+                android:layout_height="@dimen/fs_15"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_notification_gold" />
+
+            <TextView
+                android:id="@+id/frg_withdraw_tv_note_minimum"
+                style="@style/TCTextViewGray"
+                android:layout_marginStart="@dimen/fs_10"
+                android:text="@string/the_minimun_balance_to_maintained_in_your_s_wallet_we_will_process" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/frg_withdraw_tv_withdraw_title"
+            style="@style/TCTextViewBlackBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/fs_10"
+            android:layout_marginTop="@dimen/ts_15"
+            android:text="@string/withdraw_amount" />
+
+        <RelativeLayout
+            android:id="@+id/frg_withdraw_v_input"
+            style="@style/LinearLayoutHorizontalFullWidth"
+            android:layout_marginTop="@dimen/fs_10">
+
+            <EditText
+                android:id="@+id/frg_withdraw_et_amount"
+                style="@style/background_shop_input_payment"
+                android:layout_width="@dimen/fs_150"
+                android:hint="@string/enter_amount" />
+
+            <TextView
+                android:id="@+id/frg_withdraw_tv_currency"
+                style="@style/TCTextViewBlackBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/fs_10"
+                android:layout_toEndOf="@+id/frg_withdraw_et_amount"
+                android:gravity="center_vertical"
+                android:text="@string/text_sgd"
+                android:textSize="@dimen/ts_14" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/frg_withdraw_v_input_review"
+            style="@style/LinearLayoutHorizontalFullWidth"
+            android:layout_marginTop="@dimen/fs_10"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/frg_withdraw_tv_amount_review"
+                style="@style/TCTextViewBlackBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fs_35"
+                android:text="0.00"
+                android:textSize="@dimen/ts_16" />
+
+            <TextView
+                android:id="@+id/frg_withdraw_tv_currency_review"
+                style="@style/TCTextViewBlackBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fs_15"
+                android:gravity="center_vertical"
+                android:text="@string/text_sgd"
+                android:textSize="@dimen/ts_16" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/frg_withdraw_tv_error_amount"
+            style="@style/tv_b21225_10pt_regular"
+            android:layout_marginStart="@dimen/fs_10"
+            android:text="@string/withdraw_amount_must_be_at_least_1_00_sgd" />
+
+        <TextView
+            android:id="@+id/frg_withdraw_tv_fee_title"
+            style="@style/TCTextViewBlackBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/fs_10"
+            android:layout_marginTop="@dimen/ts_15"
+            android:text="@string/text_fee" />
+
+        <LinearLayout
+            android:id="@+id/frg_withdraw_v_fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/fs_10"
+            android:layout_marginTop="@dimen/fs_10"
+            android:layout_marginEnd="@dimen/fs_15"
+            android:layout_marginBottom="@dimen/fs_20"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/frg_withdraw_tv_fee"
+                style="@style/TCTextViewBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:textSize="@dimen/ts_14" />
+
+            <TextView
+                android:id="@+id/frg_withdraw_tv_fee_currency"
+                style="@style/TCTextViewBlackBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fs_50"
+                android:gravity="end"
+                android:text="@string/text_sgd"
+                android:textSize="@dimen/ts_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/frg_withdraw_v_fee_review"
+            style="@style/LinearLayoutHorizontalFullWidth"
+            android:layout_marginTop="@dimen/fs_10"
+            android:layout_marginBottom="@dimen/fs_20"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/frg_withdraw_tv_fee_review"
+                style="@style/TCTextViewBlackBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fs_35"
+                android:text="0.00"
+                android:textSize="@dimen/ts_16" />
+
+            <TextView
+                android:id="@+id/frg_withdraw_tv_fee_currency_review"
+                style="@style/TCTextViewBlackBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fs_15"
+                android:gravity="center_vertical"
+                android:text="@string/text_sgd"
+                android:textSize="@dimen/ts_16" />
+        </LinearLayout>
+
+        <include layout="@layout/view_cancel_next_bottom" />
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="horizontal"
+    android:paddingEnd="@dimen/fs_2"
+    tools:ignore="RtlSymmetry">
+
+    <ImageView
+        android:id="@+id/view_item_coupon_user_result_menu_image_iv_image"
+        android:layout_width="@dimen/fs_140"
+        android:layout_height="@dimen/fs_140"
+        android:contentDescription="@string/todo"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_logo_chattee" />
+
+</LinearLayout>

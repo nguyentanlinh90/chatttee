@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frg_input_referral_nested_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/fs_20">
+
+        <ImageView
+            android:id="@+id/frg_input_referral_iv_gift"
+            android:layout_width="@dimen/fs_90"
+            android:layout_height="@dimen/fs_90"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/fs_15"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_input_referral_welcome" />
+
+        <TextView
+            android:id="@+id/frg_input_referral_tv_welcome_text"
+            style="@style/TCTextViewGoldBold"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="@string/input_referral_code_welcome_chattee" />
+
+        <TextView
+            android:id="@+id/frg_input_referral_tv_content"
+            style="@style/TCTextViewBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/fs_10"
+            android:layout_marginEnd="@dimen/fs_10"
+            android:layout_marginStart="@dimen/fs_10"
+            android:layout_marginTop="@dimen/fs_10"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="@dimen/fs_8"
+            android:text="@string/input_referral_code_content_not_been_registered"
+            android:textSize="@dimen/ts_11" />
+
+        <TextView
+            style="@style/TCTextViewBlackBold"
+            android:layout_marginTop="@dimen/fs_15"
+            android:text="@string/input_referral_code_referral_code"
+            android:textSize="@dimen/ts_12" />
+
+        <LinearLayout
+            android:id="@+id/frg_input_referral_input"
+            style="@style/LinearLayoutHorizontalFullWidth"
+            android:layout_height="@dimen/fs_45"
+            android:layout_marginBottom="@dimen/fs_2"
+            android:layout_marginTop="@dimen/fs_5"
+            android:background="@drawable/bg_white_solid_gray_border_5_radius">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/todo"
+                android:padding="@dimen/fs_11"
+                android:src="@drawable/ic_referral_a_friend" />
+
+            <EditText
+                android:id="@+id/frg_input_referral_ed_code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                style="@style/TCTextViewBlack"
+                android:hint="@string/input_referral_code_pls_enter"
+                android:inputType="text"
+                android:maxLength="12"
+                android:text=""
+                android:textSize="@dimen/ts_13" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/frg_input_referral_tv_message_input"
+            style="@style/TCTextViewBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="@dimen/fs_5"
+            android:text="@string/input_referral_code_please_input_to_add_tec"
+            android:textColor="@color/c_b21225"
+            android:textSize="@dimen/ts_10"
+            android:visibility="visible" />
+
+
+        <TextView
+            android:id="@+id/frg_input_referral_tv_not_have_referral"
+            style="@style/TCTextViewBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/fs_20"
+            android:layout_marginTop="@dimen/fs_12"
+            android:lineSpacingExtra="@dimen/fs_5"
+            android:text="@string/input_referral_code_do_you_not_have_referral_code"
+            android:textSize="@dimen/ts_12" />
+
+        <include
+            android:id="@+id/view_button_signup_ll_sign_up_with_email"
+            layout="@layout/view_button_signup_signin"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fa_ic_calendar_alt" translatable="false">&#xf073;</string>
+    <string name="fa_ic_close_circle" translatable="false">&#xf057;</string>
+
+    <!--left menu-->
+    <string name="fa_menu_left_ic_notification" translatable="false">&#xf0f3;</string>
+    <string name="fa_menu_left_ic_location" translatable="false">&#xf3c5;</string>
+    <string name="fa_menu_left_ic_list_review" translatable="false">&#xf0c9;</string>
+
+    <!---->
+
+</resources>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.teecoin.ui.TCSwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frg_wallet_account_refresh_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:focusable="true">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/frg_wallet_account_nsv_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout style="@style/LinearLayoutVerticalFullWidthHeight">
+
+            <LinearLayout
+                android:id="@+id/frg_wallet_account_rl_balance_background"
+                style="@style/LinearLayoutVerticalFullWidth"
+                android:layout_gravity="center"
+                android:background="@color/c_f2f2f2"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/frg_wallet_account_iv_billionaire_crown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fs_5"
+                    android:layout_marginBottom="@dimen/fs_5"
+                    android:src="@drawable/ic_wallet_billionaire_crown"
+                    android:visibility="gone"
+                    tools:ignore="ContentDescription" />
+
+                <RelativeLayout
+                    android:id="@+id/frg_wallet_account_rl_account_balance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/frg_wallet_account_tv_balance_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/axis_std_regular"
+                        android:layout_marginBottom="@dimen/fs_22"
+                        android:layout_marginTop="@dimen/fs_20"
+                        android:text="@string/text_balance"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/ts_14"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/frg_wallet_account_tv_coin_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/frg_wallet_account_tv_balance_text"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/axis_std_bold"
+                        android:text="@string/text_three_dot"
+                        android:textColor="@color/c_b2973f"
+                        android:paddingTop="@dimen/fs_5"
+                        android:textSize="@dimen/ts_22" />
+
+                    <TextView
+                        android:id="@+id/frg_wallet_account_tv_tec_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/frg_wallet_account_tv_coin_number"
+                        android:layout_toEndOf="@+id/frg_wallet_account_tv_coin_number"
+                        android:fontFamily="@font/axis_std_regular"
+                        android:paddingStart="@dimen/fs_5"
+                        android:paddingBottom="@dimen/fs_10"
+                        android:text="@string/tee_coin_symbol"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/ts_14" />
+
+                    <LinearLayout
+                        android:id="@+id/frg_wallet_account_v_market_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/fs_20"
+                        android:layout_below="@+id/frg_wallet_account_tv_coin_number"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="8dp"
+                        android:visibility="invisible"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/frg_wallet_account_tv_market"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/fs_5"
+                            android:fontFamily="@font/axis_std_regular"
+                            android:text="@string/account_market_value"
+                            android:textColor="@color/c_848484"
+                            android:textSize="@dimen/ts_12" />
+
+                        <TextView
+                            android:id="@+id/frg_wallet_account_tv_market_value"
+                            style="@style/TCTextViewBlack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/fs_5"
+                            android:text="@string/text_three_dot"
+                            android:textSize="@dimen/ts_14" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <include layout="@layout/view_fragment_user_wallet_scan_and_show_qr_code_layout" />
+
+            <include layout="@layout/view_latest_transaction" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</com.teecoin.ui.TCSwipeRefreshLayout>
+

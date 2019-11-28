@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/fs_10"
+    android:paddingEnd="@dimen/fs_10"
+    android:paddingBottom="@dimen/fs_10"
+    tools:ignore="RtlSymmetry">
+
+    <include layout="@layout/view_vendor_top" />
+
+    <include
+        layout="@layout/view_vendor_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fs_3" />
+
+</LinearLayout>

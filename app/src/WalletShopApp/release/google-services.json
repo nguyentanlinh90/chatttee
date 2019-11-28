@@ -1,0 +1,135 @@
+{
+  "project_info": {
+    "project_number": "1019747353212",
+    "firebase_url": "https://teecoin-firebase.firebaseio.com",
+    "project_id": "teecoin-firebase",
+    "storage_bucket": "teecoin-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1019747353212:android:f4b4aa9246219983",
+        "android_client_info": {
+          "package_name": "com.teecoin.ChatteeForShop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1019747353212-g2lcjuecb99j8qg05a8bb60cdm6nt5q3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHKIY-90NvL1-y4UJwkDLUd5asuJl2Unc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1019747353212:android:e7c80e677d1aed22",
+        "android_client_info": {
+          "package_name": "com.teecoin.ChatteeForUser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1019747353212-g2lcjuecb99j8qg05a8bb60cdm6nt5q3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHKIY-90NvL1-y4UJwkDLUd5asuJl2Unc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1019747353212:android:5c7db42779ee5910",
+        "android_client_info": {
+          "package_name": "com.teecoin.TeecoinWalletForShop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1019747353212-g2lcjuecb99j8qg05a8bb60cdm6nt5q3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHKIY-90NvL1-y4UJwkDLUd5asuJl2Unc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1019747353212:android:2536fa50b564ce2f",
+        "android_client_info": {
+          "package_name": "com.teecoin.TeecoinWalletForUser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1019747353212-g2lcjuecb99j8qg05a8bb60cdm6nt5q3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHKIY-90NvL1-y4UJwkDLUd5asuJl2Unc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

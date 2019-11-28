@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--values-xhdpi            4.7”   1280x720 xhdpi
+        values-xhdpi            4.65”  720x1280 xhdpi -->
+
+    <!--use for text size-->
+    <dimen name="ts_7">7sp</dimen>
+    <dimen name="ts_8">8sp</dimen>
+    <dimen name="ts_9">9sp</dimen>
+    <dimen name="ts_9_3">9.3sp</dimen>
+    <dimen name="ts_10">10sp</dimen>
+    <dimen name="ts_11">11sp</dimen>
+    <dimen name="ts_11_5">11.5sp</dimen>
+    <dimen name="ts_12">12sp</dimen>
+    <dimen name="ts_12_8">12.8sp</dimen>
+    <dimen name="ts_13">13sp</dimen>
+    <dimen name="ts_14">14sp</dimen>
+    <dimen name="ts_14_5">14.5sp</dimen>
+    <dimen name="ts_15">15sp</dimen>
+    <dimen name="ts_15_5">15.5sp</dimen>
+    <dimen name="ts_16">16sp</dimen>
+    <dimen name="ts_17">16sp</dimen>
+    <dimen name="ts_18">18sp</dimen>
+    <dimen name="ts_19">19sp</dimen>
+    <dimen name="ts_20">20sp</dimen>
+    <dimen name="ts_22">22sp</dimen>
+    <dimen name="ts_30">30sp</dimen>
+    <dimen name="ts_41">41sp</dimen>
+
+</resources>

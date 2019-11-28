@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frag_review_list_review_ll_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <include layout="@layout/item_review_general" />
+    <RelativeLayout
+        android:id="@+id/frag_vendor_detail_ll_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fs_15">
+
+        <TextView
+            android:id="@+id/frag_list_review_tv_vendor"
+            style="@style/TCTextViewBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/fs_8"
+            android:layout_toStartOf="@+id/ll_tec"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/text_text" />
+
+        <LinearLayout
+            android:id="@+id/ll_tec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal">
+            <include layout="@layout/view_like_and_tip_detail_review"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/frag_vendor_detail_tv_from_google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/fs_10"
+        android:padding="@dimen/fs_10"
+        android:text="@string/text_from_google"
+        android:textColor="@color/c_0e61fd"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/frag_vendor_detail_view_diver"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fs_2"
+        android:background="@color/c_f2f2f2" />
+</LinearLayout>

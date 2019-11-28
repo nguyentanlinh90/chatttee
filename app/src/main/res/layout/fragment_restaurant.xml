@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_f2f2f2"
+    android:clickable="true"
+    android:fitsSystemWindows="true"
+    android:focusable="true">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/frg_restaurant_nested_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/fs_15"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <com.nex3z.flowlayout.FlowLayout
+                android:id="@+id/frg_restaurant_fl_filters_selected"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/fs_5"
+                app:flRowSpacing="8dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/fs_5"
+                android:paddingTop="@dimen/fs_5">
+
+                <LinearLayout
+                    android:id="@+id/ll_cuisine_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="visible"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <TextView
+                        android:id="@+id/tv_count"
+                        style="@style/TCTextViewBlack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/fs_5"
+                        android:text="@string/cuisines_type" />
+
+                    <ImageView
+                        android:id="@+id/ic_down_arrow"
+                        android:layout_width="@dimen/fs_22"
+                        android:layout_height="@dimen/fs_22"
+                        android:background="@drawable/ic_arrow_drop_down_black_24dp"
+                        android:contentDescription="@string/todo" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:orientation="horizontal"
+                    tools:ignore="RelativeOverlap">
+
+                    <include layout="@layout/view_change_location" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <com.teecoin.ui.TCRecyclerView
+                android:id="@+id/frg_restaurant_rcv_restaurant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fs_10"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_restaurant" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</FrameLayout>

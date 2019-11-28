@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_transparent_solid_gray_border_30_radius"
+    android:orientation="horizontal"
+    android:layout_marginEnd="@dimen/fs_8"
+    android:padding="@dimen/fs_5">
+
+    <TextView
+        android:id="@+id/view_filter_selected_item_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/fs_5"
+        android:text=""
+        tools:ignore="RtlSymmetry" />
+
+    <com.teecoin.ui.TCTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/fs_5"
+        android:layout_marginStart="@dimen/fs_5"
+        android:layout_gravity="center_vertical"
+        app:font_id="@string/font_awesome_solid"
+        app:icon_id="@string/fa_ic_close_circle"/>
+
+</LinearLayout>

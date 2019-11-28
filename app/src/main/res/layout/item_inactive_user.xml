@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fs_10"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bg_transparent_solid_gold_border_0_radius"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/fs_5">
+
+            <TextView
+                android:id="@+id/item_inactive_user_tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TCTextViewGoldBold"
+                android:text="12 Sep" />
+
+            <TextView
+                android:id="@+id/item_inactive_user_tv_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TCTextViewGold"
+                android:text="2018" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/fs_10"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_inactive_user_tv_purchase_name"
+                style="@style/TCTextViewBlackBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Free ice-cream" />
+
+            <TextView
+                android:id="@+id/item_inactive_user_tv_valid_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Valid: 2018/09/30 - 2018/09/30" />
+
+            <TextView
+                android:id="@+id/item_inactive_user_tv_user_number_paid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="120 Inactive Users - Paid 123.6 TEC" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/view_line" />
+</LinearLayout>

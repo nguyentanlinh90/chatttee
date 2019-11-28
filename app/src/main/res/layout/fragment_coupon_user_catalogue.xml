@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:focusable="true">
+
+    <com.teecoin.ui.TCRecyclerView
+        android:id="@+id/frg_coupon_user_catalogue_rcv_filter"
+        style="@style/recycler_view_item_main_user"
+        android:layout_marginStart="@dimen/fs_13"
+        android:layout_marginTop="@dimen/fs_5"
+        android:layout_marginEnd="@dimen/fs_10"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_filter_catalogues" />
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/frg_coupon_user_catalogue_rcv_filter"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/frg_coupon_user_catalogue_appbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:elevation="0dp"
+            android:fitsSystemWindows="true"
+            app:elevation="0dp">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                app:collapsedTitleTextAppearance="@style/CollapsedTitle"
+                app:expandedTitleTextAppearance="@style/ExpandedTitle"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:title="">
+
+                <android.support.v7.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fs_30"
+                    app:layout_collapseMode="pin" />
+
+                <include
+                    layout="@layout/view_list_catalogue_image_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/fs_15"
+                    android:layout_marginTop="@dimen/fs_10" />
+                <RelativeLayout
+                    android:id="@+id/frg_coupon_user_catalogue_view_category_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom">
+
+                    <com.teecoin.ui.TCRecyclerView
+                        android:id="@+id/frg_coupon_user_catalogue_rcv_category_name"
+                        style="@style/recycler_view_item_main_user"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/fs_15"
+                        android:layout_marginTop="@dimen/fs_5"
+                        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                        tools:listitem="@layout/item_coupon_category_name">
+
+                    </com.teecoin.ui.TCRecyclerView>
+
+                    <include
+                        layout="@layout/view_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fs_0_5"
+                        android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </android.support.design.widget.AppBarLayout>
+        <com.teecoin.ui.TCSwipeRefreshLayout
+            android:id="@+id/frg_coupon_user_catalogue_refresh_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/frag_coupon_user_catalogue_ncv_catalogue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:descendantFocusability="blocksDescendants"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/view_coupon_user_catalogue_horizontal_list" />
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+        </com.teecoin.ui.TCSwipeRefreshLayout>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <include
+        android:id="@+id/view_coupon_user_view_how_to_earn"
+        layout="@layout/view_button_circle_how_to_earn_tec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

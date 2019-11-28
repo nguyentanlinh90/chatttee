@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_ffffff"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/frg_vendor_review_v_review_header"
+        layout="@layout/view_header_review_list" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.teecoin.ui.TCSwipeRefreshLayout
+            android:id="@+id/frg_vendor_review_srl_list_review"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/fs_5">
+
+            <com.teecoin.ui.TCRecyclerView
+                android:id="@+id/frg_vendor_review_rcv_list_review"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible"
+                android:scrollbars="vertical"
+                android:scrollbarSize="@dimen/fs_2"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_review_vendor_detail" />
+        </com.teecoin.ui.TCSwipeRefreshLayout>
+
+
+        <com.teecoin.ui.TCSwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/fs_5"
+            android:visibility="gone"
+            android:layout_marginBottom="@dimen/fs_10">
+
+            <com.teecoin.ui.TCRecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:nestedScrollingEnabled="false"
+                android:scrollbars="vertical"
+                android:scrollbarSize="@dimen/fs_2"
+                app:layoutManager="android.support.v7.widget.GridLayoutManager"
+                app:spanCount="3"
+                tools:listitem="@layout/item_thumb_review_vendor" />
+        </com.teecoin.ui.TCSwipeRefreshLayout>
+
+        <include layout="@layout/view_back_to_top" />
+
+        <include layout="@layout/view_no_data" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:paddingStart="@dimen/fs_30"
+    android:paddingEnd="@dimen/fs_30">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/fs_20"
+            android:layout_marginBottom="@dimen/fs_30"
+            android:src="@drawable/shop_login_logo" />
+
+        <TextView
+            style="@style/TCTextViewBlackBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fs_15"
+            android:layout_marginBottom="@dimen/fs_10"
+            android:text="@string/text_email"
+            android:textSize="@dimen/ts_12" />
+
+        <RelativeLayout
+            android:id="@+id/frg_shop_log_in_v_input_email"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fs_46"
+            android:background="@drawable/bg_white_solid_gray_border_5_radius">
+
+            <ImageView
+                android:id="@+id/frg_shop_log_in_iv_lock_input_email"
+                style="@style/iv_icon_item_input"
+                android:src="@drawable/ic_email" />
+
+            <EditText
+                android:id="@+id/frg_shop_log_in_et_input_email"
+                style="@style/et_item_input"
+                android:layout_toStartOf="@+id/frg_shop_log_in_iv_clear_input_email"
+                android:layout_toEndOf="@+id/frg_shop_log_in_iv_lock_input_email"
+                android:hint="@string/please_enter_your_email"
+                android:inputType="textEmailAddress" />
+
+            <ImageView
+                android:id="@+id/frg_shop_log_in_iv_clear_input_email"
+                style="@style/iv_clear_item_input" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/frg_shop_log_in_tv_error_input_email"
+            style="@style/tv_b21225_10pt_regular"
+            android:text="@string/please_enter_your_email" />
+
+        <TextView
+            style="@style/TCTextViewBlackBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fs_15"
+            android:layout_marginBottom="@dimen/fs_10"
+            android:text="@string/password"
+            android:textSize="@dimen/ts_12" />
+
+        <RelativeLayout
+            android:id="@+id/frg_shop_log_in_v_input_password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fs_46"
+            android:background="@drawable/bg_white_solid_gray_border_5_radius">
+
+            <ImageView
+                android:id="@+id/frg_shop_log_in_iv_lock_input_password"
+                style="@style/iv_icon_item_input"
+                android:src="@drawable/ic_lock_gray" />
+
+            <EditText
+                android:id="@+id/frg_shop_log_in_et_input_password"
+                style="@style/et_item_input"
+                android:layout_toStartOf="@+id/frg_shop_log_in_iv_clear_input_password"
+                android:layout_toEndOf="@+id/frg_shop_log_in_iv_lock_input_password"
+                android:hint="@string/please_enter_your_password"
+                android:inputType="textPassword" />
+
+            <ImageView
+                android:id="@+id/frg_shop_log_in_iv_clear_input_password"
+                style="@style/iv_clear_item_input" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/frg_shop_log_in_tv_error_input_password"
+            style="@style/tv_b21225_10pt_regular"
+            android:text="@string/please_enter_your_password" />
+
+        <TextView
+            android:id="@+id/frg_shop_log_in_tv_forgot_password"
+            style="@style/TCTextViewGold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:text="@string/forgot_password"
+            android:textSize="@dimen/ts_12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/fs_40"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/frg_shop_log_in_tv_login"
+            style="@style/TCTextViewWhite"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fs_39"
+            android:background="@drawable/bg_gold_solid_no_border_30_radius"
+            android:gravity="center"
+            android:text="@string/text_login"
+            android:textAllCaps="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/fs_9"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/axis_std_regular"
+                android:text="@string/don_t_have_an_account"
+                android:textColor="@color/c_2d2d2d"
+                android:textSize="@dimen/ts_14" />
+
+            <LinearLayout
+                android:id="@+id/frg_shop_log_in_ll_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fs_9"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/fs_3"
+                    android:fontFamily="@font/axis_std_bold"
+                    android:text="@string/register_now"
+                    android:textColor="@color/c_2d2d2d"
+                    android:textSize="@dimen/ts_14" />
+
+                <View
+                    android:id="@+id/frg_shop_log_in_v_register"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:background="@color/c_2d2d2d" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

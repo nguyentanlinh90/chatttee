@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_status_review_rl_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/fs_31"
+        android:layout_marginEnd="@dimen/fs_31"
+        android:background="@drawable/bg_white_solid_no_border_5_radius"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/fs_30"
+        android:paddingTop="@dimen/fs_60"
+        android:paddingEnd="@dimen/fs_30"
+        android:paddingBottom="@dimen/fs_20">
+
+        <TextView
+            style="@style/TCTextViewBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="@dimen/fs_5"
+            android:text="@string/user_review_have_reached_the_limit_of_review_reward"
+            android:textSize="@dimen/ts_12" />
+
+        <TextView
+            style="@style/TCTextViewBlackBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fs_20"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="@dimen/fs_5"
+            android:text="@string/write_review_reach_limit"
+            android:textSize="@dimen/ts_12" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fs_40"
+            android:layout_marginTop="@dimen/fs_60"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/button_no"
+                style="@style/TCTextViewWhiteBold"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_transparent_solid_gold_border_30_curvature"
+                android:gravity="center"
+                android:text="@string/text_no"
+                android:textAllCaps="true"
+                android:textColor="@color/c_b2973f" />
+
+            <TextView
+                android:id="@+id/button_yes"
+                style="@style/TCTextViewWhiteBold"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/fs_30"
+                android:layout_weight="1"
+                android:background="@drawable/bg_gold_solid_no_border_30_radius"
+                android:gravity="center"
+                android:text="@string/text_yes"
+                android:textAllCaps="true" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

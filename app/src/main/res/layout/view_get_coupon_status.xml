@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_coupon_status"
+    style="@style/LinearLayoutVerticalFullWidthHeight"
+    android:background="@android:color/white"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/view_header_success"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/fs_20">
+
+                <include layout="@layout/view_coupon_image_result_success" />
+
+                <TextView
+                    style="@style/TCTextViewGoldBoldLarge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fs_10"
+                    android:gravity="center"
+                    android:text="@string/text_congratulation"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/ts_20" />
+
+                <TextView
+                    android:id="@+id/view_coupon_user_result_success_tv_you_got"
+                    style="@style/TCTextViewBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/fs_10"
+                    android:layout_marginStart="@dimen/fs_10"
+                    android:layout_marginTop="@dimen/fs_50"
+                    android:gravity="center"
+                    android:lineSpacingExtra="@dimen/fs_8"
+                    android:text="@string/coupon_congratulation_you_get"
+                    android:textSize="@dimen/ts_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/view_header_fail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/fs_20"
+                android:visibility="gone">
+
+                <include layout="@layout/view_result_icon_fail" />
+
+                <TextView
+                    style="@style/TCTextViewBlackBoldLarge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/coupon_result_sorry"
+                    android:textSize="@dimen/ts_20" />
+
+                <TextView
+                    android:id="@+id/view_header_fail_tv_error_msg"
+                    style="@style/TCTextViewBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fs_30"
+                    android:gravity="center"
+                    android:text="@string/coupon_result_something_went_wrong" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/view_coupon_user_result_view_redeem"
+            layout="@layout/view_redemption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/fs_5"
+            android:layout_marginStart="@dimen/fs_5"
+            android:layout_marginTop="@dimen/fs_20" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/fs_50"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/fs_20">
+
+            <include layout="@layout/view_line_shadow" />
+
+            <TextView
+                android:id="@+id/view_coupon_user_result_success_tv_use_now"
+                style="@style/TCTextViewWhite"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fs_45"
+                android:layout_marginEnd="@dimen/fs_50"
+                android:layout_marginStart="@dimen/fs_50"
+                android:layout_marginTop="@dimen/fs_20"
+                android:background="@drawable/bg_gold_solid_no_border_30_radius"
+                android:gravity="center"
+                android:paddingBottom="@dimen/fs_0"
+                android:text="@string/coupon_use_now" />
+
+            <TextView
+                android:id="@+id/view_coupon_user_result_success_tv_back_to_catalogue"
+                style="@style/TCTextViewGold"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fs_45"
+                android:layout_marginEnd="@dimen/fs_50"
+                android:layout_marginStart="@dimen/fs_50"
+                android:layout_marginTop="@dimen/fs_20"
+                android:background="@drawable/bg_transparent_solid_gold_border_30_curvature"
+                android:gravity="center"
+                android:text="@string/coupon_result_back_to_catalogue" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

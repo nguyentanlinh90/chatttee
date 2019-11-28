@@ -1,0 +1,199 @@
+{
+  "project_info": {
+    "project_number": "1019747353212",
+    "firebase_url": "https://teecoin-firebase.firebaseio.com",
+    "project_id": "teecoin-firebase",
+    "storage_bucket": "teecoin-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1019747353212:android:f4b4aa9246219983",
+        "android_client_info": {
+          "package_name": "com.teecoin.ChatteeForShop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1019747353212-i3bbmirualfkefe06rtqt16lipmr5p4a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.teecoin.ChatteeForShop",
+            "certificate_hash": "d8621658837fa6715b5d833c5f35a5c30862e845"
+          }
+        },
+        {
+          "client_id": "1019747353212-6e9ps1r9qqniskh2tkat1nanjruugn7m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHKIY-90NvL1-y4UJwkDLUd5asuJl2Unc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1019747353212-6e9ps1r9qqniskh2tkat1nanjruugn7m.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1019747353212-1s9pvi3blsprpgnq9s3s7e66ibur6ngi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.teecoin.ChatteeForUser.dev2",
+                "app_store_id": "1437130675"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1019747353212:android:e7c80e677d1aed22",
+        "android_client_info": {
+          "package_name": "com.teecoin.ChatteeForUser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1019747353212-8ihm3e88v7qnugkpftb69f3fb242u917.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.teecoin.ChatteeForUser",
+            "certificate_hash": "d187b56df1e81cf991c8074b647f5aa8206c8603"
+          }
+        },
+        {
+          "client_id": "1019747353212-32isep24iunbdq1ohkql2dp4bsuehbe6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.teecoin.ChatteeForUser",
+            "certificate_hash": "38c2037ef2d8a68ee1117af51a2b1dddbb0d7f0f"
+          }
+        },
+        {
+          "client_id": "1019747353212-oeia3o500v8e24rd7umcps34k7bo9928.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.teecoin.ChatteeForUser",
+            "certificate_hash": "d8621658837fa6715b5d833c5f35a5c30862e845"
+          }
+        },
+        {
+          "client_id": "1019747353212-oftt25halmn7gtapkta3grihg52ss81n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.teecoin.ChatteeForUser",
+            "certificate_hash": "969ca6be05a4cf12162b9033b280cc036151eae5"
+          }
+        },
+        {
+          "client_id": "1019747353212-6e9ps1r9qqniskh2tkat1nanjruugn7m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHKIY-90NvL1-y4UJwkDLUd5asuJl2Unc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1019747353212-6e9ps1r9qqniskh2tkat1nanjruugn7m.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1019747353212-1s9pvi3blsprpgnq9s3s7e66ibur6ngi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.teecoin.ChatteeForUser.dev2",
+                "app_store_id": "1437130675"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1019747353212:android:5c7db42779ee5910",
+        "android_client_info": {
+          "package_name": "com.teecoin.TeecoinWalletForShop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1019747353212-6e9ps1r9qqniskh2tkat1nanjruugn7m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHKIY-90NvL1-y4UJwkDLUd5asuJl2Unc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1019747353212-6e9ps1r9qqniskh2tkat1nanjruugn7m.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1019747353212-1s9pvi3blsprpgnq9s3s7e66ibur6ngi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.teecoin.ChatteeForUser.dev2",
+                "app_store_id": "1437130675"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1019747353212:android:2536fa50b564ce2f",
+        "android_client_info": {
+          "package_name": "com.teecoin.TeecoinWalletForUser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1019747353212-6e9ps1r9qqniskh2tkat1nanjruugn7m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHKIY-90NvL1-y4UJwkDLUd5asuJl2Unc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1019747353212-6e9ps1r9qqniskh2tkat1nanjruugn7m.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1019747353212-1s9pvi3blsprpgnq9s3s7e66ibur6ngi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.teecoin.ChatteeForUser.dev2",
+                "app_store_id": "1437130675"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

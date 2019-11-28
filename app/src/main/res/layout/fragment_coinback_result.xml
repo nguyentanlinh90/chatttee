@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TCTextViewHeader"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fs_56"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/text_coin_back"
+            android:textAllCaps="true" />
+
+        <include layout="@layout/view_line" />
+
+        <include layout="@layout/ripple_coinback_success" />
+
+        <include layout="@layout/ripple_coinback_fail" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/c_f2f2f2"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/fs_15"
+            android:paddingBottom="@dimen/fs_15">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fs_10"
+                android:layout_marginTop="@dimen/fs_3"
+                android:layout_marginRight="@dimen/fs_10"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TCTextViewBlackBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_address" />
+
+                <TextView
+                    android:id="@+id/frg_coinback_result_tv_address"
+                    style="@style/TCTextViewBlackBold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:text="GA27JPG5JGAYTFYWOOCO2YJLA47XCTHSOP3SDYF3O2QJU2XLAWTBXDYF" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/frg_coinback_result_tv_error_message"
+                style="@style/TCTextViewBlackBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="error message" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fs_10"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView style="@style/iv_done_gold_22pt" />
+
+                    <TextView
+                        style="@style/TCTextViewBlack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_invoice_id" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/frg_coinback_result_tv_invoice_id"
+                    style="@style/TCTextViewBlackBold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="01111111" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fs_5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView style="@style/iv_done_gold_22pt" />
+
+                    <TextView
+                        style="@style/TCTextViewBlack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/input_payment_payment" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/frg_coinback_result_tv_payment"
+                    style="@style/TCTextViewBlack"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="0.0 TEE" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fs_5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView style="@style/iv_done_gold_22pt" />
+
+                    <TextView
+                        style="@style/TCTextViewBlack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_total_tec" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/frg_coinback_result_tv_total_tee"
+                    style="@style/TCTextViewBlack"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="0.0 TEE" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fs_40" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fs_50"
+            android:layout_marginRight="@dimen/fs_50"
+            android:orientation="vertical">
+
+            <include layout="@layout/button_history_list_gold" />
+
+            <include layout="@layout/button_try_again" />
+
+            <include layout="@layout/button_history_list_white" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

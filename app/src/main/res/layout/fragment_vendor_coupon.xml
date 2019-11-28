@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:fillViewport="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <com.teecoin.ui.TCRecyclerView
+        android:id="@+id/frag_vender_coupon_rcv_coupon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:nestedScrollingEnabled="false"
+        style="@style/recycler_view_item_main_user"
+        android:paddingTop="@dimen/fs_5"
+        android:visibility="gone"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        tools:ignore="RtlSymmetry"
+        tools:listitem="@layout/view_item_coupon_user_catalogue_vertical" />
+
+    <include layout="@layout/view_no_coupon" />
+
+</LinearLayout>

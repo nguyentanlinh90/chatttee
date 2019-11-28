@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@color/c_ffffff"
+    android:clickable="true"
+    android:fitsSystemWindows="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/fs_5"
+        android:layout_marginStart="@dimen/fs_5"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/fs_20">
+
+        <include layout="@layout/view_balance" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                style="@style/view_item_main_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/frg_send_money_confirmation_rl_account_avatar"
+                android:layout_marginStart="@dimen/fs_5"
+                android:layout_marginBottom="@dimen/fs_5"
+                android:layout_marginEnd="@dimen/fs_5"
+                android:layout_marginTop="10dp"
+                android:elevation="@dimen/fs_2"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/frg_send_money_confirmation_tv_account_name"
+                    style="@style/TCTextViewGoldBoldLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fs_35"
+                    android:text="abc" />
+
+                <TextView
+                    android:id="@+id/frg_send_money_confirmation_tv_address"
+                    style="@style/TCTextViewGray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fs_10"
+                    android:text="@string/text_address" />
+
+                <TextView
+                    android:id="@+id/frg_send_money_confirmation_tv_account_public_key"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fs_10"
+                    android:layout_marginBottom="@dimen/fs_20"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/fs_20"
+                    android:paddingEnd="@dimen/fs_20"
+                    android:text="public key" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/frg_send_money_confirmation_rl_account_avatar"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="-35dp"
+                android:background="@drawable/bg_circle_white_solid_no_border"
+                android:translationZ="@dimen/fs_2">
+
+                <ImageView
+                    android:id="@+id/frg_send_money_confirmation_iv_account_avatar"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:translationZ="@dimen/fs_10" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fs_10"
+            android:layout_marginRight="@dimen/fs_10"
+            android:layout_marginTop="@dimen/fs_10"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/TCTextViewGrayBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/send_money_amount_with_tec" />
+
+                <TextView
+                    android:id="@+id/frg_send_money_confirmation_tv_payment"
+                    style="@style/TCTextViewBlackBoldMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/fs_5"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fs_25"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/TCTextViewGrayBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/send_money_fee_with_tec" />
+
+                <TextView
+                    android:id="@+id/frg_send_money_confirmation_tv_fee"
+                    style="@style/TCTextViewBlackBoldMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/fs_5"
+                    android:gravity="center_vertical"
+                    android:hint="@string/text_value_double"
+                    android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/fs_10"
+            android:layout_marginStart="@dimen/fs_10"
+            android:layout_marginTop="@dimen/fs_10"
+            android:orientation="vertical">
+            <TextView
+                style="@style/TCTextViewGrayBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/transfer_money_note" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fs_100"
+                android:layout_marginTop="@dimen/fs_5">
+
+                <TextView
+                    android:id="@+id/frg_send_money_confirmation_tv_note"
+                    style="@style/TCTextViewBlackMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="top" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="@dimen/fs_10"
+            android:layout_marginTop="@dimen/fs_10"
+            android:background="@color/c_d2d2d2" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/fs_20"
+            android:layout_marginEnd="@dimen/fs_10"
+            android:layout_marginStart="@dimen/fs_10"
+            android:layout_marginTop="@dimen/fs_20">
+
+            <TextView
+                style="@style/TCTextViewBlackBoldLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/text_total_tec" />
+
+            <TextView
+                android:id="@+id/frg_send_money_confirmation_tv_total_tec"
+                style="@style/TCTextViewBlackBoldLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="@string/default_zero_tec" />
+        </RelativeLayout>
+
+        <include layout="@layout/activity_main_bottom_cancel_next_button" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
+

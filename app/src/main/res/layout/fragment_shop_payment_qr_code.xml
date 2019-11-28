@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout style="@style/LinearLayoutVerticalParent">
+
+        <LinearLayout
+            style="@style/view_group_discover"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fs_10"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TCTextViewGoldBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fs_20"
+                android:gravity="center"
+                android:text="@string/payment_qr_code"
+                android:textSize="@dimen/fs_15"
+                tools:ignore="SpUsage" />
+
+            <TextView
+                style="@style/TCTextViewBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fs_20"
+                android:gravity="center"
+                android:text="@string/please_ask_the_customer_to_scan"
+                tools:ignore="SpUsage" />
+
+            <ImageView
+                android:id="@+id/frag_shop_payment_iv_qr_code"
+                android:layout_width="@dimen/fs_220"
+                android:layout_height="@dimen/fs_220"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/fs_20"
+                android:layout_marginTop="@dimen/fs_20"
+                android:contentDescription="@string/todo" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/frag_shop_payment_qr_code_tv_renew_in"
+            style="@style/TCTextViewWhite"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/fs_10"
+            android:background="@drawable/bg_gold_solid_no_border_30_radius"
+            android:gravity="center"
+            android:paddingBottom="@dimen/fs_6"
+            android:paddingEnd="@dimen/fs_25"
+            android:paddingStart="@dimen/fs_25"
+            android:paddingTop="@dimen/fs_5"
+            android:text="@string/renew_in_s" />
+
+        <TextView
+            android:id="@+id/frag_shop_payment_qr_code_tv_renew"
+            style="@style/TCTextViewGold"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fs_39"
+            android:layout_marginBottom="@dimen/fs_25"
+            android:layout_marginEnd="@dimen/fs_50"
+            android:layout_marginStart="@dimen/fs_50"
+            android:layout_marginTop="@dimen/fs_10"
+            android:background="@drawable/bg_white_solid_gold_border_30_radius"
+            android:gravity="center"
+            android:paddingBottom="@dimen/fs_0"
+            android:text="@string/renew"
+            android:textAllCaps="true" />
+
+
+        <LinearLayout
+            style="@style/LinearLayoutHorizontalFullWidth"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/fs_15"
+            android:layout_marginStart="@dimen/fs_15"
+            android:layout_marginTop="@dimen/fs_25"
+            android:gravity="center_vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="@dimen/fs_25"
+                android:layout_height="@dimen/fs_25"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_notification_gold" />
+
+            <TextView
+                style="@style/TCTextViewGray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fs_7"
+                android:text="@string/shop_please_click_button_check_payment" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/frag_shop_payment_qr_code_tv_check_payment"
+            style="@style/TCTextViewWhite"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fs_39"
+            android:layout_marginBottom="@dimen/fs_25"
+            android:layout_marginEnd="@dimen/fs_50"
+            android:layout_marginStart="@dimen/fs_50"
+            android:layout_marginTop="@dimen/fs_20"
+            android:background="@drawable/bg_gold_solid_no_border_30_radius"
+            android:gravity="center"
+            android:text="@string/check_payment_title"
+            android:textAllCaps="true" />
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

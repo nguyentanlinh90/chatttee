@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:fillViewport="true"
+    android:focusable="true">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/frg_review_shop_result_ll_back">
+
+            <LinearLayout
+                android:id="@+id/frg_review_shop_result_ll_layout_review_with_reward"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/todo"
+                        android:layout_marginEnd="@dimen/fs_2"
+                        android:layout_marginStart="@dimen/fs_2"
+                        android:layout_marginTop="@dimen/fs_15"
+                        android:src="@drawable/bg_review_result_banner" />
+
+                    <TextView
+                        style="@style/TCTextViewGoldBoldLarge"
+                        android:layout_gravity="center"
+                        android:text="@string/write_review_result_your_review_in_pending" />
+
+                    <TextView
+                        android:id="@+id/frag_review_result_tv_description"
+                        style="@style/TCTextViewBlack"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/fs_10"
+                        android:layout_marginStart="@dimen/fs_15"
+                        android:layout_marginEnd="@dimen/fs_15"
+                        android:layout_marginBottom="@dimen/fs_15"
+                        android:gravity="center"
+                        android:textSize="@dimen/ts_12"
+                        android:text="@string/write_review_result_content" />
+
+                    <TextView
+                        android:id="@+id/frag_review_result_tv_get_more_deals"
+                        style="@style/TCTextViewGoldBold"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/fs_10"
+                        android:text="@string/coupons_get_more_more_deals_on_chattee" />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/frag_user_review_detail_tv_share_fb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/fs_20"
+                        android:text="Share facebook"
+                        android:textColor="@color/c_a08220" />
+
+                    <TextView
+                        android:id="@+id/frag_user_review_detail_tv_share_instagram"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/fs_20"
+                        android:text="Share Instagram"
+                        android:textColor="@color/c_a08220" />
+                </LinearLayout>
+            </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/frg_review_shop_result_ll_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fs_3"
+            android:layout_marginBottom="@dimen/fs_8"
+            android:background="@drawable/bg_line_shadow" />
+
+        <TextView
+            android:id="@+id/frg_review_shop_result_ll_review_without_reward_back"
+            style="@style/text_view_button_filter_background_gold"
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/fs_50"
+            android:layout_marginTop="@dimen/fs_10"
+            android:layout_marginEnd="@dimen/fs_50"
+            android:layout_marginBottom="@dimen/fs_15"
+            android:gravity="center"
+            android:text="@string/text_back" />
+    </LinearLayout>
+
+</RelativeLayout>

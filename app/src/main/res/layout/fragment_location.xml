@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fs_48">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/fs_56"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/todo"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_back_black_24pt" />
+
+        <TextView
+            style="@style/TCTextViewGoldBoldMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/fs_8"
+            android:text="@string/review_change_location"
+            map:ignore="RelativeOverlap" />
+
+        <TextView
+            android:id="@+id/tv_done"
+            style="@style/TCTextViewGoldBoldMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center_vertical"
+            android:paddingEnd="@dimen/fs_10"
+            android:paddingStart="@dimen/fs_10"
+            android:text="@string/text_done"
+            android:textColor="@android:color/black"
+            map:ignore="RelativeOverlap,RtlSymmetry" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/view_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/map_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            map:cameraZoom="13"
+            map:mapType="normal"
+            map:uiRotateGestures="true"
+            map:uiScrollGestures="true"
+            map:uiTiltGestures="true"
+            map:uiZoomControls="true"
+            map:uiZoomGestures="true" />
+
+        <include layout="@layout/view_search_location" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/bt_load_more"
+                style="@style/TCTextViewGoldBoldMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bg_gold_solid_no_border_5_radius"
+                android:paddingBottom="@dimen/fs_3"
+                android:paddingLeft="@dimen/fs_30"
+                android:paddingRight="@dimen/fs_30"
+                android:paddingTop="@dimen/fs_3"
+                android:text="@string/search_this_area"
+                android:textColor="@android:color/white"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/view_detail_marker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <com.teecoin.ui.TCViewPager
+                    android:id="@+id/list_marker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/detail_marker_iv_remove"
+                    android:layout_width="@dimen/fs_20"
+                    android:layout_height="@dimen/fs_20"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/fs_10"
+                    android:layout_marginTop="@dimen/fs_10"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/ic_clear_black_24dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

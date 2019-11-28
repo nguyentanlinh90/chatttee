@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--values-hdpi             4.0” 480x800 hdpi-->
+    <!--values-hdpi             3.7” 480x854 hdpi-->
+
+    <!--use for text size-->
+
+    <dimen name="ts_7">6.5sp</dimen>
+    <dimen name="ts_8">7.5sp</dimen>
+    <dimen name="ts_9">8.5sp</dimen>
+    <dimen name="ts_9_3">8.8sp</dimen>
+    <dimen name="ts_10">9.5sp</dimen>
+    <dimen name="ts_11">10.5sp</dimen>
+    <dimen name="ts_11_5">11sp</dimen>
+    <dimen name="ts_12">11.5sp</dimen>
+    <dimen name="ts_12_8">12.3sp</dimen>
+    <dimen name="ts_13">12.5sp</dimen>
+    <dimen name="ts_14">13.5sp</dimen>
+    <dimen name="ts_14_5">14sp</dimen>
+    <dimen name="ts_15">14.5sp</dimen>
+    <dimen name="ts_15_5">15sp</dimen>
+    <dimen name="ts_16">15.6sp</dimen>
+    <dimen name="ts_17">16.5sp</dimen>
+    <dimen name="ts_18">17.5sp</dimen>
+    <dimen name="ts_19">18.5sp</dimen>
+    <dimen name="ts_20">19.5sp</dimen>
+    <dimen name="ts_22">21.5sp</dimen>
+    <dimen name="ts_30">29sp</dimen>
+    <dimen name="ts_41">40sp</dimen>
+    <!--  -->
+    <dimen name="main_header_height">52dp</dimen>
+    <dimen name="fs_45">42dp</dimen>
+    <dimen name="fs_40">36dp</dimen>
+    <dimen name="fs_34">30dp</dimen>
+    <dimen name="fs_38">34dp</dimen>
+    <dimen name="fs_58">53dp</dimen>
+
+</resources>

@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/fs_47"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/fs_30"
+                android:layout_height="@dimen/fs_30"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_review_active" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fs_5"
+                android:layout_marginTop="@dimen/fs_5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/frag_vendor_detail_tv_count_reviews"
+                    style="@style/TCTextViewBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="-7dp"
+                    android:text="@string/text_zero"
+                    android:textSize="@dimen/ts_15" />
+
+                <TextView
+                    style="@style/TCTextViewGray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_review"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/ts_11" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="@dimen/fs_10"
+            android:layout_marginTop="@dimen/fs_10"
+            android:background="@color/c_aaa9a9">
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/view_custom_tab_menu_vendor_tv_info"
+            style="@style/TCTextViewDefault"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/coupon_overview"
+            android:textColor="@color/review_vendor_tab_selector"
+            android:textSize="@dimen/ts_13" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/view_custom_tab_menu_vendor_tv_reviews"
+            style="@style/TCTextViewDefault"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/text_reviews_uppercase"
+            android:textColor="@color/review_vendor_tab_selector"
+            android:textSize="@dimen/ts_13" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/view_custom_tab_menu_vendor_tv_photos"
+            style="@style/TCTextViewDefault"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/vendor_photos"
+            android:textColor="@color/review_vendor_tab_selector"
+            android:textSize="@dimen/ts_13" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/view_custom_tab_menu_vendor_tv_coupon"
+            style="@style/TCTextViewDefault"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/text_coupons"
+            android:textColor="@color/review_vendor_tab_selector"
+            android:textSize="@dimen/ts_13" />
+
+    </RelativeLayout>
+</LinearLayout>

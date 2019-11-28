@@ -1,0 +1,19 @@
+[
+  {
+    "outputType": {
+      "type": "APK"
+    },
+    "apkInfo": {
+      "type": "MAIN",
+      "splits": [],
+      "versionCode": 21,
+      "versionName": "1.0.18",
+      "enabled": true,
+      "outputFile": "app-ChateeUserApp-release.apk",
+      "fullName": "ChateeUserAppRelease",
+      "baseName": "ChateeUserApp-release"
+    },
+    "path": "app-ChateeUserApp-release.apk",
+    "properties": {}
+  }
+]

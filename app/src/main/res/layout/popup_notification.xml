@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_solid_no_border_5_radius"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/TCTextViewGoldBold"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fs_45"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/text_referral"
+            android:textAllCaps="true" />
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fs_150"
+            android:contentDescription="@string/todo"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_banner_notification" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fs_150"
+            android:visibility="gone">
+
+        </android.support.v4.view.ViewPager>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/fs_10"
+            android:layout_marginTop="@dimen/fs_10"
+            android:orientation="vertical"
+            android:padding="@dimen/fs_15">
+
+            <TextView
+                android:id="@+id/tv_content"
+                style="@style/TCTextViewBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="7"
+                android:text="You will get 100TEC and your friend will get 50TEC. Refer 5 friends and you will get a bonus of additional 100 TEC. 100 TEC per referral and additional 100 TEC bonus for the referral of 5 friends." />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fs_34"
+                android:layout_marginTop="@dimen/fs_20"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <include
+                    layout="@layout/button_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/fs_10"
+                    android:layout_weight="1" />
+
+                <include
+                    layout="@layout/button_readmore"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/fs_10"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

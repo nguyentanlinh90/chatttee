@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/fs_10"
+    android:paddingTop="@dimen/fs_34"
+    android:paddingEnd="@dimen/fs_10"
+    android:background="@android:color/transparent"
+    android:clickable="true"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border_start_end_6dp">
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:padding="@dimen/fs_20"
+            android:src="@drawable/ic_close_gold_18pt" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_close"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/fs_20"
+            android:fontFamily="@font/axis_std_bold"
+            android:text="@string/text_text"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/ts_18" />
+
+        <ImageView
+            android:id="@+id/iv_qr_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_margin="@dimen/fs_40"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_logo_chattee" />
+
+        <TextView
+            android:id="@+id/tv_address_wallet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_qr_code"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/fs_40"
+            android:layout_marginTop="@dimen/fs_20"
+            android:layout_marginEnd="@dimen/fs_40"
+            android:fontFamily="@font/axis_std_regular"
+            android:gravity="center_horizontal"
+            android:text="@string/text_text"
+            android:textColor="@color/c_2d2d2d"
+            android:textSize="@dimen/ts_14" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

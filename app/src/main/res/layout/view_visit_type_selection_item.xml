@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/fs_10"
+    android:orientation="horizontal">
+
+    <LinearLayout style="@style/tc_option_selection_gray_solid_40_curvature_selector">
+
+        <TextView
+            android:id="@+id/view_visit_type_selection_tv_name"
+            style="@style/text_view_write_review_type_of_visit_selector"
+            android:text="@string/text_coupon" />
+    </LinearLayout>
+
+</LinearLayout>

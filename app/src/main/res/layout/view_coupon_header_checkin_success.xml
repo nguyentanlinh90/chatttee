@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_coupon_check_in_success_view_header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <TextView
+        style="@style/TCTextViewGoldBold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/fs_20"
+        android:layout_marginTop="@dimen/fs_20"
+        android:gravity="center"
+        android:text="@string/coupon_check_in_success"
+        android:textAllCaps="true" />
+
+    <include layout="@layout/view_line_10" />
+
+    <TextView
+        android:id="@+id/frag_check_in_success_tv_vendor"
+        style="@style/TCTextViewGoldBold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fs_20"
+        android:gravity="center"
+        android:text="CLAN RESTAURANT" />
+
+    <TextView
+        android:id="@+id/frag_check_in_success_tv_date"
+        style="@style/TCTextViewBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fs_5"
+        android:gravity="center"
+        android:text="2018/12/12 - 9:15" />
+
+    <TextView
+        android:id="@+id/frag_check_in_success_tv_exchange_rate"
+        style="@style/TCTextViewBlackBold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/fs_15"
+        android:layout_marginTop="@dimen/fs_5"
+        android:gravity="center"
+        android:text="" />
+
+    <include layout="@layout/view_line_10" />
+
+    <TextView
+        android:id="@+id/frag_check_in_success_tv_thank_you"
+        style="@style/TCTextViewBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fs_20"
+        android:gravity="center"
+        android:text="@string/coupon_check_in_thank_you" />
+
+    <TextView
+        android:id="@+id/frag_check_in_success_tv_visit"
+        style="@style/TCTextViewGold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/fs_20"
+        android:layout_marginTop="@dimen/fs_10"
+        android:gravity="center"
+        android:text="@string/coupon_check_in_visit" />
+
+    <include layout="@layout/view_line_10" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/fs_20"
+        android:paddingEnd="@dimen/fs_10"
+        android:paddingStart="@dimen/fs_10"
+        android:paddingTop="@dimen/fs_20">
+
+        <TextView
+            style="@style/TCTextViewBlackBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/text_reward" />
+
+        <TextView
+            android:id="@+id/frag_check_in_success_tv_amount"
+            style="@style/TCTextViewGoldBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/fs_5"
+            android:layout_toStartOf="@+id/tv_symbol_text"
+            android:text="@string/text_zero" />
+
+        <TextView
+            android:id="@+id/tv_symbol_text"
+            style="@style/TCTextViewBlackBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="@string/tee_coin_symbol" />
+    </RelativeLayout>
+
+    <include layout="@layout/view_line_10" />
+
+</LinearLayout>

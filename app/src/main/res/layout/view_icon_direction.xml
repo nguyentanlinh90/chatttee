@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_vendor_iv_direction"
+    android:layout_width="@dimen/fs_26"
+    android:layout_height="@dimen/fs_26"
+    android:src="@drawable/ic_direction"
+    android:layout_alignParentBottom="true"
+    android:padding="@dimen/fs_2"
+    android:layout_margin="@dimen/fs_5"
+    android:contentDescription="@string/todo"
+    android:visibility="visible">
+</ImageView>

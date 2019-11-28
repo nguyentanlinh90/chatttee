@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/fs_50"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/view_tab_ll_catalogue"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/view_tab_iv_catalogue"
+            android:layout_width="@dimen/fs_22"
+            android:layout_height="@dimen/fs_22"
+            android:background="@drawable/tab_category_selector"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:id="@+id/view_tab_tv_catalogue"
+            style="@style/TCTextViewTabMenuCoupon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/fs_5"
+            android:gravity="center"
+            android:text="@string/text_catalogue"
+            android:textColor="@drawable/tab_coupon_text_selector" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_tab_ll_my_coupon"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/view_tab_iv_my_coupon"
+            android:layout_width="@dimen/fs_26"
+            android:layout_height="@dimen/fs_25"
+            android:background="@drawable/tab_coupon_shop_selector"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:id="@+id/view_tab_tv_my_coupon"
+            style="@style/TCTextViewTabMenuCoupon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/fs_5"
+            android:gravity="center"
+            android:text="@string/coupon_my_coupons"
+            android:textColor="@drawable/tab_coupon_text_selector" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="@dimen/fs_20"
+            android:layout_height="@dimen/fs_20"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_add_black" />
+
+        <TextView
+            style="@style/TCTextViewTabMenuCoupon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/fs_10"
+            android:gravity="center"
+            android:text="@string/text_add_coupon"
+            android:textColor="@drawable/tab_coupon_text_selector" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/TCTextViewTabMenuCoupon"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/fs_5"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/text_coupons"
+        android:textColor="@drawable/tab_coupon_text_selector"
+        android:visibility="gone" />
+
+    <TextView
+        style="@style/TCTextViewTabMenuCoupon"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/fs_5"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/add_notification"
+        android:textColor="@drawable/tab_coupon_text_selector"
+        android:visibility="gone" />
+
+    <TextView
+        style="@style/TCTextViewTabMenuCoupon"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/fs_5"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/main_activity_tab_history"
+        android:textColor="@drawable/tab_coupon_text_selector"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/view_tab_tv_favourite"
+        style="@style/TCTextViewTabMenuCoupon"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/fs_5"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/favourite"
+        android:textColor="@drawable/tab_coupon_text_selector"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/view_tab_tv_recent"
+        style="@style/TCTextViewTabMenuCoupon"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/fs_5"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/recent"
+        android:textColor="@drawable/tab_coupon_text_selector"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/view_tab_tv_sgd_wallet"
+        style="@style/TCTextViewTabMenuCoupon"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/fs_5"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/sgd_wallet"
+        android:textColor="@drawable/tab_coupon_text_selector"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/view_tab_tv_tec_wallet"
+        style="@style/TCTextViewTabMenuCoupon"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/fs_5"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/tec_wallet"
+        android:textColor="@drawable/tab_coupon_text_selector"
+        android:visibility="gone" />
+</LinearLayout>

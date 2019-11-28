@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/fs_25"
+        android:layout_marginStart="@dimen/fs_25"
+        android:background="@drawable/bg_white_solid_no_border_5_radius"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/base_notify_tv_title"
+            style="@style/TCTextViewGoldBold"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fs_60"
+            android:gravity="center"
+            android:paddingTop="@dimen/ts_20"
+            android:text="@string/text_message"
+            android:textAllCaps="true"
+            android:textSize="@dimen/ts_14" />
+
+        <!--<include layout="@layout/view_line" />-->
+
+        <TextView
+            android:id="@+id/base_notify_tv_content"
+            style="@style/TCTextViewBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fs_10"
+            android:gravity="center"
+            android:paddingBottom="@dimen/ts_15"
+            android:paddingTop="@dimen/ts_10"
+            android:text="@string/text_text" />
+
+        <TextView
+            android:id="@+id/base_notify_tv_ok"
+            style="@style/TCTextViewWhiteMedium"
+            android:layout_width="@dimen/fs_160"
+            android:layout_height="@dimen/fs_38"
+            android:layout_marginBottom="@dimen/ts_12"
+            android:background="@drawable/bg_gold_solid_no_border_30_radius"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="@string/text_ok" />
+    </LinearLayout>
+</RelativeLayout>

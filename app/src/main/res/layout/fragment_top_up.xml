@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fs_15"
+                android:fontFamily="@font/axis_std_bold"
+                android:text="@string/tec_top_up_amount"
+                android:textColor="@color/c_2d2d2d"
+                android:textSize="@dimen/ts_13" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/fs_210"
+                android:layout_height="@dimen/fs_50"
+                android:layout_marginStart="@dimen/fs_15"
+                android:background="@drawable/bg_white_solid_gray_border_5_radius">
+
+                <com.teecoin.ui.AutoResizeEditText
+                    android:id="@+id/frg_top_up_et_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/axis_std_regular"
+                    android:gravity="center_vertical"
+                    android:hint="@string/send_money_enter_amount"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:paddingEnd="@dimen/fs_15"
+                    android:paddingStart="@dimen/fs_15"
+                    android:textColor="@color/c_b2973f"
+                    android:textColorHint="@color/c_a6a8b0"
+                    android:textSize="@dimen/ts_14" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_notice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fs_15"
+                android:fontFamily="@font/axis_std_regular"
+                android:lineSpacingExtra="@dimen/fs_5"
+                android:text="@string/top_up_note"
+                android:textColor="@color/c_b2973f"
+                android:textSize="@dimen/ts_13" />
+
+            <TextView
+                android:id="@+id/frg_top_up_tv_kyc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/fs_15"
+                android:layout_marginEnd="@dimen/fs_15"
+                android:layout_marginStart="@dimen/fs_15"
+                android:fontFamily="@font/axis_std_regular"
+                android:lineSpacingExtra="@dimen/fs_5"
+                android:text=""
+                android:textColor="@color/c_b2973f"
+                android:textSize="@dimen/ts_13" />
+
+            <com.teecoin.ui.TCRecyclerView
+                android:id="@+id/frg_top_up_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:nestedScrollingEnabled="false"
+                android:orientation="vertical"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_crypto" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/tv_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/fs_12"
+        android:fontFamily="@font/axis_std_regular"
+        android:lineSpacingExtra="@dimen/fs_5"
+        android:text="@string/approximate_rate_note"
+        android:textColor="@color/c_a6a8b0"
+        android:textSize="@dimen/ts_10" />
+</RelativeLayout>

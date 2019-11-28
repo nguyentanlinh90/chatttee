@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/frg_referral_event_iv_banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fs_70" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/fs_20"
+        android:layout_marginRight="@dimen/fs_20"
+        android:layout_marginTop="@dimen/fs_20"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/fs_13"
+            android:layout_height="@dimen/fs_13"
+            android:layout_gravity="center_vertical"
+            android:background="@color/c_b2973f"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/frg_referral_event_tv_event_info"
+            style="@style/TCTextViewBlack1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/fs_3"
+            android:gravity="center_vertical"
+            android:text="01 Aug -> 30 Sep"
+            android:textSize="@dimen/ts_16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/fs_20"
+        android:layout_marginRight="@dimen/fs_20"
+        android:layout_marginTop="@dimen/fs_20"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/fs_13"
+            android:layout_height="@dimen/fs_13"
+            android:layout_gravity="center_vertical"
+            android:background="@color/c_b2973f"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/frg_referral_event_tv_event_receive_date"
+            style="@style/TCTextViewBlack1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/fs_3"
+            android:gravity="center_vertical"
+            android:text="You will receive the reward from 01 Dec"
+            android:textSize="@dimen/ts_16" />
+    </LinearLayout>
+
+</LinearLayout>

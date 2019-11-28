@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/frg_account_rl_my_wallet"
+        style="@style/fragment_account_view_item">
+
+        <ImageView
+            android:id="@+id/frg_account_iv_my_wallet"
+            style="@style/fragment_account_iv_icon_item"
+            android:src="@drawable/ic_tab_wallet_gray"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            style="@style/fragment_account_tv_title_item"
+            android:layout_toEndOf="@+id/frg_account_iv_my_wallet"
+            android:text="@string/my_wallet"
+            tools:ignore="RelativeOverlap" />
+
+        <!--<ImageView-->
+        <!--style="@style/fragment_account_iv_icon_next_item"-->
+        <!--tools:ignore="ContentDescription" />-->
+
+        <!--<View style="@style/fragment_account_view_line_bottom_item" />-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/frg_account_rl_security"
+        style="@style/fragment_account_view_item">
+
+        <ImageView
+            android:id="@+id/frg_account_iv_security"
+            style="@style/fragment_account_iv_icon_item"
+            android:src="@drawable/ic_account_security"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            style="@style/fragment_account_tv_title_item"
+            android:layout_toEndOf="@+id/frg_account_iv_security"
+            android:text="@string/account_security"
+            tools:ignore="RelativeOverlap" />
+
+        <!--<ImageView-->
+        <!--style="@style/fragment_account_iv_icon_next_item"-->
+        <!--tools:ignore="ContentDescription" />-->
+
+        <!--<View style="@style/fragment_account_view_line_bottom_item" />-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/frg_account_rl_refer_a_friend"
+        style="@style/fragment_account_view_item">
+
+        <ImageView
+            android:id="@+id/frg_account_iv_refer_a_friend"
+            style="@style/fragment_account_iv_icon_item"
+            android:src="@drawable/ic_account_refer_a_friend"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            style="@style/fragment_account_tv_title_item"
+            android:layout_toEndOf="@+id/frg_account_iv_refer_a_friend"
+            android:text="@string/account_refer_a_friend"
+            tools:ignore="RelativeOverlap" />
+
+        <!--<ImageView-->
+        <!--style="@style/fragment_account_iv_icon_next_item"-->
+        <!--tools:ignore="ContentDescription" />-->
+
+        <!--<View style="@style/fragment_account_view_line_bottom_item" />-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/frg_account_rl_setting"
+        style="@style/fragment_account_view_item">
+
+        <ImageView
+            android:id="@+id/frg_account_iv_setting"
+            style="@style/fragment_account_iv_icon_item"
+            android:src="@drawable/ic_account_setting"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            style="@style/fragment_account_tv_title_item"
+            android:layout_toEndOf="@+id/frg_account_iv_setting"
+            android:text="@string/text_setting"
+            tools:ignore="RelativeOverlap" />
+
+        <!--<ImageView-->
+        <!--style="@style/fragment_account_iv_icon_next_item"-->
+        <!--tools:ignore="ContentDescription" />-->
+
+        <!--<View style="@style/fragment_account_view_line_bottom_item" />-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/frg_account_rl_term_of_use"
+        style="@style/fragment_account_view_item">
+
+        <ImageView
+            android:id="@+id/frg_account_iv_term_of_use"
+            style="@style/fragment_account_iv_icon_item"
+            android:src="@drawable/ic_account_terms_of_use"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            style="@style/fragment_account_tv_title_item"
+            android:layout_toEndOf="@+id/frg_account_iv_term_of_use"
+            android:text="@string/terms_of_use"
+            tools:ignore="RelativeOverlap" />
+
+        <!--<ImageView-->
+        <!--style="@style/fragment_account_iv_icon_next_item"-->
+        <!--tools:ignore="ContentDescription" />-->
+
+        <!--<View style="@style/fragment_account_view_line_bottom_item" />-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/frg_account_ll_faq"
+        style="@style/fragment_account_view_item">
+
+        <ImageView
+            android:id="@+id/frg_account_iv_faq"
+            style="@style/fragment_account_iv_icon_item"
+            android:src="@drawable/ic_account_faq"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            style="@style/fragment_account_tv_title_item"
+            android:layout_toEndOf="@+id/frg_account_iv_faq"
+            android:text="@string/account_faq"
+            tools:ignore="RelativeOverlap" />
+
+        <!--<ImageView-->
+        <!--style="@style/fragment_account_iv_icon_next_item"-->
+        <!--tools:ignore="ContentDescription" />-->
+
+        <!--<View style="@style/fragment_account_view_line_bottom_item" />-->
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/frg_account_ll_support"
+        style="@style/fragment_account_view_item">
+
+        <ImageView
+            android:id="@+id/frg_account_iv_support"
+            style="@style/fragment_account_iv_icon_item"
+            android:src="@drawable/ic_account_support"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            style="@style/fragment_account_tv_title_item"
+            android:layout_toEndOf="@+id/frg_account_iv_support"
+            android:text="@string/account_support"
+            tools:ignore="RelativeOverlap" />
+
+        <!--<ImageView-->
+        <!--style="@style/fragment_account_iv_icon_next_item"-->
+        <!--tools:ignore="ContentDescription" />-->
+
+        <!--<View style="@style/fragment_account_view_line_bottom_item" />-->
+    </RelativeLayout>
+
+    <!-- no use -->
+
+
+    <RelativeLayout
+        android:id="@+id/frg_account_rl_set_pass_code"
+        style="@style/fragment_account_view_item"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/frg_account_iv_set_pass_code"
+            style="@style/fragment_account_iv_icon_item"
+            android:src="@drawable/ic_set_pass_code"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            style="@style/fragment_account_tv_title_item"
+            android:layout_toEndOf="@+id/frg_account_iv_set_pass_code"
+            android:text="@string/text_set_passcode"
+            tools:ignore="RelativeOverlap" />
+
+        <TextView
+            android:id="@+id/frg_account_tv_change_passcode"
+            style="@style/TCTextViewGold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/fs_5"
+            android:paddingBottom="0dp"
+            android:layout_alignParentEnd="true"
+            android:text="@string/account_change_passcode"
+            android:textSize="@dimen/ts_12"
+            tools:ignore="RelativeOverlap" />
+
+        <!--<ImageView-->
+        <!--android:id="@+id/fragment_account_iv_change_pass_code_next"-->
+        <!--style="@style/fragment_account_iv_icon_next_item"-->
+        <!--tools:ignore="ContentDescription" />-->
+
+        <!--<View style="@style/fragment_account_view_line_bottom_item" />-->
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/frg_account_setting_rl_languages"
+        style="@style/fragment_account_view_item"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/frg_account_setting_iv_languages"
+            style="@style/fragment_account_iv_icon_item"
+            android:src="@drawable/ic_language"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            style="@style/fragment_account_tv_title_item"
+            android:layout_toEndOf="@+id/frg_account_setting_iv_languages"
+            android:text="@string/change_language"
+            tools:ignore="RelativeOverlap" />
+
+        <!--<ImageView-->
+        <!--style="@style/fragment_account_iv_icon_next_item"-->
+        <!--tools:ignore="ContentDescription" />-->
+
+        <!--<View style="@style/fragment_account_view_line_bottom_item" />-->
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/frg_account_rl_my_review"
+        style="@style/fragment_account_view_item"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/frg_account_iv_my_review"
+            style="@style/fragment_account_iv_icon_item"
+            android:src="@drawable/ic_account_my_review"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            style="@style/fragment_account_tv_title_item"
+            android:layout_toEndOf="@+id/frg_account_iv_my_review"
+            android:text="@string/text_my_reviews"
+            tools:ignore="RelativeOverlap" />
+
+        <!--<ImageView-->
+        <!--style="@style/fragment_account_iv_icon_next_item"-->
+        <!--tools:ignore="ContentDescription" />-->
+
+        <!--<View style="@style/fragment_account_view_line_bottom_item" />-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/frg_account_rl_credit_card"
+        style="@style/fragment_account_view_item"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/frg_account_iv_credit_card"
+            style="@style/fragment_account_iv_icon_item"
+            android:src="@drawable/ic_account_credit_card"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            style="@style/fragment_account_tv_title_item"
+            android:layout_toEndOf="@+id/frg_account_iv_credit_card"
+            android:text="@string/account_credit_card"
+            tools:ignore="RelativeOverlap" />
+
+        <!--<ImageView-->
+        <!--style="@style/fragment_account_iv_icon_next_item"-->
+        <!--tools:ignore="ContentDescription" />-->
+
+        <!--<View style="@style/fragment_account_view_line_bottom_item" />-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/fragment_account_view_item"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/frg_account_iv_give_us_feedback"
+            style="@style/fragment_account_iv_icon_item"
+            android:src="@drawable/ic_account_feedback"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            style="@style/fragment_account_tv_title_item"
+            android:layout_toEndOf="@+id/frg_account_iv_give_us_feedback"
+            android:text="@string/account_give_us_feedback"
+            tools:ignore="RelativeOverlap" />
+
+        <!--<ImageView-->
+        <!--style="@style/fragment_account_iv_icon_next_item"-->
+        <!--tools:ignore="ContentDescription" />-->
+
+        <!--<View style="@style/fragment_account_view_line_bottom_item" />-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/frg_account_ll_logout"
+        style="@style/fragment_account_view_item"
+        tools:ignore="TooManyViews">
+
+        <ImageView
+            android:id="@+id/frg_account_iv_logout"
+            style="@style/fragment_account_iv_icon_item"
+            android:src="@drawable/ic_logout"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            style="@style/fragment_account_tv_title_item"
+            android:layout_toEndOf="@+id/frg_account_iv_logout"
+            android:text="@string/account_shop_update_shop_logout"
+            tools:ignore="RelativeOverlap" />
+
+        <!--<ImageView-->
+        <!--style="@style/fragment_account_iv_icon_next_item"-->
+        <!--tools:ignore="ContentDescription" />-->
+
+        <!--<View style="@style/fragment_account_view_line_bottom_item" />-->
+    </RelativeLayout>
+
+</LinearLayout>

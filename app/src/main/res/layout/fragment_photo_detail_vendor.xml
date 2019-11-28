@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/c_2d2d2d"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/frg_photo_detail_iv_close"
+        android:layout_width="@dimen/fs_30"
+        android:layout_height="@dimen/fs_30"
+        android:layout_margin="@dimen/fs_8"
+        android:layout_marginEnd="@dimen/fs_15"
+        android:contentDescription="@string/todo"
+        android:padding="@dimen/fs_5"
+        android:src="@drawable/ic_close_white"
+        android:text="@string/text_close" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/frg_photo_detail_view_pager"
+            android:layout_width="match_parent"
+            android:layout_above="@+id/frg_photo_detail_ll_author"
+            android:layout_height="match_parent">
+
+        </android.support.v4.view.ViewPager>
+        <LinearLayout
+            android:id="@+id/frg_photo_detail_ll_content_review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_above="@+id/frg_photo_detail_ll_author"
+            android:background="@color/c_55000000"
+            tools:ignore="RtlSymmetry">
+
+            <TextView
+                android:id="@+id/dialog_view_vendor_tv_title"
+                style="@style/TCTextViewWhiteBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/fs_15"
+                android:paddingEnd="@dimen/fs_15"
+                android:text="@string/text_content"
+                android:paddingTop="@dimen/fs_15"
+                tools:ignore="RtlSymmetry" />
+            <TextView
+                android:id="@+id/dialog_view_vendor_tv_content"
+                style="@style/TCTextViewWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/fs_10"
+                android:paddingStart="@dimen/fs_15"
+                android:paddingEnd="@dimen/fs_15"
+                android:paddingBottom="@dimen/fs_8"
+                android:text="@string/text_content" />
+
+            <TextView
+                android:id="@+id/dialog_view_vendor_tv_more"
+                style="@style/TCTextViewGray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/fs_3"
+                android:text="@string/text_more"
+                android:layout_marginEnd="@dimen/fs_5"
+                android:layout_marginBottom="@dimen/fs_10"
+                android:layout_gravity="end"
+                android:visibility="gone" />
+
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/frg_photo_detail_ll_author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/c_2d2d2d"
+            android:paddingStart="@dimen/fs_15"
+            android:paddingTop="@dimen/fs_15"
+            android:paddingEnd="@dimen/fs_15"
+            android:paddingBottom="@dimen/fs_10"
+            android:layout_above="@+id/frg_photo_detail_ll_like_tip_bottom"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/fs_5"
+                android:layout_toStartOf="@+id/dialog_view_comment_tv_time_ago"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/dialog_view_comment_iv_avatar_user"
+                    android:layout_width="@dimen/fs_35"
+                    android:layout_height="@dimen/fs_35"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/ic_avatar_user_gold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/fs_8"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/dialog_view_comment_tv_name_user"
+                        style="@style/TCTextViewWhite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1" />
+
+                    <!--<me.zhanghai.android.materialratingbar.MaterialRatingBar-->
+                    <!--android:id="@+id/dialog_view_comment_rb_rating"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:isIndicator="true"-->
+                    <!--android:rating="2"-->
+                    <!--android:stepSize="0.1"-->
+                    <!--android:layout_height="@dimen/fs_13" />-->
+                    <com.teecoin.ui.SimpleRatingBar
+                        android:id="@+id/dialog_view_comment_rb_rating"
+                        android:layout_width="@dimen/fs_90"
+                        app:srb_isIndicator="true"
+                        app:srb_rating="2.5"
+                        app:srb_starBorderWidth="2"
+                        android:layout_height="@dimen/fs_13" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/dialog_view_comment_tv_time_ago"
+                style="@style/TCTextViewWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:gravity="end"
+                android:lineSpacingExtra="@dimen/fs_5"
+                android:text="@string/review_reviewed_format_time"
+                android:textSize="@dimen/ts_10" />
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/frg_photo_detail_ll_like_tip_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:id="@+id/frg_photo_detail_ll_like_tip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/c_2d2d2d"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fs_0_5"
+                    android:background="@android:color/white" />
+
+                <include
+                    layout="@layout/view_like_and_tip_detail_review"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/fs_10" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/fs_100"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/TCTextViewGoldBoldMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bg_gold_solid_no_border_5_radius"
+        android:fontFamily="@font/axis_std_regular"
+        android:paddingLeft="@dimen/fs_30"
+        android:paddingTop="@dimen/fs_3"
+        android:paddingRight="@dimen/fs_30"
+        android:paddingBottom="@dimen/fs_5"
+        android:text="@string/search_this_area"
+        android:textColor="@android:color/white"
+        android:visibility="visible" />
+
+    <com.teecoin.ui.TCRecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/fs_4"
+        android:visibility="visible"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_vendor" />
+
+</LinearLayout>

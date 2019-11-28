@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/frg_scan_qr_view_my_qr_code"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fs_45"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/fs_50"
+        android:background="@drawable/bg_gold_solid_no_border_30_radius"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/fs_28"
+            android:layout_height="@dimen/fs_28"
+            android:src="@drawable/ic_view_my_qr_white"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            style="@style/TCTextViewWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/fs_10"
+            android:gravity="center"
+            android:text="@string/text_view_my_qr_code" />
+
+    </LinearLayout>
+
+    <com.journeyapps.barcodescanner.DecoratedBarcodeView
+        android:id="@+id/frg_scan_qr_dbv_zxing_scanner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:zxing_preview_scaling_strategy="centerCrop"
+        app:zxing_use_texture_view="false">
+
+        <include
+            layout="@layout/header_scan_qr_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fs_24" />
+    </com.journeyapps.barcodescanner.DecoratedBarcodeView>
+
+    <TextView
+        android:id="@+id/frg_scan_qr_tv_title"
+        style="@style/TCTextViewWhite"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/fs_90"
+        android:gravity="center_horizontal"
+        android:text="@string/scan_the_qr_code_displayed_at_the_merchant_outlet"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/frg_scan_qr_tv_use_validate_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="@dimen/fs_5"
+        android:paddingBottom="@dimen/fs_40"
+        android:text="@string/cannot_scan_use_validation_code"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/ts_15"
+        android:visibility="gone" />
+</RelativeLayout>

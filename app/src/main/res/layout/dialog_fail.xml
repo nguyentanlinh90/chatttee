@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_fail_rl_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="@dimen/fs_31"
+        android:layout_marginStart="@dimen/fs_31"
+        android:background="@drawable/bg_white_solid_no_border_5_radius"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:padding="@dimen/fs_21">
+
+        <ImageView
+            android:id="@+id/dialog_fail_iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_fail" />
+
+        <TextView
+            android:id="@+id/dialog_fail_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/fs_31"
+            android:layout_marginTop="@dimen/fs_10"
+            android:fontFamily="@font/axis_std_bold"
+            android:textAllCaps="true"
+            android:textColor="@color/c_8e8e93"
+            android:textSize="@dimen/ts_16" />
+
+        <TextView
+            android:id="@+id/dialog_fail_tv_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TCTextViewBlack"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="@dimen/fs_5"
+            android:textSize="@dimen/ts_12" />
+
+        <TextView
+            android:id="@+id/dialog_login_fail_tv_try_again"
+            style="@style/TCTextViewWhite"
+            android:layout_width="@dimen/fs_150"
+            android:layout_height="@dimen/fs_39"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/fs_45"
+            android:background="@drawable/bg_gold_solid_no_border_30_radius"
+            android:gravity="center"
+            android:text="@string/try_again"
+            android:textAllCaps="true" />
+    </LinearLayout>
+</RelativeLayout>

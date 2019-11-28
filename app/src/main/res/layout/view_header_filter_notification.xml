@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/fs_37"
+    android:layout_margin="@dimen/fs_10"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:baselineAligned="false">
+    <LinearLayout
+        android:id="@+id/frag_notification_rl_general"
+        style="@style/style_sort_by_coupon_button_wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:paddingStart="@dimen/fs_5"
+        android:layout_height="match_parent"
+        tools:ignore="RtlSymmetry">
+
+        <TextView
+            android:id="@+id/frag_notification_tv_general"
+            style="@style/TCTextViewFilterNotification"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/general" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/frag_notification_rl_transactions"
+        style="@style/style_sort_by_coupon_button_wrap_content"
+        android:layout_width="0dp"
+        android:paddingStart="@dimen/fs_5"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        tools:ignore="RtlSymmetry">
+
+        <TextView
+            style="@style/TCTextViewFilterNotification"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/text_transactions"
+            android:textColor="@drawable/button_filter_selector" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/frag_notification_rl_coupons"
+        style="@style/style_sort_by_coupon_button_wrap_content"
+        android:layout_width="0dp"
+        android:paddingStart="@dimen/fs_5"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        tools:ignore="RtlSymmetry">
+
+        <TextView
+            style="@style/TCTextViewFilterNotification"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/text_coupons"
+            android:textColor="@drawable/button_filter_selector" />
+    </LinearLayout>
+
+
+</LinearLayout>

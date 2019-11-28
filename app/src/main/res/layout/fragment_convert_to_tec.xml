@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frg_wallet_account_nsv_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/view_header_shop_wallet" />
+
+        <LinearLayout
+            style="@style/LinearLayoutHorizontalFullWidth"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/fs_10"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/fs_15"
+                android:layout_height="@dimen/fs_15"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_notification_gold" />
+
+            <TextView
+                android:id="@+id/frg_convert_to_tec_tv_note"
+                style="@style/TCTextViewGray"
+                android:layout_marginStart="@dimen/fs_10" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/TCTextViewBlackBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/fs_10"
+            android:layout_marginTop="@dimen/ts_15"
+            android:text="@string/converted_amount" />
+
+        <RelativeLayout
+            android:id="@+id/frg_convert_to_tec_v_input"
+            style="@style/LinearLayoutHorizontalFullWidth"
+            android:layout_marginTop="@dimen/fs_10">
+
+            <EditText
+                android:id="@+id/frg_convert_to_tec_et_amount"
+                style="@style/background_shop_input_payment"
+                android:layout_width="@dimen/fs_150"
+                android:hint="@string/enter_amount" />
+
+            <TextView
+                android:id="@+id/frg_shop_input_payment_tv_text_sgd"
+                style="@style/TCTextViewBlackBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/fs_10"
+                android:layout_toEndOf="@+id/frg_convert_to_tec_et_amount"
+                android:gravity="center_vertical"
+                android:text="@string/text_sgd"
+                android:textSize="@dimen/ts_14" />
+
+            <TextView
+                android:id="@+id/frg_convert_to_tec_tv_round"
+                style="@style/TCTextViewBlackBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/fs_15"
+                android:layout_toEndOf="@+id/frg_shop_input_payment_tv_text_sgd"
+                android:gravity="center_vertical"
+                android:text="@string/text_character"
+                android:textSize="@dimen/ts_14" />
+
+            <TextView
+                android:id="@+id/frg_convert_to_tec_tv_converted"
+                style="@style/TCTextViewGoldBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/fs_10"
+                android:layout_marginEnd="@dimen/fs_15"
+                android:layout_toEndOf="@+id/frg_convert_to_tec_tv_round"
+                android:gravity="end"
+                android:textSize="@dimen/ts_14" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/frg_convert_to_tec_v_input_review"
+            style="@style/LinearLayoutHorizontalFullWidth"
+            android:layout_marginTop="@dimen/fs_10"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/frg_convert_to_tec_tv_review_amount"
+                style="@style/TCTextViewBlackBold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="end"
+                android:textSize="@dimen/ts_14" />
+
+            <TextView
+                style="@style/TCTextViewBlackBold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fs_15"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/text_character"
+                android:textSize="@dimen/ts_14" />
+
+            <TextView
+                android:id="@+id/frg_convert_to_tec_tv_review_converted"
+                style="@style/TCTextViewGoldBold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textSize="@dimen/ts_14" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/frg_convert_to_tec_tv_error_amount"
+            style="@style/tv_b21225_10pt_regular"
+            android:layout_marginStart="@dimen/fs_10"
+            android:text="@string/please_enter_amount" />
+        <TextView
+            style="@style/TCTextViewBlackBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/fs_10"
+            android:layout_marginTop="@dimen/ts_15"
+            android:text="@string/text_fee" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/fs_10"
+            android:layout_marginTop="@dimen/fs_10"
+            android:layout_marginEnd="@dimen/fs_15"
+            android:layout_marginBottom="@dimen/fs_20"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/frg_convert_to_tec_tv_fee"
+                style="@style/TCTextViewGold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="0"
+                android:textSize="@dimen/ts_14" />
+
+            <TextView
+                style="@style/TCTextViewGoldBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fs_50"
+                android:gravity="end"
+                android:text="@string/tee_coin_symbol"
+                android:textSize="@dimen/ts_14" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fs_1"
+            android:background="@color/c_d2d2d2" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/fs_10"
+            android:layout_marginTop="@dimen/fs_20"
+            android:layout_marginEnd="@dimen/fs_10"
+            android:layout_marginBottom="@dimen/fs_40">
+
+            <TextView
+                style="@style/TCTextViewBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/receivable"
+                android:textAllCaps="true"
+                android:textSize="@dimen/ts_16" />
+
+            <TextView
+                android:id="@+id/frg_convert_to_tec_tv_total"
+                style="@style/TCTextViewGoldBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textSize="@dimen/ts_16" />
+        </RelativeLayout>
+
+        <include layout="@layout/view_cancel_next_bottom" />
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

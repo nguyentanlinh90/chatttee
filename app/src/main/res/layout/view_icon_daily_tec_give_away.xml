@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/view_circle_daily_tec_away_iv_gift"
+        android:layout_width="@dimen/fs_75"
+        android:layout_height="@dimen/fs_75"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/todo"
+        android:layout_marginTop="@dimen/fs_6"
+        android:layout_marginEnd="@dimen/fs_5"
+        android:src="@drawable/ic_gift_daily_tec_away" />
+    <ImageView
+        android:id="@+id/view_circle_daily_tec_away_iv_close"
+        android:layout_width="@dimen/fs_28"
+        android:layout_height="@dimen/fs_28"
+        android:layout_marginTop="@dimen/fs_2"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/ic_delete_text_search" />
+</RelativeLayout>

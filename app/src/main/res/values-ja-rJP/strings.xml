@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE resources [<!ENTITY TeeCoinSymbol "TEC">]>
+<resources>
+    <!-- ****************** TRANSLATE ********************* -->
+    <!--general-->
+    <string name="version_app">バージョン</string>
+    <string name="text_successful">成功</string>
+    <string name="text_successfully">成功</string>
+    <string name="text_fail">失敗</string>
+    <string name="text_cancel">キャンセル</string>
+    <string name="text_ok">OK</string>
+    <string name="text_read_more">続きを読む</string>
+    <string name="text_please_enter">入力してください</string>
+    <string name="text_please_enter_less_than_or_equal_100">100以上の値を入力してください</string>
+    <string name="text_please_enter_more_than_or_equal_one_percent">1％以上の値を入力してください</string>
+    <string name="text_close">閉じる</string>
+    <string name="text_closed">閉店</string>
+    <string name="text_closes">閉店</string>
+    <string name="text_open">開店</string>
+    <string name="text_opens">開店</string>
+    <string name="text_close_today">本日閉店</string>
+    <string name="text_back_to_home">ホームに戻る</string>
+    <string name="text_back">戻る</string>
+    <string name="text_text">文字</string>
+    <string name="text_content">内容</string>
+    <string name="text_description">説明</string>
+    <string name="text_buy_tee_coin">&TeeCoinSymbol;購入</string>
+    <string name="text_all">全て</string>
+    <string name="text_secret_key">シークレットキー</string>
+    <string name="text_scan_qr_code">QRコードをスキャン</string>
+    <string name="text_view_my_qr_code">自分のQRコードを表示</string>
+    <string name="text_history">履歴</string>
+    <string name="text_address">宛先アドレス</string>
+    <string name="text_wallet_address">先方ウォレットアドレス</string>
+    <string name="text_invoice_id">インボイスID</string>
+    <string name="text_fee">手数料</string>
+    <string name="text_total_tec">&TeeCoinSymbol;合計</string>
+    <string name="text_remaining_payment">支払後残高</string>
+    <string name="text_transaction_config">取引の設定</string>
+    <string name="text_update">更新</string>
+    <string name="text_details">履歴詳細</string>
+    <string name="text_coin_back">コインバック</string>
+    <string name="text_payment_threshold">支払い上限設定</string>
+    <string name="text_set_passcode">パスコードの設定</string>
+    <string name="text_notifications">通知</string>
+    <string name="text_location">位置情報</string>
+    <string name="text_catalogue">カタログ</string>
+    <string name="text_restaurant">レストラン</string>
+    <string name="text_reviews_uppercase">レビュー</string>
+    <string name="text_reviews">レビュー</string>
+    <string name="text_promotions">キャンペーン</string>
+    <string name="text_opening_hours">営業時間</string>
+    <string name="text_open_24h">24時間営業</string>
+    <string name="text_name">名前</string>
+    <string name="text_coupon_what_are_you_searching">キーワードから探す</string>
+    <string name="text_review">レビュー</string>
+    <string name="text_referral">友達紹介</string>
+    <string name="text_parameter_with_tec">%s &TeeCoinSymbol;</string>
+    <string name="text_referral_code">紹介コード</string>
+    <string name="text_purchase">購入</string>
+    <string name="text_inactive_users">非アクティブユーザー</string>
+    <string name="text_yes">はい</string>
+    <string name="text_no">いいえ</string>
+    <string name="text_alert">通知</string>
+    <string name="text_message">メッセージ</string>
+    <string name="text_warning">警告</string>
+    <string name="text_reward">リワード</string>
+    <string name="text_tip">チップ</string>
+    <string name="text_done">完了</string>
+    <string name="text_from">から</string>
+    <string name="text_to">まで</string>
+    <string name="text_search">検索</string>
+    <string name="text_coupon">クーポン</string>
+    <string name="text_my_reviews">マイレビュー</string>
+    <string name="text_more">詳細</string>
+    <string name="text_latest">最新クーポン</string>
+    <string name="text_popular">総合クーポン</string>
+    <string name="text_transactions">取引</string>
+    <string name="text_coupons">クーポン</string>
+    <string name="text_sort_by">並び替え</string>
+    <string name="text_discount">割引種類</string>
+    <string name="text_less">短縮</string>
+    <string name="text_check_in">チェックイン</string>
+    <string name="text_check_in_lowercase">チェックイン</string>
+    <string name="text_add_coupon">新規作成</string>
+    <string name="text_coupon_for_free">無料クーポン</string>
+    <string name="text_balance">残高</string>
+    <string name="text_balance_with_colon">残高:</string>
+    <string name="text_receive">受け取る</string>
+    <string name="text_setting">設定</string>
+    <string name="text_send">送金</string>
+    <string name="text_copy_address">シークレットキーコピー</string>
+    <string name="text_your_qr_code">あなたのウォレットのQRコード</string>
+    <string name="text_50_minimum">%s/全角50文字以上</string>
+    <string name="text_50_maximum">%s/26以下</string>
+    <string name="text_payee">受け取る方</string>
+    <string name="text_email">メールアドレス</string>
+    <string name="text_password">パスワード</string>
+    <string name="text_sign_up">新規登録</string>
+    <string name="text_login">ログイン</string>
+    <string name="text_from_google">Googleより</string>
+    <string name="text_how_to_earn_tec">TECを稼ぐ方法</string>
+    <string name="text_other_outlet">他の%sつの支店</string>
+    <string name="text_other_outlets">他の%sつの支店</string>
+    <string name="text_got_it">了解！</string>
+    <string name="text_the_system_is_busy_try_agian">サーバーが大変込み合っております。 しばらく経てからお試しください。</string>
+    <string name="account_faq">質問と回答</string>
+    <string name="text_recovery_password">パスワード</string>
+    <string name="text_new_merchant">新着店舗</string>
+
+    <string name="language_english">英語</string>
+    <string name="language_chinese_simplified">中国語（簡体字）</string>
+    <string name="language_chinese_tranditional">中国語（繁体字）</string>
+    <string name="language_japanese">日本語</string>
+    <string name="language_vietnamese">ベトナム語</string>
+
+    <!-- Error message -->
+    <string name="error_no_internet_connection">ネットワーク接続が不安定です。接続状況を確認してください。</string>
+    <string name="error_request_time_out">タイムアウトしました。再度お試しください</string>
+    <string name="error_text_contains_unsupported_encoding">Text contain unsupported encoding</string>
+
+    <!-- location service dialog -->
+    <string name="location_service_title">位置情報が読み取れません</string>
+    <string name="location_service_check_in_title">&quot;%s&quot;に位置情報の利用を許可しますか?</string>
+    <string name="location_service_message">お客様への最適な情報提供のために位置情報サービスの利用を推奨しています。端末の位置情報サービスをONにしてください。\n１．設定→プライバシー→位置情報サービス\n２．位置情報サービスをON\n３．%s →「このアプリの使用中のみ許可」を選択</string>
+    <string name="location_service_check_in_message">チェックイン機能を利用するために%sに端末の位置情報サービスを活性化する必要があります。\n端末の位置情報サービスをONにしてください。\n設定→アプリケーションー→%s→許可→位置情報サービスをON</string>
+
+    <!--main activity-->
+    <string name="main_activity_tab_account">アカウント</string>
+    <string name="main_activity_tab_history">履歴</string>
+
+    <!--Home wallet-->
+    <string name="import_wallet_warning_enter_secret_key">シークレットキーを入力してください</string>
+    <string name="import_wallet_secret_key_info">シークレットキーは新規登録の際に生成された、「S」で始める56桁の英数字からなる文字列です。</string>
+
+    <!--Screen create wallet-->
+    <string name="create_new_wallet_message_for_phone_number">ChatTeeから認証コードをこの携帯番号に送らせていただきます</string>
+    <string name="create_new_wallet_shop_name">店舗名</string>
+    <string name="create_new_wallet_hint_shop_name">店舗名を入力してください</string>
+    <string name="create_new_wallet_notes">メモ</string>
+    <string name="create_new_wallet_hint_notes">メモを入力してください</string>
+    <string name="verify_phone_number_message_code_to_phone">携帯電話番号(%1$s) %2$s****%3$s宛てに6桁の認証コードを送信しました</string>
+    <string name="verify_phone_number_message_wrong">認証コードをお間違いございませんか。再度ご入力ください。</string>
+    <string name="verify_phone_number_resend_in">%ss 秒以内に再送信</string>
+    <string name="verify_phone_number_resend">再送</string>
+    <string name="verify_phone_number_title">携帯番号の認証</string>
+    <string name="verify_phone_number_pls_input_verification_code">認証コードを入力してください</string>
+    <string name="validate_password_not_match">パスワードが一致しません</string>
+    <string name="validate_enter_shop">ショップを入力してください</string>
+    <string name="validate_please_enter_valid_phone_number">携帯番号を入力してください</string>
+    <string name="validate_please_enter_valid_email">有効なアドレスを入力してください</string>
+    <string name="validate_please_enter_valid_password">有効なパスワードを入力してください。</string>
+    <string name="validate_email_exists">Eメールが既に使用されています</string>
+
+
+    <!--Screen Home Wallet-->
+    <string name="home_wallet_last_transaction">最新の取引</string>
+    <string name="my_wallet">Myウォレット</string>
+
+    <!--Screen Account User-->
+    <string name="account_user_title">アカウント</string>
+    <string name="account_update_info">アカウント更新する</string>
+    <string name="account_change_passcode">パスコード変更</string>
+    <string name="account_remove_passcode">Remove Passcode</string>
+    <string name="account_refer_a_friend">友達紹介</string>
+    <string name="account_credit_card">カード決済可</string>
+    <string name="account_give_us_feedback">フィードバックをお願いいたします。</string>
+    <string name="account_market_value">市場価値</string>
+    <string name="account_security">セキュリティー</string>
+    <string name="account_forgot_password">パスワードをお忘れの場合</string>
+
+    <!--Screen Account Shop-->
+    <string name="account_shop_shop_info_title">情報更新</string>
+    <string name="account_shop_update_shop_logout">ログアウト</string>
+    <string name="account_user_update_info">個人情報の更新</string>
+
+    <!--Screen input payment-->
+    <string name="input_payment_payment">お支払い</string>
+    <string name="check_payment_title">お支払い確認</string>
+
+    <!--Screen transaction success-->
+    <string name="transaction_success_you_can_track">取引ID<![CDATA[<br/><b>%s</b>]]>で追跡できます</string>
+    <string name="transaction_success_new_payment">新規支払い</string>
+    <string name="transaction_success_try_again">リトライ</string>
+
+    <!---Screen transaction config-->
+    <string name="transaction_config_coin_exchange">為替:</string>
+    <string name="transaction_config_currencies">通貨</string>
+    <string name="transaction_config_coin_back_reward">コインバック｜リワード</string>
+    <string name="transaction_config_min_amount">最低金額</string>
+    <string name="transaction_config_max_payment_allowed">&TeeCoinSymbol;で支払える最大金額</string>
+
+
+    <!--Screen history detail-->
+    <string name="history_detail_coin_back_id">コインバックID</string>
+    <string name="history_detail_reward_id">リワードID</string>
+    <string name="history_detail_payment_id">支払いID</string>
+    <string name="history_detail_coin_back_rate">コインバック: 支払額の%s%% </string>
+    <string name="history_detail_reward_rate">リワード: 請求金額の%s%% </string>
+    <string name="history_detail_try_coin_back">コインバックをリトライ</string>
+
+    <!--Screen Coin back-->
+    <string name="coin_back_coinback">コインバック</string>
+    <string name="coin_back_shop_balance">店残高</string>
+    <string name="coin_back_address">先方ウォレットアドレス %s</string>
+    <string name="coin_back_address1">先方ウォレットアドレス:\n </string>
+
+    <!--screen CoinIn Threshold-->
+    <string name="payment_threshold_maximum">最大</string>
+    <string name="payment_threshold_dialog_do_you_want_app_remember_pass">パスワードをアプリに保存しますか？</string>
+    <string name="payment_threshold_dialog_will_not_be_asked_when_make_transaction_below">%1$s &TeeCoinSymbol;以下の取引の場合にはパスワードは要求されません</string>
+
+    <!--Screen set passcode-->
+    <string name="set_passcode_enter_your_passcode">パスコードを入力してください</string>
+    <string name="set_passcode_verify_passcode">パスコードを確認してください</string>
+    <string name="you_changed_passcode">パスコードを変更しました</string>
+    <string name="enter_your_old_passcode">古いパスコードを入力してください</string>
+    <string name="enter_your_new_passcode">新しいパスコードを入力してください</string>
+    <string name="set_passcode_not_match">パスコードが一致しません。リトライしてください</string>
+    <string name="remove_passcode_message">パスワードを削除してよろしいでしょうか。</string>
+
+    <!--dialog pass code password-->
+    <string name="dialog_passcode_confirm_text_payment">支払い額が上限を超えています。実行するにはパスワードを入力してください。</string>
+    <string name="dialog_passcode_confirm_text_coinback">コインバック額が上限を超えています。実行するにはパスワードを入力してください。</string>
+    <string name="dialog_passcode_confirm_text_reward">設定上限値を超えた金額を送ろうとしています。実行するにはパスワードを入力してください。</string>
+    <string name="dialog_passcode_confirm_required_password">パスワードが必要です</string>
+
+    <!--New Recovery Password-->
+    <string name="change_password">パスワード変更</string>
+
+    <!--content menu left-->
+    <string name="left_menu_cuisine">料理のジャンル</string>
+    <string name="left_menu_spa">スパ</string>
+
+    <!--dialog recovery password-->
+    <string name="please_input_your_recovery_password_to_confirm">パスワードを入力してください\n（確認用）</string>
+    <string name="incorrect_recovery_password">パスワードが一致しません</string>
+
+    <!--dialog maximum payment threshold-->
+    <string name="only_two_decimal_is_allowed">小数点以下は第二位までです</string>
+    <string name="please_enter_maximum">最大値を入力してください</string>
+
+    <!--User review-->
+    <string name="user_review_text_receive">レビューを投稿することで%s &TeeCoinSymbol; まで取得できます！</string>
+
+    <string name="user_review_waiting_rating">ショップを評価してください</string>
+    <string name="user_review_waiting_comment">レビューを入力してください</string>
+    <string name="user_review_your_review_min_characters_count">レビュー内容は最低50文字で入力してください。</string>
+    <string name="user_review_tee_get">レビュー投稿で\n %s &TeeCoinSymbol;ゲット</string>
+    <string name="user_review_share_now">シェアする</string>
+
+    <!--popup option select inmages-->
+    <string name="select_image_from_photo">写真</string>
+    <string name="select_image_from_video">ビデオ</string>
+    <string name="select_image_from_library">カメラロール</string>
+
+    <!--Review main-->
+    <string name="review_highlight">ハイライト</string>
+    <string name="review_places_near_you">あなたの近くのお店</string>
+    <string name="review_top_ten_review">レビューの多い店舗TOP10</string>
+    <string name="review_top_new_merchants">新着店舗</string>
+    <string name="review_change_location">位置情報の変更</string>
+    <string name="review_view_all">すべて表示</string>
+    <string name="review_reviewed_format_time">%s\n 投稿された</string>
+    <string name="review_like">いいね！</string>
+    <string name="review_likes">いいね！</string>
+    <string name="review_promotion_title">プロモーション一覧</string>
+    <string name="review_promotion_detail_title">プロモーション詳細</string>
+
+    <!-- WRITE REVIEW -->
+    <string name="write_review_tap_a_star_to_rate">星をタップして評価してください</string>
+    <string name="write_review_please_enter_review_title">タイトルを入力してください。</string>
+    <string name="write_review_review_title">レビューのタイトル</string>
+    <string name="write_review_your_review">体験の感想</string>
+    <string name="write_review_date_visited">訪問日</string>
+    <string name="write_review_type_of_visit">訪問背景</string>
+    <string name="write_review_reach_limit"><![CDATA[You have reached the limit of review reward or gotten the reward from this merchant in 24 hours.<br/><br/><b>You will not receive reward for this review. Do you want to continue?</b>]]></string>
+
+    <!--location-->
+    <string name="location_text_hint_search">位置情報を選択または入力してください</string>
+
+    <!--vendor-->
+    <string name="vendor_detail_write_a_review">レビューを書く</string>
+    <string name="vendor_review_detail_payment_by">支払い</string>
+    <string name="vendor_review_detail_convenience">詳細</string>
+
+    <!--TRANSFER MONEY SCREEN-->
+    <string name="transfer_money_note">メモ</string>
+    <string name="transfer_is_greater_than_balance_do_you_want_to_transfer_max_tec">残高が足りません。設定最大値の %1$s &TeeCoinSymbol;で送金しますか？</string>
+
+    <!--REFERRAL EVENT SCREEN-->
+    <string name="events">イベント</string>
+    <string name="referral_Info">詳細</string>
+    <string name="referral_code_skip">スキップ</string>
+    <string name="referral_history">紹介履歴</string>
+    <string name="referral_event_information">%s -> %s 紹介したら、 %s &TeeCoinSymbol; をゲットできる</string>
+    <string name="referral_code_copied">紹介コードをコピーしました</string>
+    <string name="referral_total_reward">リワード合計</string>
+    <string name="share_title">シェア</string>
+
+    <!--BUSINESS INSIGHTS-->
+    <string name="business_insights_upper_case">ビジネスINSIGHT</string>
+
+    <!-- INACTIVE USERS -->
+    <string name="inactive_user_purchase_history">購入履歴</string>
+
+    <string name="inactive_user_amount_user">請求金額/ユーザー：1 &TeeCoinSymbol;</string>
+    <string name="search_inactive_users_since_last_visit">最後の訪問以来、非アクティブなユーザーを検索</string>
+
+    <!-- NEW PURCHASE -->
+    <string name="new_purchase_upper_case">新規購入</string>
+    <string name="title">タイトル</string>
+    <string name="validity">有効期間</string>
+    <string name="new_purchase_content">コンテンツ（最大200文字）</string>
+    <string name="new_purchase_title_hint">広告のタイトルを入力してください</string>
+    <string name="new_purchase_content_hint">あなたがユーザーに送信する広告の内容を入力してください。</string>
+
+    <!-- CONFIRM PURCHASE -->
+    <string name="confirm_purchase_upper_case">購入を確認します</string>
+    <string name="add_new">新しく追加する</string>
+    <string name="back_to_list">リストに戻ります</string>
+
+    <!--General Screen Order Detail, get CoinIn,CoinOut -->
+
+    <string name="general_exchange_coin">為替: 1 &TeeCoinSymbol; = %s %s</string>
+    <string name="general_amount">取引金額</string>
+    <string name="tee_coin_symbol">&TeeCoinSymbol;</string>
+    <string name="internal_server_error">内部サーバーエラー</string>
+    <string name="scan_qr_code_fail_do_you_want_scan_again">QRコードが無効です。もう一度トライしますか？</string>
+
+    <string name="pls_input_payment">支払金額を入力してください</string>
+    <string name="pls_input_amount">金額を入力してください</string>
+
+    <string name="balance_not_enough">残高が足りません</string>
+    <string name="this_secret_key_is_not_correct">シークレットキーが正しくありません</string>
+    <string name="todo">To Doリスト</string>
+    <string name="max_5_photos">写真は５枚までしか選択できません</string>
+    <string name="cant_transfer_coin_to_yourself">自分宛にコインは送金できません</string>
+    <string name="you_cant_create_account_on_emulator">エミュレータ上にはウォレットは作れません</string>
+    <string name="transaction_config_exchange_one_tec_equal_to">1 &TeeCoinSymbol; =</string>
+    <string name="default_zero_tec">0.0 &TeeCoinSymbol;</string>
+    <string name="wallet_address_copied">ウォレットアドレスをコピーしました</string>
+    <string name="trust_tee_coin_success">Teeコインの認証に成功しました</string>
+    <string name="trust_tee_coin_fail">Teeコインの認証に失敗しました</string>
+
+    <!-- REVIEW FILTER -->
+    <string name="review_filter_choose_your_filter">フィルターを選択してください</string>
+    <string name="review_filter_sort_by_date">日付で絞り込み</string>
+    <string name="review_filter_5_stars">5 つ星</string>
+    <string name="review_filter_4_stars">４つ星</string>
+    <string name="review_filter_3_stars">３つ星</string>
+    <string name="review_filter_2_stars">２つ星</string>
+    <string name="review_filter_1_star">1 つ星</string>
+    <string name="review_filter_sort_date_newest_first">新しい順</string>
+    <string name="review_filter_sort_date_most_reviews">レビューが多い順</string>
+    <string name="review_filter_sort_date_oldest_first">古い順</string>
+    <string name="review_filter_sort_date_lowest_reviews">レビューが少ない順</string>
+    <string name="search_this_area">このエリアを検索する</string>
+    <string name="review_filter_sort_rate_highest">評価が高い順</string>
+    <string name="review_filter_sort_rate_lowest">評価が低い順</string>
+    <string name="review_filter_select_opening_times">営業開始時間を選択してください</string>
+    <string name="review_filter_near_me">近くにある店</string>
+    <string name="review_filter_distance">距離：%skm</string>
+    <string name="star">%sつ星</string>
+    <string name="stars">%sつ星</string>
+    <string name="filter_by_distance">距離で絞り込み</string>
+    <string name="filter_5km">5km</string>
+    <string name="filter_10km">10km</string>
+    <string name="filter_20km">20km</string>
+    <string name="cuisines_type_count">料理のジャンル[%s]</string>
+    <string name="cuisines_type">料理のジャンル</string>
+    <!--<string name="no_data">データなし</string>-->
+    <string name="no_data"></string>
+
+    <!--DIALOG TIP-->
+    <string name="dialog_tip_title">いいね！とチップ</string>
+    <string name="dialog_tip_optional">オプション</string>
+    <string name="thank_for_your_like">「いいね」を いただき、誠に有難うございます。</string>
+    <string name="you_have_liked_and_sent_a_tip_for_this_review">このレビューを気に入りに追加してチップを送りました</string>
+    <string name="do_you_want_to_tip_more">もっとチップを送りますか？</string>
+    <string name="thank_for_your_tip">ありがとうございました！</string>
+    <string name="text_next">次へ</string>
+    <string name="tip_successfully">チップを贈りました。</string>
+    <string name="tip_message_yourself">自分が投稿したレビューにチップを送るのができません。</string>
+
+    <!--new string-->
+    <string name="in_progress">処理中</string>
+    <string name="reset_password">パスワードのリセット</string>
+    <string name="reset_password_content_first">パスワードをリセットすると、現在のパスワードが削除されます。</string>
+    <string name="reset_password_content_second">パスワードリセットを行う際、パスワードリセット用のメッセージがあなたのメールアドレスに送信されます。</string>
+    <string name="reset_password_ask">早速パスワードリセットを行いますが、よろしいですか?</string>
+    <string name="reset_password_sent_new_password">パスワードリセット用のメッセージが以下のメールアドレスに送信されました。</string>
+
+    <!-- FORGET RECOVERY PASSWORD -->
+    <string name="forget_recovery_password_message">１．<b>コードを取得</b>ボタンを押してください。\n２．認証コードがあなたの登録したメールアドレスに届くので、そちらにてご確認ください。\n３．もらった認証コードをアプリに入力してください。\n４．新しいパスワードを入力してください。\n</string>
+
+    <!--TIME AGO-->
+    <string name="time_ago_minute">1分前</string>
+    <string name="time_ago_minutes">%d分前</string>
+    <string name="time_ago_hour">1時間前</string>
+    <string name="time_ago_hours">%d時間前</string>
+    <string name="time_ago_day">1日前</string>
+    <string name="time_ago_days">%d日前</string>
+    <string name="time_ago_week">1週間前</string>
+    <string name="time_ago_weeks">%d週間前</string>
+    <string name="time_ago_month">1ヶ月前</string>
+    <string name="time_ago_months">%dヶ月前</string>
+    <string name="time_ago_year">1年前</string>
+    <string name="time_ago_years">%d年前</string>
+
+    <string name="you_can_not_upload_file_larger_than_50_mb">50MB以上の容量のファイルはアップロードすることが出来ませんのでご了承ください。 </string>
+    <string name="you_already_had_one_video_selected">レビュー投稿の際、動画は1つしかアップロードできません。</string>
+    <string name="about_restaurant">お店のこだわり</string>
+    <string name="prices">予算</string>
+
+    <!--notification new version-->
+    <string name="notify_new_version_title">利用可能な更新があります！</string>
+    <string name="notify_new_version_content">このアプリの最新版が利用可能になりました。今すぐアップデートして、最高の体験を手に入れましょう。</string>
+
+    <!-- Favourite Screen -->
+    <string name="favourite_no_data">何も保存されていません。\n#にタップされた店舗がこちらに表示されます。</string>
+
+
+    <!--Coupon-->
+    <string name="coupon_my_coupons">マイクーポン</string>
+    <string name="coupon_expired">期限切れ</string>
+    <string name="coupon_redeemed">引き換え済み</string>
+    <string name="starts">開始</string>
+    <string name="ends">終了</string>
+    <string name="buy_1_get_1">一つ買うともう一つ無料</string>
+    <string name="free_gift">無料ギフト</string>
+    <string name="discount_percentage_symbol">割引率</string>
+    <string name="discount_percentage">割引率</string>
+    <string name="discount_cash">現金割引</string>
+    <string name="terms_and_conditions">利用規約</string>
+    <string name="ending_soon">もうすぐ終わるクーポン</string>
+    <string name="day_remains">残り日数</string>
+    <string name="please_select_date_and_time">日時を選択してください</string>
+    <string name="category">カテゴリー</string>
+    <string name="low_to_high">昇順 &TeeCoinSymbol;</string>
+    <string name="high_to_low">降順 &TeeCoinSymbol;</string>
+    <string name="coupon_validity">クーポン有効期間</string>
+    <string name="coupon_successful">成功しました！</string>
+    <string name="coupon_successful_thank_you_visiting">%sgへご来店いただき、ありがとうございました。</string>
+    <string name="coupon_successful_thank_you_visiting_checkin">Thank you for checking in at\n%s</string>
+    <string name="coupon_unsuccessful">失敗しました！</string>
+    <string name="coupon_coupon_has_been_used">このクーポンは使い切りました、もしくは有効期限が切れました。</string>
+    <string name="validation_code">認証コード</string>
+    <string name="please_ask_the_cashier_to_enter_the_code">認証コードについてはレジのスタッフへお申し付けください。</string>
+    <string name="did_you_enter_the_correct_code_let_try_again">認証コードが間違っているようです。\nもう一度入力してください。</string>
+    <string name="coupon_use_now">今すぐ使います！</string>
+    <string name="coupon_result_sorry">申し訳ございません。</string>
+    <string name="coupon_result_something_went_wrong">何だかの理由で\nクーポン購入がうまく行われませんでした。</string>
+    <string name="coupon_result_back_to_catalogue">「カタログ」に戻る</string>
+    <string name="coupon_congratulation_you_get">%2$sの%1$sクーポンを取得できました。</string>
+    <string name="cash_value">現金 (%s)</string>
+    <string name="change_currency"><u>通貨変更</u></string>
+    <string name="weekdays">平日</string>
+    <string name="monday">月</string>
+    <string name="tuesday">火</string>
+    <string name="wednesday">水</string>
+    <string name="thursday">木</string>
+    <string name="friday">金</string>
+    <string name="saturday">土</string>
+    <string name="sunday">日</string>
+    <string name="reset_all"><u>全てリセット</u></string>
+    <string name="coupon_purchases">購入</string>
+    <string name="coupon_scan_qr_code">QRコードをスキャン(%s)</string>
+    <string name="coupon_message_from_vendor">ショップからのメッセージ</string>
+    <string name="coupon_simple_guide_to_redeem">クーポンのご案内</string>
+    <string name="cannot_scan_use_validation_code">スキャン失敗？\n<u>認証コード入力</u></string>
+    <string name="coupon_more_for_you">こちらもどうぞ</string>
+    <string name="coupon_check_in_to_get_tec"><u><b>Check in</b></u> to get &TeeCoinSymbol; now!</string>
+    <string name="coupon_end_at">%sに販売終了</string>
+    <string name="coupon_validity_two_dot">クーポン有効期間:</string>
+    <string name="coupon_get_coupon">このクーポンを取得！</string>
+    <string name="min">最小限</string>
+    <string name="max">最大限</string>
+    <string name="price_range_tec">価格（&TeeCoinSymbol;）</string>
+    <string name="coupon_check_in_success">チェックインに成功しました。</string>
+    <string name="coupon_check_in_thank_you">%sにチェックインいただき、ありがとうございました！</string>
+    <string name="coupon_check_in_visit">今すぐ%sに訪問する！</string>
+    <string name="coupon_check_in_delivered_via_notification">クーポンが通知を通じて配達されています。</string>
+    <string name="coupons_view">店舗を見る</string>
+    <string name="coupons_message_balance_is_not_enough_to_purchase">ただ今ウォレットの残高が不足しているため、購入できません。チャージしてからやり直しましょう。</string>
+    <string name="coupon_with_serial_number">クーポン番号</string>
+    <string name="redemption_code">引き換えコード</string>
+    <string name="coupon_purchase_coupon_with_tec">%s &TeeCoinSymbol; で購入しますが、よろしいでしょうか。</string>
+    <string name="qr_code_scanning_unsuccessful">QRコードが読めませんでした</string>
+    <string name="ask_cashier_when_check_out">会計時にレジスタッフにお尋ねください</string>
+    <string name="coupons_for_purchasing">購入可能なクーポン</string>
+    <string name="menu">メニュー</string>
+    <string name="coupon_filter_please_input_max_cash_bigger_min_cash">最大値に最小値より大きい値を入力してください。</string>
+    <string name="redeem_validity_time">残念ですが、このクーポンは有効期限前であるため、まだ利用できません。\n有効期限内にご利用ください。</string>
+    <string name="coupon_fee_purchase">（手数料　%s &TeeCoinSymbol;）</string>
+    <string name="input">入力</string>
+    <string name="add_notification">Add Notification</string>
+    <string name="coupon_overview">概要</string>
+    <string name="coupon_fee_by_catalogues">（取引手数料の%s&TeeCoinSymbol;を差し引かせていただきます）</string>
+    <string name="coupon_check_in_error_1">このお店は存在しません</string>
+    <string name="coupon_check_in_error_2">残念ですが、本日のチェックイン回数が上限に達しました。次のチャンスをお楽しみください。</string>
+    <string name="coupon_check_in_error_3">残念ですが、今回のチェックインは規定された上限回数を超えてしまいました。近いうちにまた再開致しますので何卒よろしくお願いします！</string>
+    <string name="coupon_check_in_error_4">今回のチェックインイベントは終了しました。近いうちにまた再開しますので何卒よろしくお願いします！</string>
+    <string name="coupon_check_in_error_5">このウォレットアドレスはシステムに存在しません。</string>
+    <string name="coupon_check_in_error_6">店舗までお越しいただくと、プレゼントとしてのTECが収穫できます。</string>
+    <string name="please_select_time_start_coupon_validity">クーポンの開始日を選択してください</string>
+    <string name="please_select_time_end_coupon_validity">クーポンの終了日を選択してください</string>
+    <string name="please_select_start_date_after_current_date">開始日は当日以降の日付を入力してください。</string>
+    <string name="please_select_start_date_before_selecting_end_date">先に開始日を選択してください。</string>
+
+    <string name="coupon_title_redeemed_expired">期限切れ・引き換え済みのクーポン</string>
+    <string name="about_shop">ショップについて</string>
+    <string name="terms_of_use">利用規約</string>
+    <string name="general">一般</string>
+    <string name="coupon_get_this_coupon">このクーポンをゲット！</string>
+    <string name="opening_hours_may_be_different_between_each_branch">*支店によって営業時間が変わる可能性がある。</string>
+    <string name="purchase_again">再購入</string>
+    <string name="redemption_date">引換日</string>
+
+    <string name="please_select_date_in_the_middle_validity_date">有効期間の間に選択してください</string>
+    <string name="categories">カテゴリー</string>
+    <string name="discover_experiences">カテゴリー</string>
+    <string name="recommended_for_you">おすすめ店舗</string>
+    <string name="top_rated_experiences">口コミ高評価の店舗</string>
+    <string name="recommended_coupons_vouchers">おすすめクーポン</string>
+    <string name="what_are_you_looking_for">何をお探しですか。</string>
+    <string name="google_places_api_connection_failed_with_error_code">Google Places API connection failed with error code: %s</string>
+    <string name="my_favourite">お気に入り</string>
+    <string name="favourite">お気に入り</string>
+    <string name="recent">最近見たお店</string>
+    <string name="filter_price_range">価格ランキング</string>
+    <string name="filter_distance_within">距離</string>
+    <string name="filter_by_rating">レーティング</string>
+    <string name="filter_opening_time">営業時間</string>
+    <string name="filter_apply">適用</string>
+
+    <string name="filter_sort_by_highest_rating">レーティング上位の店舗</string>
+    <string name="filter_sort_by_high_to_low_price">価格降順</string>
+    <string name="filter_sort_by_low_to_high_price">価格昇順</string>
+    <string name="filter_sort_by_near_by">お近くの店舗</string>
+    <string name="filter_open_now">営業中</string>
+    <string name="filter_reset">リセット</string>
+    <string name="coupon_back_to_top">トップへ</string>
+    <string name="count_reviews">(%sレビュー)</string>
+    <string name="count_review">(%sレビュー)</string>
+    <string name="distance_to_vendor">%s km</string>
+    <string name="discover">ディスカバー</string>
+    <string name="text_filter_and_sort">絞り込み条件</string>
+    <string name="select_the_country_you_want_to_discover">ご希望の国・地域を選んで、\n目的地周辺のお店を発見しましょう！</string>
+    <string name="good_deals">お得なクーポン</string>
+    <string name="new_arrivals">新着のクーポン</string>
+    <string name="no_result">検索結果がありません。</string>
+    <string name="undo">UNDO</string>
+    <string name="deleted">deleted</string>
+    <string name="change_language">言語変更</string>
+    <string name="user_review_have_reached_the_limit_of_review_reward">レビュー賞金の限定数に達したため、もしくは、この24時間の間にこのショップからレビュー賞金を既にもらいましたため、今回はレビューに対する賞金がないということになります。ご了承ください。</string>
+    <string name="no_suggest">に関する情報が見つかりません。</string>
+    <string name="error_country_code">国コードが間違っているようです。</string>
+    <string name="vendor_photos">写真</string>
+    <string name="please_enter_your_current_password_to_confirm">現行のパスワードを入力してください。</string>
+    <string name="please_enter_your_password">パスワードを入力してください</string>
+    <string name="submit">決定</string>
+    <string name="password">パスワード</string>
+    <string name="minimum_8_characters_at_least_1_upper_case">（パスワードは８英文字以上であり、かつ大文字が１文字以上であること）</string>
+    <string name="confirm_password">パスワード確認</string>
+    <string name="please_re_enter_your_password">パスワードを再入力してください</string>
+    <string name="vendor_detail_get_deals_now">今すぐクーポンをゲット！</string>
+    <string name="copied_to_clipboard">クリップボードにコピーされました。</string>
+    <string name="input_password">パスワード入力</string>
+    <string name="current_password">現行のパスワード</string>
+    <string name="maximum_amount">最大金額</string>
+    <string name="please_enter_the_maximum_amount">最大金額を入力してください。</string>
+    <string name="name">お名前</string>
+    <string name="please_enter_your_full_name">氏名を入力してください。</string>
+    <string name="please_enter_your_name">お名前を入力してください。</string>
+    <string name="please_enter_your_email">メールアドレスを入力してください。</string>
+    <string name="phone_number">携帯番号</string>
+    <string name="please_enter_your_phone_number">携帯番号を入力してください。</string>
+    <string name="day_of_birth">生年月日</string>
+    <string name="male">男性</string>
+    <string name="female">女性</string>
+    <string name="gender">性別</string>
+    <string name="are_you_sure_you_want_to_log_out">ChatTeeからログアウトしてもよろしいですか？</string>
+    <string name="forgot_password"><![CDATA[<b><u>パスワードお忘れですか？</u></b>]]></string>
+    <string name="forgot_password_no_xml">パスワードお忘れですか？</string>
+    <string name="follow_the_step_to_reset_your_password">以下の手順に従い、パスワードをリセットしてください。</string>
+    <string name="verification_code">認証コード</string>
+    <string name="please_enter_the_verification_code_that_have_been_sent_to_your_registered_email">メールにて送信された認証コードを入力してください。</string>
+    <string name="please_enter_verification_code">認証コードを入力してください。</string>
+    <string name="your_information_have_been_successfully_updated">個人情報が更新されました。</string>
+    <string name="million_club">ミリオンクラブ</string>
+    <string name="send_money_enter_amount">金額を入力</string>
+    <string name="send_money_amount_with_tec">取引金額 (&TeeCoinSymbol;)</string>
+    <string name="send_money_fee_with_tec">手数料 (&TeeCoinSymbol;)</string>
+    <string name="send_money_new_send">新規の送金</string>
+    <string name="send_money_back_to_wallet">Myウォレットに戻り</string>
+    <string name="send_money_input_address">ウォレットアドレス入力</string>
+    <string name="please_input_the_address">ウォレットアドレスを入力してください。</string>
+    <string name="get_more_tec_rewards_when_you_attach_pictures">写真を付けて、さらにTECをもらいましょう！</string>
+    <string name="singin_terms_of_use">サインアップしたことによって、<![CDATA[<b><u><font color=#b2973f>利用規約</font></u></b>]]>に同意したものとみなされます。</string>
+    <string name="welcome_back">お帰りなさい！</string>
+    <string name="sign_in_or">または</string>
+    <string name="text_import_existing_wallet">既存ウォレットをインポート</string>
+    <string name="please_enter_your_secret_key_to_import_your_wallet">シークレットキーを入力してください。</string>
+    <string name="you_can_reset_your_password_if_you_forget_it_your_current_password_will_be_deleted">パスワードを忘れてしまった場合はリセットできます。リセット後、元のパスワードが削除されます</string>
+    <string name="are_you_sure_that_you_want_to_reset_the_password">今パスワードのリセットをリクエストしてよろしいでしょうか。</string>
+    <string name="password_reset_sent">リセット用のパスワードを送りました！</string>
+    <string name="an_email_with_password_reset_instructions_has_been_sent_to_your_registered_email_address">下記のメールアドレスにパスワードをリセットするための案内メールを送信しますので、ご確認ください。</string>
+    <string name="log_in_failed">ログインが失敗しました！</string>
+    <string name="the_email_address_or_password_entered_is_invalid">入力したメールアドレス若くはパスワードが無効になっているようです。</string>
+    <string name="try_again">やり直し</string>
+
+    <string name="input_referral_code_welcome_chattee">ChatTeeへようこそ！</string>
+    <string name="input_referral_code_welcome_chattee_">ChatTeeへようこそ！！</string>
+    <string name="input_referral_code_welcome_back">お帰りなさい！</string>
+    <string name="input_referral_code_welcome">ようこそ！</string>
+    <string name="input_referral_code_referral_code">紹介コード</string>
+    <string name="input_referral_code_pls_enter">紹介コードを入力してください</string>
+    <string name="input_referral_code_content_not_been_registered">ChatTeeで新しい体験がスタートします。お友だちから\nChatTeeの紹介を受けた方は紹介コードを以下の\nテキストボックスに入力してください。これだけであなたも紹介者もTECがもらえます！</string>
+    <string name="input_referral_code_content_has_been_registered">アカウントを追加で作成することもできますが、リワードは受け取れません。ご了承ください。</string>
+    <string name="invalid_referral_code">無効な紹介コード</string>
+    <string name="input_referral_code_do_you_not_have_referral_code"><![CDATA[<b><font color=#2d2d2d>紹介コードをお持ちでない方は</font></b><br/>「スキップ」して次へ。]]>"</string>
+    <string name="input_referral_code_please_input_to_add_tec">紹介コードを入力して、TECをさらに稼ぎましょう！</string>
+    <string name="invalid_secret_key">シークレットキーが正しくありません！</string>
+    <string name="the_secret_key_entered_is_invalid">入力したシークレットキーが間違っているようです。もう一度ご確認ください。</string>
+    <string name="the_password_entered_is_invalid">入力したパスワードが間違っているようです。</string>
+    <string name="login_by_facebook">Facebookアカウントでログイン</string>
+    <string name="restart_again">最初からやり直してください</string>
+    <string name="go_to_home_for_other_signup">ホームに戻り、別の登録方法をお試しください</string>
+    <string name="enable_email_login">メールアドレスでのログインを有効にする"</string>
+    <string name="to_enable_email_login_you_need_to_login_by_importing_secret_key_one_time">メールアドレスでログインするためには、一度シークレットキーを入力し、再ログインする必要があります。"</string>
+    <string name="afterwards_you_won_t_be_prompted_anymore">After wards, you won\'t be prompted anymore</string>
+    <string name="account_exists">アカウントが重複しています！</string>
+    <string name="account_does_not_exists">アカウントが存在しません</string>
+    <string name="email_exists">メールアドレスが重複しています！</string>
+    <string name="your_password_have_been_successfully_updated">新しくパスワードを設定しました。.</string>
+    <string name="new_password">パスワード</string>
+    <string name="login_by_email">メールアドレスでログイン</string>
+    <string name="loading">読み込み中</string>
+    <string name="please_choose_gender">性別情報をお教えていただくことで、お客様へ最適なサービスを提供することができます。</string>
+    <string name="phone_number_already_exists">Phone number already exists!</string>
+    <string name="password_is_max_100_characters">パスワードは最大100桁までです。</string>
+    <string name="the_email_is_max_100_characters">メールアドレスは最大100桁までです。</string>
+    <string name="gender_has_not_been_selected">性別が選択されていません。</string>
+    <string name="thank_you_for_checking_in_at_s">“%s”へご来店いただき、ありがとうございました。</string>
+    <string name="sorry_something_went_wrong">ただいま大変混み合っています。しばらく経ってから再度お試しください。</string>
+    <string name="thank_you_for_visiting_s">“<![CDATA[<u>%s</u>]]>”へご来店いただき、ありがとうございました。</string>
+    <string name="treat_yourself_with_tec_you_ve_earned">稼いだTECを自分におごろう？</string>
+    <string name="coupons_for_you">お勧めクーポン</string>
+    <string name="purchase_no_cap">購入</string>
+
+    <string name="coupons_no_coupons_available">申し訳ございませんが、\nただ今割引クーポンの発行を行っておりません。</string>
+    <string name="coupons_get_more_more_deals_on_chattee">ChatTeeカタログでお得なクーポンをもっと収穫しよう!!</string>
+    <string name="coupons_no_worries_start_shopping"><![CDATA[<b>他の店でお得＆独占クーポン</b>が待っているので、\nご心配なくお楽しんでください。]]></string>
+
+    <string name="coupon_filter_best_selling">ベスト・セラー</string>
+
+    <string name="see_more_vendor_details">店舗詳細はこちら</string>
+    <string name="checkin_rewards">チェックインのリワード</string>
+
+    <string name="write_review_title_header">レビュを公開する前に内容審査の作業が必要となっております。投稿されたレビューの内容が承認されると、報酬のTECがもらえます。</string>
+    <string name="write_review_result_your_review_in_pending">投稿されたレビューは承認待ちです。</string>
+    <string name="write_review_result_content"><![CDATA[コンテンツチームによってのレビュー審査作業が行われています。ここで投稿されたレビューの内容、及び写真とビデオが全て投稿ガイドラインに従っているかどうかを確認させていただきます。<br/> <br/> 毎日のレビュー数が多く届いているため、受け取ってから通常２営業日以内にお返事いたします。<br/> <br/> あなたのレビューが承認されると、承認通知が届き、報酬TECもあなたのウォレットに送金されます。<br/> <br/> <br/> <br/> 審査結果を待っている間に、他の店の<b><font color=#2d2d2d>お得なクーポン</font></b>を見つけて楽しもう！]]>></string>
+    <string name="account_support">お問い合わせ</string>
+
+    <string name="daily_give_tec_your_daily_tec">デイリーTECキャンペーン！</string>
+    <string name="daily_give_tec_get_daily_prize">"ログインするとランダムでTECプレゼント！（何TEC当たるかは毎日のお楽しみ）\n 毎日午前０時（SGT）以降にログインするとTECが貰えます。"</string>
+    <string name="daily_give_tec_double_your_change">連続で７日ログインすると7日目は報酬が５倍になるビッグチャンス！</string>
+    <string name="text_congratulation">おめでとうございます！</string>
+    <string name="daily_give_tec_you_just_won_tec">"TEC獲得しました！\n７日間連続でログインすると、7日目のプレゼントは５倍になります！大当たり目指してまたトライしてください！ "</string>
+    <string name="daily_tec_give_away">毎日のTECプレゼント</string>
+    <string name="daily_give_tec_title_1">箱を開ければサプライズ！</string>
+    <string name="daily_give_tec_title_2">プレゼントボックスをタップしてTECをゲットしよう！</string>
+    <string name="daily_give_tec_day_format">%s日目</string>
+    <string name="copy_address">ウォレットアドレスをコピー</string>
+    <string name="chattee_will_send_a_verification_code_to_this_number">ChatTeeからこの携帯電話番号あてに認証コードが送信されます。</string>
+    <string name="coupon_your_current_redemption">クーポン引き換えの懸賞</string>
+    <string name="coupon_more_you_redeem_the_more_tec">クーポン券をたくさん引き換えれば、引き換えるほど報酬TECがもっと多くもらえます！</string>
+    <string name="coupon_go_to_catalogue">「カタログ」へ</string>
+    <string name="redeem_success_received_tec_message">%s &TeeCoinSymbol;を獲得をできました！</string>
+    <string name="redeem_success_received_tec_message_over">これからクーポンを引き換えるたびに\n最大報酬の %s &TeeCoinSymbol;がもらえます。</string>
+
+    <string name="the_email_address_has_been_already_taken">お使いのメールアドレスは既に登録されているようです。</string>
+    <string name="we_regret_that_currently_this_merchant_is_not_eligible_for_coinback_redemption_event">残念ながら、ただ今この店舗はクーポン引き換えリワードキャンペーンの対象外です。</string>
+
+    <string name="top_up">チャージ</string>
+    <string name="approximate_rate_note">*現時点の概算値です。コインが本ウォレットに届いた時、当時の為替レートで再計算し、両替いたします。</string>
+    <string name="top_up_note">TECチャージ方法\n1:上記に希望TEC数量を入力\n2:下のお好みの通貨の「チャージ」ボタンをタップ\n3:表示されたウォレットアドレスにチャージボタン横の数量を送金\n4:送金完了後、もう一度「チャージ」をタップ\n5:変換されたTECがチャージされます\n5まで完了してから次の手続きを行ってください。無事チャージが完了すると通知が届きますのでご確認ください。</string>
+    <string name="tec_top_up_amount">ご希望のTEC金額</string>
+    <string name="user_profile_verification">身元認証</string>
+    <string name="don_t_have_an_account">まだ会員登録されたいない方？</string>
+    <string name="register_now">今すぐ新規登録を！</string>
+    <string name="coinback_setting">コインバックの設定</string>
+    <string name="shop_information">店舗情報</string>
+    <string name="payment">お会計</string>
+    <string name="featured_experience"> 注目記事</string>
+    <string name="scan_the_qr_code_displayed_at_the_merchant_outlet">店舗に貼ってあるChatTeeのQRコードをスキャンしてください。</string>
+    <string name="profile">プロファイル</string>
+    <string name="bank_name">銀行名</string>
+    <string name="account_number">口座番号</string>
+    <string name="shop_coinback_setting_title">これは、お店での支払い時にお客様が受け取るコインバックの金額であり、お店の不換通貨ウォレットの残高から直接差し引かれます。\nコインバックの割合は、あなたのお店でお客様のTEC扱いを勧めるためにユーザーアプリに表示されます。</string>
+    <string name="coinback_percentage">コインバック割合(%)</string>
+    <string name="all_info_cannot_chane">こちらの情報はアプリケーションで変更不可です。</string>
+    <string name="register_account">新規登録</string>
+    <string name="tec_insufficient">残高不足</string>
+    <string name="your_balance">残高</string>
+    <string name="sgd_wallet">SGDウォレット</string>
+    <string name="tec_wallet">TECウォレット</string>
+    <string name="tec_equivalent">TEC換算額：</string>
+    <string name="convert_to_tec">TECに変換</string>
+    <string name="with_draw">現金引き出し</string>
+    <string name="please_input_wallet_address">ウォレットアドレスを入力してください</string>
+
+    <string name="total_bill">請求金額</string>
+    <string name="amount_to_be_by_wallet">ウォレットからのお支払金額</string>
+    <string name="amount_paid_by_wallet">ウォレットからのお支払金額</string>
+    <string name="amount_to_be_by_cash">現金でのお支払金額</string>
+    <string name="amount_paid_by_cash">現金でのお支払金額</string>
+    <string name="enter_amount">金額を入力</string>
+    <string name="converted_to_tec">&TeeCoinSymbol;へ交換</string>
+    <string name="payment_review">お支払い内容確認</string>
+    <string name="please_enter_amount">金額を入力してください</string>
+    <string name="payment_qr_code">QRコード決済</string>
+    <string name="please_ask_the_customer_to_scan">お客様にChatTeeアプリで以下のQRコードを\nスキャンしてもらってください。</string>
+    <string name="shop_please_click_button_check_payment">決済完了の通知が届かない場合は、以下のボタンをクリックして決済状況を確認してください。</string>
+    <string name="get_code">コードを取得</string>
+    <string name="qr_code">QRコード</string>
+    <string name="customer">顧客名</string>
+    <string name="please_collect_the_remaining_cash_payment">残額は現金で受け取ってください。</string>
+    <string name="shop_payment_unsuccess_title">エラーが発生したため、\n決済が正常に処理できませんでした。\n後でもう一度やり直してください。</string>
+    <string name="pay">お支払い</string>
+    <string name="confirm">決定</string>
+    <string name="user_payment_review_text_note">コインバックの処理が完了次第、通知にてご連絡いたします。</string>
+    <string name="user_payment_message_enough_tec">残高不足のため、決済できません。チャージするか、ChatTeeを使ってTECをもっと獲得しましょう！</string>
+    <string name="merchant">店舗名</string>
+    <string name="back_to_my_wallet">「Myウォレット」へ戻る</string>
+    <string name="the_coinback_percentage_has_been_successfully_changed">コインバック率が更新されました。</string>
+    <string name="an_error_has_occurred_and_your_setting_could_not_be_processed_please_try_again_later">エラーが発生したため、コインバック率は正常に更新されませんでした。後でもう一度やり直してください。</string>
+    <string name="the_minimum_coinback_percentage_must_be_1_and_less_than_100">コインバック率は1%以上、且つ100％以下であること。</string>
+    <string name="receivable">受取金額</string>
+    <string name="user_needs_to_pay_a_min_of_s_s_to_cover_the_coinback_fee">コインバックを受け取るために支払い額に%s %s以上を指定してください。</string>
+    <string name="s_insufficient">%s残高不足</string>
+    <string name="you_do_not_have_sufficient_s_balance_for_the_coinback_incurred_with_this_transaction">この支払いへのコインバックに対する%s残高が不足しています。</string>
+    <string name="user_payment_success_text_note_user">支払いを完了するために残額分を現金で支払ってください。コインバックが完了し次第、通知にてご連絡いたします。</string>
+    <string name="renew">更新</string>
+    <string name="renew_in_s">%ss秒以内に更新</string>
+    <string name="payment_are_you_sure_you_want_to_back">前画面に戻り、お会計の金額を変更すれば、このQRコードが無効になりますが、今すぐ戻りますか。</string>
+    <string name="payment_detail">お支払いの詳細</string>
+    <string name="coinback_detail">コインバックの詳細</string>
+    <string name="qr_code_is_invalid">無効なQRコードです</string>
+    <string name="payment_received">受け取り完了</string>
+    <string name="please_enable_coinback_if_you_want_to_provide_coinback_to_user_who_is_paying_full_amount_with_cash">請求金額を全部現金払いで決済する方にコインバック（還元）を与えたい場合はコインバック設定でONに指定してください。</string>
+    <string name="the_payment_is_being_processed">現在決済処理中です。</string>
+    <string name="payment_processing">処理中。。。</string>
+    <string name="payment_detail_amount">お支払い金額</string>
+    <string name="withdraw">現金引き出し</string>
+    <string name="new_convert_to_tec">新規のTEC変換</string>
+    <string name="something_wen_wrong_please_try_again">システムエラーが発生しております。お手数ですが、しばらく時間を置いてから再度お試しください。</string>
+    <string name="converted_amount">変換希望金額</string>
+    <string name="the_minimun_balance_to_maintained_in_your_s_wallet">TEC変換において、%1$sウォレット残高の取引保証金が最低必要金額%2$s %3$sとなります。</string>
+    <string name="the_minimun_balance_to_maintained_in_your_s_wallet_we_will_process">現金引き出しにおいて、%sウォレット残高の取引保証金が最低必要金額%s %sとなります。\n引き出しリクエストを受け取ってから銀行間の振込時間を除き、3営業日以内に処理いたします。</string>
+    <string name="withdraw_amount">引き出し希望金額</string>
+    <string name="sgd_balance">SGD残高</string>
+    <string name="you_will_earn_an_estimated_title_withdraw_screen"><![CDATA[月末までSGD残高を維持すると、月利の<b>%s TEC</b>がTECウォレットに自動的に振り替えられます。]]></string>
+    <string name="incoming_tec_details">TEC入手詳細</string>
+    <string name="tec_conversion_details">TEC変換詳細</string>
+    <string name="withdraw_details">現金引き出し詳細</string>
+    <string name="convert_to_tec_review">TEC変換確認</string>
+    <string name="withdraw_review">お引き出し確認</string>
+    <string name="withdraw_amount_must_be_at_least_1_00_sgd">お引き出しの最低金額は1.00 SGDとなります。</string>
+    <string name="convert_to_tec_success_note">%s %sが成功にTECに変換されました。</string>
+    <string name="incoming_success_note">&TeeCoinSymbol;変換により%s &TeeCoinSymbol;を受け取りました。 </string>
+    <string name="note_withdraw_instead">この取引を行うと、ウォレット残高が残高最低必要金額を超えてしまうため、実行できません。\n現在、お引き出し可能な金額は%s %sとなりますが、これでお引き出しよろしいでしょうか。</string>
+    <string name="note_convert_instead">この取引を行うと、ウォレット残高が残高最低必要金額を超えてしまうため、実行できません。\n現在、変換可能な金額は%s %sとなりますが、これで変換してよろしいでしょうか。</string>
+    <string name="your_balance_is_not_sufficient_for_this_transaction">ウォレット残高が不足しているため、取引を実行できません。</string>
+    <string name="note_top_up"><![CDATA[ %sUSD以上のチャージをご希望の場合は<u><b>KYC認証（身元認証）<b></u>が必要となりますので、ご注意ください。]]></string>
+    <string name="withdraw_request">お引き出し依頼中</string>
+    <string name="withdraw_completed">お引き出し完了</string>
+    <string name="withdraw_request_detail_note">%2$s時点での%1$s SGDお引き出しの依頼が完了しました。この後振込いたしますので、しばらくお待ちになってから、ご利用の銀行口座にてご確認ください。</string>
+    <string name="purchase_timer">購入 (%ss)</string>
+    <string name="confirm_timer">決定 (%ss)</string>
+    <string name="coupon_price_will_change_in_s"><![CDATA[<b><font color=#b2973f>%s</font></b>秒以内のお値段です。]]></string>
+    <string name="purchase_with_s_tec_in_ss"><![CDATA[<b><font color=#b2973f>%s秒</font></b>以内の<b><font color=#b2973f>%s</font></b> TECのお値段でご購入いただきませんか？]]></string>
+    <string name="integrating_with_exchanger">調整中</string>
+    <string name="your_session_has_expired_please_login_again">セッションタイムアウトが発生しました。\nお手数ですが再度ログインしていただきますよう、お願いいたします。</string>
+    <string name="login_password_info">パスワードは、アプリ登録時に自身で設定された、最低１つの大文字と８文字以上の英数字からなる文字列です。</string>
+</resources>

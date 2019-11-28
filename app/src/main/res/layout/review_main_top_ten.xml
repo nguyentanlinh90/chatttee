@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_view_ll_top_ten"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/fs_20"
+    android:orientation="vertical"
+    android:visibility="invisible">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fs_20">
+
+        <TextView
+            style="@style/TCTextViewGoldBoldMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/fs_3"
+            android:text="@string/review_top_ten_review"
+            tools:ignore="RelativeOverlap" />
+
+        <LinearLayout
+            android:id="@+id/frg_review_ll_view_all_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingEnd="@dimen/fs_10"
+            tools:ignore="RelativeOverlap,RtlSymmetry,UseCompoundDrawables">
+
+            <TextView
+                style="@style/TCTextViewGray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/review_view_all"
+                android:textSize="@dimen/ts_12" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/fs_2"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_next_gray_24pt" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.teecoin.ui.TCRecyclerView
+        android:id="@+id/frg_review_rcv_top_review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fs_5"
+        android:orientation="horizontal"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_review_top_ten">
+
+    </com.teecoin.ui.TCRecyclerView>
+</LinearLayout>

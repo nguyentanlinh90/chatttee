@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/TCTextViewGrayBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/fs_14"
+        android:layout_marginTop="@dimen/fs_10"
+        android:text="@string/text_wallet_address"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/ts_14" />
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/fs_78"
+       android:background="@drawable/bg_transparent_solid_gold_border_5_radius"
+       android:layout_margin="@dimen/fs_14"
+       >
+       <EditText
+           android:id="@+id/frg_input_wallet_et_input"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/fs_80"
+          android:background="@android:color/transparent"
+           android:gravity="top"
+           android:hint="@string/please_input_the_address"
+           android:padding="@dimen/fs_10"
+           android:textColor="@android:color/black"
+           android:textSize="@dimen/ts_14"
+           android:layout_toStartOf="@+id/frg_input_wallet_iv_clear_secret"
+           tools:ignore="Autofill,TextFields" />
+       <ImageView
+           android:id="@+id/frg_input_wallet_iv_clear_secret"
+           style="@style/iv_clear_item_input"
+           android:layout_marginEnd="@dimen/fs_5"
+           android:contentDescription="TODO" />
+   </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/fs_20"
+        android:gravity="bottom">
+
+        <include layout="@layout/activity_main_bottom_cancel_next_button" />
+    </LinearLayout>
+
+</LinearLayout>

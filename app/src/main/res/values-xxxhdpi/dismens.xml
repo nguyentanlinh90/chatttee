@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--use for text size-->
+
+    <dimen name="ts_7">5.7sp</dimen>
+    <dimen name="ts_8">6.7sp</dimen>
+    <dimen name="ts_9">7.7sp</dimen>
+    <dimen name="ts_9_3">8sp</dimen>
+    <dimen name="ts_10">8.7sp</dimen>
+    <dimen name="ts_11">9.7sp</dimen>
+    <dimen name="ts_11_5">10.2sp</dimen>
+    <dimen name="ts_12">10.7sp</dimen>
+    <dimen name="ts_12_8">11.5sp</dimen>
+    <dimen name="ts_13">11.7sp</dimen>
+    <dimen name="ts_14">12.7sp</dimen>
+    <dimen name="ts_14_5">13.2sp</dimen>
+    <dimen name="ts_15">13.7sp</dimen>
+    <dimen name="ts_15_5">14.2sp</dimen>
+    <dimen name="ts_16">14.7sp</dimen>
+    <dimen name="ts_17">15.7sp</dimen>
+    <dimen name="ts_18">16.7sp</dimen>
+    <dimen name="ts_19">17.7sp</dimen>
+    <dimen name="ts_20">18.7sp</dimen>
+    <dimen name="ts_22">19.7sp</dimen>
+    <dimen name="ts_30">28.7sp</dimen>
+    <dimen name="ts_41">39.7sp</dimen>
+</resources>

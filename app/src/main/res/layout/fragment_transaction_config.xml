@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/fs_15">
+
+        <!--<LinearLayout
+            android:id="@+id/ll_currency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/fs_35"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/fs_5"
+                android:layout_weight="0.52"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TCTextViewBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/transaction_config_currency" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/fs_38"
+                android:layout_weight="0.48"
+                android:background="@drawable/bg_light_gray_solid_no_border_5_radius">
+
+                <TextView
+                    android:id="@+id/frg_transaction_config_tv_currency"
+                    style="@style/TCTextViewBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toStartOf="@+id/iv_line0"
+                    android:background="@drawable/bg_light_gray_solid_no_border_5_radius"
+                    android:gravity="center_vertical" />
+
+                <View
+                    android:id="@+id/iv_line0"
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_toStartOf="@+id/frg_transaction_config_ll_select_currency"
+                    android:background="@color/colorText_A6A8B0" />
+
+                <LinearLayout
+                    android:id="@+id/frg_transaction_config_ll_select_currency"
+                    android:layout_width="@dimen/fs_38"
+                    android:layout_height="@dimen/fs_38"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/fs_5"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="@string/todo"
+                        android:rotation="90"
+                        android:src="@drawable/ic_arrow_next" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:id="@+id/ll_coin_exchange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/fs_5"
+                android:layout_weight="0.52"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TCTextViewBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/transaction_config_coin_exchange" />
+
+                <TextView
+                    style="@style/TCTextViewBlack1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/fs_5"
+                    android:text="@string/transaction_config_exchange_one_tec_equal_to"
+                    android:textSize="@dimen/ts_16" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/fs_38"
+                android:layout_weight="0.48"
+                android:background="@drawable/bg_light_gray_solid_no_border_5_radius">
+
+                <EditText
+                    android:id="@+id/frg_transaction_config_et_exchange"
+                    style="@style/TCEditTextBack"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toStartOf="@+id/iv_line2"
+                    android:background="@drawable/bg_light_gray_solid_no_border_5_radius"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:hint="@string/text_value_double"
+                    android:inputType="numberDecimal" />
+
+                <View
+                    android:id="@+id/iv_line2"
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_toStartOf="@+id/frg_transaction_config_tv_exchange_code"
+                    android:background="@color/c_a6a8b0" />
+
+                <TextView
+                    android:id="@+id/frg_transaction_config_tv_exchange_code"
+                    style="@style/TCTextViewGray"
+                    android:layout_width="@dimen/fs_38"
+                    android:layout_height="@dimen/fs_38"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/fs_5"
+                    android:gravity="center" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_coin_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_coin_exchange"
+            android:layout_marginTop="@dimen/fs_35"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.47"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TCTextViewBlack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/transaction_config_coin_back_reward" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fs_38"
+                        android:layout_marginTop="@dimen/fs_8"
+                        android:background="@drawable/bg_light_gray_solid_no_border_5_radius"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/frg_transaction_config_et_coinback"
+                            style="@style/TCEditTextBack"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toStartOf="@+id/iv_line"
+                            android:background="@drawable/bg_light_gray_solid_no_border_5_radius"
+                            android:gravity="center_vertical"
+                            android:hint="@string/text_value_double"
+                            android:inputType="numberDecimal"
+                            android:maxLength="10"
+                            android:text="" />
+
+                        <View
+                            android:id="@+id/iv_line"
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:layout_toStartOf="@+id/tv_percent"
+                            android:background="@color/c_a6a8b0" />
+
+                        <TextView
+                            android:id="@+id/tv_percent"
+                            style="@style/TCTextViewGray"
+                            android:layout_width="@dimen/fs_38"
+                            android:layout_height="@dimen/fs_38"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="@dimen/fs_5"
+                            android:gravity="center"
+                            android:text="@string/text_percent" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="0.06" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.47"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TCTextViewBlack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/transaction_config_min_amount" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fs_38"
+                        android:layout_marginTop="@dimen/fs_8"
+                        android:background="@drawable/bg_light_gray_solid_no_border_5_radius"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/frg_transaction_config_et_min_amount"
+                            style="@style/TCEditTextBack"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toStartOf="@+id/iv_line1"
+                            android:background="@drawable/bg_light_gray_solid_no_border_5_radius"
+                            android:gravity="center_vertical"
+                            android:hint="@string/text_value_double"
+                            android:imeOptions="actionDone"
+                            android:inputType="numberDecimal"
+                            android:maxLength="10"
+                            android:text="" />
+
+                        <View
+                            android:id="@+id/iv_line1"
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:layout_toStartOf="@+id/frg_transaction_config_tv_min_amount_code"
+                            android:background="@color/c_a6a8b0" />
+
+                        <TextView
+                            android:id="@+id/frg_transaction_config_tv_min_amount_code"
+                            style="@style/TCTextViewGray"
+                            android:layout_width="@dimen/fs_38"
+                            android:layout_height="@dimen/fs_38"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="@dimen/fs_5"
+                            android:gravity="center" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_coin_back"
+            android:layout_marginTop="@dimen/fs_35"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                style="@style/TCTextViewBlackBold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.47"
+                android:text="@string/transaction_config_max_payment_allowed" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.06" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/fs_38"
+                android:layout_weight="0.47"
+                android:background="@drawable/bg_light_gray_solid_no_border_5_radius"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/frg_transaction_config_et_max_payment_rate"
+                    style="@style/TCEditTextBack"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toStartOf="@+id/frg_transaction_config_v_max_payment_rate"
+                    android:background="@drawable/bg_light_gray_solid_no_border_5_radius"
+                    android:gravity="center_vertical"
+                    android:hint="@string/text_value_double"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal"
+                    android:maxLength="10"
+                    android:text="" />
+
+                <View
+                    android:id="@+id/frg_transaction_config_v_max_payment_rate"
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_toStartOf="@+id/frg_transaction_config_tv_max_payment_rate_percent"
+                    android:background="@color/c_a6a8b0" />
+
+                <TextView
+                    android:id="@+id/frg_transaction_config_tv_max_payment_rate_percent"
+                    style="@style/TCTextViewGray"
+                    android:layout_width="@dimen/fs_38"
+                    android:layout_height="@dimen/fs_38"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/fs_5"
+                    android:gravity="center"
+                    android:text="@string/text_percent" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/fs_30"
+            android:layout_marginRight="@dimen/fs_30">
+
+            <include layout="@layout/button_update" />
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/fs_193"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingEnd="@dimen/fs_10"
+    android:paddingBottom="@dimen/fs_4"
+    tools:ignore="RtlSymmetry">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fs_103"
+        app:cardCornerRadius="@dimen/fs_4"
+        app:cardElevation="@dimen/fs_2"
+        tools:ignore="RtlSymmetry">
+
+        <ImageView
+            android:id="@+id/item_feature_experience_iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/todo"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_cover_chattee" />
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/item_feature_experience_tv_title"
+        style="@style/TCTextViewBlackBold"
+        android:layout_marginTop="@dimen/fs_5"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/text_text"
+        android:textSize="@dimen/ts_12" />
+
+    <TextView
+        android:id="@+id/item_feature_experience_tv_preview"
+        style="@style/TCTextViewGraySmall"
+        android:layout_marginTop="@dimen/fs_2"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:textSize="@dimen/ts_10"
+        android:text="@string/text_text" />
+
+</LinearLayout>

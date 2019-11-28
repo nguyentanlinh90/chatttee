@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main_ll_tab_menu"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/fs_50"
+    android:layout_gravity="bottom"
+    android:background="@android:color/black"
+    android:baselineAligned="false"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/activity_main_ll_tab_discover"
+        style="@style/ll_item_menu">
+
+        <ImageView
+            android:id="@+id/activity_main_iv_tab_discover"
+            style="@style/iv_item_menu"
+            android:background="@drawable/tab_discover_selector" />
+
+        <TextView
+            android:id="@+id/activity_main_tv_tab_discover"
+            style="@style/TextViewBottomBar"
+            android:text="@string/discover" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_main_ll_tab_profile"
+        style="@style/ll_item_menu">
+
+        <ImageView
+            android:id="@+id/activity_main_iv_tab_profile"
+            style="@style/iv_item_menu"
+            android:background="@drawable/tab_profile_selector" />
+
+        <TextView
+            android:id="@+id/activity_main_tv_tab_profile"
+            style="@style/TextViewBottomBar"
+            android:text="@string/profile" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_main_ll_tab_coupon_user"
+        style="@style/ll_item_menu">
+
+        <ImageView
+            android:id="@+id/activity_main_iv_tab_coupon_user"
+            style="@style/iv_item_menu"
+            android:background="@drawable/tab_coupon_user_selector" />
+
+        <TextView
+            android:id="@+id/activity_main_tv_tab_coupon_user"
+            style="@style/TextViewBottomBar"
+            android:text="@string/text_coupons" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_main_ll_tab_favourite"
+        style="@style/ll_item_menu">
+
+        <ImageView
+            android:id="@+id/activity_main_iv_tab_favourite"
+            style="@style/iv_item_menu"
+            android:background="@drawable/tab_favourite_selector" />
+
+        <TextView
+            android:id="@+id/activity_main_tv_tab_favourite"
+            style="@style/TextViewBottomBar"
+            android:text="@string/favourite"
+            android:textColor="@drawable/tab_text_favourite_selector" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/activity_main_ll_tab_payment"
+        style="@style/ll_item_menu">
+
+        <ImageView
+            android:id="@+id/activity_main_iv_tab_payment"
+            style="@style/iv_item_menu"
+            android:background="@drawable/tab_payment_selector" />
+
+        <TextView
+            android:id="@+id/activity_main_tv_tab_payment"
+            style="@style/TextViewBottomBar"
+            android:text="@string/payment" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/activity_main_ll_tab_notification"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/activity_main_iv_tab_notification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:background="@drawable/tab_notification_selector"
+                    android:contentDescription="@string/todo" />
+
+                <TextView
+                    android:id="@+id/activity_main_tv_tab_count_notification"
+                    style="@style/TCTextViewWhite"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginStart="-5dp"
+                    android:layout_marginBottom="-10dp"
+                    android:layout_toEndOf="@+id/activity_main_iv_tab_notification"
+                    android:background="@drawable/bg_circle_red"
+                    android:gravity="center"
+                    android:text="@string/text_zero"
+                    android:textSize="@dimen/ts_10"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/activity_main_tv_tab_notifications"
+                style="@style/TextViewBottomBar"
+                android:text="@string/text_notifications" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_main_ll_tab_account"
+        style="@style/ll_item_menu">
+
+        <ImageView
+            android:id="@+id/activity_main_iv_tab_account"
+            style="@style/iv_item_menu"
+            android:background="@drawable/tab_account_selector" />
+
+        <TextView
+            android:id="@+id/activity_main_tv_tab_account"
+            style="@style/TextViewBottomBar"
+            android:text="@string/main_activity_tab_account" />
+    </LinearLayout>
+</LinearLayout>

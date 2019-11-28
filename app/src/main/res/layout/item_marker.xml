@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/fs_3"
+    android:background="@color/c_ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/fs_10"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/detail_marker_iv_image"
+            android:layout_width="@dimen/fs_50"
+            android:layout_height="@dimen/fs_50"
+            android:layout_marginTop="@dimen/fs_10"
+            android:src="@drawable/ic_shop_icon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/fs_10"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/detail_marker_tv_name"
+                style="@style/TCTextViewBlackBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/fs_20"
+                android:text="" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fs_5"
+                android:orientation="horizontal">
+
+                <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                    android:id="@+id/detail_marker_rb_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/fs_15"
+                    android:rating="5" />
+
+                <TextView
+                    android:id="@+id/detail_marker_tv_total_rate"
+                    style="@style/TCTextViewGray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/fs_10"
+                    android:text="" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/detail_marker_tv_address"
+                style="@style/TCTextViewBlack"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/fs_10"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/detail_marker_tv_cuisine"
+                style="@style/TCTextViewBlack"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/fs_10"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="" />
+            <TextView
+                android:id="@+id/detail_marker_tv_open_status"
+                style="@style/TCTextViewBlack"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/fs_10"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+

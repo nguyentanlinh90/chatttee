@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_coupon_user_result_success_ll_view_unsuccessful"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/fs_15"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/fs_20">
+
+        <ImageView
+            android:layout_width="@dimen/fs_100"
+            android:layout_height="@dimen/fs_100"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_check_coupon_fail" />
+
+        <TextView
+            style="@style/TCTextViewBlackBoldLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fs_15"
+            android:gravity="center"
+            android:text="@string/coupon_unsuccessful"
+            android:textSize="@dimen/ts_20" />
+
+        <TextView
+            android:id="@+id/view_coupon_user_result_unsuccessful_tv_error"
+            style="@style/TCTextViewBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fs_35"
+            android:gravity="center"
+            android:text="@string/coupon_coupon_has_been_used" />
+
+        <TextView
+            android:id="@+id/view_coupon_user_result_unsuccessful_tv_fail_thank"
+            style="@style/TCTextViewBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fs_5"
+            android:gravity="center"
+            android:text="@string/coupon_successful_thank_you_visiting" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayoutVerticalParent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <include layout="@layout/view_header_filter_notification" />
+    <com.teecoin.ui.TCSwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.teecoin.ui.TCRecyclerView
+            android:id="@+id/frg_notification_rcv_notify"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:splitMotionEvents="true"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_list_notification"/>
+    </com.teecoin.ui.TCSwipeRefreshLayout>
+
+</LinearLayout>

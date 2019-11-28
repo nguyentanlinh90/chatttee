@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/view_group_discover"
+        android:orientation="vertical">
+
+        <RelativeLayout style="@style/view_header_group_discover">
+
+            <LinearLayout
+                android:id="@+id/view_item_coupon_user_catalogue_horizontal_list_ll_parent_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="RtlSymmetry">
+
+                <include layout="@layout/view_item_coupon_user_catalogue_horizontal_list_header" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.teecoin.ui.TCRecyclerView
+            android:id="@+id/view_item_coupon_user_catalogue_horizontal_list_rcv_catalogue_data"
+            style="@style/recycler_view_item_main_user"
+            tools:listitem="@layout/item_recommend_coupon_horizontal" />
+    </LinearLayout>
+</LinearLayout>

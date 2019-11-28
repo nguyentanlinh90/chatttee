@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_f2f2f2"
+    android:clickable="true"
+    android:fillViewport="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fs_10"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/frg_inactive_user_ll_purchase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_solid_no_border_30_radius"
+            android:layout_gravity="end"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginEnd="@dimen/fs_20"
+            android:padding="@dimen/fs_5">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_add_black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fs_5"
+                android:text="@string/text_purchase" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/fs_10"
+            android:layout_marginStart="@dimen/fs_5"
+            android:text="@string/inactive_user_purchase_history" />
+
+        <com.teecoin.ui.TCRecyclerView
+            android:id="@+id/frg_inactive_user_rcv_purchase_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_inactive_user" />
+    </LinearLayout>
+</LinearLayout>

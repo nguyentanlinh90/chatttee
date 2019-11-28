@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:focusable="true">
+
+    <include layout="@layout/view_no_data" />
+
+    <include
+        android:id="@+id/fragment_recommend_coupons_categories_v_search_all"
+        layout="@layout/view_search_all" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/fragment_recommend_coupons_categories_nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fragment_recommend_coupons_categories_v_search_all">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/fs_88">
+
+            <TextView
+                style="@style/text_view_title_item_main_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fs_15"
+                android:text="@string/recommended_coupons_vouchers" />
+
+            <!--<include layout="@layout/view_button_sort_by_group_hot_coupon" />-->
+
+            <com.teecoin.ui.TCRecyclerView
+                android:id="@+id/fragment_recommend_coupons_categories_rcv_sort_catalogue"
+                style="@style/recycler_view_item_main_user"
+                android:layout_marginStart="@dimen/fs_15"
+                android:layout_marginTop="@dimen/fs_5"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_coupon_category_image" />
+
+            <com.teecoin.ui.TCRecyclerView
+                android:id="@+id/fragment_recommend_coupons_categories_rcv_categories"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:nestedScrollingEnabled="false"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/fs_10"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_horizontal_list" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_recommend_coupons_categories_v_search_all"
+        android:layout_marginStart="@dimen/fs_10"
+        android:layout_marginEnd="@dimen/fs_10"
+        android:background="@drawable/my_shadow_radius_4pt"
+        android:elevation="@dimen/fs_2">
+
+        <com.teecoin.ui.TCRecyclerView
+            android:id="@+id/fragment_recommend_coupons_categories_rcv_suggest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_suggest" />
+    </RelativeLayout>
+
+
+    <include layout="@layout/view_back_to_top" />
+</RelativeLayout>

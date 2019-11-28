@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frag_review_list_review_ll_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fs_10"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/fs_5"
+                android:layout_toStartOf="@+id/ll_reviewed"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/frag_review_list_review_iv_avatar_user"
+                    android:layout_width="@dimen/fs_38"
+                    android:layout_height="@dimen/fs_38"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/ic_avatar_user_gold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/fs_8"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/frag_review_list_review_tv_name_user"
+                        style="@style/TCTextViewDefault"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        />
+
+                    <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                        android:id="@+id/frag_review_list_review_rb_rating"
+                        android:layout_width="wrap_content"
+                        android:stepSize="0.5"
+                        android:rating="0"
+                        android:layout_height="@dimen/fs_13" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_reviewed"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/fs_50"
+                android:layout_alignParentEnd="true"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal"
+                tools:ignore="RtlHardcoded">
+
+                <TextView
+                    android:id="@+id/frag_review_list_review_tv_time_ago"
+                    style="@style/TCTextViewGray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:lineSpacingExtra="@dimen/fs_5"
+                    android:text="@string/review_reviewed_format_time"
+                    android:textSize="@dimen/ts_10" />
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/frag_review_list_review_tv_title"
+            style="@style/TCTextViewBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fs_5"
+             />
+        <TextView
+            android:id="@+id/frag_review_list_review_tv_content"
+            style="@style/TCTextViewDefault"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+    <com.teecoin.ui.TCRecyclerView
+        android:id="@+id/frag_review_list_review_rcv_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_slide_image_video_on_list"
+        >
+    </com.teecoin.ui.TCRecyclerView>
+
+    <!--<include layout="@layout/view_pager_image_list_review" />-->
+</LinearLayout>

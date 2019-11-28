@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingEnd="@dimen/fs_6"
+    android:paddingBottom="@dimen/fs_2"
+    android:id="@+id/view_tem_coupon_user_catalogue_rl_parent"
+    tools:ignore="RtlSymmetry">
+
+    <LinearLayout
+        android:id="@+id/view_tem_coupon_user_catalogue_rl_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fs_15"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/fs_13">
+        <android.support.v7.widget.CardView
+            android:id="@+id/view_tem_coupon_user_catalogue_rl_banner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fs_100"
+            app:cardCornerRadius="@dimen/fs_4"
+            app:cardElevation="@dimen/fs_2"
+            tools:ignore="RtlSymmetry">
+            <ImageView
+                android:id="@+id/view_item_coupon_user_catalogue_iv_banner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_cover_chattee"
+                android:contentDescription="@string/todo" />
+            <LinearLayout
+                android:id="@+id/view_item_coupon_user_catalogue_view_favourite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/fs_5"
+                android:orientation="horizontal"
+                android:layout_gravity="right|bottom"
+                android:visibility="gone"
+                tools:ignore="RtlHardcoded,UseCompoundDrawables">
+                <ImageView
+                    android:id="@+id/view_item_coupon_user_catalogue_iv_favorite"
+                    android:layout_width="@dimen/fs_23"
+                    android:layout_height="@dimen/fs_23"
+                    android:background="@drawable/state_favorite"
+                    android:layout_marginEnd="-12dp"
+                    android:layout_marginBottom="@dimen/fs_8"
+                    android:contentDescription="@string/todo" />
+
+                <TextView
+                    android:id="@+id/view_item_coupon_user_catalogue_tv_favorite"
+                    style="@style/TCTextViewBlack"
+                    android:layout_width="@dimen/fs_28"
+                    android:text="@string/text_zero"
+                    android:textSize="@dimen/ts_8"
+                    android:layout_gravity="bottom"
+                    android:paddingEnd="@dimen/fs_2"
+                    android:layout_marginEnd="@dimen/fs_2"
+                    android:gravity="right"
+                    android:background="@drawable/my_shadow_radius_2pt"
+                    android:elevation="@dimen/fs_2"
+                    />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <include layout="@layout/view_item_coupon_user_info_item_catalogue" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/view_item_coupon_user_view_type_coupon">
+
+        <LinearLayout
+            style="@style/view_rating_coupon"
+            >
+
+            <TextView
+                android:id="@+id/view_item_coupon_user_catalogue_tv_name_vendor"
+                style="@style/TCTextViewBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:padding="0dp"
+                android:text="@string/text_text"
+                android:textSize="@dimen/ts_12" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.teecoin.ui.SimpleRatingBar
+                    android:id="@+id/view_item_coupon_user_catalogue_mrb_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srb_borderColor="@color/c_b2973f"
+                    app:srb_fillColor="@color/c_b2973f"
+                    app:srb_numberOfStars="5"
+                    app:srb_isIndicator="true"
+                    app:srb_pressedBorderColor="@color/c_b2973f"
+                    app:srb_pressedFillColor="@color/c_b2973f"
+                    app:srb_rating="0"
+                    app:srb_starBorderWidth="1"
+                    app:srb_starCornerRadius="1"
+                    app:srb_starSize="@dimen/fs_10"
+                    app:srb_stepSize="0.1" />
+
+                <TextView
+                    android:id="@+id/view_item_coupon_user_catalogue_tv_reviews"
+                    style="@style/TCTextViewGray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/ts_9" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/view_item_coupon_user_view_type_coupon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/fs_5"
+        android:orientation="vertical"
+        tools:ignore="RtlHardcoded">
+
+        <ImageView
+            android:id="@+id/view_item_coupon_user_iv_is_cash_voucher"
+            android:layout_width="@dimen/fs_25"
+            android:layout_height="@dimen/fs_25"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_is_cash_voucher" />
+
+        <ImageView
+            android:id="@+id/view_item_coupon_user_iv_is_good_deal"
+            android:layout_width="@dimen/fs_25"
+            android:layout_height="@dimen/fs_25"
+            android:layout_marginBottom="@dimen/fs_3"
+            android:layout_marginTop="@dimen/fs_3"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_is_good_deal"
+            android:visibility="visible" />
+        <ImageView
+            android:id="@+id/view_item_coupon_user_iv_is_new_arrivals"
+            android:layout_width="@dimen/fs_26"
+            android:layout_height="@dimen/fs_26"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_is_new_arrivals"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+<!--view_vendor_top-->
+<!--item_review_main_single_category-->

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/fs_31"
+        android:layout_marginEnd="@dimen/fs_31"
+        android:background="@drawable/bg_white_solid_no_border_5_radius"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/fs_25"
+        android:paddingBottom="@dimen/fs_20">
+
+        <include layout="@layout/view_ripple_background_success" />
+
+        <include layout="@layout/view_result_icon_fail" />
+
+        <TextView
+            android:id="@+id/base_dialog_success_tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fs_10"
+            android:layout_marginBottom="@dimen/fs_30"
+            style="@style/TCTextViewGoldBold"
+            android:gravity="center_horizontal"
+            android:text="@string/coupon_successful"
+            android:textAllCaps="true"
+            android:textSize="@dimen/ts_16" />
+
+        <TextView
+            android:id="@+id/base_dialog_success_tv_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/fs_70"
+            style="@style/TCTextViewBlack"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="@dimen/fs_7"
+            android:paddingStart="@dimen/fs_39"
+            android:paddingEnd="@dimen/fs_39"
+            android:text="@string/your_information_have_been_successfully_updated"
+            android:textSize="@dimen/ts_12" />
+
+
+        <include
+            layout="@layout/button_ok"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fs_39"
+            android:layout_marginStart="@dimen/fs_80"
+            android:layout_marginEnd="@dimen/fs_80" />
+
+    </LinearLayout>
+
+</RelativeLayout>

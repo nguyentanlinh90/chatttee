@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_f2f2f2"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/fs_30"
+        android:paddingEnd="@dimen/fs_30"
+        android:paddingBottom="@dimen/fs_15">
+
+        <LinearLayout
+            android:id="@+id/frg_update_user_view_name"
+            style="@style/LinearLayoutVerticalFullWidth">
+
+            <TextView
+                style="@style/tv_black_bold_12pt"
+                android:text="@string/name" />
+
+            <RelativeLayout
+                android:id="@+id/fragment_update_info_v_user_name"
+                style="@style/background_for_update_info_view">
+
+                <ImageView
+                    android:id="@+id/fragment_update_info_iv_user_name"
+                    style="@style/iv_icon_item_input"
+                    android:src="@drawable/ic_user_name"
+                    tools:ignore="ContentDescription" />
+
+                <EditText
+                    android:id="@+id/fragment_update_info_et_user_name"
+                    style="@style/et_item_input"
+                    android:layout_toStartOf="@+id/fragment_update_info_iv_clear_user_name"
+                    android:layout_toEndOf="@+id/fragment_update_info_iv_user_name"
+                    android:hint="@string/please_enter_your_full_name"
+                    android:inputType="text"
+                    android:lineSpacingExtra="@dimen/fs_2_5"
+                    android:textSize="@dimen/ts_13"
+                    tools:ignore="Autofill" />
+
+                <ImageView
+                    android:id="@+id/fragment_update_info_iv_clear_user_name"
+                    style="@style/iv_clear_item_input"
+                    tools:ignore="ContentDescription" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/fragment_update_info_tv_error_name"
+                style="@style/tv_b21225_10pt_regular"
+                android:text="@string/please_enter_your_full_name" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/frg_update_shop_view_shop_name"
+            style="@style/LinearLayoutVerticalFullWidth">
+
+            <TextView
+                style="@style/tv_black_bold_12pt"
+                android:layout_marginTop="@dimen/fs_20"
+                android:text="@string/create_new_wallet_shop_name" />
+
+            <RelativeLayout
+                style="@style/background_for_update_info_view"
+                android:background="@drawable/bg_light_gray_solid_no_border_5_radius">
+
+                <ImageView
+                    android:id="@+id/fragment_update_info_iv_shop"
+                    style="@style/iv_icon_item_input"
+                    android:layout_width="@dimen/fs_20"
+                    android:src="@drawable/ic_user_name" />
+
+                <EditText
+                    android:id="@+id/frg_update_shop_et_shop_name"
+                    style="@style/et_item_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:layout_toStartOf="@+id/frg_update_shop_iv_remove_shop_name"
+                    android:layout_toEndOf="@+id/fragment_update_info_iv_shop"
+                    android:hint="@string/create_new_wallet_hint_shop_name"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+                <ImageView
+                    android:id="@+id/frg_update_shop_iv_remove_shop_name"
+                    style="@style/iv_clear_item_input"
+                    tools:ignore="ContentDescription" />
+
+            </RelativeLayout>
+
+            <TextView style="@style/tv_b21225_10pt_regular" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/fragment_update_info_view_email"
+            style="@style/LinearLayoutVerticalFullWidth">
+
+            <TextView
+                style="@style/tv_black_bold_12pt"
+                android:text="@string/text_email" />
+
+            <RelativeLayout
+                android:id="@+id/fragment_update_info_v_email"
+                style="@style/background_for_update_info_view"
+                android:background="@drawable/bg_light_gray_solid_no_border_5_radius">
+
+                <ImageView
+                    android:id="@+id/fragment_update_info_iv_email"
+                    style="@style/iv_icon_item_input"
+                    android:src="@drawable/ic_email"
+                    tools:ignore="ContentDescription" />
+
+                <EditText
+                    android:id="@+id/fragment_update_info_et_email"
+                    style="@style/et_item_input"
+                    android:layout_toStartOf="@+id/fragment_update_info_iv_clear_email"
+                    android:layout_toEndOf="@+id/fragment_update_info_iv_email"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:hint="@string/please_enter_your_email"
+                    android:inputType="textEmailAddress"
+                    android:textSize="@dimen/ts_13" />
+
+                <ImageView
+                    android:id="@+id/fragment_update_info_iv_clear_email"
+                    style="@style/iv_clear_item_input"
+                    tools:ignore="ContentDescription" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/fragment_update_info_tv_error_email"
+                style="@style/tv_b21225_10pt_regular"
+                android:text="@string/please_enter_your_email" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_update_info_view_phone"
+            style="@style/LinearLayoutVerticalFullWidth">
+
+            <TextView
+                style="@style/tv_black_bold_12pt"
+                android:text="@string/phone_number" />
+
+            <TextView
+                android:id="@+id/fragment_update_info_tv_header_phone"
+                style="@style/tv_grey_regular_12pt"
+                android:text="@string/chattee_will_send_a_verification_code_to_this_number" />
+
+            <RelativeLayout
+                style="@style/background_for_update_info_view"
+                android:background="@drawable/bg_light_gray_solid_no_border_5_radius">
+
+                <ImageView
+                    android:id="@+id/fragment_update_info_iv_phone_number"
+                    style="@style/iv_icon_item_input"
+                    android:layout_marginEnd="@dimen/fs_15"
+                    android:src="@drawable/ic_phone"
+                    tools:ignore="ContentDescription" />
+
+                <EditText
+                    android:id="@+id/fragment_update_info_et_country_code"
+                    style="@style/TCTextViewBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/fs_15"
+                    android:layout_toEndOf="@+id/fragment_update_info_iv_phone_number"
+                    android:background="@null"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/ts_12" />
+
+                <View
+                    android:id="@+id/fragment_update_info_view_line"
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/fs_25"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/fragment_update_info_et_country_code"
+                    android:background="@color/c_2d2d2d" />
+
+                <EditText
+                    android:id="@+id/fragment_update_info_et_phone_number"
+                    style="@style/et_item_input"
+                    android:layout_toStartOf="@+id/fragment_update_info_iv_clear_phone_number"
+                    android:layout_toEndOf="@+id/fragment_update_info_view_line"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:inputType="phone"
+                    android:textSize="@dimen/ts_13" />
+
+                <ImageView
+                    android:id="@+id/fragment_update_info_iv_clear_phone_number"
+                    style="@style/iv_clear_item_input"
+                    tools:ignore="ContentDescription" />
+
+            </RelativeLayout>
+
+            <TextView style="@style/tv_b21225_10pt_regular" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/fragment_update_info_view_bank"
+            style="@style/LinearLayoutVerticalFullWidth">
+
+            <TextView
+                style="@style/tv_black_bold_12pt"
+                android:text="@string/bank_name" />
+
+            <RelativeLayout
+                android:id="@+id/fragment_update_info_v_info_bank"
+                style="@style/background_for_update_info_view"
+                android:background="@drawable/bg_light_gray_solid_no_border_5_radius">
+
+                <ImageView
+                    android:id="@+id/fragment_update_info_iv_bank"
+                    style="@style/iv_icon_item_input"
+                    android:layout_width="@dimen/fs_19"
+                    android:src="@drawable/ic_bank_gray"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/fragment_update_info_tv_bank"
+                    style="@style/et_item_input"
+                    android:layout_toEndOf="@+id/fragment_update_info_iv_bank"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/ts_13" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/fragment_update_info_tv_error_bank"
+                style="@style/tv_b21225_10pt_regular" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_update_info_v_acc_number"
+            style="@style/LinearLayoutVerticalFullWidth"
+            android:layout_marginBottom="@dimen/fs_10">
+
+            <TextView
+                style="@style/tv_black_bold_12pt"
+                android:text="@string/account_number" />
+
+            <RelativeLayout
+                style="@style/background_for_update_info_view"
+                android:background="@drawable/bg_light_gray_solid_no_border_5_radius">
+
+                <ImageView
+                    android:id="@+id/fragment_update_info_iv_account_number"
+                    style="@style/iv_icon_item_input"
+                    android:layout_width="@dimen/fs_19"
+                    android:src="@drawable/ic_account_number_gray"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/fragment_update_info_tv_account_number"
+                    style="@style/et_item_input"
+                    android:layout_toEndOf="@+id/fragment_update_info_iv_account_number"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:focusable="false"
+                    android:textSize="@dimen/ts_13" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_update_info_view_all_info"
+            style="@style/LinearLayoutHorizontalFullWidth"
+            android:layout_marginTop="@dimen/fs_20"
+
+            tools:ignore="UseCompoundDrawables">
+            <ImageView
+                android:layout_width="@dimen/fs_20"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_notification_gold"
+                android:contentDescription="@string/todo" />
+            <TextView
+               style="@style/TCTextViewGray"
+                android:text="@string/all_info_cannot_chane"
+                android:textSize="@dimen/ts_12"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/fs_5"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_update_info_view_dob"
+            style="@style/LinearLayoutVerticalFullWidth">
+
+            <TextView
+                style="@style/tv_black_bold_12pt"
+                android:text="@string/day_of_birth" />
+
+            <RelativeLayout
+                android:id="@+id/fragment_update_info_v_dob"
+                style="@style/background_for_update_info_view">
+
+                <ImageView
+                    android:id="@+id/fragment_update_info_iv_dob"
+                    style="@style/iv_icon_item_input"
+                    android:src="@drawable/ic_dob"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/fragment_update_info_tv_dob"
+                    style="@style/et_item_input"
+                    android:layout_toStartOf="@+id/fragment_update_info_iv_clear_dob"
+                    android:layout_toEndOf="@+id/fragment_update_info_iv_dob"
+                    android:gravity="center_vertical"
+                    android:hint="@string/text_birthday_format"
+                    tools:ignore="Autofill,TextFields" />
+
+                <ImageView
+                    android:id="@+id/fragment_update_info_iv_clear_dob"
+                    style="@style/iv_clear_item_input"
+                    tools:ignore="ContentDescription" />
+
+            </RelativeLayout>
+
+            <TextView style="@style/tv_b21225_10pt_regular" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_update_info_view_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/tv_black_bold_12pt"
+                android:layout_marginTop="@dimen/fs_20"
+                android:text="@string/create_new_wallet_notes" />
+
+
+            <RelativeLayout
+                style="@style/background_for_update_info_view"
+                android:background="@drawable/bg_light_gray_solid_no_border_5_radius">
+
+                <ImageView
+                    android:id="@+id/fragment_update_info_iv_note"
+                    style="@style/iv_icon_item_input"
+                    android:layout_width="@dimen/fs_20"
+                    android:layout_height="@dimen/fs_22"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_node_grey" />
+
+                <EditText
+                    android:id="@+id/frg_update_shop_et_notes"
+                    style="@style/TCEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toStartOf="@+id/frg_update_shop_iv_remove_notes"
+                    android:layout_toEndOf="@+id/fragment_update_info_iv_note"
+                    android:hint="@string/create_new_wallet_hint_notes"
+                    android:imeOptions="actionDone"
+                    android:maxLines="1" />
+
+                <ImageView
+                    android:id="@+id/frg_update_shop_iv_remove_notes"
+                    style="@style/iv_clear_item_input"
+                    android:visibility="gone"
+                    tools:ignore="ContentDescription" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_update_info_view_gender"
+            style="@style/LinearLayoutVerticalFullWidth">
+
+            <TextView
+                style="@style/tv_black_bold_12pt"
+                android:text="@string/gender" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fs_46"
+                android:layout_marginBottom="@dimen/fs_49"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/fragment_update_info_tv_male"
+                    style="@style/TCTextViewBlack"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_gray_solid_no_border_5_radius"
+                    android:gravity="center"
+                    android:text="@string/male"
+                    android:textSize="@dimen/ts_13" />
+
+                <TextView
+                    android:id="@+id/fragment_update_info_tv_female"
+                    style="@style/TCTextViewBlack"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/fs_30"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_gray_solid_no_border_5_radius"
+                    android:gravity="center"
+                    android:text="@string/female"
+                    android:textSize="@dimen/ts_13" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fs_20"
+            android:orientation="vertical">
+
+            <include layout="@layout/button_update" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

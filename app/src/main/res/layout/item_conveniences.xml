@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingEnd="@dimen/fs_10"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="RtlSymmetry">
+<ImageView
+    android:id="@+id/frag_vendor_detail_iv_conveniences"
+    android:layout_width="@dimen/fs_25"
+    android:layout_height="@dimen/fs_25"
+    android:src="@drawable/ic_convenience_android_default"
+    android:contentDescription="@string/todo" />
+
+    <TextView
+        android:id="@+id/frag_vendor_detail_tv_name_conveniences"
+        style="@style/TCTextViewBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/fs_5"
+        android:gravity="center"
+        android:text="@string/text_text"
+        android:lineSpacingExtra="@dimen/fs_2"
+        android:ellipsize="end"
+        android:layout_marginTop="@dimen/fs_3"
+        android:textSize="@dimen/ts_11"
+        />
+    <!--@string/vendor_review_detail_wifi-->
+</LinearLayout>

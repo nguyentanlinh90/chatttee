@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_bt_left"
+    android:layout_width="0dp"
+    android:layout_height="@dimen/fs_39"
+    android:layout_marginStart="@dimen/fs_24"
+    android:layout_marginEnd="@dimen/fs_12"
+    android:layout_marginBottom="@dimen/fs_5"
+    android:layout_weight="1"
+    android:background="@drawable/bg_white_solid_gold_border_30_radius"
+    style="@style/TCTextViewGold"
+    android:gravity="center"
+    android:text="@string/text_no"
+    android:textAllCaps="true"
+    android:textSize="@dimen/ts_13">
+
+</TextView>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_signup"
+    android:clickable="true"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/frg_welcome_tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="@dimen/fs_10"
+        android:layout_marginEnd="@dimen/fs_16"
+        android:layout_marginTop="@dimen/fs_10"
+        android:background="@drawable/bg_white_solid_gold_border_5_radius"
+        style="@style/TCTextViewGoldBold"
+        android:paddingBottom="@dimen/fs_9"
+        android:paddingEnd="@dimen/fs_20"
+        android:paddingStart="@dimen/fs_20"
+        android:paddingTop="@dimen/fs_9"
+        android:text="@string/text_login"
+        android:textAllCaps="true"
+        android:textSize="@dimen/ts_12" />
+
+    <ImageView
+        android:id="@+id/frg_welcome_iv_chattee_logo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fs_150"
+        android:layout_below="@+id/frg_welcome_tv_login"
+        android:layout_marginTop="@dimen/fs_50"
+        android:src="@drawable/ic_chattee_logo"
+        android:visibility="gone" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/frg_welcome_vp_guideline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/frg_welcome_cip_guideline_indicator"
+        android:layout_below="@+id/frg_welcome_tv_login" />
+
+    <com.bikomobile.circleindicatorpager.CircleIndicatorPager
+        android:id="@+id/frg_welcome_cip_guideline_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/frg_welcome_ll_sign_up_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/fs_5"
+        android:padding="@dimen/fs_2"
+        android:visibility="visible"
+        app:ci_drawable="@drawable/ic_oval_check_box_selected"
+        app:ci_drawable_unselected="@drawable/ic_oval_check_box"
+        app:ci_height="@dimen/fs_7"
+        app:ci_width="@dimen/fs_7" />
+
+    <RelativeLayout
+        android:id="@+id/frg_welcome_ll_sign_up_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="@dimen/fs_20"
+        android:layout_marginStart="@dimen/fs_20"
+        android:layout_marginTop="@dimen/fs_10">
+
+        <include
+            android:id="@+id/view_button_signup_ll_sign_up_with_email"
+            layout="@layout/view_button_signup_signin" />
+
+        <TextView
+            android:id="@+id/frg_welcome_tv_terms_of_use"
+            style="@style/TCTextViewGray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_button_signup_ll_sign_up_with_email"
+            android:layout_marginBottom="@dimen/fs_15"
+            android:layout_marginTop="@dimen/fs_15"
+            android:gravity="center"
+            android:text="@string/singin_terms_of_use"
+            android:textSize="@dimen/ts_10" />
+    </RelativeLayout>
+</RelativeLayout>

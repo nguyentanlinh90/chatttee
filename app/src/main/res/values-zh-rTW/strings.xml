@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE resources [<!ENTITY TeeCoinSymbol "TEC">]>
+<resources>
+    <!-- ****************** TRANSLATE ********************* -->
+    <string name="version_app">版本</string>
+    <string name="text_successful">成功</string>
+    <string name="text_successfully">成功</string>
+    <string name="text_fail">失敗</string>
+    <string name="text_cancel">取消</string>
+    <string name="text_ok">OK</string>
+    <string name="text_read_more">閱讀更多</string>
+    <string name="text_more">更多細節</string>
+    <string name="text_please_enter">請輸入</string>
+    <string name="text_please_enter_less_than_or_equal_100">請輸入大于或等于100的值</string>
+    <string name="text_please_enter_more_than_or_equal_one_percent">請輸入大于或等于1％的值</string>
+    <string name="text_closed">關閉</string>
+    <string name="text_closes">關閉</string>
+    <string name="text_close">關閉</string>
+    <string name="text_open">開店</string>
+    <string name="text_opens">開放</string>
+    <string name="text_close_today">今天休息</string>
+    <string name="text_back_to_home">返回首頁</string>
+    <string name="text_back">返回</string>
+    <string name="text_text">文字</string>
+    <string name="text_content">內容</string>
+    <string name="text_description">說明</string>
+    <string name="text_buy_tee_coin">購買TEC</string>
+    <string name="text_all">顯示所有</string>
+    <string name="text_secret_key">密鑰</string>
+    <string name="text_scan_qr_code">掃描二維碼</string>
+    <string name="text_view_my_qr_code">我的二維碼</string>
+    <string name="text_history">歷史</string>
+    <string name="text_address">錢包地址</string>
+    <string name="text_wallet_address">錢包地址</string>
+    <string name="text_invoice_id">賬單ID</string>
+    <string name="text_fee">費用</string>
+    <string name="text_total_tec">總額 &TeeCoinSymbol;</string>
+    <string name="text_remaining_payment">剩餘</string>
+    <string name="text_transaction_config">交易設定</string>
+    <string name="text_update">更新</string>
+    <string name="text_details">歷史詳情</string>
+    <string name="text_coin_back">返利</string>
+    <string name="text_payment_threshold">付款門檻</string>
+    <string name="text_set_passcode">設置密碼</string>
+    <string name="text_notifications">通知</string>
+    <string name="text_location">位置信息</string>
+    <string name="text_catalogue">目錄</string>
+    <string name="text_restaurant">餐廳</string>
+    <string name="text_reviews_uppercase">評論</string>
+    <string name="text_reviews">評論</string>
+    <string name="text_promotions">促銷</string>
+    <string name="text_opening_hours">營業時間</string>
+    <string name="text_open_24h">24小時營業</string>
+    <string name="text_name">名</string>
+    <string name="text_coupon_what_are_you_searching">您在尋找什麽？</string>
+    <string name="text_review">評論</string>
+    <string name="text_referral">介紹朋友</string>
+    <string name="text_parameter_with_tec">%s &TeeCoinSymbol;</string>
+    <string name="text_referral_code">推薦代碼</string>
+    <string name="text_purchase">購買</string>
+    <string name="text_inactive_users">不活躍用戶</string>
+    <string name="text_yes">是</string>
+    <string name="text_no">否</string>
+    <string name="text_alert">通知</string>
+    <string name="text_message">信息</string>
+    <string name="text_warning">警告</string>
+    <string name="text_reward">獎勵</string>
+    <string name="text_tip">打賞</string>
+    <string name="text_done">完成</string>
+    <string name="text_from">從</string>
+    <string name="text_to">至</string>
+    <string name="text_search">搜索</string>
+    <string name="text_coupon">優惠券</string>
+    <string name="text_my_reviews">我的評論</string>
+    <string name="text_latest">最新優惠券</string>
+    <string name="text_popular">熱門</string>
+    <string name="text_transactions">交易</string>
+    <string name="text_coupons">優惠券</string>
+    <string name="text_sort_by">分類</string>
+    <string name="text_discount">折扣</string>
+    <string name="text_less">省略</string>
+    <string name="text_check_in">簽到</string>
+    <string name="text_check_in_lowercase">簽到</string>
+    <string name="text_add_coupon">追加優惠券</string>
+    <string name="text_coupon_for_free">免費券</string>
+    <string name="text_balance">餘額</string>
+    <string name="text_balance_with_colon">餘額：</string>
+    <string name="text_receive">接收</string>
+    <string name="text_setting">設置</string>
+    <string name="text_send">轉賬</string>
+    <string name="text_copy_address">復制密鑰</string>
+    <string name="text_your_qr_code">您的二維碼</string>
+    <string name="text_50_minimum">%s/最少50個字符</string>
+    <string name="text_50_maximum">%s/最多26個字符</string>
+    <string name="text_payee">收款人</string>
+    <string name="text_email">電郵地址</string>
+    <string name="text_password">密碼</string>
+    <string name="text_sign_up">新註冊</string>
+    <string name="text_login">登入</string>
+    <string name="text_from_google">來自Google</string>
+    <string name="text_how_to_earn_tec">如何賺取TEC</string>
+    <string name="text_other_outlet">%s其他的分店</string>
+    <string name="text_other_outlets">%s其他的分店</string>
+    <string name="text_got_it">收到了！</string>
+    <string name="text_the_system_is_busy_try_agian">系統繁忙。請稍後再試一次。</string>
+    <string name="account_faq">常見問題集</string>
+    <string name="text_recovery_password">恢複密碼</string>
+    <string name="text_new_merchant">新商店</string>
+
+    <string name="language_english">英語</string>
+    <string name="language_chinese_simplified">中文（簡體）</string>
+    <string name="language_chinese_tranditional">中文（繁體）</string>
+    <string name="language_japanese">日語</string>
+    <string name="language_vietnamese">越南語</string>
+
+    <!-- Error message -->
+    <string name="error_no_internet_connection">抱歉，我們無法連接到網絡。 請檢查您的網絡連接。</string>
+    <string name="error_request_time_out">超時</string>
+    <string name="error_text_contains_unsupported_encoding">內容包含未經證實的編碼</string>
+
+    <!-- location service dialog -->
+    <string name="location_service_title">定位服務已被禁用</string>
+    <string name="location_service_check_in_title">允許 &quot;%s&quot; 獲取您的位置信息？</string>
+    <string name="location_service_message">%s獎勵需要您的位置信息以便提供更好的體驗。請您在設置 中打開定位服務。請打開設置>APP>%s>許可>打開定位服務\n</string>
+    <string name="location_service_check_in_message">您需要允許%s獲取您的位置信息才能使用這功能。\n1。打開設置>APP> %s>许可\打開定位服務</string>
+
+
+    <!--main activity-->
+    <string name="main_activity_tab_account">帳戶</string>
+    <string name="main_activity_tab_history">歷史</string>
+
+    <!--Home wallet-->
+    <string name="import_wallet_warning_enter_secret_key">請輸入您的密鑰</string>
+    <string name="import_wallet_secret_key_info">您注冊時將會被提供一個密鑰。它以"S"字母開頭，而有56個字符。</string>
+
+    <!--Screen create wallet-->
+    <string name="create_new_wallet_message_for_phone_number">（ChatTee將會發送驗證碼到這個手機號碼）</string>
+    <string name="create_new_wallet_shop_name">店鋪名稱</string>
+    <string name="create_new_wallet_hint_shop_name">請輸入商店名稱</string>
+    <string name="create_new_wallet_notes">備註</string>
+    <string name="create_new_wallet_hint_notes">請輸入備註</string>
+    <string name="verify_phone_number_message_code_to_phone">我們已發送了6位數的驗證碼到您的手機號碼。(%s) %s****%s</string>
+    <string name="verify_phone_number_message_wrong">代碼不正確。請再試一次。</string>
+    <string name="verify_phone_number_resend_in">%s內重傳</string>
+    <string name="verify_phone_number_resend">重傳</string>
+    <string name="verify_phone_number_title">手機號碼的驗證</string>
+    <string name="verify_phone_number_pls_input_verification_code">請輸入驗證碼</string>
+    <string name="validate_password_not_match">密碼與確認密碼不匹配</string>
+    <string name="validate_enter_shop">請進入店鋪</string>
+    <string name="validate_please_enter_valid_phone_number">請輸入您的手機號碼</string>
+    <string name="validate_please_enter_valid_email">請輸入有效電子郵件</string>
+    <string name="validate_please_enter_valid_password">請輸入有效的密碼。</string>
+    <string name="validate_email_exists">此電郵地址已被使用</string>
+
+    <!--Screen Home Wallet-->
+    <string name="home_wallet_last_transaction">最新交易</string>
+    <string name="my_wallet">我的錢包</string>
+
+    <!--Screen Account User-->
+    <string name="account_user_title">帳戶</string>
+    <string name="account_update_info">更新賬戶</string>
+    <string name="account_change_passcode">更改密碼</string>
+    <string name="account_remove_passcode">刪除密碼</string>
+    <string name="account_refer_a_friend">介紹朋友</string>
+    <string name="account_credit_card">信用卡</string>
+    <string name="account_give_us_feedback">請給予我們反饋</string>
+    <string name="account_market_value">市場價值</string>
+    <string name="account_security">安全保障</string>
+    <string name="account_forgot_password">忘記密碼</string>
+
+    <!--Screen Account Shop-->
+    <string name="account_shop_shop_info_title">更新資料</string>
+    <string name="account_shop_update_shop_logout">登出</string>
+    <string name="account_user_update_info">更新用戶資料</string>
+
+    <!--Screen input payment-->
+    <string name="input_payment_payment">付款</string>
+    <string name="check_payment_title">確認付款</string>
+
+    <!--Screen transaction success-->
+    <string name="transaction_success_you_can_track">您可以使用<![CDATA[<br/><b>%s</b>]]>追蹤</string>
+    <string name="transaction_success_new_payment">新的支出</string>
+    <string name="transaction_success_try_again">請再試一次</string>
+
+    <!---Screen transaction config-->
+    <string name="transaction_config_coin_exchange">代幣兌換</string>
+    <string name="transaction_config_currencies">代幣</string>
+    <string name="transaction_config_coin_back_reward">回贈|獎勵</string>
+    <string name="transaction_config_min_amount">最低金額</string>
+    <string name="transaction_config_max_payment_allowed">可用 &TeeCoinSymbol;支付的最高金額</string>
+
+    <!--Screen history detail-->
+    <string name="history_detail_coin_back_id">返利ID</string>
+    <string name="history_detail_reward_id">獎勵ID</string>
+    <string name="history_detail_payment_id">付款ID</string>
+    <string name="history_detail_coin_back_rate">回贈：支付的%s%%</string>
+    <string name="history_detail_reward_rate">獎勵: 總額的%s%%</string>
+    <string name="history_detail_try_coin_back">嘗試回贈</string>
+
+    <!--Screen Coin back-->
+    <string name="coin_back_coinback">回贈</string>
+    <string name="coin_back_shop_balance">店鋪餘額</string>
+    <string name="coin_back_address">目的地址</string>
+    <string name="coin_back_address1">目的地址</string>
+
+    <!--screen CoinIn Threshold-->
+    <string name="payment_threshold_maximum">最大</string>
+    <string name="payment_threshold_dialog_do_you_want_app_remember_pass">確定保存密碼？</string>
+    <string name="payment_threshold_dialog_will_not_be_asked_when_make_transaction_below">在進行金額%1$s&TeeCoinSymbol;以下的任何交易時，您不會被要求輸入密碼</string>
+
+    <!--Screen set passcode-->
+    <string name="set_passcode_enter_your_passcode">請輸入密碼</string>
+    <string name="set_passcode_verify_passcode">請驗證您的新密碼</string>
+    <string name="you_changed_passcode">密碼已被更改</string>
+    <string name="enter_your_old_passcode">請輸入原本的密碼</string>
+    <string name="enter_your_new_passcode">請輸入一個新的密碼</string>
+    <string name="set_passcode_not_match">您的密碼不正確。請再試一次。</string>
+    <string name="remove_passcode_message">你確定要刪除密碼嗎？</string>
+
+    <!--dialog pass code password-->
+    <string name="dialog_passcode_confirm_text_payment">付款金額超過閾值。請輸入密碼確定</string>
+    <string name="dialog_passcode_confirm_text_coinback">回贈金額超過閾值。請輸入密碼確定</string>
+    <string name="dialog_passcode_confirm_text_reward">獎勵金額超過閾值。請輸入密碼確定</string>
+    <string name="dialog_passcode_confirm_required_password">需要密碼</string>
+
+    <!--New Recovery Password-->
+    <string name="change_password">更改密碼</string>
+
+    <!--content menu left-->
+    <string name="left_menu_cuisine">菜系</string>
+    <string name="left_menu_spa">休閑健身中心</string>
+
+    <!--dialog recovery password-->
+    <string name="please_input_your_recovery_password_to_confirm">請輸入恢複密碼確認</string>
+    <string name="incorrect_recovery_password">恢複密碼不正確</string>
+
+    <!--dialog maximum payment threshold-->
+    <string name="only_two_decimal_is_allowed">只允許兩位小數點</string>
+    <string name="please_enter_maximum">請輸入最大值</string>
+
+    <!--User review-->
+    <string name="user_review_text_receive">您的這個點評將獲得最多%s &TeeCoinSymbol;。</string>
+    <string name="user_review_waiting_rating">請對這家商店進行評級</string>
+    <string name="user_review_waiting_comment">請輸入您的評論</string>
+    <string name="user_review_your_review_min_characters_count">請輸入至少50個字符作為評論內容。</string>
+    <string name="user_review_tee_get">得到</string>
+    <string name="user_review_share_now">現在分享</string>
+
+    <!--popup option select images-->
+    <string name="select_image_from_photo">照片</string>
+    <string name="select_image_from_video">Video</string>
+    <string name="select_image_from_library">圖像庫</string>
+
+    <!--Review main-->
+    <string name="review_highlight">精選</string>
+    <string name="review_places_near_you">在您附近商店</string>
+    <string name="review_top_ten_review">最多點評的前10家店鋪</string>
+    <string name="review_top_new_merchants">新增店鋪</string>
+    <string name="review_change_location">選擇位置</string>
+    <string name="review_view_all">查看全部</string>
+    <string name="review_reviewed_format_time">已評價\n%s</string>
+    <string name="review_like">贊</string>
+    <string name="review_likes">贊</string>
+    <string name="review_promotion_title">促銷一覽</string>
+    <string name="review_promotion_detail_title">促銷詳情</string>
+
+    <!-- WRITE REVIEW -->
+    <string name="write_review_tap_a_star_to_rate">請通過點擊星星評級</string>
+    <string name="write_review_please_enter_review_title">請輸入評價標題</string>
+    <string name="write_review_review_title">評價標題</string>
+    <string name="write_review_your_review">您的評價</string>
+    <string name="write_review_date_visited">訪問日</string>
+    <string name="write_review_type_of_visit">訪問類別</string>
+    <string name="write_review_reach_limit">該評論將不會收到獎勵。\n請問您想繼續嗎？</string>
+
+    <!--location-->
+    <string name="location_text_hint_search">請選擇或輸入的位置信息</string>
+
+    <!--vendor-->
+    <string name="vendor_detail_write_a_review">撰寫評論</string>
+    <string name="vendor_review_detail_payment_by">付款</string>
+    <string name="vendor_review_detail_convenience">便利</string>
+
+    <!--TRANSFER MONEY SCREEN-->
+    <string name="transfer_money_note">備注</string>
+    <string name="transfer_is_greater_than_balance_do_you_want_to_transfer_max_tec">轉賬金額大于余額。你想轉移最多 %1$s TEC嗎？</string>
+
+    <!--REFERRAL EVENT SCREEN-->
+    <string name="events">活動</string>
+    <string name="referral_Info">詳情</string>
+    <string name="referral_code_skip">跳過</string>
+    <string name="referral_history">推薦歷史</string>
+    <string name="referral_event_information">%s -> %s 推薦就能獲得 %s TEC 哦</string>
+    <string name="referral_code_copied">已複制推薦代碼</string>
+    <string name="referral_total_reward">獎勵總額</string>
+    <string name="share_title">分享內容</string>
+
+    <!--BUSINESS INSIGHTS-->
+    <string name="business_insights_upper_case">店鋪活動</string>
+
+    <!-- INACTIVE USERS -->
+    <string name="inactive_user_purchase_history">購買歷史</string>
+
+    <string name="inactive_user_amount_user">總額/用戶： 1 TEC</string>
+    <string name="search_inactive_users_since_last_visit">搜索自上次訪問後的不活躍的用戶</string>
+
+    <!-- NEW PURCHASE -->
+    <string name="new_purchase_upper_case">新的訂購</string>
+    <string name="title">標題</string>
+    <string name="validity">有效期限</string>
+    <string name="new_purchase_content">內容（最多200字符）</string>
+    <string name="new_purchase_title_hint">請輸入廣告標題</string>
+    <string name="new_purchase_content_hint"> 請輸入您要發送給用戶的廣告內容</string>
+
+    <!-- CONFIRM PURCHASE -->
+    <string name="confirm_purchase_upper_case">確定購買</string>
+    <string name="add_new">追加</string>
+    <string name="back_to_list">返回菜單</string>
+
+    <!--General Screen Order Detail, get CoinIn,CoinOut -->
+
+    <string name="general_exchange_coin">兌換：1 TEC = %s %s</string>
+    <string name="general_amount">金額</string>
+    <string name="tee_coin_symbol">TEC</string>
+    <string name="internal_server_error">內部服務器出錯</string>
+    <string name="scan_qr_code_fail_do_you_want_scan_again">二維碼無效。請再試一次</string>
+
+    <string name="pls_input_payment">請選擇付款方式</string>
+    <string name="pls_input_amount">請輸入金額</string>
+
+    <string name="balance_not_enough">餘額不足</string>
+    <string name="this_secret_key_is_not_correct">密鑰不正確</string>
+    <string name="todo">待辦事項</string>
+    <string name="max_5_photos">最多只能選擇五張照片</string>
+    <string name="cant_transfer_coin_to_yourself">無法將代幣轉移到您自己的錢包中</string>
+    <string name="you_cant_create_account_on_emulator">您無法在模擬器上創建錢包</string>
+    <string name="transaction_config_exchange_one_tec_equal_to">1 TEC =</string>
+    <string name="default_zero_tec">0.0 TEC</string>
+    <string name="wallet_address_copied">錢包地址已被複製</string>
+    <string name="trust_tee_coin_success">認證成功</string>
+    <string name="trust_tee_coin_fail">認證失敗</string>
+
+    <!-- REVIEW FILTER -->
+    <string name="review_filter_choose_your_filter">選擇您的過濾器</string>
+    <string name="review_filter_sort_by_date">按日期分類</string>
+    <string name="review_filter_5_stars">5星級</string>
+    <string name="review_filter_4_stars">4星級</string>
+    <string name="review_filter_3_stars">3星級</string>
+    <string name="review_filter_2_stars">2星級</string>
+    <string name="review_filter_1_star">1 star</string>
+    <string name="review_filter_sort_date_newest_first">最新的前</string>
+    <string name="review_filter_sort_date_most_reviews">最多點評</string>
+    <string name="review_filter_sort_date_oldest_first">最舊在前</string>
+    <string name="review_filter_sort_date_lowest_reviews">最少點評</string>
+    <string name="search_this_area">搜索這個區域</string>
+    <string name="review_filter_sort_rate_highest">最高評分</string>
+    <string name="review_filter_sort_rate_lowest">最低評分</string>
+    <string name="review_filter_select_opening_times">選擇營業時間</string>
+    <string name="review_filter_near_me">我的附近</string>
+    <string name="review_filter_distance">距離: %skm</string>
+    <string name="star">%s 星</string>
+    <string name="stars">%s 星</string>
+    <string name="filter_by_distance">按距離分類</string>
+    <string name="filter_5km">5公里</string>
+    <string name="filter_10km">10公里</string>
+    <string name="filter_20km">20公里</string>
+    <string name="cuisines_type_count">菜系[%s]</string>
+    <string name="cuisines_type">菜系</string>
+    <!--<string name="no_data">No Data</string>-->
+    <string name="no_data">沒有數據</string>
+
+    <!--DIALOG TIP-->
+    <string name="dialog_tip_title">“贊“並打賞</string>
+    <string name="dialog_tip_optional">可選</string>
+    <string name="thank_for_your_like">感謝您的”贊“！</string>
+    <string name="you_have_liked_and_sent_a_tip_for_this_review">你已經給了個”贊“，並且打賞過此評論了</string>
+    <string name="do_you_want_to_tip_more">想要打賞更多嗎？</string>
+    <string name="thank_for_your_tip">謝謝您的打賞！</string>
+    <string name="text_next">下一步</string>
+    <string name="tip_successfully">打賞成功</string>
+    <string name="tip_message_yourself">無法打賞代幣給自己</string>
+
+    <!--new string-->
+    <string name="in_progress">處理中</string>
+    <string name="reset_password">重置密碼</string>
+    <string name="reset_password_content_first">如果重設密碼的話，您現在的恢複密碼將被刪除。</string>
+    <string name="reset_password_content_second">重設密碼時，重設密碼的電子郵件將發送到您注冊的電郵地址</string>
+    <string name="reset_password_ask">您確定要重設恢複密碼嗎？</string>
+    <string name="reset_password_sent_new_password">重設密碼的電子郵件已被寄去您的電郵地址。</string>
+
+    <!-- FORGET RECOVERY PASSWORD -->
+    <string name="forget_recovery_password_message">1.點擊<b>“取得代碼”</b>按鈕\n2.檢查您的註冊電郵地址，以獲取<b>驗證碼</b> \n3.輸入驗證碼\n4.輸入新密碼\n</string>
+
+    <!-- FORGET RECOVERY PASSWORD -->
+
+    <!--TIME AGO-->
+    <string name="time_ago_minute">1分鐘前</string>
+    <string name="time_ago_minutes">%d分鍾前</string>
+    <string name="time_ago_hour">1小時前</string>
+    <string name="time_ago_hours">%d小時前</string>
+    <string name="time_ago_day">1天前</string>
+    <string name="time_ago_days">%d天前</string>
+    <string name="time_ago_week">1星期前</string>
+    <string name="time_ago_weeks">%d星期前</string>
+    <string name="time_ago_month">1個月前</string>
+    <string name="time_ago_months">%d個月前</string>
+    <string name="time_ago_year">1年前</string>
+    <string name="time_ago_years">%d年前</string>
+
+    <string name="you_can_not_upload_file_larger_than_50_mb">超過50mb的文件不能被上傳。請您諒解。</string>
+    <string name="you_already_had_one_video_selected">您已經選擇了一個錄像</string>
+    <string name="about_restaurant">關于餐廳</string>
+    <string name="prices">價格</string>
+
+    <!--notification new version-->
+    <string name="notify_new_version_title">可用更新</string>
+    <string name="notify_new_version_content">這個APP可更新。請您更新以獲取更好的經驗。</string>
+
+    <!-- Input Wallet Address-->
+    <string name="please_input_the_address">請輸入地址</string>
+
+    <!-- Send Money -->
+    <string name="send_money_enter_amount">輸入金額</string>
+    <string name="send_money_amount_with_tec">金額 (&TeeCoinSymbol;)</string>
+    <string name="send_money_fee_with_tec">費用 (&TeeCoinSymbol;)</string>
+    <string name="send_money_new_send">新的彙款</string>
+    <string name="send_money_back_to_wallet">返回我的錢包</string>
+    <string name="send_money_input_address">輸入錢包地址</string>
+
+    <!-- Favourite Screen -->
+    <string name="favourite_no_data">您還沒保存任何東西 \n 按一下#的話它就會顯示在這裏</string>
+
+
+    <!--Coupon-->
+    <string name="coupon_my_coupons">我的優惠券</string>
+    <string name="coupon_expired">過期</string>
+    <string name="coupon_redeemed">已被使用過的</string>
+    <string name="starts">開始</string>
+    <string name="ends">結束</string>
+    <string name="buy_1_get_1">買一送一</string>
+    <string name="free_gift">免費贈品</string>
+    <string name="discount_percentage_symbol">折扣</string>
+    <string name="discount_percentage">折扣百分比</string>
+    <string name="discount_cash">現金折扣</string>
+    <string name="terms_and_conditions">使用條款</string>
+    <string name="ending_soon">快結束了</string>
+    <string name="day_remains">剩餘期限</string>
+    <string name="please_select_date_and_time">請選擇優惠券的日期和時間</string>
+    <string name="category">目錄</string>
+    <string name="low_to_high">從低到高</string>
+    <string name="high_to_low">從高到低</string>
+    <string name="coupon_validity">優惠券有效期</string>
+    <string name="coupon_successful">成功!</string>
+    <string name="coupon_successful_thank_you_visiting">感謝您訪問%s</string>
+    <string name="coupon_successful_thank_you_visiting_checkin">感謝您于\n%s簽到！</string>
+    <string name="coupon_unsuccessful">失敗！</string>
+    <string name="coupon_coupon_has_been_used">優惠券已被使用，或已過期。</string>
+    <string name="validation_code">驗證碼</string>
+    <string name="please_ask_the_cashier_to_enter_the_code">請要求收銀員輸入認證碼</string>
+    <string name="did_you_enter_the_correct_code_let_try_again">驗證碼錯誤。\n請再輸入一次。</string>
+    <string name="coupon_use_now">現在使用!</string>
+    <string name="coupon_result_sorry">抱歉！</string>
+    <string name="coupon_result_something_went_wrong">出現了錯誤！ \n您的購買失敗了。</string>
+    <string name="coupon_result_back_to_catalogue">返回”目錄“</string>
+    <string name="coupon_congratulation_you_get">您可以從\n %s獲得 %s</string>
+    <string name="cash_value">現金 (%s)</string>
+    <string name="change_currency">更改貨幣</string>
+
+    <string name="weekdays">平日</string>
+    <string name="monday">星期一</string>
+    <string name="tuesday">星期二</string>
+    <string name="wednesday">星期三</string>
+    <string name="thursday">星期四</string>
+    <string name="friday">星期五</string>
+    <string name="saturday">星期六</string>
+    <string name="sunday">星期日</string>
+    <string name="reset_all">全部重設</string>
+    <string name="coupon_purchases">購買</string>
+    <string name="coupon_scan_qr_code">掃描二維碼</string>
+    <string name="coupon_message_from_vendor">來自商店的信息</string>
+    <string name="coupon_simple_guide_to_redeem">獲得優惠券的方法</string>
+    <string name="cannot_scan_use_validation_code">無法掃描？\n请使用  <u>验证码</u></string>
+    <string name="coupon_more_for_you">更多適合您的優惠券</string>
+    <string name="coupon_check_in_to_get_tec"><u><b>簽到</b></u></string>
+    <string name="coupon_end_at">%s結束！</string>
+    <string name="coupon_validity_two_dot">優惠券有效期限</string>
+    <string name="coupon_get_coupon">獲得優惠券</string>
+    <string name="min">最小</string>
+    <string name="max">最大</string>
+    <string name="price_range_tec">價格範圍 （TEC）</string>
+    <string name="coupon_check_in_success">打卡成功</string>
+    <string name="coupon_check_in_thank_you">謝謝您在 %s簽到。</string>
+    <string name="coupon_check_in_visit">馬上拜訪%s吧！</string>
+    <string name="coupon_check_in_delivered_via_notification">優惠券正在由推送通知發送中</string>
+    <string name="coupons_view">瀏覽優惠券</string>
+    <string name="coupons_message_balance_is_not_enough_to_purchase">您的餘額不足。請充值後再試一次。</string>
+    <string name="coupon_with_serial_number">有序列號的優惠券</string>
+    <string name="redemption_code">兌換碼</string>
+    <string name="coupon_purchase_coupon_with_tec">使用 %s &TeeCoinSymbol;購買？</string>
+    <string name="qr_code_scanning_unsuccessful">不能掃描二維碼</string>
+    <string name="ask_cashier_when_check_out">買單時請詢問收銀員</string>
+    <string name="coupons_for_purchasing">可購買優惠券</string>
+    <string name="menu">菜單</string>
+    <string name="coupon_filter_please_input_max_cash_bigger_min_cash">請輸入最高現金額且大於最低現金額</string>
+    <string name="redeem_validity_time">感謝您來到 %s! 遺憾的是，您的優惠券不在有效期間內，所以不能使用。</string>
+    <string name="coupon_fee_purchase">（費用：%s&TeeCoinSymbol;）</string>
+    <string name="input">輸入</string>
+    <string name="add_notification">追加推送通知</string>
+
+    <string name="coupon_overview">概觀</string>
+    <string name="coupon_fee_by_catalogues">（附加%s&TeeCoinSymbol;的手續費）</string>
+    <string name="coupon_check_in_error_1">店鋪不存在</string>
+    <string name="coupon_check_in_error_2">您已成功卡在此地打卡。謝謝你的到來。</string>
+    <string name="coupon_check_in_error_3">打卡活動已結束。敬請期待下次活動。</string>
+    <string name="coupon_check_in_error_4">打卡活動已終止。請等待下一個活動。</string>
+    <string name="coupon_check_in_error_5">您的錢包並不存在于我們的系統。請登入另一個錢包再試一次。</string>
+    <string name="coupon_check_in_error_6">請到我們的商家賺取TEC及享受體驗.</string>
+    <string name="please_select_time_start_coupon_validity">請選擇優惠券的開始日期</string>
+    <string name="please_select_time_end_coupon_validity">請選擇優惠券的結束日期</string>
+    <string name="please_select_start_date_after_current_date">請選擇今天後的開始日期。</string>
+    <string name="please_select_start_date_before_selecting_end_date">請在選擇結束日期前選擇開始日期。</string>
+    <string name="coupon_title_redeemed_expired">已過期/已被使用過的優惠券</string>
+    <string name="about_shop">關于店鋪</string>
+    <string name="terms_of_use">使用條款</string>
+    <string name="general">一般</string>
+    <string name="coupon_get_this_coupon">獲得優惠券</string>
+    <string name="opening_hours_may_be_different_between_each_branch">每個分店的營業時間可能不同</string>
+    <string name="purchase_again">重新購買</string>
+    <string name="redemption_date">交易日期</string>
+    <string name="please_select_date_in_the_middle_validity_date">請選擇在有效期間內的日期</string>
+    <string name="categories">類別</string>
+    <string name="discover_experiences">探索體驗</string>
+    <string name="recommended_for_you">給您的推薦</string>
+    <string name="top_rated_experiences">評分最高的體驗</string>
+    <string name="recommended_coupons_vouchers">我們推薦的優惠券</string>
+    <string name="what_are_you_looking_for">您在找什麽呢？</string>
+    <string name="google_places_api_connection_failed_with_error_code">谷歌Places API的連接失敗，錯誤代碼：％</string>
+    <string name="my_favourite">我的最愛</string>
+    <string name="favourite">我的最愛</string>
+    <string name="recent">最近所查看的店家</string>
+    <string name="filter_price_range">價格範圍</string>
+    <string name="filter_distance_within">距離內</string>
+    <string name="filter_by_rating">按評價分類</string>
+    <string name="filter_opening_time">營業時間</string>
+    <string name="filter_apply">申請</string>
+
+    <string name="filter_sort_by_highest_rating">評價最高的商店</string>
+    <string name="filter_sort_by_high_to_low_price">價格從高到低</string>
+    <string name="filter_sort_by_low_to_high_price">價格從低到高</string>
+    <string name="filter_sort_by_near_by">附近的商店</string>
+    <string name="filter_open_now">營業中</string>
+    <string name="filter_reset">重置</string>
+    <string name="coupon_back_to_top">回到頂部</string>
+    <string name="count_reviews">(%s 評價)</string>
+    <string name="count_review">(%s 評價)</string>
+    <string name="distance_to_vendor">%s 公裏</string>
+    <string name="discover">探索</string>
+    <string name="text_filter_and_sort">煉油廠</string>
+    <string name="select_the_country_you_want_to_discover">選擇您想探索的地點/地區</string>
+    <string name="good_deals">折扣券</string>
+    <string name="new_arrivals">新券</string>
+    <string name="no_result">沒有任何搜索結果。</string>
+    <string name="undo">取消</string>
+    <string name="deleted">已被刪除</string>
+    <string name="user_review_have_reached_the_limit_of_review_reward">你已到達評價獎勵的次數限制或在24小時以內已收到了這商店的獎勵。</string>
+    <string name="no_suggest">&#160;沒有任何建議</string>
+    <string name="change_language">更換語言</string>
+    <string name="error_country_code">國家代碼似乎是錯誤的。</string>
+    <string name="vendor_photos">照片</string>
+    <string name="please_enter_your_current_password_to_confirm">請輸入當前的密碼確認。</string>
+    <string name="please_enter_your_password">請輸入密碼。</string>
+    <string name="submit">提交</string>
+    <string name="password">密碼</string>
+    <string name="minimum_8_characters_at_least_1_upper_case">（密碼應該有最少8個字符，及至少1個大寫字母）</string>
+    <string name="confirm_password">密碼確認</string>
+    <string name="please_re_enter_your_password">請重新輸入密碼。</string>
+    <string name="vendor_detail_get_deals_now">現在就購買優惠券吧！</string>
+    <string name="copied_to_clipboard">已複制到剪貼板</string>
+    <string name="input_password">請輸入密碼</string>
+    <string name="current_password">當前的密碼</string>
+    <string name="maximum_amount">最高金額</string>
+    <string name="please_enter_the_maximum_amount">請輸入最高金額</string>
+    <string name="name">名</string>
+    <string name="please_enter_your_full_name">請輸入您的姓名。</string>
+    <string name="please_enter_your_name">請輸入您的姓名。</string>
+    <string name="please_enter_your_email">請輸入您的電郵地址</string>
+    <string name="phone_number">手機號碼</string>
+    <string name="please_enter_your_phone_number">請輸入手機號碼。</string>
+    <string name="day_of_birth">出生日期</string>
+    <string name="male">男性</string>
+    <string name="female">女性</string>
+    <string name="gender">性別</string>
+    <string name="are_you_sure_you_want_to_log_out">您確定您想登出ChatTee？</string>
+    <string name="forgot_password"><![CDATA[<b><u>忘了密碼？</u></b>]]></string>
+    <string name="forgot_password_no_xml">忘了密碼？</string>
+    <string name="follow_the_step_to_reset_your_password">按照步驟重置密碼</string>
+    <string name="verification_code">驗證碼</string>
+    <string name="please_enter_the_verification_code_that_have_been_sent_to_your_registered_email">請輸入通過電郵發送的驗證碼。</string>
+    <string name="please_enter_verification_code">請輸入驗證碼。</string>
+    <string name="your_information_have_been_successfully_updated">您的個人資料已被更新</string>
+    <string name="million_club">百萬俱樂部</string>
+    <string name="get_more_tec_rewards_when_you_attach_pictures">上傳照片的話會獲得更多的TEC哦！</string>
+    <string name="singin_terms_of_use">註冊即表示您同意我們的 <![CDATA[<b><u><font color=#2d2d2d>使用條款</font></u></b>]]></string>
+    <string name="welcome_back">歡迎回來！</string>
+    <string name="sign_in_or">或</string>
+    <string name="text_import_existing_wallet">導入現存的錢包</string>
+    <string name="please_enter_your_secret_key_to_import_your_wallet">請輸入密鑰導入錢包</string>
+    <string name="you_can_reset_your_password_if_you_forget_it_your_current_password_will_be_deleted"> 如果您忘了您的密碼，將可以重置。您當前的密碼將被刪除。</string>
+    <string name="are_you_sure_that_you_want_to_reset_the_password">您確定要重置密碼嗎？</string>
+    <string name="password_reset_sent">新密碼已被發送！</string>
+    <string name="an_email_with_password_reset_instructions_has_been_sent_to_your_registered_email_address">帶有您的密碼重置說明的電郵已被寄去您的登錄電郵地址。</string>
+    <string name="log_in_failed">登錄失敗</string>
+    <string name="the_email_address_or_password_entered_is_invalid">您輸入的電郵地址或密碼無效</string>
+    <string name="try_again">請再試一次</string>
+
+    <string name="input_referral_code_welcome_chattee">歡迎來到ChatTee！</string>
+    <string name="input_referral_code_welcome_chattee_">歡迎來到ChatTee！！</string>
+    <string name="input_referral_code_welcome_back">歡迎回來！</string>
+    <string name="input_referral_code_welcome">歡迎！</string>
+    <string name="input_referral_code_referral_code">推薦代碼</string>
+    <string name="input_referral_code_pls_enter">請輸入推薦代碼</string>
+    <string name="input_referral_code_content_not_been_registered">新的經驗將在ChatTee開始。請那些誰收到來自好友的介紹\nChatTee的是進入推薦碼以下\n文本框。僅這一點就引導你也不是我得到的TEC！</string>
+    <string name="input_referral_code_content_has_been_registered">您還可以創建添加了一個帳戶，但獎勵不接收。請理解。</string>
+    <string name="invalid_referral_code">推薦代碼無效</string>
+
+    <string name="input_referral_code_do_you_not_have_referral_code"><![CDATA[<b><font color=#2d2d2d>沒有推薦代碼嗎?</font></b><br/>請按“跳過”]]></string>
+    <string name="input_referral_code_please_input_to_add_tec">輸入推薦代碼，賺取更多的TEC。</string>
+    <string name="invalid_secret_key">密鑰不正確！</string>
+    <string name="the_secret_key_entered_is_invalid">您輸入的密鑰不正確</string>
+    <string name="the_password_entered_is_invalid">您輸入的密碼不正確</string>
+    <string name="login_by_facebook">使用Facebook帳戶登錄</string>
+    <string name="restart_again">請重新再試一次</string>
+    <string name="go_to_home_for_other_signup">返回主頁\t嘗試其他的注冊方法</string>
+    <string name="enable_email_login">啓用電郵地址登錄</string>
+    <string name="to_enable_email_login_you_need_to_login_by_importing_secret_key_one_time">想啟用電郵地址登陸的話，您必須通過導入密鑰登入一次</string>
+    <string name="afterwards_you_won_t_be_prompted_anymore">之後，您就不會再被提示了。請您諒解。</string>
+    <string name="account_exists">這賬戶已存在</string>
+    <string name="account_does_not_exists">帳戶不存在</string>
+    <string name="email_exists">電郵地址已存在</string>
+    <string name="your_password_have_been_successfully_updated">您的密碼成功地被更新了</string>
+    <string name="new_password">新密碼</string>
+    <string name="login_by_email">使用電郵地址登錄</string>
+    <string name="loading">載入中</string>
+    <string name="please_choose_gender">為了讓我們為您提供更好的經驗，請告訴我們您的性別。</string>
+    <string name="phone_number_already_exists">電話號碼已存在！</string>
+    <string name="password_is_max_100_characters">密碼最多可使用100個字符</string>
+    <string name="the_email_is_max_100_characters">電郵地址最多可使用100個字符</string>
+    <string name="gender_has_not_been_selected">還沒選擇性別</string>
+    <string name="thank_you_for_checking_in_at_s">感謝您于“餐廳名字”簽到！</string>
+    <string name="sorry_something_went_wrong">非常抱歉！出錯了。</string>
+    <string name="thank_you_for_visiting_s">感谢您来到   “<![CDATA[<u>%s</u>]]>”</string>
+
+    <string name="treat_yourself_with_tec_you_ve_earned">用賺取的TEC寵一寵自己吧？</string>
+    <string name="coupons_for_you">為您推薦的優惠券</string>
+    <string name="purchase_no_cap">購買</string>
+    <string name="coupons_no_coupons_available">沒有優惠券可購買</string>
+    <string name="coupons_get_more_more_deals_on_chattee">嘗試從ChatTee的目錄中獲得更多的優惠券吧！</string>
+    <string name="coupons_no_worries_start_shopping"><![CDATA[ 不用擔心。開始購買 <b>獨家優惠吧 &amp; <br/> 超值 </b>來自其他商家.]]></string>
+    <string name="coupon_filter_best_selling">暢銷</string>
+    <string name="checkin_rewards">打卡獎勵</string>
+    <string name="see_more_vendor_details">點擊查看更多詳情</string>
+    <string name="write_review_title_header">我們的內容小組會在發布之前先對您的點評進行審核。評價被批准後，您將獲得TEC獎勵。</string>
+    <string name="write_review_result_your_review_in_pending">您的評價正在審核中。</string>
+    <string name="write_review_result_content"><![CDATA[我們的內容小組正在對您的點評進行審核。為了確保該點評符合我們的發布指南，我們的內容小組都會對點評進行審核。 <br/> <br/> 由于我們每天收到的點評數量巨大，我們通常需要2個工作日來審核您的點評。 <br/> <br/> 一旦您的點評獲得批准，您將收到推送通知也會收到您的TEC獎勵。 <br/> <br/> <br/> <br/> 在等待批准時，不然看一看其他商家所提供的 <b><u><font color=#2d2d2d>獨家</font></u></b> &amp; <b><u><font color=#2d2d2d> 優惠券</font></u></b> 吧？]]></string>
+    <string name="account_support">支持</string>
+
+    <string name="daily_give_tec_your_daily_tec">每日TEC活動！</string>
+    <string name="daily_give_tec_get_daily_prize">獲取我們的每日獎品!! 活動將在每天00:00 SGT開始。</string>
+    <string name="daily_give_tec_double_your_change">連續登錄達到第7天時，您獲得大獎的機會將會增加五倍</string>
+    <string name="text_congratulation">恭喜！</string>
+    <string name="daily_give_tec_you_just_won_tec">您剛贏取X TEC。請記得每天登入，在第7天獲得贏取的大獎的機會！</string>
+    <string name="daily_tec_give_away">TEC 每日發放</string>
+    <string name="daily_give_tec_title_1">打開盒子看看驚喜吧！</string>
+    <string name="daily_give_tec_title_2">只需要點擊一下就能賺取TEC哦！</string>
+    <string name="daily_give_tec_day_format">第%s天</string>
+    <string name="copy_address">复制地址</string>
+    <string name="chattee_will_send_a_verification_code_to_this_number">ChatTee將會發送驗證碼到這個手機號碼</string>
+    <string name="coupon_your_current_redemption">您當前的兌換</string>
+    <string name="coupon_more_you_redeem_the_more_tec">您兌換的越多，您賺取的TEC就越多。</string>
+    <string name="coupon_go_to_catalogue">返回到“目錄”</string>
+    <string name="redeem_success_received_tec_message">您收到了%s&TeeCoinSymbol;</string>
+    <string name="redeem_success_received_tec_message_over">從現在開始，只要您兌換優惠券，您將收到%s &TeeCoinSymbol;</string>
+    <string name="the_email_address_has_been_already_taken">此電郵地址已被使用</string>
+    <string name="we_regret_that_currently_this_merchant_is_not_eligible_for_coinback_redemption_event">非常抱歉。這商家現在不符合回贈活動的條件。</string>
+
+    <string name="top_up">充值</string>
+    <string name="approximate_rate_note">*現在的大致彙率。代幣被送到錢包時將會用實際彙率計算。</string>
+    <string name="top_up_note">如果您想充值，請在限制的時間裏把正確金額轉移到以下任何錢包裏。這些錢包所收到的金額將自動轉換為TEC，而您將在成功充值時會收到推送通知。</string>
+    <string name="tec_top_up_amount">TEC的充值金額</string>
+
+    <string name="user_profile_verification">身份認證</string>
+    <string name="scan_the_qr_code_displayed_at_the_merchant_outlet">請掃描在店裏的ChatTee二維碼。</string>
+
+    <string name="featured_experience">有特色的體驗</string>
+    <string name="don_t_have_an_account">沒有賬戶？</string>
+    <string name="register_now">立即注冊</string>
+    <string name="coinback_setting">回贈設定</string>
+    <string name="shop_information">商家信息</string>
+    <string name="payment">付款</string>
+    <string name="profile">個人信息</string>
+    <string name="bank_name">銀行名稱</string>
+    <string name="account_number">帳號</string>
+    <string name="shop_coinback_setting_title">這是顧客在您的商店中支付後將收到的回贈金額，而這金額將直接從您應收的法定貨幣金額中扣除。\n這回贈百分率將被顯示在用戶的APP上，以吸引他們在您的商店裏使用TEC。</string>
+    <string name="coinback_percentage">回贈百分比</string>
+    <string name="all_info_cannot_chane">一切信息提交後將無法修改</string>
+    <string name="register_account">注冊賬戶</string>
+    <string name="tec_insufficient">余額不足</string>
+    <string name="your_balance">餘額</string>
+    <string name="sgd_wallet">SGD錢包</string>
+    <string name="tec_wallet">TEC錢包</string>
+    <string name="tec_equivalent">TEC 等價金額</string>
+    <string name="convert_to_tec">轉換成TEC</string>
+    <string name="with_draw">取出</string>
+    <string name="please_input_wallet_address">請輸入錢包地址</string>
+    <string name="total_bill">總金額</string>
+    <string name="amount_to_be_by_wallet">用錢包支付的金額</string>
+    <string name="amount_paid_by_wallet">用錢包支付的金額</string>
+    <string name="amount_to_be_by_cash">用現金支付的金額</string>
+    <string name="amount_paid_by_cash">用現金支付的金額</string>
+    <string name="enter_amount">輸入金額</string>
+    <string name="converted_to_tec">轉換成TeeCoinSymbol;</string>
+    <string name="payment_review">付款確認</string>
+    <string name="please_enter_amount">請輸入金額</string>
+    <string name="payment_qr_code">二維碼結算</string>
+    <string name="please_ask_the_customer_to_scan">請讓顧客掃描以下二維碼以完成支付</string>
+    <string name="shop_please_click_button_check_payment">如果沒有收到付款完成的通知，請點擊下面的按鈕</string>
+    <string name="get_code">獲取代碼</string>
+    <string name="qr_code">二維碼</string>
+    <string name="customer">客戶名稱</string>
+    <string name="please_collect_the_remaining_cash_payment">請向顧客收取剩余的付現金額。</string>
+    <string name="shop_payment_unsuccess_title">由于發生錯誤，您的交易無法處理，請稍後再試</string>
+    <string name="pay">付款</string>
+    <string name="confirm">確認</string>
+    <string name="user_payment_review_text_note">一旦成功收到回贈，您將會收到推送通知</string>
+    <string name="user_payment_message_enough_tec">您的TEC 余額不足以支付此次交易。請充值或是參與ChatTee平台上的各種活動以賺取更多的TEC。</string>
+    <string name="merchant">店鋪名稱</string>
+    <string name="back_to_my_wallet">返回我的錢包</string>
+    <string name="the_coinback_percentage_has_been_successfully_changed">回贈百分比已成功變更</string>
+    <string name="an_error_has_occurred_and_your_setting_could_not_be_processed_please_try_again_later">由於發生未知錯誤，設定處理失敗。請稍後再試</string>
+    <string name="the_minimum_coinback_percentage_must_be_1_and_less_than_100">回贈百分比需多於1%或者是少於等於100%</string>
+    <string name="receivable">應收款</string>
+    <string name="user_needs_to_pay_a_min_of_s_s_to_cover_the_coinback_fee">用戶需支付至少%s %s 以包括回贈費用</string>
+    <string name="s_insufficient">%s 不足</string>
+    <string name="you_do_not_have_sufficient_s_balance_for_the_coinback_incurred_with_this_transaction">您的餘額不足以獲得此次​​交易的回贈</string>
+    <string name="user_payment_success_text_note_user">請用現金付清余額以完成付款。一旦收到回贈，您將會收到推送通知</string>
+    <string name="renew">更新</string>
+    <string name="renew_in_s">%ss秒內更新</string>
+    <string name="payment_are_you_sure_you_want_to_back">回到前面的屏幕上，通過改變你的紙幣的數量，但QR碼被禁止，難道我想回到現在。</string>
+    <string name="payment_detail">付款細節</string>
+    <string name="coinback_detail">回贈細節</string>
+    <string name="qr_code_is_invalid">二維碼無效</string>
+    <string name="payment_received">已收到付款</string>
+    <string name="please_enable_coinback_if_you_want_to_provide_coinback_to_user_who_is_paying_full_amount_with_cash">如果您想提供回贈給使用現金支付全額的用戶的話，請啓用回贈功能。</string>
+    <string name="the_payment_is_being_processed">付款正在處理中</string>
+    <string name="payment_processing">處理中！</string>
+    <string name="payment_detail_amount">總額</string>
+    <string name="withdraw">提款</string>
+    <string name="new_convert_to_tec">新轉換為的TEC</string>
+    <string name="something_wen_wrong_please_try_again">出現了錯誤. 請再試一次!</string>
+    <string name="converted_amount">被轉換的金額</string>
+    <string name="the_minimun_balance_to_maintained_in_your_s_wallet">您的%1$s錢包裏該保持的最低金額是%2$s %3$s</string>
+    <string name="the_minimun_balance_to_maintained_in_your_s_wallet_we_will_process">您的%1$s錢包裏該保持的最低金額是 %3$s%2$s。\n我們將會在3工作日以內處理提款要求（銀行間的處理時間不包括在內）</string>
+    <string name="withdraw_amount">提款金額</string>
+    <string name="sgd_balance">SGD 餘額</string>
+    <string name="you_will_earn_an_estimated_title_withdraw_screen"><![CDATA[您將會在月底獲得約 <b>%s 的TEC</b>，而通過保持SGD余額，這金額將會自動的轉給您的TEC錢包。]]></string>
+    <string name="incoming_tec_details">TEC的入款信息</string>
+    <string name="tec_conversion_details">TEC的轉換信息</string>
+    <string name="withdraw_details">提款信息</string>
+    <string name="convert_to_tec_review">轉換去TEC評價</string>
+    <string name="withdraw_review">撤回評價</string>
+    <string name="withdraw_amount_must_be_at_least_1_00_sgd">提款金額必須大於1.00 新元</string>
+    <string name="convert_to_tec_success_note">您已成功将%s轉換 %s。</string>
+    <string name="incoming_success_note">您已經成功收到了轉換成%s &TeeCoinSymbol;的金額</string>
+    <string name="note_withdraw_instead">此次交易後，您的余額將會低過最低金額。您要不要改為提取%s %s？</string>
+    <string name="note_convert_instead">此次交易後，您的余額將會低過最低金額。您要不要改為提取%s %s？</string>
+    <string name="your_balance_is_not_sufficient_for_this_transaction">您的余額不足以執行此次交易。</string>
+    <string name="note_top_up"><![CDATA[ 請注意。如果您想充值%sUSD以上的，<u><b>個人資料</b></u>需要被驗證。]]></string>
+    <string name="withdraw_request">提款要求</string>
+    <string name="withdraw_completed">提款完畢</string>
+    <string name="withdraw_request_detail_note">我們已處理您在%2$s所提出的%1$sSGD提款要求。請您查看銀行戶口。</string>
+    <string name="purchase_timer">購買 (%ss)</string>
+    <string name="confirm_timer">確定 (%ss)</string>
+    <string name="coupon_price_will_change_in_s"><![CDATA[優惠券的價格將在<b><font color=#b2973f>%s</font></b>秒改變。]]></string>
+    <string name="purchase_with_s_tec_in_ss"><![CDATA[在<b><font color=#b2973f>%s秒裏</font></b>使用<b><font color=#b2973f>%s</font></b>TEC購買嗎？]]></string>
+    <string name="integrating_with_exchanger">正與交易所合並</string>
+    <string name="your_session_has_expired_please_login_again">您的登入時間已結束，\n請按這裡再次登入。</string>
+    <string name="login_password_info">密碼是您設置的密碼。使用這密碼及您的電郵地址就能登入您的賬戶。這密碼最少需要8個字符，至少需要1個大寫字母。</string>
+
+</resources>

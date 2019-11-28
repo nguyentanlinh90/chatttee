@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/fs_1_5"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:layout_width="@dimen/fs_10"
+        android:layout_height="@dimen/fs_20"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/half_circle_gray_left" />
+
+    <ImageView
+        android:layout_width="@dimen/fs_10"
+        android:layout_height="@dimen/fs_20"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/half_circle_gray_right" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/fs_10"
+        android:layout_marginEnd="@dimen/fs_15"
+        android:layout_marginStart="@dimen/fs_15"
+        android:layout_marginTop="@dimen/fs_10"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|end"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/fs_20"
+                android:layout_height="@dimen/fs_20"
+                android:src="@drawable/ic_watch_gold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fs_8"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/view_coupon_user_tv_start_date_time"
+                    style="@style/TCTextViewBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="14:30    Wedneseday, 2018/10/25"
+                    android:textSize="@dimen/ts_11" />
+
+                <TextView
+                    android:id="@+id/view_coupon_user_tv_end_date_time"
+                    style="@style/TCTextViewBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="14:30   Tues, 2018/10/25"
+                    android:textSize="@dimen/ts_11" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

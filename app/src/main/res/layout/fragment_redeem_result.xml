@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:fillViewport="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <include
+            layout="@layout/view_coupon_result_processing"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/frg_redeem_result_ll_redeem_success"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/frg_redeem_result_iv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/fs_10"
+                android:layout_marginTop="@dimen/fs_15" />
+
+            <TextView
+                android:id="@+id/frg_redeem_result_tv_status"
+                style="@style/TCTextViewGoldBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/fs_10"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/text_three_dot"
+                android:textAllCaps="true"
+                android:textSize="@dimen/ts_18" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fs_5"
+                android:layout_marginBottom="@dimen/fs_5"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/frg_redeem_result_tv_redeem"
+                    style="@style/TCTextViewBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/redemption_code"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/frg_redeem_result_tv_redeem_serial"
+                    style="@style/TCTextViewWhiteBoldMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="@dimen/fs_3"
+                    android:textColor="@color/c_b2973f"
+                    android:visibility="visible"
+                    tools:ignore="RelativeOverlap" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/frg_redeem_result_tv_message_fail"
+                style="@style/TCTextViewBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/fs_8"
+                android:padding="@dimen/fs_5"
+                android:text="@string/text_three_dot"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/frg_redeem_result_tv_thanks"
+                style="@style/TCTextViewBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/fs_8"
+                android:text="" />
+
+            <include
+                android:id="@+id/view_coupon_user_result_view_redeem"
+                layout="@layout/view_redemption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/fs_5"
+                android:layout_marginStart="@dimen/fs_5"
+                android:layout_marginTop="@dimen/fs_20" />
+
+            <LinearLayout
+                android:id="@+id/frg_redeem_result_ll_coupon_for_you"
+                style="@style/view_group_discover"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fs_20"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginEnd="@dimen/fs_5"
+                    android:layout_marginStart="@dimen/fs_5"
+                    android:layout_marginTop="@dimen/fs_20"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/axis_std_bold"
+                    android:gravity="center_horizontal"
+                    android:maxLines="1"
+                    android:text="@string/treat_yourself_with_tec_you_ve_earned"
+                    android:textColor="@color/c_2d2d2d"
+                    android:textSize="@dimen/ts_15_5" />
+
+                <RelativeLayout style="@style/view_header_group_discover">
+
+                    <TextView
+                        style="@style/text_view_title_item_main_user"
+                        android:text="@string/coupons_for_you" />
+
+                    <LinearLayout
+                        android:id="@+id/frg_redeem_result_ll_all"
+                        style="@style/view_button_all_main_user"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <TextView style="@style/text_view_button_all_main_user" />
+
+                        <ImageView
+                            style="@style/image_button_all_main_user"
+                            android:contentDescription="@string/todo" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <com.teecoin.ui.TCRecyclerView
+                    android:id="@+id/frg_redeem_result_rcv"
+                    style="@style/recycler_view_item_main_user"
+                    app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                    tools:listitem="@layout/item_recommend_coupon_horizontal" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fs_66"
+                    android:layout_alignParentBottom="true">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/c_c4c4cc" />
+
+                    <TextView
+                        android:id="@+id/frg_check_in_result_tv_see_more"
+                        style="@style/TCTextViewWhite"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fs_40"
+                        android:layout_centerInParent="true"
+                        android:layout_marginEnd="@dimen/fs_45"
+                        android:layout_marginStart="@dimen/fs_45"
+                        android:background="@drawable/bg_gold_solid_no_border_30_radius"
+                        android:gravity="center"
+                        android:text="@string/coupon_go_to_catalogue"
+                        android:textAllCaps="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

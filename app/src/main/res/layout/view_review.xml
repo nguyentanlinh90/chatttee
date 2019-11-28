@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_review"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/fs_42"
+    android:layout_marginBottom="@dimen/fs_30"
+    android:gravity="center"
+    android:visibility="visible">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toStartOf="@+id/ll_go_review">
+
+        <LinearLayout
+            android:id="@+id/ll_contain"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_black_solid_no_border_5_radius"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/fs_10"
+            android:paddingRight="@dimen/fs_10">
+
+            <ImageView
+                android:layout_width="@dimen/fs_25"
+                android:layout_height="@dimen/fs_25"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_coin_gold_review" />
+
+            <TextView
+                android:id="@+id/view_review_tv_get_tee"
+                style="@style/TCTextViewWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLines="2"
+                android:paddingStart="@dimen/fs_5"
+                android:text="@string/user_review_tee_get"
+                android:textSize="@dimen/ts_12"
+                tools:ignore="RtlSymmetry" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="-5dp"
+            android:layout_toEndOf="@+id/ll_contain"
+            android:background="@drawable/custom_arrow_next_black"
+            android:gravity="center_horizontal">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_go_review"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/bg_white_solid_gray_border_30_radius"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/fs_25"
+        android:paddingRight="@dimen/fs_25">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/fs_33"
+            android:layout_gravity="center"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_review_gray_star" />
+
+        <TextView
+            style="@style/TCTextViewGray"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/fs_33"
+            android:layout_marginStart="@dimen/fs_8"
+            android:layout_marginTop="@dimen/fs_2"
+            android:text="@string/text_review"
+            android:textAllCaps="true"
+            android:textSize="@dimen/ts_16" />
+    </LinearLayout>
+</RelativeLayout>

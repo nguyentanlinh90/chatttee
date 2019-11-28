@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/view_group_discover"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/view_redemption_tv_title_1"
+        style="@style/TCTextViewBlackMedium"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="@dimen/fs_5"
+        android:layout_marginStart="@dimen/fs_5"
+        android:layout_marginTop="@dimen/fs_15"
+        android:gravity="center"
+        android:text="@string/coupon_your_current_redemption" />
+
+    <TextView
+        android:id="@+id/view_redemption_tv_title_2"
+        style="@style/TCTextViewBlackBoldMedium"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/fs_5"
+        android:gravity="center"
+        android:text="@string/coupon_more_you_redeem_the_more_tec" />
+
+    <com.teecoin.ui.TCRecyclerView
+        android:id="@+id/view_redemption_rcv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/fs_15"
+        android:orientation="horizontal"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_coin_back_redeem">
+
+    </com.teecoin.ui.TCRecyclerView>
+
+</LinearLayout>

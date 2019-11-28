@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".feature.reviewSystem.userReviewShop.CaptureVideoActivity">
+
+    <!-- CapturePhoto -->
+    <com.teecoin.feature.reviewSystem.userReviewShop.TCSquareCameraView
+        android:id="@+id/activity_capture_view_scv_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:keepScreenOn="true"
+        app:cameraAudio="on"
+        android:layout_centerInParent="true"
+        app:cameraFacing="back"
+        app:cameraFlash="off"
+        app:cameraGestureLongTap="none"
+        app:cameraGesturePinch="zoom"
+        app:cameraGestureScrollHorizontal="exposureCorrection"
+        app:cameraGestureScrollVertical="none"
+        app:cameraGestureTap="focusWithMarker"
+        app:cameraGrid="off"
+        app:cameraJpegQuality="100"
+        app:cameraPlaySounds="true"
+        app:cameraCropOutput="true"
+        app:cameraPictureSizeAspectRatio="1:1"
+        app:cameraSessionType="video"
+        app:cameraVideoQuality="max720p" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/fs_10">
+
+        <LinearLayout
+            android:id="@+id/activity_capture_view_ll_record_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end">
+
+                <ImageView
+                    android:id="@+id/activity_capture_view_iv_record_video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_record_video" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start">
+
+                <ImageView
+                    android:id="@+id/activity_capture_view_iv_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_cancel" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/activity_capture_view_pb_progress_record_time"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_capture_view_ll_record_video"
+            android:layout_centerHorizontal="true"
+            android:max="100"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/activity_capture_view_tv_progress_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/activity_capture_view_pb_progress_record_time"
+            android:layout_alignTop="@+id/activity_capture_view_pb_progress_record_time"
+            android:layout_toEndOf="@+id/activity_capture_view_pb_progress_record_time" />
+    </RelativeLayout>
+</RelativeLayout>

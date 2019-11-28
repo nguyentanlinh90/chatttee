@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_filter_number_rl_filter"
+    android:layout_width="@dimen/fs_38"
+    android:layout_height="@dimen/fs_38"
+    android:layout_alignParentEnd="true"
+    android:layout_centerVertical="true"
+    android:layout_gravity="center_vertical"
+    android:layout_marginEnd="@dimen/fs_10"
+    android:visibility="visible">
+
+    <ImageView
+        android:layout_width="@dimen/fs_32"
+        android:layout_height="@dimen/fs_32"
+        android:contentDescription="@string/todo"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_filter_search"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/view_filter_number_tv_num_filter"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-5dp"
+        android:layout_marginBottom="-10dp"
+        android:background="@drawable/bg_circle_red"
+        style="@style/TCTextViewWhite"
+        android:gravity="center"
+        android:paddingBottom="@dimen/fs_0"
+        android:text="@string/text_zero"
+        android:textSize="@dimen/ts_9"
+        android:visibility="visible" />
+</RelativeLayout>

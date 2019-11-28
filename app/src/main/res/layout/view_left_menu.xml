@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fs_160">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fs_120"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_cover_chattee" />
+
+            <ImageView
+                android:id="@+id/left_menu_iv_avatar_border"
+                android:layout_width="@dimen/fs_80"
+                android:layout_height="@dimen/fs_80"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/todo" />
+
+            <ImageView
+                android:id="@+id/left_menu_iv_avatar"
+                android:layout_width="@dimen/fs_80"
+                android:layout_height="@dimen/fs_80"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/todo"
+                android:padding="@dimen/fs_3"
+                android:src="@drawable/ic_shop_icon" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/left_menu_tv_name"
+            style="@style/TCTextViewBlackBoldMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="@dimen/fs_10"
+            android:text="@string/text_name"
+            android:textAllCaps="true" />
+
+        <RelativeLayout
+            android:id="@+id/left_menu_rl_notification"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fs_42"
+            android:paddingStart="@dimen/fs_10"
+            android:paddingEnd="@dimen/fs_15">
+
+            <com.teecoin.ui.TCTextView
+                android:id="@+id/iv_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/fs_5"
+                android:layout_marginEnd="@dimen/fs_5"
+                android:gravity="center"
+                android:paddingBottom="@dimen/fs_3"
+                android:textSize="@dimen/ts_20"
+                app:font_id="@string/font_awesome_regular"
+                app:icon_id="@string/fa_menu_left_ic_notification" />
+
+            <TextView
+                style="@style/TCTextViewBlackMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/fs_10"
+                android:layout_toEndOf="@+id/iv_notification"
+                android:text="@string/text_notifications" />
+
+            <TextView
+                android:id="@+id/left_menu_tv_number_notofication"
+                style="@style/TCTextViewBlackBoldMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                tools:ignore="RelativeOverlap" />
+        </RelativeLayout>
+
+        <include layout="@layout/view_line" />
+
+        <RelativeLayout
+            android:id="@+id/left_menu_rl_location"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fs_42"
+            android:paddingStart="@dimen/fs_10"
+            android:paddingEnd="@dimen/fs_15">
+
+            <com.teecoin.ui.TCTextView
+                android:id="@+id/iv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/fs_5"
+                android:layout_marginEnd="@dimen/fs_5"
+                android:gravity="center"
+                android:paddingBottom="@dimen/fs_3"
+                android:textSize="@dimen/fs_20"
+                app:font_id="@string/font_awesome_solid"
+                app:icon_id="@string/fa_menu_left_ic_location"
+                tools:ignore="SpUsage" />
+
+            <TextView
+                style="@style/TCTextViewBlackMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/fs_10"
+                android:layout_toEndOf="@+id/iv_location"
+                android:text="@string/text_location" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_next_gray_24pt" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/view_line" />
+
+        <RelativeLayout
+            android:id="@+id/left_menu_rl_category"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fs_42"
+            android:paddingStart="@dimen/fs_10"
+            android:paddingEnd="@dimen/fs_15">
+
+            <ImageView
+                android:id="@+id/iv_catalog"
+                android:layout_width="@dimen/fs_25"
+                android:layout_height="@dimen/fs_17"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_left_menu_catalogue" />
+
+            <TextView
+                style="@style/TCTextViewBlackMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/fs_10"
+                android:layout_toEndOf="@+id/iv_catalog"
+                android:text="@string/text_catalogue" />
+
+            <ImageView
+                android:id="@+id/left_menu_iv_catalogue_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_next_gray_24pt" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/left_menu_group_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/c_f2f2f2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/left_menu_tv_restaurant"
+                style="@style/TCTextViewBlackMedium"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fs_42"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/fs_65"
+                android:text="@string/text_restaurant"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/left_menu_tv_cuisine"
+                style="@style/TCTextViewBlackMedium"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fs_42"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/fs_65"
+                android:text="@string/left_menu_cuisine"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/left_menu_tv_spa"
+                style="@style/TCTextViewBlackMedium"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fs_42"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/fs_65"
+                android:text="@string/left_menu_spa"
+                android:visibility="gone"
+                tools:ignore="RtlSymmetry" />
+
+        </LinearLayout>
+
+        <include layout="@layout/view_line" />
+
+        <RelativeLayout
+            android:id="@+id/left_menu_rl_reviews"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fs_42"
+            android:paddingStart="@dimen/fs_10"
+            android:paddingEnd="@dimen/fs_15">
+
+            <com.teecoin.ui.TCTextView
+                android:id="@+id/iv_reviews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/fs_5"
+                android:layout_marginEnd="@dimen/fs_5"
+                android:gravity="center"
+                android:textSize="@dimen/fs_20"
+                app:font_id="@string/font_awesome_solid"
+                app:icon_id="@string/fa_menu_left_ic_list_review"
+                tools:ignore="SpUsage" />
+
+
+            <TextView
+                style="@style/TCTextViewBlackMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/fs_10"
+                android:layout_toEndOf="@+id/iv_reviews"
+                android:text="@string/text_reviews" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_next_gray_24pt" />
+        </RelativeLayout>
+
+        <include layout="@layout/view_line" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

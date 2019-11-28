@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_coupon_user_result_success_ll_view_success"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/fs_15"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/fs_20">
+
+        <include layout="@layout/view_coupon_image_result_success" />
+
+        <TextView
+            android:id="@+id/view_coupon_user_result_success_tv_success"
+            style="@style/TCTextViewBlackBoldLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fs_15"
+            android:gravity="center"
+            android:text="@string/coupon_successful"
+            android:textSize="@dimen/ts_20" />
+
+        <TextView
+            android:id="@+id/view_coupon_user_result_success_tv_you_got"
+            style="@style/TCTextViewBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fs_15"
+            android:gravity="center"
+            android:text="@string/coupon_with_serial_number"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/view_coupon_user_result_success_tv_serial"
+            style="@style/TCTextViewWhiteBoldMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="@dimen/fs_5"
+            android:textColor="@color/c_b2973f"
+            android:visibility="gone"
+            tools:ignore="RelativeOverlap" />
+
+        <TextView
+            android:id="@+id/view_coupon_user_result_success_tv_success_thank"
+            style="@style/TCTextViewBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fs_5"
+            android:gravity="center"
+            android:text="@string/coupon_successful_thank_you_visiting" />
+
+
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_gravity="bottom"-->
+    <!--android:layout_marginEnd="@dimen/margin_50"-->
+    <!--android:layout_marginStart="@dimen/margin_50"-->
+    <!--android:gravity="bottom"-->
+    <!--android:orientation="vertical"-->
+    <!--android:paddingBottom="@dimen/fs_20">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/view_coupon_user_result_success_tv_purchase_coupon"-->
+    <!--style="@style/TCTextViewWhiteBold"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/fs_45"-->
+    <!--android:background="@drawable/bg_radius_100pt_b2973f"-->
+    <!--android:gravity="center"-->
+    <!--android:text="@string/coupon_successful_purchase_coupon" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/view_coupon_user_result_success_tv_back_to_my_coupon"-->
+    <!--style="@style/TCTextViewGrayBold"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/fs_45"-->
+    <!--android:layout_marginTop="@dimen/fs_20"-->
+    <!--android:background="@drawable/bg_button_border_gray"-->
+    <!--android:gravity="center"-->
+    <!--android:text="@string/coupon_successful_back_to_my_coupon" />-->
+    <!--</LinearLayout>-->
+</LinearLayout>

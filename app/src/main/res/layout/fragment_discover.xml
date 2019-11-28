@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.teecoin.ui.TCSwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frag_discover_refresh_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/view_search_all_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fs_5">
+
+            <LinearLayout
+                android:id="@+id/frag_discover_ll_check_in"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/fs_47"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/fs_5"
+                android:layout_marginTop="@dimen/fs_7"
+                android:layout_marginEnd="@dimen/fs_3"
+                android:layout_marginBottom="@dimen/fs_7"
+                android:background="@drawable/my_shadow_radius_4pt"
+                android:elevation="@dimen/fs_2"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/fs_4">
+
+                <ImageView
+                    android:layout_width="@dimen/fs_18"
+                    android:layout_height="@dimen/fs_20"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/ic_check_in_quick_access" />
+
+                <TextView
+                    style="@style/TCTextViewGold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/fs_4"
+                    android:layout_marginEnd="@dimen/fs_5"
+                    android:text="@string/text_check_in"
+                    android:textSize="@dimen/ts_9" />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fs_47"
+                android:layout_margin="@dimen/fs_7"
+                android:layout_toStartOf="@+id/frag_discover_rl_location"
+                android:layout_toEndOf="@+id/frag_discover_ll_check_in"
+                android:background="@drawable/my_shadow_radius_4pt"
+                android:elevation="@dimen/fs_2">
+
+                <ImageView
+                    android:id="@+id/frag_discover_iv_bt_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/fs_15"
+                    android:layout_marginEnd="@dimen/fs_15"
+                    android:background="@drawable/ic_search_gold"
+                    android:contentDescription="@string/todo" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/fs_10"
+                    android:layout_toEndOf="@+id/frag_discover_iv_bt_search"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:focusable="false"
+                    android:fontFamily="@font/axis_std_regular"
+                    android:hint="@string/what_are_you_looking_for"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true"
+                    android:textColor="@color/c_b2973f"
+                    android:textColorHint="@color/c_838383"
+                    android:textSize="@dimen/ts_12"
+                    tools:ignore="Autofill" />
+
+
+                <View
+                    android:id="@+id/frag_discover_v_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/frag_discover_rl_location"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/fs_47"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/fs_3"
+                android:layout_marginTop="@dimen/fs_7"
+                android:layout_marginEnd="@dimen/fs_5"
+                android:layout_marginBottom="@dimen/fs_7"
+                android:background="@drawable/my_shadow_radius_4pt"
+                android:elevation="@dimen/fs_2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/fs_4">
+
+                <TextView
+                    android:id="@+id/frag_discover_tv_country"
+                    style="@style/TCTextViewGrayBoldMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/fs_4"
+                    android:layout_marginEnd="@dimen/fs_5"
+                    android:text="@string/text_three_dot" />
+
+                <ImageView
+                    android:layout_width="@dimen/fs_18"
+                    android:layout_height="@dimen/fs_20"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/ic_location_gold_border" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/frag_discover_nested_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/view_search_all_container"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/fs_88">
+
+                <RelativeLayout
+                    android:id="@+id/frag_discover_ll_balance"
+                    style="@style/view_group_discover"
+                    android:layout_marginBottom="@dimen/fs_0"
+                    android:paddingTop="@dimen/fs_17"
+                    android:paddingEnd="@dimen/fs_17"
+                    android:paddingBottom="@dimen/fs_17"
+                    tools:ignore="RtlSymmetry">
+
+                    <ImageView
+                        android:id="@+id/frag_discover_iv_wallet"
+                        android:layout_width="@dimen/fs_25"
+                        android:layout_height="@dimen/fs_20"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/todo"
+                        android:src="@drawable/ic_tab_wallet_selector" />
+
+                    <TextView
+                        android:id="@+id/frag_discover_tv_balance_"
+                        style="@style/TCTextViewBlack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/fs_8"
+                        android:layout_toEndOf="@+id/frag_discover_iv_wallet"
+                        android:text="@string/text_balance_with_colon"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/ts_14"
+                        tools:ignore="RelativeOverlap" />
+
+                    <TextView
+                        android:id="@+id/frag_discover_tv_balance"
+                        style="@style/TCTextViewBlackBold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/fs_2"
+                        android:layout_marginEnd="@dimen/fs_5"
+                        android:layout_toStartOf="@+id/frag_discover_view_more_wallet"
+                        android:layout_toEndOf="@+id/frag_discover_tv_balance_"
+                        android:text="@string/text_zero"
+                        android:textAllCaps="true" />
+
+                    <include
+                        android:id="@+id/frag_discover_view_more_wallet"
+                        layout="@layout/view_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/frag_discover_iv_earn_tec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-2dp"
+                    android:layout_marginBottom="-2dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/ic_banner_how_to_earn_tec"
+                    android:visibility="gone" />
+
+                <!--<ImageView-->
+                <!--android:id="@+id/frag_discover_iv_agoda_banner"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="-2dp"-->
+                <!--android:layout_marginTop="-2dp"-->
+                <!--android:contentDescription="@string/todo"-->
+                <!--android:src="@drawable/ic_banner_agoda" />-->
+                <RelativeLayout
+                    android:id="@+id/frag_discover_v_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fs_58"
+                    android:layout_marginBottom="@dimen/fs_15"
+                    android:layout_marginEnd="@dimen/fs_7"
+                    android:layout_marginStart="@dimen/fs_7"
+                    android:layout_marginTop="@dimen/fs_15"
+                    android:minHeight="@dimen/fs_58"
+                    android:visibility="visible">
+
+                    <com.teecoin.ui.TCAutoScrollViewPager
+                        android:id="@+id/frag_discover_view_pager_banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <com.bikomobile.circleindicatorpager.CircleIndicatorPager
+                        android:id="@+id/frag_discover_indicator_pager"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:paddingBottom="@dimen/fs_3"
+                        app:ci_drawable="@drawable/ic_circleindicator_pager_selected"
+                        app:ci_drawable_unselected="@drawable/ic_circleindicator_pager_unselected"
+                        app:ci_height="@dimen/fs_6"
+                        app:ci_width="@dimen/fs_6">
+
+                    </com.bikomobile.circleindicatorpager.CircleIndicatorPager>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/fragment_coupon_home_v_discover"
+                    style="@style/view_group_discover"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fs_0"
+                    android:orientation="vertical">
+
+                    <RelativeLayout style="@style/view_header_group_discover">
+
+                        <TextView
+                            style="@style/text_view_title_item_main_user"
+                            android:text="@string/discover_experiences" />
+
+                        <include
+                            android:id="@+id/frag_discover_view_all_discover"
+                            layout="@layout/view_all" />
+
+                    </RelativeLayout>
+
+                    <include layout="@layout/view_list_catalogue_image_horizontal" />
+
+                </LinearLayout>
+
+                <!--end 1-->
+
+                <LinearLayout
+                    android:id="@+id/frag_discover_v_feature_experience"
+                    style="@style/view_group_discover"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout style="@style/view_header_group_discover">
+
+                        <TextView
+                            style="@style/text_view_title_item_main_user"
+                            android:text="@string/featured_experience" />
+
+                    </RelativeLayout>
+                    <com.teecoin.ui.TCRecyclerView
+                        android:id="@+id/frag_discover_rcv_feature_experience"
+                        style="@style/recycler_view_item_main_user"
+                        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                        tools:listitem="@layout/item_feature_experience" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/frag_discover_v_checkin"
+                    style="@style/view_group_discover"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout style="@style/view_header_group_discover">
+
+                        <TextView
+                            style="@style/text_view_title_item_main_user"
+                            android:text="@string/checkin_rewards" />
+
+                        <LinearLayout
+                            android:id="@+id/frag_discover_view_all_checkin"
+                            style="@style/view_button_all_main_user"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <TextView style="@style/text_view_button_all_main_user" />
+
+                            <TextView
+                                android:id="@+id/frag_discover_tv_count_all_check_in"
+                                style="@style/text_view_button_all_main_user"
+                                android:text="@string/count_all_discover" />
+
+                            <ImageView
+                                style="@style/image_button_all_main_user"
+                                android:contentDescription="@string/todo" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <com.teecoin.ui.TCRecyclerView
+                        android:id="@+id/frag_discover_rcv_checkin"
+                        style="@style/recycler_view_item_main_user"
+                        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                        tools:listitem="@layout/item_vendor" />
+
+                </LinearLayout>
+                <!--2-->
+
+                <LinearLayout
+                    android:id="@+id/frag_discover_v_recommend_for_you"
+                    style="@style/view_group_discover"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout style="@style/view_header_group_discover">
+
+                        <TextView
+                            style="@style/text_view_title_item_main_user"
+                            android:text="@string/recommended_for_you" />
+
+                        <LinearLayout
+                            android:id="@+id/frag_discover_view_all_recommend_for_you"
+                            style="@style/view_button_all_main_user"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <TextView style="@style/text_view_button_all_main_user" />
+
+                            <TextView
+                                android:id="@+id/frag_discover_tv_count_all_recommended_for_you"
+                                style="@style/text_view_button_all_main_user"
+                                android:text="@string/count_all_discover" />
+
+                            <ImageView
+                                style="@style/image_button_all_main_user"
+                                android:contentDescription="@string/todo" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <com.teecoin.ui.TCRecyclerView
+                        android:id="@+id/frag_discover_rcv_recommend_for_you"
+                        style="@style/recycler_view_item_main_user"
+                        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                        tools:listitem="@layout/item_vendor" />
+
+                </LinearLayout>
+
+                <!--end 2-->
+
+                <!--3-->
+
+                <LinearLayout
+                    android:id="@+id/frag_discover_v_recommend_coupons"
+                    style="@style/view_group_discover"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout style="@style/view_header_group_discover">
+
+                        <TextView
+                            style="@style/text_view_title_item_main_user"
+                            android:text="@string/recommended_coupons_vouchers" />
+
+                        <LinearLayout
+                            android:id="@+id/frag_discover_v_all_recommend_coupons"
+                            style="@style/view_button_all_main_user"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <TextView style="@style/text_view_button_all_main_user" />
+
+                            <TextView
+                                android:id="@+id/frag_discover_tv_count_all_recommended_coupon"
+                                style="@style/text_view_button_all_main_user"
+                                android:text="@string/count_all_discover" />
+
+                            <ImageView
+                                style="@style/image_button_all_main_user"
+                                android:contentDescription="@string/todo" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <com.teecoin.ui.TCRecyclerView
+                        android:id="@+id/frag_discover_rcv_recommend_coupons"
+                        style="@style/recycler_view_item_main_user"
+                        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                        tools:listitem="@layout/item_recommend_coupon_horizontal" />
+
+                </LinearLayout>
+
+                <!--end 3-->
+
+                <!--4-->
+
+                <LinearLayout
+                    android:id="@+id/frag_discover_home_v_top_rate"
+                    style="@style/view_group_discover"
+                    android:orientation="vertical">
+
+                    <RelativeLayout style="@style/view_header_group_discover">
+
+                        <TextView
+                            style="@style/text_view_title_item_main_user"
+                            android:text="@string/top_rated_experiences" />
+
+                        <LinearLayout
+                            android:id="@+id/frag_discover_v_all_rate"
+                            style="@style/view_button_all_main_user"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <TextView style="@style/text_view_button_all_main_user" />
+
+                            <TextView
+                                android:id="@+id/frag_discover_tv_count_all_top_rate"
+                                style="@style/text_view_button_all_main_user"
+                                android:text="@string/count_all_discover" />
+
+                            <ImageView
+                                style="@style/image_button_all_main_user"
+                                android:contentDescription="@string/todo" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <com.teecoin.ui.TCRecyclerView
+                        android:id="@+id/fragment_coupon_home_rcv_top_rate"
+                        style="@style/recycler_view_item_main_user"
+                        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                        tools:listitem="@layout/item_vendor" />
+
+                </LinearLayout>
+
+                <!--end 4-->
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+        <include layout="@layout/view_back_to_top" />
+
+        <include
+            android:id="@+id/frag_discover_v_daily_tec_give_away"
+            layout="@layout/view_icon_daily_tec_give_away"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/fs_25"
+            android:layout_marginEnd="@dimen/fs_20"
+            />
+
+    </RelativeLayout>
+</com.teecoin.ui.TCSwipeRefreshLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_transparent_solid_gray_border_5_radius"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/fs_5">
+
+    <com.teecoin.ui.TCTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/fs_5"
+        android:layout_marginEnd="@dimen/fs_5"
+        app:font_id="@string/font_awesome_regular"
+        app:icon_id="@string/fa_ic_calendar_alt" />
+
+    <TextView
+        android:id="@+id/view_filter_calendar_item_tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_text" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_arrow_drop_down_black_24dp"
+        tools:ignore="ContentDescription" />
+
+</LinearLayout>

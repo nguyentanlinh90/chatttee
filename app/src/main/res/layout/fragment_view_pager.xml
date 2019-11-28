@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/frg_view_pager_rl_add_for_shop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fs_56">
+
+        <ImageView
+            android:layout_width="@dimen/fs_35"
+            android:layout_height="@dimen/fs_35"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/fs_15"
+            android:background="@drawable/ic_logo_chattee"
+            android:contentDescription="@string/todo"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/TCTextViewHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/text_coupons"
+            android:textAllCaps="true"
+            tools:ignore="RelativeOverlap" />
+
+        <ImageView
+            android:layout_width="@dimen/fs_35"
+            android:layout_height="@dimen/fs_35"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/fs_15"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_add_gold" />
+
+        <include
+            layout="@layout/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+        </include>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/frg_view_pager_rl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fs_56"
+        android:background="@android:color/white"
+        android:visibility="visible">
+        <LinearLayout
+            android:id="@+id/view_coupon_user_toolbar_coupon_ll_redeem_expired"
+            android:layout_width="@dimen/fs_56"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/fs_29"
+                android:layout_height="@dimen/fs_29"
+                android:contentDescription="@string/text_to"
+                android:src="@drawable/ic_redeem_expired_coupon_toolbar" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/view_coupon_user_toolbar_coupon_tv_title_header"
+            style="@style/TCTextViewHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/text_coupons"
+            android:textAllCaps="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.77dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/c_a6a8b0" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/fs_5"
+            android:layout_marginEnd="@dimen/fs_8"
+            android:layout_toEndOf="@+id/view_coupon_user_toolbar_coupon_tv_title_header"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            tools:ignore="RtlHardcoded">
+
+            <TextView
+                style="@style/TCTextViewGoldBold"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/text_zero"
+                android:textSize="@dimen/ts_12" />
+
+            <TextView
+                style="@style/TCTextViewBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/fs_15"
+                android:text="@string/tee_coin_symbol"
+                android:textSize="@dimen/ts_11" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view_coupon_user_toolbar_coupon_ll_search"
+            android:layout_width="@dimen/fs_48"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/fs_25"
+                android:layout_height="@dimen/fs_25"
+                android:padding="@dimen/fs_2"
+                android:contentDescription="@string/text_to"
+                android:src="@drawable/ic_search_gold" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fs_50"
+        android:background="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/view_tab" />
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/frg_view_pager_tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fs_56"
+                app:tabGravity="fill"
+                app:tabIndicatorColor="@color/c_b2973f"
+                app:tabIndicatorHeight="3dp"
+                app:tabMode="fixed" />
+
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <com.teecoin.ui.TCViewPager
+        android:id="@+id/frg_view_pager_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

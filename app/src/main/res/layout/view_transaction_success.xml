@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <ImageView
+        android:layout_width="@dimen/fs_100"
+        android:layout_height="@dimen/fs_100"
+        android:layout_gravity="center"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/ic_check_success" />
+
+    <TextView
+        android:id="@+id/frg_transaction_tv_success"
+        style="@style/TCTextViewGoldBoldLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fs_20"
+        android:gravity="center"
+        android:text="@string/coupon_successful" />
+
+</LinearLayout>

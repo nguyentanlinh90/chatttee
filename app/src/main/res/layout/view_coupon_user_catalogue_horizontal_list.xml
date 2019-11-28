@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.teecoin.ui.TCRecyclerView
+        android:id="@+id/view_coupon_user_catalogue_horizontal_list_rcv_catalogue_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fs_2"
+        android:nestedScrollingEnabled="false"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        tools:listitem="@layout/view_item_coupon_user_catalogue_horizontal_list" />
+
+    <include layout="@layout/view_no_data" />
+
+</RelativeLayout>

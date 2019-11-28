@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/fs_5"
+    android:background="@android:color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_popup_give_tec"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fs_40">
+
+                <ImageView
+                    android:layout_width="@dimen/fs_115"
+                    android:layout_height="@dimen/fs_115"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/ic_give_tec" />
+
+                <TextView
+                    android:id="@+id/tv_tec"
+                    style="@style/TCTextViewWhiteBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/text_give_tec"
+                    android:textSize="@dimen/ts_30" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/TCTextViewBlackBoldMedium"
+                android:layout_marginTop="@dimen/fs_15"
+                android:gravity="center"
+                android:text="@string/text_congratulation" />
+            <TextView
+                android:id="@+id/tv_congratulation"
+                style="@style/TCTextViewBlack"
+                android:layout_marginEnd="@dimen/fs_15"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/fs_15"
+                android:layout_marginTop="@dimen/fs_13"
+                android:lineSpacingExtra="@dimen/fs_4"
+                android:text="@string/daily_give_tec_you_just_won_tec"
+                android:textSize="@dimen/ts_12" />
+
+            <TextView
+                android:id="@+id/tv_got_it"
+                style="@style/TCTextViewWhite"
+                android:layout_width="@dimen/fs_150"
+                android:layout_height="@dimen/fs_39"
+                android:layout_marginTop="@dimen/fs_20"
+                android:layout_marginBottom="@dimen/ts_20"
+                android:background="@drawable/bg_gold_solid_no_border_30_radius"
+                android:gravity="center"
+                android:paddingBottom="@dimen/fs_0"
+                android:text="@string/text_got_it"
+                android:textAllCaps="true" />
+        </LinearLayout>
+</android.support.v7.widget.CardView>

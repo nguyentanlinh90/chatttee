@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_solid_no_border_10_radius"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/fs_15">
+
+    <TextView
+        style="@style/TCTextViewGoldBold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/fs_20"
+        android:layout_marginTop="@dimen/fs_20"
+        android:gravity="center"
+        android:text="@string/dialog_tip_title" />
+
+    <include layout="@layout/view_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/fs_50"
+        android:paddingStart="@dimen/fs_50">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fs_20"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_tip_thank_you"
+                android:contentDescription="@string/todo" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/TCTextViewBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/thank_for_your_like" />
+
+        <TextView
+            android:id="@+id/view_thank_for_like_tv_close"
+            style="@style/TCTextViewWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/fs_30"
+            android:background="@drawable/bg_gold_solid_no_border_30_radius"
+            android:paddingBottom="@dimen/fs_8"
+            android:paddingLeft="@dimen/fs_50"
+            android:paddingRight="@dimen/fs_50"
+            android:paddingTop="@dimen/fs_8"
+            android:text="@string/text_ok" />
+    </LinearLayout>
+
+
+</LinearLayout>

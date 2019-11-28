@@ -1,0 +1,834 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE resources [<!ENTITY TeeCoinSymbol "TEC">]>
+<resources>
+    <string name="font_awesome_regular" translatable="false">Font_Awesome_5_Free_Regular_400.otf</string>
+    <string name="font_awesome_solid" translatable="false">Font Awesome 5 Free-Solid-900.otf</string>
+    <!--google services-->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCesIoc0UOvtKa4S4QrdtOEBFMm6dfInYE</string>
+    <string name="Teecoin_notification_channel_id" translatable="false">TeeCoin_chanel_id</string>
+    <string name="facebook_app_id" translatable="false">2327772820608221</string>
+    <string name="google_client_id" translatable="false">1019747353212-g2lcjuecb99j8qg05a8bb60cdm6nt5q3.apps.googleusercontent.com</string>
+
+
+    <string name="text_character" translatable="false">≈</string>
+    <string name="text_percent" translatable="false">%</string>
+    <string name="text_value_double" translatable="false">0.0</string>
+
+    <string name="text_zero" translatable="false">0</string>
+    <string name="text_zero_tec" translatable="false">0.0 &TeeCoinSymbol;</string>
+
+    <string name="text_time_zero" translatable="false">00:00</string>
+    <string name="string_format_1" translatable="false">%s %s</string>
+    <string name="string_format_5" translatable="false">≈ %s &TeeCoinSymbol;</string>
+    <string name="string_format_6" translatable="false">%s = %s%s</string>
+    <string name="time_format" translatable="false">%s\n%s</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="text_three_dot" translatable="false">...</string>
+    <string name="text_facebook" translatable="false">Facebook</string>
+    <string name="text_google" translatable="false">Google</string>
+    <string name="filter_price_range_one_price" translatable="false">$</string>
+    <string name="filter_price_range_two_price" translatable="false">$$</string>
+    <string name="filter_price_range_three_price" translatable="false">$$$</string>
+    <string name="filter_price_range_four_price" translatable="false">$$$$</string>
+    <string name="filter_distance_500m" translatable="false">500M</string>
+    <string name="filter_distance_1_km" translatable="false">1KM</string>
+    <string name="filter_distance_1_5_km" translatable="false">1.5KM</string>
+    <string name="filter_distance_2_km" translatable="false">2KM</string>
+    <string name="filter_star_1" translatable="false">1</string>
+    <string name="filter_star_2" translatable="false">2</string>
+    <string name="filter_star_3" translatable="false">3</string>
+    <string name="filter_star_4" translatable="false">4</string>
+    <string name="filter_star_5" translatable="false">5</string>
+    <string name="text_birthday_format" translatable="false">DD/MM/YYYY</string>
+    <string name="count_all_discover" translatable="false">(%d)</string>
+    <string name="text_addition" translatable="false">+%s</string>
+    <string name="text_give_tec" translatable="false">%s\n &TeeCoinSymbol;</string>
+    <string name="text_agoda" translatable="false">Agoda</string>
+    <string name="text_usd" translatable="false">USD</string>
+    <string name="text_sgd" translatable="false">SGD</string>
+    <!-- ****************** TRANSLATE ********************* -->
+    <!--general-->
+    <string name="version_app">Version</string>
+    <string name="text_successful">Successful!</string>
+    <string name="text_successfully">Successfully!</string>
+    <string name="text_fail">Fail</string>
+    <string name="text_cancel">Cancel</string>
+    <string name="text_ok">OK</string>
+    <string name="text_read_more">Read more</string>
+    <string name="text_more">More</string>
+    <string name="text_please_enter">Please enter</string>
+    <string name="text_please_enter_less_than_or_equal_100">Please enter less than or equal 100</string>
+    <string name="text_please_enter_more_than_or_equal_one_percent">Please enter more than or equal 1%</string>
+    <string name="text_closed">Closed</string>
+    <string name="text_closes">Closes</string>
+    <string name="text_close">Close</string>
+    <string name="text_open">Open</string>
+    <string name="text_opens">Opens</string>
+    <string name="text_close_today">Closed Today</string>
+    <string name="text_back_to_home">Back to home</string>
+    <string name="text_back">Back</string>
+    <string name="text_text">Text</string>
+    <string name="text_content">content</string>
+    <string name="text_description">description</string>
+    <string name="text_buy_tee_coin">Buy &TeeCoinSymbol;</string>
+    <string name="text_all">All</string>
+    <string name="text_secret_key">Secret Key</string>
+    <string name="text_scan_qr_code">SCAN QR CODE</string>
+    <string name="text_view_my_qr_code">VIEW MY QR CODE</string>
+    <string name="text_history">History</string>
+    <string name="text_address">Address</string>
+    <string name="text_wallet_address">Address</string>
+    <string name="text_invoice_id">Invoice ID</string>
+    <string name="text_fee">Fee</string>
+    <string name="text_total_tec">Total &TeeCoinSymbol;</string>
+    <string name="text_remaining_payment">Remaining Payment</string>
+    <string name="text_transaction_config">Transaction Config</string>
+    <string name="text_update">Update</string>
+    <string name="text_details">Details</string>
+    <string name="text_coin_back">Coinback</string>
+    <string name="text_payment_threshold">Payment Threshold</string>
+    <string name="text_set_passcode">Set Passcode</string>
+    <string name="text_notifications">Notifications</string>
+    <string name="text_location">Location</string>
+    <string name="text_catalogue">Catalogue</string>
+    <string name="text_restaurant">Restaurants</string>
+    <string name="text_reviews_uppercase">Reviews</string>
+    <string name="text_reviews">reviews</string>
+    <string name="text_promotions">Promotions</string>
+    <string name="text_opening_hours">Opening Hours</string>
+    <string name="text_open_24h">Open 24h</string>
+    <string name="text_name">Name</string>
+    <string name="text_coupon_what_are_you_searching">What are you searching for?</string>
+    <string name="text_review">review</string>
+    <string name="text_referral">Referral</string>
+    <string name="text_parameter_with_tec">%s &TeeCoinSymbol;</string>
+    <string name="text_referral_code">Referral Code</string>
+    <string name="text_purchase">Purchase</string>
+    <string name="text_inactive_users">Inactive Users</string>
+    <string name="text_yes">Yes</string>
+    <string name="text_no">No</string>
+    <string name="text_alert">Alert</string>
+    <string name="text_message">Message</string>
+    <string name="text_warning">Warning</string>
+    <string name="text_reward">Reward</string>
+    <string name="text_tip">Tip</string>
+    <string name="text_done">Done</string>
+    <string name="text_from">From</string>
+    <string name="text_to">To</string>
+    <string name="text_search">Search</string>
+    <string name="text_coupon">Coupon</string>
+    <string name="text_my_reviews">My Reviews</string>
+    <string name="text_latest">Latest</string>
+    <string name="text_popular">Popular</string>
+    <string name="text_transactions">Transactions</string>
+    <string name="text_coupons">Coupons</string>
+    <string name="text_sort_by">Sort by</string>
+    <string name="text_discount">Discount</string>
+    <string name="text_less">Less</string>
+    <string name="text_check_in">Check-in</string>
+    <string name="text_check_in_lowercase">check-in</string>
+    <string name="text_add_coupon">Add Coupon</string>
+    <string name="text_coupon_for_free">Coupons For Free</string>
+    <string name="text_balance">Balance</string>
+    <string name="text_balance_with_colon">Balance:</string>
+    <string name="text_receive">RECEIVE</string>
+    <string name="text_setting">Settings</string>
+    <string name="text_send">Send</string>
+    <string name="text_copy_address">Copy secret key</string>
+    <string name="text_your_qr_code">Your QR Code</string>
+    <string name="text_50_minimum">%s/50 minimum</string>
+    <string name="text_50_maximum">%s/26 maximum</string>
+    <string name="text_payee">Payee</string>
+    <string name="text_email">Email</string>
+    <string name="text_password">Password</string>
+    <string name="text_sign_up">Sign Up</string>
+    <string name="text_login">Log In</string>
+    <string name="text_from_google">From Google</string>
+    <string name="text_how_to_earn_tec">How to Earn TEC</string>
+    <string name="text_other_outlet">%s other outlet</string>
+    <string name="text_other_outlets">%s other outlets</string>
+    <string name="text_got_it">Got It!</string>
+    <string name="text_the_system_is_busy_try_agian">The system is busy. Please try again.</string>
+    <string name="account_faq">FAQ</string>
+    <string name="text_recovery_password">Recovery Password</string>
+    <string name="text_new_merchant">New merchant</string>
+
+
+    <string name="language_english">English</string>
+    <string name="language_chinese_simplified">Chinese (Simplified)</string>
+    <string name="language_chinese_tranditional">Chinese (Traditional)</string>
+    <string name="language_japanese">Japanese</string>
+    <string name="language_vietnamese">Vietnamese</string>
+
+    <!-- Error message -->
+    <string name="error_no_internet_connection">Sorry, we were unable to connect to the network. Please check your network connection.</string>
+    <string name="error_request_time_out">Request timeout</string>
+    <string name="error_text_contains_unsupported_encoding">Text contain unsupported encoding</string>
+
+    <!-- location service dialog -->
+    <string name="location_service_title">Location Services disabled</string>
+    <string name="location_service_check_in_title">Allow &quot;%s&quot; to access your location?</string>
+    <string name="location_service_message">%s needs access to your location in order to give you a better experiences. Please turn on Location Services in your device settings.\nGo to Settings> Apps> %s> Permissions> Turn ON Location </string>
+
+    <string name="location_service_check_in_message">You need to allow %s to access your location to use this function.\nPlease turn on Location Services in your device settings.\nGo to Settings> Apps> %s> Permissions> Turn ON Location </string>
+
+    <!--main activity-->
+    <string name="main_activity_tab_account">Account</string>
+    <string name="main_activity_tab_history">History</string>
+
+    <!--Home wallet-->
+    <string name="import_wallet_warning_enter_secret_key">Please input Secret Key</string>
+    <string name="import_wallet_secret_key_info">Secret key is 56 characters key given when you sign-up and it starts with letter “S”.</string>
+
+    <!--Screen create wallet-->
+    <string name="create_new_wallet_message_for_phone_number">ChatTee will send a verification code to this number </string>
+    <string name="create_new_wallet_shop_name">Shop Name </string>
+    <string name="create_new_wallet_hint_shop_name">Enter shop name</string>
+    <string name="create_new_wallet_notes">Notes</string>
+    <string name="create_new_wallet_hint_notes">Enter your notes</string>
+    <string name="verify_phone_number_message_code_to_phone">6-digit verification code has been sent to your phone number (%1$s) %2$s****%3$s</string>
+    <string name="verify_phone_number_message_wrong">Wrong code. Try again</string>
+    <string name="verify_phone_number_resend_in">Resend in %ss</string>
+    <string name="verify_phone_number_resend">Resend</string>
+    <string name="verify_phone_number_title">PHONE NUMBER VERIFICATION</string>
+    <string name="verify_phone_number_pls_input_verification_code">Please input the Verification Code</string>
+    <string name="validate_password_not_match">Passwords do not match</string>
+    <string name="validate_enter_shop">Please enter Shop</string>
+    <string name="validate_please_enter_valid_phone_number">Please enter a valid phone number</string>
+    <string name="validate_please_enter_valid_email">Please enter a valid email</string>
+    <string name="validate_please_enter_valid_password">Please enter a valid password</string>
+    <string name="validate_email_exists">This email address is already in use.</string>
+
+    <!--Screen Home Wallet-->
+    <string name="home_wallet_last_transaction">LATEST TRANSACTIONS</string>
+    <string name="my_wallet">My Wallet</string>
+
+    <!--Screen Account User-->
+    <string name="account_user_title">ACCOUNT</string>
+    <string name="account_update_info">Update Account</string>
+    <string name="account_change_passcode">Change  Passcode</string>
+    <string name="account_remove_passcode">Remove Passcode</string>
+    <string name="account_refer_a_friend">Refer a Friend</string>
+    <string name="account_credit_card">Credit Card</string>
+    <string name="account_give_us_feedback">Give us feedback</string>
+    <string name="account_market_value">Market value:</string>
+    <string name="account_security">Security</string>
+    <string name="account_forgot_password">Forgot Password</string>
+
+    <!--Screen Account Shop-->
+    <string name="account_shop_shop_info_title">UPDATE INFO</string>
+    <string name="account_shop_update_shop_logout">Logout</string>
+    <string name="account_user_update_info">Update User Info</string>
+
+    <!--Screen input payment-->
+    <string name="input_payment_payment">Payment</string>
+    <string name="check_payment_title">CHECK PAYMENT</string>
+
+    <!--Screen transaction success-->
+    <string name="transaction_success_you_can_track">You can track with Transaction ID<![CDATA[<br/><b>%s</b>]]> </string>
+    <string name="transaction_success_new_payment">NEW PAYMENT</string>
+    <string name="transaction_success_try_again">TRY AGAIN</string>
+
+    <!---Screen transaction config-->
+    <string name="transaction_config_coin_exchange">Coin Exchange:</string>
+    <string name="transaction_config_currencies">Currencies</string>
+    <string name="transaction_config_coin_back_reward">Coinback | Reward</string>
+    <string name="transaction_config_min_amount">Min. Amount</string>
+    <string name="transaction_config_max_payment_allowed">Max &TeeCoinSymbol;payment allowed</string>
+
+    <!--Screen history detail-->
+    <string name="history_detail_coin_back_id">Coinback ID</string>
+    <string name="history_detail_reward_id">Reward ID</string>
+    <string name="history_detail_payment_id">Payment ID</string>
+    <string name="history_detail_coin_back_rate">Coinback: %s%%  on Payment</string>
+    <string name="history_detail_reward_rate">Reward: %s%% on Amount</string>
+    <string name="history_detail_try_coin_back">Try coinback</string>
+
+    <!--Screen Coin back-->
+    <string name="coin_back_coinback">Coin back</string>
+    <string name="coin_back_shop_balance">SHOP BALANCE:</string>
+    <string name="coin_back_address">ADDRESS: %s</string>
+    <string name="coin_back_address1">Address:\n\n</string>
+
+    <!--screen CoinIn Threshold-->
+    <string name="payment_threshold_maximum">Maximum</string>
+    <string name="payment_threshold_dialog_do_you_want_app_remember_pass">Do you want the app to remember your password?</string>
+    <string name="payment_threshold_dialog_will_not_be_asked_when_make_transaction_below">You will not be asked for your password when making any transactions below %1$s &TeeCoinSymbol;</string>
+
+    <!--Screen set passcode-->
+    <string name="set_passcode_enter_your_passcode">Enter your passcode</string>
+    <string name="set_passcode_verify_passcode">Verify your new passcode</string>
+    <string name="you_changed_passcode">You changed passcode!</string>
+    <string name="enter_your_old_passcode">Enter your old passcode</string>
+    <string name="enter_your_new_passcode">Enter your new passcode</string>
+    <string name="set_passcode_not_match">Passcode is incorrect. Try again.</string>
+    <string name="remove_passcode_message">Are you sure you want to remove the passcode?</string>
+
+    <!--dialog pass code password-->
+    <string name="dialog_passcode_confirm_text_payment">Your payment is greater than the threshold. Please enter the password to confirm. </string>
+    <string name="dialog_passcode_confirm_text_coinback">Coinback is greater than the threshold. Please enter the password to confirm.</string>
+    <string name="dialog_passcode_confirm_text_reward">Reward is higher than Payment Threshold. Please input your recovery password to confirm</string>
+    <string name="dialog_passcode_confirm_required_password">Password is required</string>
+
+    <!--New Recovery Password-->
+    <string name="change_password">Change Password</string>
+
+    <!--content menu left-->
+    <string name="left_menu_cuisine">Cuisines</string>
+    <string name="left_menu_spa">Spa</string>
+
+    <!--dialog recovery password-->
+    <string name="please_input_your_recovery_password_to_confirm">Please input your recovery password to confirm</string>
+    <string name="incorrect_recovery_password">Incorrect Recovery Password</string>
+
+    <!--dialog maximum payment threshold-->
+    <string name="only_two_decimal_is_allowed">Only two decimal places allowed</string>
+    <string name="please_enter_maximum">Please enter the maximum value</string>
+
+    <!--User review-->
+    <string name="user_review_text_receive">You will be rewarded up to %s &TeeCoinSymbol; for this review</string>
+    <string name="user_review_waiting_rating">Please rate this shop</string>
+    <string name="user_review_waiting_comment">Please enter your review</string>
+    <string name="user_review_your_review_min_characters_count">Your review must be at least 50 characters long</string>
+    <string name="user_review_tee_get">Get %s &TeeCoinSymbol;\nfor a review</string>
+    <string name="user_review_share_now">Share now</string>
+
+    <!--popup option select images-->
+    <string name="select_image_from_photo">Photo</string>
+    <string name="select_image_from_video">Video</string>
+    <string name="select_image_from_library">Library</string>
+
+    <!--Review main-->
+    <string name="review_highlight">Highlights</string>
+    <string name="review_places_near_you">Places Near You</string>
+    <string name="review_top_ten_review">Top 10 Most Reviewed Shops</string>
+    <string name="review_top_new_merchants">New Merchants</string>
+    <string name="review_change_location">Change Location</string>
+    <string name="review_view_all">View all</string>
+    <string name="review_reviewed_format_time">Reviewed\n%s</string>
+    <string name="review_like">Like</string>
+    <string name="review_likes">Likes</string>
+    <string name="review_promotion_title">PROMOTION LIST</string>
+    <string name="review_promotion_detail_title">PROMOTION DETAILS</string>
+
+    <!-- WRITE REVIEW -->
+    <string name="write_review_tap_a_star_to_rate">Tap a star to rate</string>
+    <string name="write_review_please_enter_review_title">Please enter review title</string>
+    <string name="write_review_review_title">Review Title</string>
+    <string name="write_review_your_review">Your Review</string>
+    <string name="write_review_date_visited">Date Visited</string>
+    <string name="write_review_type_of_visit">Type of visit</string>
+    <string name="write_review_reach_limit">You will not receive reward for this review.\nDo you want to continue?</string>
+
+    <!--location-->
+    <string name="location_text_hint_search">Type or select location</string>
+
+    <!--vendor-->
+    <string name="vendor_detail_write_a_review">Write a review</string>
+    <string name="vendor_review_detail_payment_by">Payment</string>
+    <string name="vendor_review_detail_convenience">Convenience</string>
+
+    <!--TRANSFER MONEY SCREEN-->
+    <string name="transfer_money_note">Note</string>
+    <string name="transfer_is_greater_than_balance_do_you_want_to_transfer_max_tec">Transfer Amount is greater than Balance. Do you want to transfer max %1$s &TeeCoinSymbol;?</string>
+
+    <!--REFERRAL EVENT SCREEN-->
+    <string name="events">Events</string>
+    <string name="referral_Info">Info</string>
+    <string name="referral_code_skip">Skip</string>
+    <string name="referral_history">Referral History</string>
+    <string name="referral_event_information">%s -> %s  Get %s &TeeCoinSymbol; for referral</string>
+    <string name="referral_code_copied">Referral Code copied</string>
+    <string name="referral_total_reward">Total Reward</string>
+    <string name="share_title">Share Content</string>
+
+    <!--BUSINESS INSIGHTS-->
+    <string name="business_insights_upper_case">BUSINESS INSIGHT</string>
+
+    <!-- INACTIVE USERS -->
+    <string name="inactive_user_purchase_history">Purchase History</string>
+
+    <string name="inactive_user_amount_user">Amount/User: 1 &TeeCoinSymbol;</string>
+    <string name="search_inactive_users_since_last_visit">Search inactive users since last visit</string>
+
+    <!-- NEW PURCHASE -->
+    <string name="new_purchase_upper_case">NEW PURCHASE</string>
+    <string name="title">Title</string>
+    <string name="validity">Validity</string>
+    <string name="new_purchase_content">Content (maximum 200 characters)</string>
+    <string name="new_purchase_title_hint">Please enter advertisement title</string>
+    <string name="new_purchase_content_hint">Please enter the content of the advertisement you want to send to users</string>
+
+    <!-- CONFIRM PURCHASE -->
+    <string name="confirm_purchase_upper_case">CONFIRM PURCHASE</string>
+    <string name="add_new">ADD NEW</string>
+    <string name="back_to_list">BACK TO LIST</string>
+
+    <!--General Screen Order Detail, get CoinIn,CoinOut -->
+
+    <string name="general_exchange_coin">Exchange: 1 &TeeCoinSymbol; = %s %s</string>
+    <string name="general_amount">Amount</string>
+    <string name="tee_coin_symbol">&TeeCoinSymbol;</string>
+    <string name="internal_server_error">Internal Server Error</string>
+    <string name="scan_qr_code_fail_do_you_want_scan_again">This QR code is invalid. Do you want to scan again?</string>
+
+    <string name="pls_input_payment">Please input the Payment method</string>
+    <string name="pls_input_amount">Please input the Amount</string>
+
+    <string name="balance_not_enough">Balance is not enough</string>
+    <string name="this_secret_key_is_not_correct">This Secret Key is incorrect</string>
+    <string name="todo">TODO</string>
+    <string name="max_5_photos">You can only select up to 5 photos</string>
+    <string name="cant_transfer_coin_to_yourself">Unable to transfer coin to your own wallet.</string>
+    <string name="you_cant_create_account_on_emulator">You cannot create a wallet on the emulator</string>
+    <string name="transaction_config_exchange_one_tec_equal_to">1 &TeeCoinSymbol; =</string>
+    <string name="default_zero_tec">0.0 &TeeCoinSymbol;</string>
+    <string name="wallet_address_copied">Wallet address copied</string>
+    <string name="trust_tee_coin_success">Creation of Trustline successful</string>
+    <string name="trust_tee_coin_fail">Creation of Trustline failed</string>
+
+    <!-- REVIEW FILTER -->
+    <string name="review_filter_choose_your_filter">Choose your filter</string>
+    <string name="review_filter_sort_by_date">FILTER BY DATE</string>
+    <string name="review_filter_5_stars">5 stars</string>
+    <string name="review_filter_4_stars">4 stars</string>
+    <string name="review_filter_3_stars">3 stars</string>
+    <string name="review_filter_2_stars">2 stars</string>
+    <string name="review_filter_1_star">1 star</string>
+    <string name="review_filter_sort_date_newest_first">Newest First</string>
+    <string name="review_filter_sort_date_most_reviews">Most Reviews</string>
+    <string name="review_filter_sort_date_oldest_first">Oldest First</string>
+    <string name="review_filter_sort_date_lowest_reviews">Least Reviews</string>
+    <string name="search_this_area">Search this area</string>
+    <string name="review_filter_sort_rate_highest">Highest Rated</string>
+    <string name="review_filter_sort_rate_lowest">Lowest Rated</string>
+    <string name="review_filter_select_opening_times">Select opening hours</string>
+    <string name="review_filter_near_me">Near me</string>
+    <string name="review_filter_distance">Distance: %skm</string>
+    <string name="star">%s star</string>
+    <string name="stars">%s stars</string>
+    <string name="filter_by_distance">FILTER BY DISTANCE</string>
+    <string name="filter_5km">5km</string>
+    <string name="filter_10km">10km</string>
+    <string name="filter_20km">20km</string>
+    <string name="cuisines_type_count">Cuisine Types [%s]</string>
+    <string name="cuisines_type">Cuisine Type</string>
+    <string name="no_data"></string>
+
+    <!--DIALOG TIP-->
+    <string name="dialog_tip_title">Like &amp; Tip</string> <!-- &amp; is "&" -->
+    <string name="dialog_tip_optional">Optional</string>
+    <string name="thank_for_your_like">Thanks for your like!</string>
+    <string name="you_have_liked_and_sent_a_tip_for_this_review">You have liked and sent a tip for this review.</string>
+    <string name="do_you_want_to_tip_more">Do you want to tip more?</string>
+    <string name="thank_for_your_tip">Thanks for your tip!</string>
+    <string name="text_next">Next</string>
+    <string name="tip_successfully">Tip successfully</string>
+    <string name="tip_message_yourself">Unable to tip coin to yourself</string>
+
+    <!--new string-->
+    <string name="in_progress">In Progress</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="reset_password_content_first">If reset password, your current recovery password will be deleted.</string>
+    <string name="reset_password_content_second">When reset password, a Reset Password email will be sent to your registered email address.</string>
+    <string name="reset_password_ask">Are you sure you want to reset the recovery password?</string>
+    <string name="reset_password_sent_new_password">A reset password email has been sent to your email address.</string>
+
+    <!-- FORGET RECOVERY PASSWORD -->
+    <string name="forget_recovery_password_message">1. Tap the <b>&quot;GET CODE&quot;</b> button\n2. Check your registered email address for a <b>Verification Code</b>\n3. Input the Verification Code\n4. Enter your new password\n</string>
+    <!-- FORGET RECOVERY PASSWORD -->
+
+    <!--TIME AGO-->
+    <string name="time_ago_minute">1 minute ago</string>
+    <string name="time_ago_minutes">%d minutes ago</string>
+    <string name="time_ago_hour">1 hour ago</string>
+    <string name="time_ago_hours">%d hours ago</string>
+    <string name="time_ago_day">1 day ago</string>
+    <string name="time_ago_days">%d days ago</string>
+    <string name="time_ago_week">1 week ago</string>
+    <string name="time_ago_weeks">%d weeks ago</string>
+    <string name="time_ago_month">1 month ago</string>
+    <string name="time_ago_months">%d months ago</string>
+    <string name="time_ago_year">1 year ago</string>
+    <string name="time_ago_years">%d years ago</string>
+
+    <string name="you_can_not_upload_file_larger_than_50_mb">You can not upload file larger than 50mb</string>
+    <string name="you_already_had_one_video_selected">You already had 1 video selected</string>
+    <string name="about_restaurant">About restaurant</string>
+    <string name="prices">Prices</string>
+
+    <!--notification new version-->
+    <string name="notify_new_version_title">Update available</string>
+    <string name="notify_new_version_content">A new version of this application is available. Please update now for the best experience</string>
+
+    <!-- Input Wallet Address-->
+    <string name="please_input_the_address">Please input the address</string>
+
+    <!-- Send Money -->
+    <string name="send_money_enter_amount">Enter amount</string>
+    <string name="send_money_amount_with_tec">Amount (&TeeCoinSymbol;)</string>
+    <string name="send_money_fee_with_tec">Fee (&TeeCoinSymbol;)</string>
+    <string name="send_money_new_send">New send</string>
+    <string name="send_money_back_to_wallet">Back to My Wallet</string>
+    <string name="send_money_input_address">Input address</string>
+
+    <!-- Favourite Screen -->
+    <string name="favourite_no_data">You have not saved any items yet\nTap # and it will appear here</string>
+
+
+    <!--Coupon-->
+    <string name="coupon_my_coupons">My Coupons</string>
+    <string name="coupon_expired">Expired</string>
+    <string name="coupon_redeemed">Redeemed</string>
+    <string name="starts">Starts</string>
+    <string name="ends">Ends</string>
+    <string name="buy_1_get_1">Buy 1 Get 1</string>
+    <string name="free_gift">Free Gift</string>
+    <string name="discount_percentage_symbol">Discount (%)</string>
+    <string name="discount_percentage">Discount Percentage</string>
+    <string name="discount_cash">Discount Cash</string>
+    <string name="terms_and_conditions">Terms &amp; Conditions</string>
+    <string name="ending_soon">Ending Soon</string>
+    <string name="day_remains">DAY REMAINNINGS</string>
+    <string name="please_select_date_and_time">Please select date and time</string>
+    <string name="category">Categories</string>
+    <string name="low_to_high">Low to High &TeeCoinSymbol;</string>
+    <string name="high_to_low">High to Low &TeeCoinSymbol;</string>
+    <string name="coupon_validity">Coupon Validity</string>
+    <string name="coupon_successful">SUCCESSFUL!</string>
+    <string name="coupon_successful_thank_you_visiting">Thank you for visiting %s</string>
+    <string name="coupon_successful_thank_you_visiting_checkin">Thank you for checking in at\n%s</string>
+    <string name="coupon_unsuccessful">UNSUCCESSFUL!</string>
+    <string name="coupon_coupon_has_been_used">The Coupon has been used up/ expired.</string>
+    <string name="validation_code">VALIDATION CODE</string>
+    <string name="please_ask_the_cashier_to_enter_the_code">Please ask the cashier to enter the code</string>
+    <string name="did_you_enter_the_correct_code_let_try_again">Did you enter the correct code?\nLet\'s try again</string>
+    <string name="coupon_use_now">USE NOW</string>
+    <string name="coupon_result_sorry">SORRY!</string>
+    <string name="coupon_result_something_went_wrong">Something went wrong!\nYour purchase was unsuccessful.</string>
+    <string name="coupon_result_back_to_catalogue">BACK TO \"CATALOGUE\"</string>
+    <string name="coupon_congratulation_you_get">You got %1$s from %2$s</string>
+    <string name="cash_value">Cash (%s)</string>
+    <string name="change_currency"><u>Change Currency</u></string>
+
+    <string name="weekdays">Weekdays</string>
+    <string name="monday">Mon</string>
+    <string name="tuesday">Tue</string>
+    <string name="wednesday">Wed</string>
+    <string name="thursday">Thu</string>
+    <string name="friday">Fri</string>
+    <string name="saturday">Sat</string>
+    <string name="sunday">Sun</string>
+    <string name="reset_all"><u>Reset All</u></string>
+    <string name="coupon_purchases">purchases</string>
+    <string name="coupon_scan_qr_code">SCAN QR CODE (%s)</string>
+    <string name="coupon_message_from_vendor">MESSAGE FROM VENDOR</string>
+    <string name="coupon_simple_guide_to_redeem">SIMPLE GUIDE TO REDEEM</string>
+    <string name="cannot_scan_use_validation_code">Cannot scan?\nUse  <u>Validation Code</u></string>
+    <string name="coupon_more_for_you">More for you</string>
+    <string name="coupon_check_in_to_get_tec"><u><b>Check in</b></u> to get &TeeCoinSymbol; now!</string>
+    <string name="coupon_end_at">End at %s</string>
+    <string name="coupon_validity_two_dot">Coupon Validity:</string>
+    <string name="coupon_get_coupon">Get Coupon</string>
+    <string name="min">Min</string>
+    <string name="max">Max</string>
+    <string name="price_range_tec">PRICE RANGE (&TeeCoinSymbol;)</string>
+    <string name="coupon_check_in_success">Check in success!</string>
+    <string name="coupon_check_in_thank_you">Thank you for checking in at %s.</string>
+    <string name="coupon_check_in_visit">Visit %s now!</string>
+    <string name="coupon_check_in_delivered_via_notification">The coupons are being delivered via Notification.</string>
+    <string name="coupons_view">View</string>
+    <string name="coupons_message_balance_is_not_enough_to_purchase">Your balance is not enough to purchase. Please recharge and try again.</string>
+    <string name="coupon_with_serial_number">Coupon with serial number</string>
+    <string name="redemption_code">Redemption Code</string>
+    <string name="coupon_purchase_coupon_with_tec">Purchase with %s &TeeCoinSymbol;?</string>
+    <string name="qr_code_scanning_unsuccessful">Unsuccessful QR Code Scanning</string>
+    <string name="ask_cashier_when_check_out">Ask cashier when check out</string>
+    <string name="coupons_for_purchasing">Coupons For Purchasing</string>
+    <string name="menu">Menu</string>
+    <string name="coupon_filter_please_input_max_cash_bigger_min_cash">Please input max cash bigger min cash</string>
+    <string name="redeem_validity_time">You can not use the coupon because the current time is not in the validity time.</string>
+    <string name="coupon_fee_purchase">(Fee %s &TeeCoinSymbol;)</string>
+    <string name="input">Input</string>
+    <string name="add_notification">Add Notification</string>
+
+    <string name="coupon_overview">Overview</string>
+    <string name="coupon_fee_by_catalogues">(plus %s &TeeCoinSymbol; transaction fee)</string>
+    <string name="coupon_check_in_error_1">Vendor does not exist.</string>
+    <string name="coupon_check_in_error_2">You have already checked in at this place successfully.</string>
+    <string name="coupon_check_in_error_3">Your check-in has exceeded the number of check-ins allowed. Please wait for next events.</string>
+    <string name="coupon_check_in_error_4">The check-in event has expired. Please wait for next events.</string>
+    <string name="coupon_check_in_error_5">Your wallet is not existing in our system. Please login another wallet and try again.</string>
+    <string name="coupon_check_in_error_6">Please visit our merchant to receive TEC and enjoy the experience.</string>
+    <string name="please_select_time_start_coupon_validity">Please select time start coupon validity</string>
+    <string name="please_select_time_end_coupon_validity">Please select time end coupon validity</string>
+    <string name="please_select_start_date_after_current_date">Please select start date after current date</string>
+    <string name="please_select_start_date_before_selecting_end_date">Please select start date before selecting end date</string>
+    <string name="coupon_title_redeemed_expired">EXPIRED/ REDEEMED COUPONS</string>
+    <string name="about_shop">About shop</string>
+    <string name="terms_of_use">Terms of Use</string>
+    <string name="general">General</string>
+    <string name="coupon_get_this_coupon">Get this coupon!</string>
+    <string name="opening_hours_may_be_different_between_each_branch">Opening hours may be different between each branch.</string>
+    <string name="purchase_again">Purchase again</string>
+    <string name="redemption_date">Redemption Date</string>
+    <string name="please_select_date_in_the_middle_validity_date">Please select date in the middle validity date</string>
+    <string name="categories">Categories</string>
+    <string name="discover_experiences">Discover Experiences</string>
+    <string name="recommended_for_you">Recommended For You</string>
+    <string name="top_rated_experiences">Top-Rated Experiences</string>
+    <string name="recommended_coupons_vouchers">Recommended Coupons</string>
+    <string name="what_are_you_looking_for">What are you looking for?</string>
+    <string name="google_places_api_connection_failed_with_error_code">Google Places API connection failed with error code: %s</string>
+    <string name="my_favourite">My Favourite</string>
+    <string name="favourite">Favourite</string>
+    <string name="recent">Recent</string>
+    <string name="filter_price_range">PRICE RANGE</string>
+    <string name="filter_distance_within">DISTANCE WITHIN</string>
+    <string name="filter_by_rating">FILTER BY RATING</string>
+    <string name="filter_opening_time">OPENING TIME</string>
+    <string name="filter_apply">APPLY</string>
+
+    <string name="filter_sort_by_highest_rating">Highest rating</string>
+    <string name="filter_sort_by_high_to_low_price">High to Low Price</string>
+    <string name="filter_sort_by_low_to_high_price">Low to High Price</string>
+    <string name="filter_sort_by_near_by">Nearby</string>
+    <string name="filter_open_now">Open now</string>
+    <string name="filter_reset">Reset</string>
+    <string name="coupon_back_to_top">Back to top</string>
+    <string name="count_reviews">(%s reviews)</string>
+    <string name="count_review">(%s review)</string>
+    <string name="distance_to_vendor">%s km</string>
+    <string name="discover">Discover</string>
+    <string name="text_filter_and_sort">Filter &amp; Sort</string>
+    <string name="select_the_country_you_want_to_discover">Select the location/region\nyou want to discover</string>
+    <string name="good_deals">Good Deals</string>
+    <string name="new_arrivals">New Arrivals</string>
+    <string name="no_result">No result</string>
+    <string name="undo">UNDO</string>
+    <string name="deleted">deleted</string>
+    <string name="user_review_have_reached_the_limit_of_review_reward">You have reached the limit of review reward or gotten the reward from this merchant in 24 hours.</string>
+    <string name="no_suggest">No suggestion for&#160;</string>
+    <string name="change_language">Change Language</string>
+    <string name="error_country_code">Error Country code!</string>
+    <string name="vendor_photos">Photos</string>
+    <string name="please_enter_your_current_password_to_confirm">Please enter your current password to confirm</string>
+    <string name="please_enter_your_password">Please enter your password</string>
+    <string name="submit">Submit</string>
+    <string name="password">Password</string>
+    <string name="minimum_8_characters_at_least_1_upper_case">(Minimum 8 characters, at least 1 upper case)</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="please_re_enter_your_password">Please re-enter your password</string>
+    <string name="vendor_detail_get_deals_now">GET DEALS NOW!</string>
+    <string name="copied_to_clipboard">Copied to clipboard</string>
+    <string name="input_password">Input Password</string>
+    <string name="current_password">Current Password</string>
+    <string name="maximum_amount">Maximum amount</string>
+    <string name="please_enter_the_maximum_amount">Please enter the maximum amount</string>
+    <string name="name">Name</string>
+    <string name="please_enter_your_full_name">Please enter your full name</string>
+    <string name="please_enter_your_name">Please enter your name</string>
+    <string name="please_enter_your_email">Please enter your email</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="please_enter_your_phone_number">Please enter your phone number</string>
+    <string name="day_of_birth">Day of birth</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="gender">Gender</string>
+    <string name="are_you_sure_you_want_to_log_out">Are you sure you want to log out?</string>
+    <string name="forgot_password"><![CDATA[<b><u>Forgot password?</u></b>]]></string>
+    <string name="forgot_password_no_xml">Forgot password?</string>
+    <string name="follow_the_step_to_reset_your_password">Follow the step to reset your password:</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="please_enter_the_verification_code_that_have_been_sent_to_your_registered_email">Please enter the Verification Code that has been sent to your registered email</string>
+    <string name="please_enter_verification_code">Please enter verification code</string>
+    <string name="your_information_have_been_successfully_updated">Your information has been updated successfully.</string>
+    <string name="million_club">Million Club</string>
+    <string name="get_more_tec_rewards_when_you_attach_pictures">Get more TEC rewards when you attach pictures!</string>
+    <string name="singin_terms_of_use">By signing up, you agree to our <![CDATA[<b><u><font color=#2d2d2d>Terms of Use</font></u></b>]]></string>
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="sign_in_or">Or</string>
+    <string name="text_import_existing_wallet">Import Existing Wallet</string>
+    <string name="please_enter_your_secret_key_to_import_your_wallet">Please enter your secret key to import your wallet</string>
+    <string name="you_can_reset_your_password_if_you_forget_it_your_current_password_will_be_deleted">You can reset your password if you forget it. Your current password will be deleted.</string>
+    <string name="are_you_sure_that_you_want_to_reset_the_password">Are you sure that you want to reset the password?</string>
+    <string name="password_reset_sent">Password reset sent!</string>
+    <string name="an_email_with_password_reset_instructions_has_been_sent_to_your_registered_email_address">An email with password reset instructions has been sent to your registered email address:</string>
+    <string name="log_in_failed">Log in Failed</string>
+    <string name="the_email_address_or_password_entered_is_invalid">The email address or password entered is invalid</string>
+    <string name="try_again">Try Again</string>
+
+    <string name="input_referral_code_welcome_chattee">Welcome to ChatTee!</string>
+    <string name="input_referral_code_welcome_chattee_">Welcome to ChatTee!!</string>
+    <string name="input_referral_code_welcome_back">Welcome back!!</string>
+    <string name="input_referral_code_welcome">Welcome!</string>
+    <string name="input_referral_code_referral_code">Referral Code</string>
+    <string name="input_referral_code_pls_enter">Please enter Referral Code</string>
+    <string name="input_referral_code_content_not_been_registered">You are about to discover new experiences with ChatTee. If you are referred by someone and you have the Referral Code, please key in the code in the field below. Both you and the referrer will enjoy additional TEC.\n\nWe hope you enjoy your journey with us!!</string>
+    <string name="input_referral_code_content_has_been_registered">We have detected that an account has been created before on this device. You may want to log-in instead of signing up.\n\nYou may still able to sign-up if you prefer, but please note that most of our reward programs are device id specific and you may not be able to enjoy those rewards.</string>
+    <string name="invalid_referral_code">INVALID REFERRAL CODE</string>
+    <string name="input_referral_code_do_you_not_have_referral_code"><![CDATA[<b><font color=#2d2d2d>Do not have Referral Code?</font></b><br/>Press “SKIP”to continue]]></string>
+    <string name="input_referral_code_please_input_to_add_tec">Please input the referral code to earn additional TEC.</string>
+    <string name="invalid_secret_key">Invalid Secret Key</string>
+    <string name="the_secret_key_entered_is_invalid">The secret key entered is invalid</string>
+    <string name="the_password_entered_is_invalid">The password entered is invalid</string>
+    <string name="login_by_facebook">LOG IN BY FACEBOOK</string>
+    <string name="restart_again">RESTART AGAIN</string>
+    <string name="go_to_home_for_other_signup">Go to “Home”\tfor other sign up options</string>
+    <string name="enable_email_login">Enable Email Login</string>
+    <string name="to_enable_email_login_you_need_to_login_by_importing_secret_key_one_time">To enable Email login, you need to login by importing secret key one time.</string>
+    <string name="afterwards_you_won_t_be_prompted_anymore">Afterwards, you won\'t be prompted anymore</string>
+    <string name="account_exists">Account Exists</string>
+    <string name="account_does_not_exists">Account does not exist</string>
+    <string name="email_exists">Email Exists</string>
+    <string name="your_password_have_been_successfully_updated">Your password has been successfully updated.</string>
+    <string name="new_password">New password</string>
+    <string name="login_by_email">Login By Email</string>
+    <string name="loading">Loading...</string>
+    <string name="please_choose_gender">Please let us know your gender, so we are able to deliver better experiences to you.</string>
+    <string name="phone_number_already_exists">Phone number already exists!</string>
+    <string name="password_is_max_100_characters">Password is max 100 characters</string>
+    <string name="the_email_is_max_100_characters">The email is max 100 characters</string>
+    <string name="gender_has_not_been_selected">Gender has not been selected</string>
+    <string name="thank_you_for_checking_in_at_s">Thank you for visiting at “%s”</string>
+    <string name="sorry_something_went_wrong">Sorry! Something went wrong.</string>
+    <string name="thank_you_for_visiting_s">Thanks for visiting  “<![CDATA[<u>%s</u>]]>”</string>
+    <string name="treat_yourself_with_tec_you_ve_earned">Treat yourself with TEC you’ve earned?</string>
+    <string name="coupons_for_you">Coupons for You</string>
+    <string name="purchase_no_cap">purchase</string>
+    <string name="coupons_no_coupons_available">No coupons available</string>
+    <string name="coupons_get_more_more_deals_on_chattee">Get More Deals on ChatTee’s catalogue!!</string>
+    <string name="coupons_no_worries_start_shopping"><![CDATA[ No worries. Start shopping for <b>great deals &amp; <br/> exclusive </b>from other merchants.]]></string>
+    <string name="coupon_filter_best_selling">Best Selling</string>
+    <string name="checkin_rewards">Check-in Rewards</string>
+    <string name="see_more_vendor_details">See more vendor details</string>
+    <string name="write_review_title_header">Your review will be verified by our content team first before it is published. You will receive your TEC reward once the review is approved.</string>
+    <string name="write_review_result_your_review_in_pending">Your review in pending..</string>
+    <string name="write_review_result_content"><![CDATA[It means that it is waiting to be processed by our content team. Our content team goes through reviews to make sure they comply with our Posting Guidelines.<br/> <br/> Due to the amount of reviews we receive on a daily basis, it generally takes us less than 2 working days to process your review.<br/> <br/> Once your review has been approved, you will be notified and you will receive your TEC rewards.<br/> <br/> <br/> <br/> While waiting for approval, why don’t start shopping for <b><font color=#2d2d2d>great deals</font></b> &amp; <b><font color=#2d2d2d> exclusive</font></b> from other merchants?]]></string>
+    <string name="account_support">Support</string>
+
+    <string name="daily_give_tec_your_daily_tec">YOUR DAILY TEC</string>
+    <string name="daily_give_tec_get_daily_prize">Get daily prize from us!!\n Event starts daily at 00:00 SGT.</string>
+    <string name="daily_give_tec_double_your_change">Get 5x of your rewards when you log continuously and reach Day 7</string>
+    <string name="text_congratulation">Congratulation!</string>
+    <string name="daily_give_tec_you_just_won_tec">You just won TEC.\nPlease remember to login daily and get a chance to win bigger TEC on Day 7.</string>
+    <string name="daily_tec_give_away">DAILY TEC GIVEAWAY</string>
+    <string name="daily_give_tec_title_1">OPEN THE BOX AND SEE THE SURPRISE!</string>
+    <string name="daily_give_tec_title_2">All you have to do is tap and collect your TEC</string>
+    <string name="daily_give_tec_day_format">Day %s</string>
+    <string name="copy_address">Copy Address</string>
+    <string name="chattee_will_send_a_verification_code_to_this_number">ChatTee will send a verification code to this number</string>
+    <string name="coupon_your_current_redemption">Your Current Redemption</string>
+    <string name="coupon_more_you_redeem_the_more_tec">The more you redeem, the more TEC you earn.</string>
+    <string name="coupon_go_to_catalogue">GO TO “CATALOGUE”</string>
+    <string name="redeem_success_received_tec_message">You have received %s &TeeCoinSymbol;</string>
+    <string name="redeem_success_received_tec_message_over">From now on, you will receive %s &TeeCoinSymbol;\n whenever you redeem.</string>
+    <string name="the_email_address_has_been_already_taken">The email address has been already taken.</string>
+    <string name="we_regret_that_currently_this_merchant_is_not_eligible_for_coinback_redemption_event">We regret that currently this merchant is not eligible for coinback redemption event.</string>
+
+    <string name="top_up">Top up</string>
+    <string name="approximate_rate_note">*Approximate rate at current time. The actual exchange rate will be recalculated when the coin is transferred to this wallet.</string>
+    <string name="top_up_note">To top up, please transfer the amount required to the wallet address within the time limit.\nThe amount received in these wallets will be converted to TEC automatically and you will receive notification upon successful top-up.</string>
+    <string name="tec_top_up_amount">TEC Top-Up Amount</string>
+    <string name="top_up_exchange" translatable="false">%s %s = %s &TeeCoinSymbol;</string>
+    <string name="top_up_exchange_1" translatable="false">*%s %s</string>
+    <string name="user_profile_verification">User Profile Verification</string>
+    <string name="scan_the_qr_code_displayed_at_the_merchant_outlet">Scan the QR code displayed at the merchant outlet.</string>
+
+    <string name="featured_experience"> Featured Experience</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="register_now">Register Now!</string>
+    <string name="coinback_setting">Coinback Setting</string>
+    <string name="shop_information">Shop Information</string>
+    <string name="payment">Payment</string>
+    <string name="profile">Profile</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="account_number">Account Number</string>
+    <string name="shop_coinback_setting_title">This is the amount of coinback that user will receive upon their payment in your shop and will be deducted directly from the fiat amount receivable by you.\nThe coinback percentage will be displayed on user app to entice them to spend their TEC in your shop.</string>
+    <string name="coinback_percentage">Coinback Percentage (%)</string>
+    <string name="all_info_cannot_chane">All information can not change after submitted.</string>
+    <string name="register_account">Register Account</string>
+    <string name="tec_insufficient"> TEC INSUFFICIENT</string>
+    <string name="your_balance"> Your Balance:</string>
+    <string name="sgd_wallet"> SGD Wallet</string>
+    <string name="tec_wallet">TEC Wallet</string>
+    <string name="tec_equivalent">TEC equivalent:</string>
+    <string name="convert_to_tec">Convert to Tec</string>
+    <string name="with_draw">Withdraw</string>
+    <string name="please_input_wallet_address">Please input wallet address</string>
+    <string name="total_bill">Total Bill</string>
+    <string name="amount_to_be_by_wallet">Amount to be Paid by Wallet</string>
+    <string name="amount_paid_by_wallet">Amount Paid by Wallet</string>
+    <string name="amount_to_be_by_cash">Amount to be Paid by Cash</string>
+    <string name="amount_paid_by_cash">Amount Paid by Cash</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="converted_to_tec">Converted to &TeeCoinSymbol;</string>
+    <string name="payment_review">Payment Review</string>
+    <string name="please_enter_amount">Please enter amount</string>
+    <string name="payment_qr_code">Payment QR Code</string>
+    <string name="please_ask_the_customer_to_scan">Please ask the customer to scan\nbelow code for payment.</string>
+    <string name="shop_please_click_button_check_payment">Please click the button below if you have not received notification after user completed the payment process.</string>
+    <string name="get_code">Get code</string>
+    <string name="qr_code">QR Code</string>
+    <string name="customer">Customer</string>
+    <string name="please_collect_the_remaining_cash_payment">Please collect the remaining Cash payment from Customer.</string>
+    <string name="shop_payment_unsuccess_title">An error has occurred and your\ntransaction could not be processed.\n Please try again later.</string>
+    <string name="pay">Pay</string>
+    <string name="confirm">Confirm</string>
+    <string name="user_payment_review_text_note">You will receive notification when you successfully receive the coinback.</string>
+    <string name="user_payment_message_enough_tec">You do not have enough TEC for this payment. Please top up or participate in activities or events to earn TEC.</string>
+    <string name="merchant">Merchant</string>
+    <string name="back_to_my_wallet">BACK TO \"MY WALLET\"</string>
+    <string name="the_coinback_percentage_has_been_successfully_changed">The coinback percentage has been successfully changed.</string>
+    <string name="an_error_has_occurred_and_your_setting_could_not_be_processed_please_try_again_later">An error has occurred and your setting could not be processed. Please try again later.</string>
+    <string name="the_minimum_coinback_percentage_must_be_1_and_less_than_100">Coinback percentage must be at least 1% and less or equal to 100%.</string>
+    <string name="receivable">Receivable</string>
+    <string name="user_needs_to_pay_a_min_of_s_s_to_cover_the_coinback_fee">User needs to pay a min of %s %s to cover the coinback fee.</string>
+    <string name="s_insufficient">%s Insufficient</string>
+    <string name="you_do_not_have_sufficient_s_balance_for_the_coinback_incurred_with_this_transaction">You do not have sufficient %s balance for the coinback incurred with this transaction.</string>
+    <string name="user_payment_success_text_note_user">Please pay the cash amount to complete your payment. You will then receive push notification notifying on your coinback.</string>
+    <string name="renew">Renew</string>
+    <string name="renew_in_s">Renew in %ss</string>
+    <string name="payment_are_you_sure_you_want_to_back">If you would like to change the payment,this Payment QR Code will be not valid anymore. Are you sure you want to back?</string>
+    <string name="payment_detail">Payment Details</string>
+    <string name="coinback_detail">Coinback Details</string>
+    <string name="qr_code_is_invalid">QR Code is invalid</string>
+    <string name="payment_received">Payment received</string>
+    <string name="please_enable_coinback_if_you_want_to_provide_coinback_to_user_who_is_paying_full_amount_with_cash">Please enable coinback if you want to provide coinback to user who is paying full amount with cash.</string>
+    <string name="the_payment_is_being_processed">The payment is being processed</string>
+    <string name="payment_processing">PROCESSING!</string>
+    <string name="payment_detail_amount">Amount</string>
+    <string name="withdraw">Withdraw</string>
+    <string name="new_convert_to_tec">New Convert to TEC</string>
+    <string name="something_wen_wrong_please_try_again">Something went wrong. Please try again!</string>
+    <string name="converted_amount">Converted Amount</string>
+    <string name="the_minimun_balance_to_maintained_in_your_s_wallet">The minimum balance to be maintained in your %1$s Wallet is %2$s %3$s.</string>
+    <string name="the_minimun_balance_to_maintained_in_your_s_wallet_we_will_process">The minimum balance to be maintained in your %1$s Wallet is %2$s %3$s.\nWe will process your withdrawal within 3 working days excluding the interbank processing time.</string>
+    <string name="withdraw_amount">Withdraw Amount</string>
+    <string name="sgd_balance">SGD Balance</string>
+    <string name="you_will_earn_an_estimated_title_withdraw_screen"><![CDATA[You will earn an estimated of <b>%s TEC</b> by end of the month, transferred automatically to your TEC wallet by maintaining your SGD balance.]]></string>
+    <string name="incoming_tec_details">Incoming TEC DETAILS</string>
+    <string name="tec_conversion_details">TEC Conversion Details</string>
+    <string name="withdraw_details">Withdraw DETAILS</string>
+    <string name="convert_to_tec_review">CONVERT TO TEC REVIEW</string>
+    <string name="withdraw_review">WITHDRAW REVIEW</string>
+    <string name="withdraw_amount_must_be_at_least_1_00_sgd">Withdraw amount must be at least 1.00 SGD</string>
+    <string name="convert_to_tec_success_note">You have successfully converted %s %s</string>
+    <string name="incoming_success_note">You have successfully received %s &TeeCoinSymbol; from the Convert to &TeeCoinSymbol;. </string>
+    <string name="note_withdraw_instead">Your balance will be lower than the minimum balance allowed after this transaction. Would you want to withdraw %s %s instead?</string>
+    <string name="note_convert_instead">Your balance will be lower than the minimum balance allowed after this transaction. Would you want to convert %s %s instead?</string>
+    <string name="your_balance_is_not_sufficient_for_this_transaction">Your balance is not sufficient for this transaction.</string>
+    <string name="note_top_up"><![CDATA[ Please note that you need to have your <u><b>profile verified</b></u> if you want to top up more than %s USD.]]></string>
+    <string name="withdraw_request">Withdraw Request</string>
+    <string name="withdraw_completed">Withdraw Completed</string>
+    <string name="withdraw_request_detail_note">We have processed your request to withdraw %s SGD on %s. Kindly keep track on your bank account.</string>
+    <string name="purchase_timer">PURCHASE (%ss)</string>
+    <string name="confirm_timer">CONFIRM (%ss)</string>
+    <string name="integrating_with_exchanger">Integrating with Exchanger</string>
+    <string name="coupon_price_will_change_in_s"><![CDATA[Coupon price will change in <b><font color=#b2973f>%ss</font></b>]]></string>
+    <string name="purchase_with_s_tec_in_ss"><![CDATA[Purchase with <b><font color=#b2973f>%s</font></b> TEC  in <b><font color=#b2973f>%ss</font></b>]]></string>
+    <string name="your_session_has_expired_please_login_again">Your session has expired. \nPlease login again.</string>
+    <string name="login_password_info">Password is the password you setup in combination to your email address to access the system. Minimum 8 characters, at least 1 upper case.</string>
+
+</resources>
+

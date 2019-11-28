@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_white_solid_no_border_10_radius"
+    android:paddingBottom="@dimen/fs_15"
+    android:id="@+id/view_input_tip_ll_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/fs_20"
+        android:layout_marginTop="@dimen/fs_20"
+        style="@style/TCTextViewGoldBold"
+        android:text="@string/dialog_tip_title"
+        android:gravity="center" />
+
+    <include layout="@layout/view_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fs_20"
+            android:gravity="center"
+            android:paddingEnd="@dimen/fs_35"
+            android:paddingStart="@dimen/fs_35"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/view_input_tip_tv_balance"
+                style="@style/TCTextViewBlackBoldLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1000 TEC" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/view_input_tip_tv_exchange_rate"
+            style="@style/TCTextViewBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fs_15"
+            android:gravity="center"
+            android:text="Exchange:" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fs_15"
+            android:layout_marginBottom="@dimen/fs_10"
+            android:gravity="center_horizontal"
+            android:paddingEnd="@dimen/fs_35"
+            android:paddingStart="@dimen/fs_35">
+            <TextView
+                android:id="@+id/view_input_tip_tv_tip_label"
+                style="@style/TCTextViewBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/view_input_tip_ll_tip_amount"
+                android:layout_alignTop="@+id/view_input_tip_ll_tip_amount"
+                android:layout_marginEnd="@dimen/fs_5"
+                android:text="@string/text_tip" />
+
+            <LinearLayout
+                android:id="@+id/view_input_tip_ll_tip_amount"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_toEndOf="@+id/view_input_tip_tv_tip_label"
+                android:background="@color/c_f2f2f2"
+                android:orientation="horizontal">
+
+                <AutoCompleteTextView
+                    android:id="@+id/view_input_tip_et_tip_amount"
+                    android:layout_width="@dimen/fs_150"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/fs_3"
+                    android:background="@android:color/white"
+                    android:hint="@string/dialog_tip_optional"
+                    android:inputType="numberDecimal"
+                    android:maxLength="9"
+                    android:textStyle="bold"
+                    android:paddingBottom="@dimen/fs_5"
+                    android:paddingEnd="@dimen/fs_30"
+                    android:paddingStart="@dimen/fs_10"
+                    android:paddingTop="@dimen/fs_5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/c_000000"
+                    android:padding="@dimen/fs_10"
+                    android:text="TEC" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/view_input_tip_tv_tip_exchange_to_currency"
+                style="@style/TCTextViewGoldLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/view_input_tip_ll_tip_amount"
+                android:layout_below="@+id/view_input_tip_ll_tip_amount" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/c_f2f2f2"
+            android:gravity="center"
+            android:paddingBottom="@dimen/fs_10"
+            android:paddingTop="@dimen/fs_20">
+            <TextView
+                android:id="@+id/view_input_tip_tv_amount_zero"
+                style="@style/TCSquareShapeTextView"
+                android:text="@string/text_zero" />
+
+            <TextView
+                android:id="@+id/view_input_tip_tv_amount_one"
+                style="@style/TCSquareShapeTextView"
+                android:text="1" />
+
+            <TextView
+                android:id="@+id/view_input_tip_tv_amount_five"
+                style="@style/TCSquareShapeTextView"
+                android:text="5" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/c_f2f2f2"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/fs_20"
+            android:paddingTop="@dimen/fs_10">
+
+            <TextView
+                android:id="@+id/view_input_tip_tv_amount_ten"
+                style="@style/TCSquareShapeTextView"
+                android:text="10" />
+
+            <TextView
+                android:id="@+id/view_input_tip_tv_amount_twenty"
+                style="@style/TCSquareShapeTextView"
+                android:text="20" />
+
+            <TextView
+                android:id="@+id/view_input_tip_tv_amount_fifty"
+                style="@style/TCSquareShapeTextView"
+                android:text="50" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fs_20"
+            android:layout_marginEnd="@dimen/fs_20"
+            android:layout_marginStart="@dimen/fs_20"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/view_input_tip_tv_cancel"
+                style="@style/TCTextViewGold"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_solid_gold_border_30_radius"
+                android:paddingBottom="@dimen/fs_8"
+                android:paddingTop="@dimen/fs_8"
+                android:layout_marginEnd="@dimen/fs_10"
+                android:textAllCaps="true"
+                android:text="@string/text_cancel" />
+
+            <TextView
+                android:id="@+id/view_input_tip_tv_next"
+                style="@style/TCTextViewWhite"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fs_10"
+                android:background="@drawable/bg_gold_solid_no_border_30_radius"
+                android:paddingBottom="@dimen/fs_8"
+                android:paddingTop="@dimen/fs_8"
+                android:textAllCaps="true"
+                android:text="@string/text_next" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

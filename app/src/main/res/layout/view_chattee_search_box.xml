@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_search_box"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/fs_56"
+    android:background="@drawable/bg_top_ten_review"
+    android:padding="@dimen/fs_5"
+    android:visibility="visible">
+
+    <ImageView
+        android:id="@+id/iv_search_box"
+        android:layout_width="@dimen/fs_28"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/todo"
+        android:padding="@dimen/fs_5"
+        android:src="@drawable/ic_search_black_24dp" />
+
+    <EditText
+        android:id="@+id/ed_search"
+        style="@style/TCEditText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@+id/iv_search_box"
+        android:layout_toStartOf="@+id/iv_remove"
+        android:background="@android:color/transparent"
+        android:hint="@string/text_search"
+        android:imeOptions="actionSearch"
+        android:padding="@dimen/fs_3" />
+
+    <ImageView
+        android:id="@+id/iv_remove"
+        android:layout_width="@dimen/fs_28"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/todo"
+        android:padding="@dimen/fs_7"
+        android:src="@drawable/ic_remove_edittext"
+        android:visibility="gone" />
+
+</RelativeLayout>

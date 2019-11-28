@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TCMainActivity">
+
+    <com.sothree.slidinguppanel.SlidingUpPanelLayout
+        android:id="@+id/activity_main_spl_main_slide_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        sothree:umanoPanelHeight="@dimen/fs_68"
+        sothree:umanoShadowHeight="@dimen/fs_4">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+
+            <include layout="@layout/activity_main_toolbar_header" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/activity_main_rl_bottom"
+                android:layout_below="@+id/activity_main_rl_header"
+                android:fitsSystemWindows="true"
+                tools:ignore="UnknownIdInLayout">
+
+                <FrameLayout
+                    android:id="@+id/activity_main_fl_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:fitsSystemWindows="true"
+                    android:focusable="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/activity_main_rl_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center|bottom">
+
+                <include layout="@layout/activity_main_button_pre_next" />
+
+                <include layout="@layout/view_cancel_next_bottom" />
+
+                <include layout="@layout/activity_main_menu_bottom" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_activity_rl_slide_up_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </RelativeLayout>
+    </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_cancel_next_bottom_ll_parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/fs_80"
+    android:background="@android:color/white"
+    android:orientation="horizontal"
+    android:padding="@dimen/fs_20">
+
+    <TextView
+        android:id="@+id/view_cancel_next_bottom_tv_cancel"
+        style="@style/TCTextViewGold"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/bg_white_solid_gold_border_30_radius"
+        android:gravity="center"
+        android:text="@string/text_cancel"
+        android:textAllCaps="true" />
+
+    <TextView
+        android:id="@+id/view_cancel_next_bottom_tv_next"
+        style="@style/TCTextViewWhite"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/fs_20"
+        android:layout_weight="1"
+        android:background="@drawable/bg_gold_solid_no_border_30_radius"
+        android:contentDescription="@string/todo"
+        android:gravity="center"
+        android:text="@string/text_next"
+        android:textAllCaps="true" />
+</LinearLayout>

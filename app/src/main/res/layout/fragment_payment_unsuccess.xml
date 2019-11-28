@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayoutVerticalParent">
+
+    <LinearLayout
+        style="@style/LinearLayoutVerticalFullWidth"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/frg_transaction_iv_fail"
+            android:layout_width="@dimen/fs_100"
+            android:layout_height="@dimen/fs_100"
+            android:layout_gravity="center"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_fail" />
+
+        <TextView
+            android:id="@+id/frg_payment_unsuccess_tv_title"
+            style="@style/TCTextViewGrayBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fs_20"
+            android:gravity="center"
+            android:text="@string/coupon_unsuccessful"
+            android:textSize="@dimen/ts_16" />
+
+        <TextView
+            android:id="@+id/frg_payment_unsuccess_tv_message"
+            style="@style/TCTextViewBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/fs_100"
+            android:layout_marginEnd="@dimen/fs_50"
+            android:layout_marginStart="@dimen/fs_50"
+            android:layout_marginTop="@dimen/fs_10"
+            android:gravity="center"
+            android:text="@string/shop_payment_unsuccess_title" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LinearLayoutVerticalFullWidth"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="@dimen/fs_25">
+
+        <TextView
+            android:id="@+id/frag_payment_unsuccess_tv_try_again"
+            style="@style/TCTextViewWhite"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fs_39"
+            android:layout_marginBottom="@dimen/fs_25"
+            android:layout_marginEnd="@dimen/fs_50"
+            android:layout_marginStart="@dimen/fs_50"
+            android:layout_marginTop="@dimen/fs_20"
+            android:background="@drawable/bg_gold_solid_no_border_30_radius"
+            android:gravity="center"
+            android:text="@string/try_again"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:id="@+id/frag_payment_success_tv_cancel"
+            style="@style/TCTextViewGold"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fs_39"
+            android:layout_marginEnd="@dimen/fs_50"
+            android:layout_marginStart="@dimen/fs_50"
+            android:background="@drawable/bg_white_solid_gold_border_30_radius"
+            android:gravity="center"
+            android:text="@string/text_cancel"
+            android:textAllCaps="true" />
+    </LinearLayout>
+</RelativeLayout>

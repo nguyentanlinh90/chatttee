@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<languages>
+    <item
+        language_code="en"
+        locale_country_code="US"
+        locale_language_code="en"
+        locale_script=""
+        language_name="English"
+        text_code="language_english" />
+    <item
+        language_code="zh-Hans"
+        locale_country_code="CN"
+        locale_language_code="zh"
+        locale_script="Hans"
+        language_name="Chinese (Simplified)"
+        text_code="language_chinese_simplified" />
+    <item
+        language_code="zh-Hant"
+        locale_country_code="TW"
+        locale_language_code="zh"
+        locale_script="Hant"
+        language_name="Chinese (Traditional)"
+        text_code="language_chinese_traditional" />
+    <item
+        language_code="ja"
+        language_name="Japanese"
+        locale_country_code="JP"
+        locale_language_code="ja"
+        locale_script=""
+        text_code="language_japanese" />
+    <item
+        language_code="vi"
+        language_name="Vietnamese"
+        locale_country_code="VN"
+        locale_language_code="vi"
+        locale_script=""
+        text_code="language_vietnamese" />
+</languages>
+
+    <!--
+
+            country code & language_code: for
+        flagcode is using according to this solution
+        https://stackoverflow.com/questions/30494284/android-get-country-emoji-flag-using-locale/35849652
+
+        Unicode refer:
+        https://unicode.org/emoji/charts/full-emoji-list.html#1f1e7_1f1e6
+    -->

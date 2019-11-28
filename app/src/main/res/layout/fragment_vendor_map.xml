@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+    <include layout="@layout/view_maps" />
+
+    <ImageView
+        android:id="@+id/frg_vendor_map_iv_directions"
+        android:layout_width="@dimen/fs_35"
+        android:layout_height="@dimen/fs_35"
+        android:src="@drawable/ic_direction"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/fs_10"
+        android:visibility="visible"
+        />
+
+
+</RelativeLayout>

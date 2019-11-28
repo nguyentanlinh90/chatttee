@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_log_in_v_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:paddingEnd="@dimen/fs_30"
+    android:paddingStart="@dimen/fs_30">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/fs_10"
+        android:layout_marginTop="@dimen/fs_15"
+        style="@style/TCTextViewBlackBold"
+        android:text="@string/text_email"
+        android:textSize="@dimen/ts_12" />
+
+    <RelativeLayout
+        android:id="@+id/fragment_log_in_v_input_email"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fs_46"
+        android:background="@drawable/bg_white_solid_gray_border_5_radius">
+
+        <ImageView
+            android:id="@+id/fragment_log_in_iv_lock_input_email"
+            style="@style/iv_icon_item_input"
+            android:src="@drawable/ic_email" />
+
+        <EditText
+            android:id="@+id/fragment_log_in_et_input_email"
+            style="@style/et_item_input"
+            android:layout_toEndOf="@+id/fragment_log_in_iv_lock_input_email"
+            android:layout_toStartOf="@+id/fragment_log_in_iv_clear_input_email"
+            android:hint="@string/please_enter_your_email"
+            android:inputType="textEmailAddress" />
+
+        <ImageView
+            android:id="@+id/fragment_log_in_iv_clear_input_email"
+            style="@style/iv_clear_item_input" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/fragment_log_in_tv_error_input_email"
+        style="@style/tv_b21225_10pt_regular"
+        android:text="@string/please_enter_your_email" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/fs_10"
+        android:layout_marginTop="@dimen/fs_15"
+        style="@style/TCTextViewBlackBold"
+        android:text="@string/password"
+        android:textSize="@dimen/ts_12" />
+
+    <RelativeLayout
+        android:id="@+id/fragment_log_in_v_input_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fs_46"
+        android:background="@drawable/bg_white_solid_gray_border_5_radius">
+
+        <ImageView
+            android:id="@+id/fragment_log_in_iv_lock_input_password"
+            style="@style/iv_icon_item_input"
+            android:src="@drawable/ic_lock_gray" />
+
+        <EditText
+            android:id="@+id/fragment_log_in_et_input_password"
+            style="@style/et_item_input"
+            android:layout_toEndOf="@+id/fragment_log_in_iv_lock_input_password"
+            android:layout_toStartOf="@+id/fragment_log_in_iv_clear_input_password"
+            android:hint="@string/please_enter_your_password"
+            android:inputType="textPassword" />
+
+        <ImageView
+            android:id="@+id/fragment_log_in_iv_clear_input_password"
+            style="@style/iv_clear_item_input" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/fragment_log_in_tv_error_input_password"
+        style="@style/tv_b21225_10pt_regular"
+        android:text="@string/please_enter_your_password" />
+
+    <TextView
+        android:id="@+id/fragment_log_in_tv_forgot_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TCTextViewGold"
+        android:gravity="end"
+        android:text="@string/forgot_password"
+        android:textSize="@dimen/ts_12" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fs_15"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_notification_gold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_password_info"
+            android:textColor="@color/c_9b9b9b"
+            android:textSize="@dimen/ts_12" />
+    </LinearLayout>
+</LinearLayout>

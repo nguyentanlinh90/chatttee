@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/fs_80"
+    android:layout_height="@dimen/fs_64"
+    android:layout_marginEnd="@dimen/fs_8">
+
+    <ImageView
+        android:id="@+id/item_coin_back_redeem_iv_icon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/ic_redemption_unselected" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_coin_back_redeem_tv_amount"
+            style="@style/TCTextViewWhiteBoldMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-4dp"
+            android:gravity="center"
+            android:text="@string/text_zero" />
+
+        <TextView
+            style="@style/TCTextViewWhiteBold"
+            android:gravity="center"
+            android:text="@string/tee_coin_symbol"
+            android:textSize="@dimen/ts_10" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_coin_back_redeem_tv_level"
+        style="@style/TCTextViewWhite"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/fs_3"
+        android:text=""
+        android:textSize="@dimen/ts_7" />
+
+</RelativeLayout>

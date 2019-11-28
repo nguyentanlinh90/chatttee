@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_no_data_tv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/TCTextViewBlack"
+    android:gravity="center"
+    android:lineSpacingExtra="@dimen/fs_5"
+    android:padding="@dimen/fs_15"
+    android:text="@string/no_data"
+    android:textSize="@dimen/ts_15"
+    android:visibility="gone" />
+

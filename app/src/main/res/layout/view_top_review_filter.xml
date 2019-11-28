@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:background="@android:color/transparent"
+    android:clickable="true"
+    android:fillViewport="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/fs_20">
+
+        <TextView
+            style="@style/TCTextViewBlackBoldLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/fs_5"
+            android:text="@string/review_filter_choose_your_filter" />
+
+        <LinearLayout
+            android:id="@+id/restaurant_rl_search"
+            style="@style/style_coupon_view_search"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                style="@style/style_coupon_bt_search"
+                android:contentDescription="@string/todo" />
+
+            <EditText
+                android:id="@+id/restaurant_et_search"
+                style="@style/style_coupon_et_search"
+                android:importantForAutofill="no"
+                tools:ignore="LabelFor,UnusedAttribute" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/top_review_filter_ll_sort_by_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TCTextViewBlackBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/c_e0e0e0"
+                android:padding="@dimen/fs_10"
+                android:text="@string/review_filter_sort_by_date" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fs_20"
+                android:orientation="horizontal">
+
+                <include
+                    android:id="@+id/top_review_filter_ll_from_date"
+                    layout="@layout/view_filter_calendar_item" />
+
+                <TextView
+                    style="@style/TCTextViewGray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/fs_10"
+                    android:layout_marginEnd="@dimen/fs_10"
+                    android:text="〜"
+                    android:textSize="@dimen/ts_20" />
+
+                <include
+                    android:id="@+id/top_review_filter_ll_to_date"
+                    layout="@layout/view_filter_calendar_item" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_distance"
+            style="@style/TCTextViewBlackBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/c_e0e0e0"
+            android:padding="@dimen/fs_10"
+            android:text="@string/filter_by_distance" />
+
+        <LinearLayout
+            android:id="@+id/ll_distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fs_20"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/top_review_filter_cb_five_km"
+                style="@style/style_filter_coupon_cb_square"
+                android:text="@string/filter_5km" />
+
+            <CheckBox
+                android:id="@+id/top_review_filter_cb_ten_km"
+                style="@style/style_filter_coupon_cb_square"
+                android:text="@string/filter_10km" />
+
+            <CheckBox
+                android:id="@+id/top_review_filter_cb_twenty_km"
+                style="@style/style_filter_coupon_cb_square"
+                android:text="@string/filter_20km" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/TCTextViewBlackBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/c_e0e0e0"
+            android:padding="@dimen/fs_10"
+            android:text="@string/filter_by_rating" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fs_20"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/top_review_filter_cb_five_star"
+                style="@style/style_filter_coupon_cb_square"
+                android:text="@string/review_filter_5_stars" />
+
+            <CheckBox
+                android:id="@+id/top_review_filter_cb_four_star"
+                style="@style/style_filter_coupon_cb_square"
+                android:text="@string/review_filter_4_stars" />
+
+            <CheckBox
+                android:id="@+id/top_review_filter_cb_three_star"
+                style="@style/style_filter_coupon_cb_square"
+                android:text="@string/review_filter_3_stars" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/fs_20"
+            android:layout_marginEnd="@dimen/fs_20"
+            android:layout_marginBottom="@dimen/fs_20"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/top_review_filter_cb_two_star"
+                style="@style/style_filter_coupon_cb_square"
+                android:text="@string/review_filter_2_stars" />
+
+            <CheckBox
+                android:id="@+id/top_review_filter_cb_one_star"
+                style="@style/style_filter_coupon_cb_square"
+                android:text="@string/review_filter_1_star" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/restaurant_filter_ll_opening_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TCTextViewBlackBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/c_e0e0e0"
+                android:padding="@dimen/fs_10"
+                android:text="@string/text_opening_hours"
+                android:textAllCaps="true" />
+
+            <RelativeLayout
+                android:id="@+id/restaurant_rl_opening_times"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fs_40"
+                android:layout_margin="@dimen/fs_20"
+                android:background="@drawable/bg_transparent_solid_gray_border_5_radius">
+
+                <TextView
+                    android:id="@+id/restaurant_filter_tv_opening_time"
+                    style="@style/TCTextViewGray"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toStartOf="@+id/dialog_coupon_user_filter_coupon_iv_arrow_start"
+                    android:gravity="center"
+                    android:hint="@string/review_filter_select_opening_times"
+                    android:textColor="@color/c_b2973f"
+                    android:textColorHint="@color/c_8e8e93" />
+
+                <ImageView
+                    android:id="@+id/dialog_coupon_user_filter_coupon_iv_arrow_start"
+                    style="@style/style_arrow_up"
+                    android:contentDescription="@string/todo" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            style="@style/TCTextViewBlackBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/c_e0e0e0"
+            android:padding="@dimen/fs_10"
+            android:text="@string/text_sort_by"
+            android:textAllCaps="true" />
+
+        <LinearLayout
+            android:id="@+id/top_review_filter_ll_near_me_merchant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fs_20"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/top_review_filter_cb_near_me"
+                style="@style/style_filter_coupon_cb_square"
+                android:text="@string/review_filter_near_me" />
+
+            <CheckBox
+                android:id="@+id/top_review_filter_cb_new_merchant"
+                style="@style/style_filter_coupon_cb_square"
+                android:text="@string/text_new_merchant" />
+        </LinearLayout>
+
+        <include layout="@layout/view_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fs_20"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/top_review_filter_cb_sort_date_newest"
+                style="@style/style_filter_coupon_cb_oval_horizontal"
+                android:text="@string/review_filter_sort_date_newest_first" />
+
+            <CheckBox
+                android:id="@+id/top_review_filter_cb_sort_date_oldest"
+                style="@style/style_filter_coupon_cb_oval_horizontal"
+                android:text="@string/review_filter_sort_date_oldest_first" />
+        </LinearLayout>
+
+        <include layout="@layout/view_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fs_20"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/top_review_filter_cb_sort_rate_newest"
+                style="@style/style_filter_coupon_cb_oval_horizontal"
+                android:text="@string/review_filter_sort_rate_highest" />
+
+            <CheckBox
+                android:id="@+id/top_review_filter_cb_sort_rate_oldest"
+                style="@style/style_filter_coupon_cb_oval_horizontal"
+                android:text="@string/review_filter_sort_rate_lowest" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/top_review_filter_btn_filter"
+            style="@style/TCTextViewWhite"
+            android:layout_width="@dimen/fs_170"
+            android:layout_height="@dimen/fs_45"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/fs_10"
+            android:background="@drawable/bg_gold_solid_no_border_30_radius"
+            android:gravity="center"
+            android:text="@string/text_done" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

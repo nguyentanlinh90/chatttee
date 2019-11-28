@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/c_f2f2f2"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/fs_20"
+            android:paddingTop="@dimen/fs_20">
+
+            <TextView
+                android:id="@+id/frg_coin_back_tv_payment_id"
+                style="@style/TCTextViewGoldBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment ID 10002"
+                android:textAllCaps="true"
+                android:textSize="@dimen/ts_15" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fs_3"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/frg_coin_back_tv_is_success"
+                    style="@style/TCTextViewBlackBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Success"
+                    android:textSize="@dimen/ts_15" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/frg_coin_back_tv_date"
+                style="@style/TCTextViewBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fs_3"
+                android:text="2018/04/02 - 11:20"
+                android:textSize="@dimen/ts_15" />
+
+            <TextView
+                android:id="@+id/frg_coin_back_tv_coinback"
+                style="@style/TCTextViewBlackBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fs_3"
+                android:text="% Coin Back = 1%"
+                android:textSize="@dimen/ts_15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/fs_8"
+            android:paddingLeft="@dimen/fs_10"
+            android:paddingRight="@dimen/fs_10"
+            android:paddingTop="@dimen/fs_8">
+
+            <TextView
+                android:id="@+id/frg_coin_back_tv_address"
+                style="@style/TCTextViewBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="Address:1BvBMSEYstWetqTFn5Au4"
+                android:textAllCaps="true" />
+
+        </LinearLayout>
+
+        <include layout="@layout/view_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/fs_8">
+
+            <TextView
+                style="@style/TCTextViewBlackBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/coin_back_shop_balance" />
+
+            <TextView
+                android:id="@+id/frg_coin_back_tv_balance"
+                style="@style/TCTextViewBlackBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fs_5"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="0 TEE"
+                android:textAllCaps="true" />
+
+        </LinearLayout>
+
+        <include layout="@layout/view_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fs_10"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TCTextViewBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_invoice_id" />
+
+                <TextView
+                    android:id="@+id/frg_coin_back_tv_invoice_id"
+                    style="@style/TCTextViewGrayMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fs_38"
+                    android:layout_marginTop="@dimen/fs_5"
+                    android:background="@drawable/bg_light_gray_solid_no_border_5_radius"
+                    android:gravity="center_vertical"
+                    android:text="@string/text_zero" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/fs_15"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TCTextViewBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_remaining_payment" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fs_38"
+                    android:layout_marginTop="@dimen/fs_5"
+                    android:background="@drawable/bg_light_gray_solid_no_border_5_radius">
+
+                    <TextView
+                        android:id="@+id/frg_coin_back_tv_remain"
+                        style="@style/TCTextViewGrayMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:hint="@string/text_value_double"
+                        android:text="" />
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_toStartOf="@+id/frg_coin_back_tv_payment_currency"
+                        android:background="@color/c_a6a8b0" />
+
+                    <TextView
+                        android:id="@+id/frg_coin_back_tv_payment_currency"
+                        style="@style/TCTextViewBlack1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="@dimen/fs_10"
+                        android:gravity="center"
+                        android:text="@string/tee_coin_symbol" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/frg_coin_back_tv_convert_payment"
+                    style="@style/TCTextViewGoldLight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/fs_10"
+            android:layout_marginLeft="@dimen/fs_10"
+            android:layout_marginRight="@dimen/fs_10"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TCTextViewBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_coin_back" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fs_38"
+                    android:layout_marginTop="@dimen/fs_5"
+                    android:background="@drawable/bg_light_gray_solid_no_border_5_radius">
+
+                    <TextView
+                        android:id="@+id/frg_coin_back_tv_coin_back"
+                        style="@style/TCTextViewGrayMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toStartOf="@+id/iv_line"
+                        android:gravity="center_vertical"
+                        android:hint="@string/text_value_double"
+                        android:inputType="numberDecimal"
+                        android:maxLength="10"
+                        android:text="" />
+
+                    <View
+                        android:id="@+id/iv_line"
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_toStartOf="@+id/tv_tee"
+                        android:background="@color/c_a6a8b0" />
+
+                    <TextView
+                        android:id="@+id/tv_tee"
+                        style="@style/TCTextViewGray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="@dimen/fs_10"
+                        android:gravity="center"
+                        android:text="@string/tee_coin_symbol" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/fs_15"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TCTextViewBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_fee" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fs_38"
+                    android:layout_marginTop="@dimen/fs_5"
+                    android:background="@drawable/bg_light_gray_solid_no_border_5_radius">
+
+                    <TextView
+                        android:id="@+id/frg_coin_back_tv_coin_back_fee"
+                        style="@style/TCTextViewGrayMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:hint="@string/text_value_double"
+                        android:text="" />
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_toStartOf="@+id/tv_tee_"
+                        android:background="@color/c_a6a8b0" />
+
+                    <TextView
+                        android:id="@+id/tv_tee_"
+                        style="@style/TCTextViewBlack1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="@dimen/fs_10"
+                        android:gravity="center"
+                        android:text="@string/tee_coin_symbol" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/view_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/fs_25">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/TCTextViewBlack1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_total_tec"
+                    android:textSize="@dimen/ts_18" />
+
+                <TextView
+                    android:id="@+id/frg_coin_back_tv_total_tee"
+                    style="@style/TCTextViewBlackBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="@dimen/ts_18" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

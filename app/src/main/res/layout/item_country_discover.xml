@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/fs_10"
+    android:layout_marginBottom="@dimen/fs_15"
+    android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/item_country_discover_cb_country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:button="@drawable/check_box_oval_selector"
+        style="@style/TCTextViewBlack"
+        android:paddingStart="@dimen/fs_10"
+        android:text="@string/text_text"
+        android:textSize="@dimen/ts_13"
+        tools:ignore="RtlSymmetry" />
+
+</LinearLayout>

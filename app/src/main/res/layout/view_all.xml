@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_view_all"
+    style="@style/view_button_all_main_user"
+    android:layout_gravity="right"
+    tools:ignore="RtlHardcoded,RtlSymmetry,UseCompoundDrawables">
+
+    <TextView
+        android:id="@+id/ll_all_tv_all"
+        style="@style/text_view_button_all_main_user" />
+
+    <ImageView
+        style="@style/image_button_all_main_user"
+        android:contentDescription="@string/todo" />
+
+</LinearLayout>

@@ -1,0 +1,821 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/c_a08220</item>
+        <item name="colorPrimaryDark">@color/c_a08220</item>
+        <item name="colorAccent">@color/c_b2973f</item>
+    </style>
+    <!---->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/black</item>
+    </style>
+
+    <style name="dialog_full_transparent_background">
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <!--custom textview-->
+    <style name="TCTextViewDefault" parent="android:Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/ts_12_5</item>
+        <item name="android:fontFamily">@font/axis_std_regular</item>
+        <item name="fontFamily">@font/axis_std_regular</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:paddingBottom">@dimen/fs_1</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:lineSpacingExtra">@dimen/fs_2_5</item>
+    </style>
+
+    <style name="TCTextViewLight" parent="TCTextViewDefault">
+        <item name="android:fontFamily">@font/axis_std_light</item>
+        <item name="fontFamily">@font/axis_std_light</item>
+    </style>
+
+    <style name="TCTextViewBold" parent="TCTextViewDefault">
+        <item name="android:fontFamily">@font/axis_std_bold</item>
+        <item name="fontFamily">@font/axis_std_bold</item>
+    </style>
+
+    <style name="TCTextViewGray" parent="TCTextViewDefault">
+        <item name="android:textColor">@color/c_9698a2</item>
+    </style>
+
+    <style name="TCTextViewGrayLight" parent="TCTextViewLight">
+        <item name="android:textColor">@color/c_9698a2</item>
+    </style>
+
+    <style name="TCTextViewGrayBold" parent="TCTextViewBold">
+        <item name="android:textColor">@color/c_9698a2</item>
+    </style>
+
+    <style name="TCTextViewGrayMedium" parent="TCTextViewGray">
+        <item name="android:textSize">@dimen/ts_14</item>
+    </style>
+
+
+    <style name="TCTextViewGrayBoldMedium" parent="TCTextViewGrayBold">
+        <item name="android:textSize">@dimen/ts_14</item>
+
+    </style>
+
+    <style name="TCTextViewGraySmall" parent="TCTextViewGray">
+        <item name="android:textSize">@dimen/ts_11</item>
+    </style>
+
+    <style name="TCTextViewWhite" parent="TCTextViewDefault">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="TCTextViewWhiteMedium" parent="TCTextViewWhite">
+        <item name="android:textSize">@dimen/ts_14</item>
+    </style>
+
+    <style name="TCTextViewWhiteBold" parent="TCTextViewBold">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="TCTextViewWhiteBoldMedium" parent="TCTextViewWhiteBold">
+        <item name="android:textSize">@dimen/ts_14</item>
+    </style>
+
+    <style name="TCTextViewBlackLight" parent="TCTextViewLight">
+        <item name="android:textColor">@color/c_2d2d2d</item>
+    </style>
+
+    <style name="TCTextViewBlack" parent="TCTextViewDefault">
+        <item name="android:textColor">@color/c_2d2d2d</item>
+    </style>
+
+    <style name="TCTextViewBlackMedium" parent="TCTextViewBlack">
+        <item name="android:textSize">@dimen/ts_14</item>
+
+    </style>
+
+    <style name="TCTextViewBlackLarge" parent="TCTextViewBlack">
+        <item name="android:textSize">@dimen/ts_16</item>
+
+    </style>
+
+    <style name="TCTextViewBlack1" parent="TCTextViewDefault">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="TCTextViewBlack1Medium" parent="TCTextViewBlack1">
+        <item name="android:textSize">@dimen/ts_14</item>
+    </style>
+
+    <style name="TCTextViewBlack1Large" parent="TCTextViewBlack1">
+        <item name="android:textSize">@dimen/ts_16</item>
+    </style>
+
+    <style name="TCTextViewTabMenuCoupon" parent="TCTextViewBlack">
+        <item name="android:paddingBottom">@dimen/fs_0</item>
+        <item name="android:layout_marginStart">@dimen/fs_8</item>
+    </style>
+
+
+    <style name="TCTextViewBlackBold" parent="TCTextViewBold">
+        <item name="android:textColor">@color/c_2d2d2d</item>
+    </style>
+
+    <style name="TCTextViewBlackBoldMedium" parent="TCTextViewBlackBold">
+        <item name="android:textSize">@dimen/ts_14</item>
+    </style>
+
+    <style name="TCTextViewBlackBoldLarge" parent="TCTextViewBlackBold">
+        <item name="android:textSize">@dimen/ts_16</item>
+    </style>
+
+    <style name="TCTextViewBlackBoldLargeEditor" parent="TCTextViewBlackBold">
+        <item name="android:textSize">@dimen/ts_16</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingBottom">-1dp</item>
+    </style>
+
+    <style name="TCTextViewHeader" parent="TCTextViewBlack">
+        <item name="android:textSize">@dimen/ts_17</item>
+    </style>
+
+    <style name="TCTextViewRightHeaderBlueBold" parent="TCTextViewDefault">
+        <item name="android:textColor">@color/c_0e61fd</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/ts_14</item>
+    </style>
+
+    <style name="TCTextViewGold" parent="TCTextViewDefault">
+        <item name="android:textColor">@color/c_b2973f</item>
+        <item name="android:textSize">@dimen/ts_12_8</item>
+        <item name="android:paddingBottom">@dimen/fs_2</item>
+        <item name="android:lineSpacingExtra">@dimen/fs_2_5</item>
+    </style>
+
+    <style name="TCTextViewGoldBold" parent="TCTextViewBold">
+        <item name="android:textColor">@color/c_b2973f</item>
+    </style>
+
+    <style name="TCTextViewGoldBoldMedium" parent="TCTextViewGoldBold">
+        <item name="android:textSize">@dimen/ts_14</item>
+    </style>
+
+    <style name="TCTextViewGoldBoldLarge" parent="TCTextViewGoldBold">
+        <item name="android:textSize">@dimen/ts_16</item>
+        <item name="android:lineSpacingExtra">3dp</item>
+    </style>
+
+    <style name="TCTextViewGoldLight" parent="TCTextViewLight">
+        <item name="android:textColor">@color/c_b2973f</item>
+    </style>
+
+    <style name="TCTextViewCoinNumber" parent="TCTextViewDefault">
+        <item name="android:textColor">@color/c_b2973f</item>
+        <item name="android:fontFamily">@font/axis_std_bold</item>
+        <item name="fontFamily">@font/axis_std_bold</item>
+        <item name="android:textSize">@dimen/ts_19</item>
+        <item name="android:lineSpacingExtra">@dimen/fs_2_5</item>
+
+    </style>
+
+    <style name="TCTextViewNumberPasscode" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/c_ffffff</item>
+        <item name="android:textSize">@dimen/ts_41</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--custom edittex-->
+    <!--http://fonts3.com/fonts/a/%E6%97%A5%E7%B3%BB%E5%AD%97%E4%BD%93axisstd-regular.html-->
+    <style name="TCEditText" parent="android:Widget.EditText">
+        <item name="android:textColor">@color/c_2d2d2d</item>
+        <item name="android:textColorHint">@color/c_a6a8b0</item>
+        <item name="android:textSize">@dimen/ts_13</item>
+        <item name="android:textCursorDrawable">@drawable/cursor_edittex</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">@dimen/fs_8</item>
+        <item name="android:inputType">text</item>
+        <item name="android:fontFamily">@font/axis_std_regular</item>
+        <item name="fontFamily">@font/axis_std_regular</item>
+    </style>
+
+    <style name="TCEditTextBack" parent="TCEditText">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="TCTextViewFilterNotification" parent="TCTextViewDefault">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/ts_11</item>
+        <item name="android:paddingBottom">@dimen/fs_2</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/button_filter_selector</item>
+    </style>
+    <!--custom layout input-->
+
+    <style name="Widget.MaterialRatingBar.RatingBar" parent="android:Widget.RatingBar">
+        <!--
+        Disabled for correct behavior on Android 4.x, see
+        https://github.com/android/platform_frameworks_base/commit/911743652b597057a1bd7ef8a921e9ff8dce0f4a#diff-149f45c5ff2d3185bb79688ba17bc432L536
+        <item name="android:progressDrawable">@null</item>
+        -->
+        <item name="android:indeterminateDrawable">@null</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:maxHeight">50dp</item>
+
+    </style>
+
+    <!--custom tab layout-->
+
+    <!--custom text CollapsingToolbarLayout from vendor screen-->
+    <style name="ExpandedTitle" parent="@android:style/TextAppearance">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="CollapsedTitle" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/fs_18</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@android:color/black</item>
+    </style>
+
+    <style name="TCSquareShapeTextView">
+        <item name="android:layout_width">38dp</item>
+        <item name="android:layout_height">38dp</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:padding">@dimen/fs_10</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginEnd">@dimen/fs_10</item>
+    </style>
+
+    <style name="BottomSheetDialog" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/bottomSheetStyleWrapper</item>
+    </style>
+
+    <style name="bottomSheetStyleWrapper" parent="Widget.Design.BottomSheet.Modal">
+        <item name="behavior_peekHeight">500dp</item>
+    </style>
+
+    <style name="fragment_coupon_shop_tv_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/fs_23</item>
+        <item name="android:background">@color/c_f2f2f2</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/ts_14</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:fontFamily">@font/axis_std_regular</item>
+        <item name="android:paddingStart">@dimen/fs_10</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="style_arrow_up">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginEnd">@dimen/fs_10</item>
+        <item name="android:layout_marginStart">@dimen/fs_10</item>
+        <item name="android:background">@drawable/ic_arrow_drop_down_black_24dp</item>
+    </style>
+
+    <style name="style_coupon_view_search">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/fs_35</item>
+        <item name="android:layout_marginLeft">@dimen/fs_20</item>
+        <item name="android:layout_marginTop">@dimen/fs_10</item>
+        <item name="android:layout_marginRight">@dimen/fs_10</item>
+        <item name="android:layout_marginBottom">@dimen/fs_10</item>
+        <item name="android:background">@drawable/bg_transparent_solid_gray_border_5_radius</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="style_coupon_bt_search">
+        <item name="android:layout_width">@dimen/fs_19</item>
+        <item name="android:layout_height">@dimen/fs_19</item>
+        <item name="android:layout_marginStart">@dimen/fs_10</item>
+        <item name="android:background">@drawable/ic_search_black_24dp</item>
+    </style>
+
+    <style name="style_coupon_et_search">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">@dimen/fs_10</item>
+        <item name="android:layout_marginRight">@dimen/fs_10</item>
+        <item name="android:background">@null</item>
+        <item name="android:hint">@string/text_coupon_what_are_you_searching</item>
+        <item name="android:inputType">text</item>
+        <item name="android:textColor">@color/c_b2973f</item>
+        <item name="android:textColorHint">@color/c_8e8e93</item>
+        <item name="android:textSize">@dimen/ts_12</item>
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+
+    <style name="style_filter_coupon_cb_oval_vertical">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/ts_13</item>
+        <item name="android:fontFamily">@font/axis_std_regular</item>
+        <item name="android:button">@drawable/check_box_oval_selector</item>
+        <item name="android:paddingStart">@dimen/fs_6</item>
+        <item name="android:layout_marginStart">@dimen/fs_20</item>
+    </style>
+
+    <style name="style_filter_coupon_cb_oval_horizontal">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/ts_13</item>
+        <item name="android:button">@drawable/check_box_oval_selector</item>
+        <item name="android:paddingStart">@dimen/fs_6</item>
+    </style>
+
+    <style name="style_filter_coupon_cb_square">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/ts_13</item>
+        <item name="android:button">@drawable/check_box_square_selector</item>
+        <item name="android:paddingStart">@dimen/fs_6</item>
+    </style>
+
+    <style name="style_sort_by_coupon_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">@dimen/ts_13</item>
+        <item name="android:layout_margin">@dimen/fs_5</item>
+        <item name="android:paddingStart">@dimen/fs_12</item>
+        <item name="android:paddingEnd">@dimen/fs_12</item>
+        <item name="android:background">@drawable/button_filter_view_group_selector</item>
+    </style>
+
+
+    <style name="style_sort_by_coupon_button_wrap_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/fs_5</item>
+        <item name="android:layout_marginEnd">@dimen/fs_5</item>
+        <item name="android:layout_marginBottom">@dimen/fs_5</item>
+        <item name="android:layout_marginStart">@dimen/fs_5</item>
+        <item name="android:paddingStart">@dimen/fs_12</item>
+        <item name="android:paddingEnd">@dimen/fs_5</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/button_filter_view_group_selector</item>
+    </style>
+
+    <style name="style_filter_coupon_cb_square_vertical">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/ts_13</item>
+        <item name="android:button">@drawable/check_box_square_selector</item>
+        <item name="android:paddingStart">@dimen/fs_6</item>
+        <item name="android:layout_marginBottom">@dimen/fs_20</item>
+        <item name="android:layout_marginStart">@dimen/fs_20</item>
+    </style>
+
+    <style name="validation_code_edit_text">
+        <item name="android:layout_width">@dimen/fs_37</item>
+        <item name="android:layout_height">@dimen/fs_37</item>
+        <item name="android:background">@drawable/bg_transparent_solid_gray_border_0_radius</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginRight">@dimen/fs_7</item>
+        <item name="android:maxLength">1</item>
+        <item name="android:inputType">number</item>
+        <item name="android:textColor">@color/c_b2973f</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="fragment_account_view_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+
+    <style name="fragment_account_iv_icon_item">
+        <item name="android:layout_width">@dimen/fs_20</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginStart">@dimen/fs_15</item>
+    </style>
+
+    <style name="fragment_account_tv_title_item">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:paddingStart">@dimen/fs_20</item>
+        <item name="android:paddingEnd">@dimen/fs_20</item>
+        <item name="android:paddingTop">@dimen/fs_10</item>
+        <item name="android:paddingBottom">@dimen/fs_10</item>
+        <item name="android:textColor">@color/c_333338</item>
+        <item name="android:textSize">@dimen/ts_15</item>
+        <item name="android:fontFamily">@font/axis_std_regular</item>
+        <item name="fontFamily">@font/axis_std_regular</item>
+    </style>
+
+    <style name="fragment_account_iv_icon_next_item">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginEnd">@dimen/fs_25</item>
+        <item name="android:src">@drawable/ic_next_gray_24pt</item>
+    </style>
+
+    <style name="fragment_account_view_line_bottom_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.3dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:background">@color/c_d1d1d1</item>
+    </style>
+
+    <style name="tv_reset_all">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:text">@string/reset_all</item>
+        <item name="android:textColor">@color/c_b2973f</item>
+        <item name="android:textSize">@dimen/ts_14</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingEnd">@dimen/fs_10</item>
+    </style>
+
+    <style name="view_item_main_user">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/fs_4</item>
+        <item name="android:layout_marginEnd">@dimen/fs_4</item>
+        <item name="android:layout_marginBottom">@dimen/fs_18</item>
+        <item name="android:background">@drawable/my_shadow_radius_4pt</item>
+    </style>
+
+    <style name="view_group_discover">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/fs_5</item>
+        <item name="android:layout_marginEnd">@dimen/fs_5</item>
+        <item name="android:layout_marginTop">@dimen/fs_9</item>
+        <item name="android:layout_marginBottom">@dimen/fs_9</item>
+        <item name="android:paddingStart">@dimen/fs_10</item>
+        <item name="android:elevation">@dimen/fs_2</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingBottom">@dimen/fs_10</item>
+        <item name="android:background">@drawable/my_shadow_radius_4pt</item>
+    </style>
+
+    <style name="view_header_group_discover">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingEnd">@dimen/fs_16</item>
+        <item name="android:paddingTop">@dimen/fs_10</item>
+        <item name="android:paddingBottom">@dimen/fs_9</item>
+    </style>
+
+    <style name="view_rating_coupon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginStart">@dimen/fs_5</item>
+        <item name="android:layout_marginEnd">@dimen/fs_5</item>
+        <item name="android:paddingStart">@dimen/fs_5</item>
+        <item name="android:paddingEnd">@dimen/fs_5</item>
+        <item name="android:paddingTop">@dimen/fs_3</item>
+        <item name="android:paddingBottom">@dimen/fs_1</item>
+        <item name="android:elevation">@dimen/fs_3</item>
+        <item name="android:alpha">0.9</item>
+        <item name="android:layout_marginBottom">@dimen/fs_8</item>
+        <item name="android:background">@drawable/my_shadow_radius_4pt</item>
+    </style>
+
+
+    <!--<item name="android:background">@drawable/bg_border_radius_1pt</item>-->
+
+    <style name="text_view_title_item_main_user">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/axis_std_bold</item>
+        <item name="fontFamily">@font/axis_std_bold</item>
+        <item name="android:textSize">@dimen/ts_14_5</item>
+        <item name="android:textColor">@color/c_b2973f</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="view_button_all_main_user">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="text_view_button_all_main_user">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/text_all</item>
+        <item name="android:textColor">@color/c_a6b0a8</item>
+        <item name="android:textSize">@dimen/ts_12</item>
+        <item name="android:layout_marginEnd">@dimen/fs_5</item>
+        <item name="android:paddingBottom">@dimen/fs_1</item>
+    </style>
+
+    <style name="image_button_all_main_user">
+        <item name="android:layout_width">@dimen/fs_10</item>
+        <item name="android:layout_height">@dimen/fs_14</item>
+        <item name="android:layout_marginEnd">@dimen/fs_2</item>
+        <item name="android:background">@drawable/ic_next_grey</item>
+    </style>
+
+    <style name="recycler_view_item_main_user">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="iv_done_gold_22pt">
+        <item name="android:layout_width">@dimen/fs_22</item>
+        <item name="android:layout_height">@dimen/fs_22</item>
+        <item name="android:layout_marginEnd">@dimen/fs_5</item>
+        <item name="android:src">@drawable/ic_done_gold</item>
+    </style>
+
+    <style name="iv_check_language">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/ic_oval_check_box</item>
+        <item name="android:layout_alignParentEnd">true</item>
+    </style>
+
+    <style name="text_view_title_filter_category" parent="TCTextViewDefault">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/c_333338</item>
+        <item name="android:paddingStart">@dimen/fs_10</item>
+        <item name="android:paddingEnd">@dimen/fs_10</item>
+        <item name="android:paddingTop">@dimen/fs_3</item>
+        <item name="android:paddingBottom">@dimen/fs_3</item>
+        <item name="android:textSize">@dimen/ts_14</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">@dimen/fs_13</item>
+        <item name="android:layout_marginBottom">@dimen/fs_13</item>
+        <item name="android:background">@color/c_f2f2f2</item>
+    </style>
+
+    <style name="text_view_button_filter_border_gold">
+        <item name="android:layout_width">@dimen/fs_0</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">@dimen/fs_40</item>
+        <item name="android:textColor">@color/c_a08220</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/ts_14</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:background">@drawable/bg_white_solid_gold_border_30_radius</item>
+    </style>
+
+    <style name="text_view_button_filter_background_gold" parent="TCTextViewDefault">
+        <item name="android:layout_width">@dimen/fs_0</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">@dimen/fs_40</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/ts_14</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:background">@drawable/bg_gold_solid_no_border_30_radius</item>
+    </style>
+
+    <style name="linner_layout_content_price_range_selector">
+        <item name="android:layout_width">@dimen/fs_0</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/fs_5</item>
+        <item name="android:paddingBottom">@dimen/fs_5</item>
+        <item name="android:layout_marginEnd">@dimen/fs_5</item>
+        <item name="android:background">@drawable/bg_button_filter_vendor_selector</item>
+    </style>
+
+    <style name="text_view_content_price_range_selector" parent="TCTextViewDefault">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">@font/axis_std_regular</item>
+        <item name="fontFamily">@font/axis_std_regular</item>
+        <item name="android:paddingBottom">@dimen/fs_0</item>
+        <item name="android:textSize">@dimen/ts_13</item>
+    </style>
+
+    <style name="tc_option_selection_gray_solid_40_curvature_selector">
+        <item name="android:layout_width">@dimen/fs_0</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingStart">@dimen/fs_8</item>
+        <item name="android:paddingEnd">@dimen/fs_8</item>
+        <item name="android:paddingTop">@dimen/fs_5</item>
+        <item name="android:paddingBottom">@dimen/fs_5</item>
+        <item name="android:layout_marginEnd">@dimen/fs_5</item>
+        <item name="android:background">
+            @drawable/bg_tc_option_selection_gray_solid_30_curvature_selector
+        </item>
+    </style>
+
+    <style name="text_view_write_review_type_of_visit_selector">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:fontFamily">@font/axis_std_regular</item>
+        <item name="fontFamily">@font/axis_std_regular</item>
+        <item name="android:paddingBottom">@dimen/fs_0</item>
+        <item name="android:textSize">@dimen/ts_9_3</item>
+    </style>
+
+
+    <style name="LinearLayoutVerticalParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="LinearLayoutDefault">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="LinearLayoutVerticalFullWidth" parent="LinearLayoutDefault">
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="LinearLayoutVerticalFullWidthHeight" parent="LinearLayoutVerticalFullWidth">
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="LinearLayoutHorizontalFullWidth" parent="LinearLayoutDefault">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="LinearLayoutHorizontalFullWidthHeight" parent="LinearLayoutHorizontalFullWidth">
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="CustomBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+    </style>
+
+    <style name="CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="TextViewBottomBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/tab_text_selector</item>
+        <item name="android:textSize">@dimen/ts_9</item>
+        <item name="fontFamily">@font/axis_std_regular</item>
+    </style>
+
+    <style name="tv_black_bold_12pt">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:fontFamily">@font/axis_std_bold</item>
+        <item name="fontFamily">@font/axis_std_bold</item>
+        <item name="android:textSize">@dimen/ts_12</item>
+        <item name="android:layout_marginBottom">@dimen/fs_5</item>
+        <item name="android:layout_marginTop">@dimen/fs_10</item>
+    </style>
+
+    <style name="tv_grey_regular_12pt">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/c_4a4a4a</item>
+        <item name="android:fontFamily">@font/axis_std_regular</item>
+        <item name="fontFamily">@font/axis_std_regular</item>
+        <item name="android:textSize">@dimen/ts_12</item>
+        <item name="android:layout_marginBottom">@dimen/fs_5</item>
+    </style>
+
+    <style name="background_for_update_info_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/fs_46</item>
+        <item name="android:background">@drawable/bg_white_solid_gray_border_5_radius</item>
+    </style>
+
+    <style name="iv_icon_item_input">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginStart">@dimen/fs_15</item>
+    </style>
+
+    <style name="et_item_input">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@null</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:textColor">@color/c_2d2d2d</item>
+        <item name="android:textColorHint">@color/c_9b9b9b</item>
+        <item name="android:textSize">@dimen/ts_12</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:layout_marginStart">@dimen/fs_15</item>
+        <item name="android:fontFamily">@font/axis_std_regular</item>
+        <item name="fontFamily">@font/axis_std_regular</item>
+
+    </style>
+
+    <style name="iv_clear_item_input">
+        <item name="android:layout_width">@dimen/fs_30</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:src">@drawable/ic_delete_text_search</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="tv_b21225_10pt_regular">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/c_b21225</item>
+        <item name="android:fontFamily">@font/axis_std_regular</item>
+        <item name="fontFamily">@font/axis_std_regular</item>
+        <item name="android:textSize">@dimen/ts_10</item>
+        <item name="android:layout_marginTop">@dimen/fs_3</item>
+        <item name="android:layout_marginBottom">@dimen/fs_3</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <!--<style name="TCRatingBarWriteReview" parent="android:Widget.DeviceDefault.Light.RatingBar.Indicator">-->
+
+    <style name="TCViewWallet">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_gold_solid_no_border_30_radius</item>
+        <item name="android:fontFamily">@font/axis_std_regular</item>
+        <item name="android:paddingStart">@dimen/fs_50</item>
+        <item name="android:paddingEnd">@dimen/fs_50</item>
+        <item name="android:paddingBottom">@dimen/fs_5</item>
+        <item name="android:paddingTop">@dimen/fs_5</item>
+        <item name="android:text">@string/top_up</item>
+        <item name="android:textSize">@dimen/ts_13</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="ll_item_menu">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="iv_item_menu">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="background_shop_input_payment">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/fs_50</item>
+        <item name="android:paddingStart">@dimen/fs_10</item>
+        <item name="android:paddingEnd">@dimen/fs_10</item>
+        <item name="android:maxLength">9</item>
+        <item name="android:layout_marginStart">@dimen/fs_10</item>
+        <item name="android:inputType">numberDecimal</item>
+        <item name="android:textSize">@dimen/ts_16</item>
+        <item name="android:background">@drawable/bg_white_solid_gray_border_5_radius</item>
+    </style>
+
+</resources>
+

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:background="@color/c_2d2d2d"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/rl_parent_images"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/item_list_review_iv_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/todo"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_logo_chattee"
+            android:visibility="gone" />
+
+        <com.teecoin.animation.TCTouchZooImageView
+            android:id="@+id/item_list_review_iv_photo_zoom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_logo_chattee" />
+        <LinearLayout
+            android:id="@+id/dialog_view_vendor_ll_review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/c_2d2d2d"
+            android:layout_alignParentBottom="true"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/fs_15"
+                android:paddingEnd="@dimen/fs_15"
+                android:paddingTop="@dimen/fs_15"
+                android:background="@color/c_2d2d2d"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/dialog_view_vendor_tv_title"
+                    style="@style/TCTextViewWhiteBold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_content" />
+                <TextView
+                    android:id="@+id/dialog_view_vendor_tv_content"
+                    style="@style/TCTextViewWhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_content" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fs_15"
+                    android:layout_marginBottom="@dimen/fs_10"
+                    tools:ignore="UselessParent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/fs_5"
+                        android:layout_toStartOf="@+id/dialog_view_comment_tv_time_ago"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/dialog_view_comment_iv_avatar_user"
+                            android:layout_width="@dimen/fs_35"
+                            android:layout_height="@dimen/fs_35"
+                            android:contentDescription="@string/todo"
+                            android:src="@drawable/ic_avatar_user_gold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/fs_8"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/dialog_view_comment_tv_name_user"
+                                style="@style/TCTextViewWhite"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                />
+                            <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                                android:id="@+id/dialog_view_comment_rb_rating"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/fs_13" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/dialog_view_comment_tv_time_ago"
+                        style="@style/TCTextViewGray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:layout_alignParentEnd="true"
+                        android:lineSpacingExtra="@dimen/fs_5"
+                        android:text="@string/review_reviewed_format_time"
+                        android:textSize="@dimen/ts_10" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/c_2d2d2d"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fs_0_5"
+                    android:background="@android:color/white"
+                    />
+                <include layout="@layout/view_like_and_tip_detail_review"
+                    android:layout_margin="@dimen/fs_10"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <include layout="@layout/view_play_video" />
+</RelativeLayout>

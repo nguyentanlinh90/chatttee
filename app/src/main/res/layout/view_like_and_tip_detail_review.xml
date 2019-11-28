@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="right"
+    android:gravity="right"
+    android:orientation="horizontal"
+    android:clickable="true"
+    tools:ignore="RtlHardcoded"
+    android:focusable="true">
+    <LinearLayout
+        android:id="@+id/frag_review_top_review_ll_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/fs_20"
+            android:layout_height="@dimen/fs_20"
+            android:contentDescription="@string/todo"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:src="@drawable/ic_like_gold" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/fs_3">
+
+            <TextView
+                android:id="@+id/frag_list_review_tv_total_like"
+                style="@style/TCTextViewBlackBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_zero"
+                android:textSize="@dimen/ts_12" />
+
+            <TextView
+                android:id="@+id/frag_list_review_tv_like"
+                style="@style/TCTextViewGrayLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/frag_list_review_tv_total_like"
+                android:layout_marginTop="-3dp"
+                android:text="@string/review_like"
+                android:textSize="@dimen/ts_11" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/fs_20"
+        android:layout_height="@dimen/fs_20"
+        android:layout_marginStart="@dimen/fs_15"
+        android:contentDescription="@string/todo"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:src="@drawable/ic_logo_not_text" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/fs_3"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/frag_list_review_tv_tip_amount"
+            style="@style/TCTextViewBlackBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_zero"
+            android:textSize="@dimen/ts_12" />
+
+        <TextView
+            android:id="@+id/frag_list_review_tv_tec"
+            style="@style/TCTextViewGrayLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/frag_list_review_tv_tip_amount"
+            android:layout_marginTop="-3dp"
+            android:text="@string/tee_coin_symbol"
+            android:textSize="@dimen/ts_11" />
+    </RelativeLayout>
+</LinearLayout>

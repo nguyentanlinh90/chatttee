@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_no_coupon"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fillViewport="true"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fs_20"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_not_my_coupon" />
+
+        <TextView
+            style="@style/TCTextViewBlackBold"
+            android:layout_marginTop="@dimen/fs_15"
+            android:gravity="center_horizontal"
+            android:text="@string/coupons_no_coupons_available" />
+
+        <TextView
+            android:id="@+id/frag_vender_coupon_tv_no_worries"
+            style="@style/TCTextViewBlack"
+            android:layout_marginTop="@dimen/fs_10"
+            android:gravity="center_horizontal"
+            android:text="@string/coupons_no_worries_start_shopping" />
+
+        <TextView
+            android:id="@+id/frag_vender_coupon_tv_get_more_deals"
+            style="@style/TCTextViewGoldBold"
+            android:layout_marginTop="@dimen/fs_20"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/fs_5"
+            android:text="@string/coupons_get_more_more_deals_on_chattee" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/fs_10"
+        android:layout_marginEnd="@dimen/fs_20"
+        android:paddingStart="@dimen/fs_10"
+        android:layout_marginTop="@dimen/fs_10"
+        tools:ignore="RtlSymmetry">
+
+        <ImageView
+            android:id="@+id/frg_wallet_account_transaction_item_iv_icon"
+            android:layout_width="@dimen/fs_35"
+            android:layout_height="@dimen/fs_35"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/fs_10"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_coin_in" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/fs_3"
+            android:layout_toStartOf="@+id/ll_tee"
+            android:layout_toEndOf="@+id/frg_wallet_account_transaction_item_iv_icon"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/frg_wallet_account_transaction_item_tv_name"
+                    style="@style/TCTextViewBlack1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/fs_5"
+                    android:layout_toStartOf="@+id/frg_wallet_user_last_trans_item_tv_coin"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/text_three_dot"
+                    android:textSize="@dimen/ts_15" />
+
+                <TextView
+                    android:id="@+id/frg_wallet_user_last_trans_item_tv_coin"
+                    style="@style/TCTextViewBlackBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="@string/text_three_dot"
+                    android:textSize="@dimen/ts_15" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/frg_wallet_account_transaction_item_tv_day"
+                style="@style/TCTextViewGraySmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fs_1_5"
+                android:text="@string/text_three_dot" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <include layout="@layout/view_line" />
+</LinearLayout>

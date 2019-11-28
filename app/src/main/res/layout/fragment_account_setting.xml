@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/fs_20">
+
+    <RelativeLayout
+        style="@style/fragment_account_view_item"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/frg_account_setting_iv_update_shop"
+            style="@style/fragment_account_iv_icon_item"
+            android:src="@drawable/ic_update_account"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            style="@style/fragment_account_tv_title_item"
+            android:layout_toEndOf="@+id/frg_account_setting_iv_update_shop"
+            android:text="@string/account_update_info"
+            tools:ignore="RelativeOverlap" />
+
+        <ImageView
+            style="@style/fragment_account_iv_icon_next_item"
+            tools:ignore="ContentDescription" />
+
+        <View style="@style/fragment_account_view_line_bottom_item" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/frg_account_setting_rl_update_user_info"
+        style="@style/fragment_account_view_item">
+
+        <ImageView
+            android:id="@+id/frg_account_iv_update_user_info"
+            style="@style/fragment_account_iv_icon_item"
+            android:src="@drawable/ic_update_account"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            style="@style/fragment_account_tv_title_item"
+            android:layout_toEndOf="@+id/frg_account_iv_update_user_info"
+            android:text="@string/account_user_update_info"
+            tools:ignore="RelativeOverlap" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/frg_account_setting_rl_update_shop_info"
+        style="@style/fragment_account_view_item">
+
+        <ImageView
+            android:id="@+id/frg_account_iv_update_shop_info"
+            style="@style/fragment_account_iv_icon_item"
+            android:src="@drawable/ic_update_account"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            style="@style/fragment_account_tv_title_item"
+            android:layout_toEndOf="@+id/frg_account_iv_update_shop_info"
+            android:text="@string/shop_information"
+            tools:ignore="RelativeOverlap" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/frg_account_setting_rl_coin_back"
+        style="@style/fragment_account_view_item">
+
+        <ImageView
+            android:id="@+id/frg_account_iv_coin_back"
+            style="@style/fragment_account_iv_icon_item"
+            android:src="@drawable/ic_coin_back_setting"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            style="@style/fragment_account_tv_title_item"
+            android:layout_toEndOf="@+id/frg_account_iv_coin_back"
+            android:text="@string/coinback_setting"
+            tools:ignore="RelativeOverlap" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/frg_account_setting_rl_languages"
+        style="@style/fragment_account_view_item">
+
+        <ImageView
+            android:id="@+id/frg_account_setting_iv_languages"
+            style="@style/fragment_account_iv_icon_item"
+            android:src="@drawable/ic_account_language"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            style="@style/fragment_account_tv_title_item"
+            android:layout_toEndOf="@+id/frg_account_setting_iv_languages"
+            android:text="@string/change_language"
+            tools:ignore="RelativeOverlap" />
+
+        <!--<ImageView-->
+        <!--style="@style/fragment_account_iv_icon_next_item"-->
+        <!--tools:ignore="ContentDescription" />-->
+
+        <!--<View style="@style/fragment_account_view_line_bottom_item" />-->
+    </RelativeLayout>
+
+</LinearLayout>

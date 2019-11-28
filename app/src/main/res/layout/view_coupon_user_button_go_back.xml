@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frag_coupon_user_result_ll_go_back"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/frag_coupon_user_result_tv_go_back"
+        style="@style/TCTextViewGold"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fs_40"
+        android:layout_marginStart="@dimen/fs_50"
+        android:layout_marginTop="@dimen/fs_20"
+        android:layout_marginEnd="@dimen/fs_50"
+        android:layout_marginBottom="@dimen/fs_20"
+        android:background="@drawable/bg_transparent_solid_gold_border_30_curvature"
+        android:gravity="center"
+        android:text="@string/text_back_to_home"
+        android:textAllCaps="true" />
+
+</LinearLayout>

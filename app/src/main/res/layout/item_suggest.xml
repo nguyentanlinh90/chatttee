@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_suggest_tv_suggest"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/TCTextViewGold"
+    android:gravity="center_vertical"
+    android:lineSpacingExtra="@dimen/fs_5"
+    android:padding="@dimen/fs_14"
+    android:textSize="@dimen/ts_14" />

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/fs_56"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_chattee_main_review_rl_menu"
+        android:layout_width="@dimen/fs_56"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/frg_coupon_user_my_coupon_detail_toolbar"
+            android:layout_width="@dimen/fs_32"
+            android:layout_height="@dimen/fs_25"
+            android:layout_centerInParent="true"
+            android:background="@android:color/white"
+            app:navigationIcon="@drawable/ic_menu_nav"
+
+            />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/toolbar_chattee_main_review_iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/fs_25"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/ic_chattee_header_logo" />
+
+    <include
+        layout="@layout/view_chattee_search_box"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/fs_7"
+        android:layout_toEndOf="@+id/toolbar_chattee_main_review_rl_menu"
+        android:layout_toStartOf="@+id/toolbar_review_rl_search" />
+
+    <RelativeLayout
+        android:id="@+id/toolbar_review_rl_search"
+        android:layout_width="@dimen/fs_65"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/toolbar_review_iv_search"
+            android:layout_width="@dimen/fs_45"
+            android:layout_height="@dimen/fs_40"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/todo"
+            android:padding="@dimen/fs_10"
+            android:src="@drawable/ic_search_black_24dp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/toolbar_review_tv_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/text_cancel"
+            android:textColor="@color/c_0e61fd"
+            android:textSize="@dimen/ts_11"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

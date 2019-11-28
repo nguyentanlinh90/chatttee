@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_solid_no_border_10_radius">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/TCTextViewBlackBold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fs_20"
+        android:gravity="center"
+        android:text="@string/notify_new_version_title" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        style="@style/TCTextViewBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:gravity="center"
+        android:padding="@dimen/fs_15"
+        android:text="@string/notify_new_version_content"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/view_line" />
+
+        <TextView
+            android:id="@+id/tv_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/fs_12"
+            android:text="@string/text_update"
+            android:textColor="@color/c_0e61fd"
+            android:textSize="@dimen/ts_17" />
+    </LinearLayout>
+</RelativeLayout>

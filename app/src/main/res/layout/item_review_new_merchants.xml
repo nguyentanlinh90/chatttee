@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/fs_140"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/fs_13"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/frag_review_new_merchant_iv_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fs_140"
+        android:background="@color/c_f2f2f2"
+        android:contentDescription="@string/todo"
+        android:scaleType="centerCrop" />
+    <me.zhanghai.android.materialratingbar.MaterialRatingBar
+        android:id="@+id/frag_review_new_merchant_rb_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/fs_15"
+        android:layout_margin="@dimen/fs_3" />
+    <TextView
+        android:id="@+id/frag_review_new_merchant_tv_name"
+        style="@style/TCTextViewBlack"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fs_37"
+        android:layout_marginTop="@dimen/fs_1"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="2"
+        android:text="@string/text_text" />
+
+    <TextView
+        android:id="@+id/frag_review_new_merchant_tv_total_reviews"
+        style="@style/TCTextViewBlackLight"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/fs_2"
+        android:gravity="top"
+        android:text="@string/text_text"
+        android:textSize="@dimen/ts_12" />
+</LinearLayout>

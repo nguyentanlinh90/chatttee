@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="RtlSymmetry">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fs_5"
+        android:paddingTop="@dimen/fs_2"
+        android:paddingEnd="@dimen/fs_5">
+
+        <TextView
+            android:id="@+id/item_coupon_user_info_item_catalogue_tv_name"
+            style="@style/TCTextViewBlackBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="top"
+            android:maxLines="1"
+            android:text="@string/text_text"
+            android:textSize="@dimen/ts_12" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/fs_5">
+
+        <LinearLayout
+            android:id="@+id/item_coupon_user_info_item_catalogue_ll_purchase_tec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/TCTextViewBlackBoldLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/text_character"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_marginTop="-2.5dp"
+                />
+
+            <TextView
+                android:id="@+id/item_coupon_user_info_item_catalogue_tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TCTextViewGoldBold"
+                android:text="@string/text_text"
+                android:textAllCaps="true"
+                android:layout_marginStart="@dimen/fs_3"
+                android:textSize="@dimen/ts_12" />
+
+            <TextView
+                style="@style/TCTextViewBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/fs_5"
+                android:text="@string/tee_coin_symbol"
+                android:textSize="@dimen/ts_10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/item_coupon_user_info_item_catalogue_ll_purchase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_coupon_user_info_item_catalogue_tv_purchases_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TCTextViewGoldBold"
+                android:textSize="@dimen/ts_12" />
+
+            <TextView
+                android:id="@+id/item_coupon_user_info_item_catalogue_tv_purchases"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/fs_3"
+                style="@style/TCTextViewBlack"
+                android:paddingBottom="@dimen/fs_0"
+                android:textSize="@dimen/ts_10" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/item_coupon_user_info_item_catalogue_tv_end"
+        style="@style/TCTextViewBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_text"
+        android:textSize="@dimen/ts_9" />
+</LinearLayout>

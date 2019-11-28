@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_bt_cancel"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/fs_34"
+    android:background="@drawable/bg_white_solid_gold_border_30_radius"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/button_cancel_tv_cancel"
+        style="@style/TCTextViewGold"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/text_cancel"
+        android:textAllCaps="true"
+        android:textSize="@dimen/ts_13" />
+</LinearLayout>
